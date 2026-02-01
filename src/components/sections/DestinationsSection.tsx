@@ -8,7 +8,6 @@ import {
   NavArrowLeft,
   NavArrowRight,
   Rain,
-  Search,
   SeaWaves,
   Snow,
   SunLight,
@@ -147,7 +146,6 @@ const matchesLandscape = (
 
 export function DestinationsSection() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchQuery, setSearchQuery] = useState("");
   const [seasonFilters, setSeasonFilters] = useState<string[]>([]);
   const [priceFilter, setPriceFilter] = useState("all");
   const [landscapeFilters, setLandscapeFilters] = useState<string[]>([]);
@@ -175,42 +173,26 @@ export function DestinationsSection() {
     setCurrentPage(1);
   };
 
-  // Filter destinations with multiple selections
-  const matchesSeasonFilters = (dest: Destination) => {
-    if (seasonFilters.length === 0) return true;
-    return seasonFilters.some((season) => matchesSeason(dest, season));
-  };
-
-  const matchesLandscapeFilters = (dest: Destination) => {
-    if (landscapeFilters.length === 0) return true;
-    return landscapeFilters.some((landscape) =>
-      matchesLandscape(dest, landscape),
-    );
-  };
-
-  // Search filter
-  const matchesSearch = (dest: Destination) => {
-    if (!searchQuery.trim()) return true;
-    const query = searchQuery.toLowerCase();
-    return (
-      (dest.name || dest.destination || "").toLowerCase().includes(query) ||
-      dest.state.toLowerCase().includes(query) ||
-      dest.description.toLowerCase().includes(query) ||
-      (dest.tags || []).some((tag: string) => tag.toLowerCase().includes(query))
-    );
-  };
-
   // Filter destinations
   const filteredDestinations = useMemo(() => {
     return destinations.filter((dest) => {
+      // Check season filters
+      const matchesSeasonsFilter =
+        seasonFilters.length === 0 ||
+        seasonFilters.some((season) => matchesSeason(dest, season));
+
+      // Check landscape filters
+      const matchesLandscapesFilter =
+        landscapeFilters.length === 0 ||
+        landscapeFilters.some((landscape) => matchesLandscape(dest, landscape));
+
       return (
-        matchesSearch(dest) &&
-        matchesSeasonFilters(dest) &&
+        matchesSeasonsFilter &&
         matchesPrice(dest, priceFilter) &&
-        matchesLandscapeFilters(dest)
+        matchesLandscapesFilter
       );
     });
-  }, [searchQuery, seasonFilters, priceFilter, landscapeFilters]);
+  }, [seasonFilters, priceFilter, landscapeFilters]);
 
   // Pagination
   const totalPages = Math.ceil(filteredDestinations.length / ITEMS_PER_PAGE);
@@ -228,11 +210,9 @@ export function DestinationsSection() {
   const activeFiltersCount =
     seasonFilters.length +
     landscapeFilters.length +
-    (priceFilter !== "all" ? 1 : 0) +
-    (searchQuery.trim() ? 1 : 0);
+    (priceFilter !== "all" ? 1 : 0);
 
   const clearFilters = () => {
-    setSearchQuery("");
     setSeasonFilters([]);
     setPriceFilter("all");
     setLandscapeFilters([]);
@@ -266,89 +246,36 @@ export function DestinationsSection() {
           </p>
         </motion.div>
 
-        {/* Glassmorphism Filter Section */}
+        {/* Compact Filter Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mb-10 relative"
+          className="mb-8 relative"
         >
-          {/* Apple-style Glass background */}
+          {/* Glass background */}
           <div
-            className="absolute inset-0 rounded-[2rem]"
+            className="absolute inset-0 rounded-2xl"
             style={{
-              background: 'linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.5) 100%)',
-              backdropFilter: 'blur(40px) saturate(180%)',
-              WebkitBackdropFilter: 'blur(40px) saturate(180%)',
-              border: '1px solid rgba(255,255,255,0.5)',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.06), 0 0 0 1px rgba(255,255,255,0.4) inset',
-            }}
-          />
-          {/* Subtle gradient overlay */}
-          <div 
-            className="absolute inset-0 rounded-[2rem] opacity-50"
-            style={{
-              background: 'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, transparent 40%)',
+              background:
+                "linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 100%)",
+              backdropFilter: "blur(20px) saturate(150%)",
+              WebkitBackdropFilter: "blur(20px) saturate(150%)",
+              border: "1px solid rgba(255,255,255,0.4)",
+              boxShadow: "0 4px 20px rgba(0,0,0,0.04)",
             }}
           />
 
-          <div className="relative z-10 p-6 md:p-8">
-            {/* Search & Header Row */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-              {/* Search Input */}
-              <div className="relative flex-1 max-w-md">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-content-tertiary" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => {
-                    setSearchQuery(e.target.value);
-                    setCurrentPage(1);
-                  }}
-                  placeholder="Search destinations..."
-                  className="w-full pl-12 pr-4 py-3 rounded-2xl text-sm font-medium text-content-primary placeholder:text-content-tertiary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500/30"
-                  style={{
-                    background: 'rgba(255,255,255,0.6)',
-                    backdropFilter: 'blur(10px)',
-                    WebkitBackdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(0,0,0,0.05)',
-                    boxShadow: 'inset 0 1px 2px rgba(0,0,0,0.04)',
-                  }}
-                />
-                {searchQuery && (
-                  <button
-                    onClick={() => setSearchQuery("")}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-content-tertiary/20 hover:bg-content-tertiary/30 flex items-center justify-center transition-colors"
-                  >
-                    <Xmark className="w-3.5 h-3.5 text-content-secondary" />
-                  </button>
-                )}
-              </div>
-
-              {activeFiltersCount > 0 && (
-                <button
-                  onClick={clearFilters}
-                  className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium text-content-secondary hover:text-primary-600 transition-all"
-                  style={{
-                    background: 'rgba(255,255,255,0.5)',
-                    border: '1px solid rgba(0,0,0,0.05)',
-                  }}
-                >
-                  <Xmark className="w-4 h-4" />
-                  Clear all ({activeFiltersCount})
-                </button>
-              )}
-            </div>
-
-            {/* Season & Budget Row - Same line on desktop */}
-            <div className="flex flex-col md:flex-row md:items-start md:gap-12 mb-5">
-              {/* Season Toggle Buttons */}
-              <div className="mb-5 md:mb-0">
-                <p className="text-xs font-medium text-content-tertiary mb-2.5 uppercase tracking-wide">
+          <div className="relative z-10 px-5 py-4 md:px-6 md:py-5">
+            {/* All Filters in One Row */}
+            <div className="flex flex-wrap items-center gap-3 md:gap-4">
+              {/* Season Filters */}
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-semibold text-content-tertiary uppercase tracking-wide hidden sm:block">
                   Season
-                </p>
-                <div className="flex flex-wrap gap-2">
+                </span>
+                <div className="flex gap-1.5">
                   {SEASON_OPTIONS.map((option) => {
                     const Icon = option.icon;
                     const isActive = seasonFilters.includes(option.value);
@@ -356,50 +283,51 @@ export function DestinationsSection() {
                       <button
                         key={option.value}
                         onClick={() => toggleSeason(option.value)}
-                        className={`group flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-medium transition-all duration-300 ${isActive ? "text-white shadow-lg" : "text-content-secondary hover:scale-[1.02]"}`}
-                        style={isActive ? {
-                          background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
-                          boxShadow: '0 4px 15px rgba(59,130,246,0.35)',
-                        } : {
-                          background: 'rgba(255,255,255,0.7)',
-                          backdropFilter: 'blur(10px)',
-                          border: '1px solid rgba(0,0,0,0.06)',
-                          boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                        }}
+                        className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium transition-all duration-200 ${isActive ? "text-white shadow-md" : "text-content-secondary hover:bg-white/50"}`}
+                        style={
+                          isActive
+                            ? {
+                                background:
+                                  "linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)",
+                              }
+                            : {
+                                background: "rgba(255,255,255,0.5)",
+                                border: "1px solid rgba(0,0,0,0.04)",
+                              }
+                        }
                       >
-                        <Icon className="w-4 h-4" />
-                        {option.label}
+                        <Icon className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">{option.label}</span>
                       </button>
                     );
                   })}
                 </div>
               </div>
 
-              {/* Budget Pills */}
-              <div>
-                <div className="flex items-center gap-2 mb-2.5">
-                  <Wallet className="w-3.5 h-3.5 text-content-tertiary" />
-                  <p className="text-xs font-medium text-content-tertiary uppercase tracking-wide">
-                    Max Budget
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2">
+              <div className="w-px h-6 bg-black/10 hidden md:block" />
+
+              {/* Budget Filters */}
+              <div className="flex items-center gap-2">
+                <Wallet className="w-3.5 h-3.5 text-content-tertiary hidden sm:block" />
+                <div className="flex gap-1.5">
                   {PRICE_OPTIONS.map((option) => {
                     const isActive = priceFilter === option.value;
                     return (
                       <button
                         key={option.value}
                         onClick={() => handlePriceChange(option.value)}
-                        className={`px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all duration-300 ${isActive ? "text-white shadow-lg" : "text-content-secondary hover:scale-[1.02]"}`}
-                        style={isActive ? {
-                          background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-                          boxShadow: '0 4px 15px rgba(16,185,129,0.35)',
-                        } : {
-                          background: 'rgba(255,255,255,0.7)',
-                          backdropFilter: 'blur(10px)',
-                          border: '1px solid rgba(0,0,0,0.06)',
-                          boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                        }}
+                        className={`px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-200 ${isActive ? "text-white shadow-md" : "text-content-secondary hover:bg-white/50"}`}
+                        style={
+                          isActive
+                            ? {
+                                background:
+                                  "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+                              }
+                            : {
+                                background: "rgba(255,255,255,0.5)",
+                                border: "1px solid rgba(0,0,0,0.04)",
+                              }
+                        }
                       >
                         {option.label}
                       </button>
@@ -407,57 +335,62 @@ export function DestinationsSection() {
                   })}
                 </div>
               </div>
-            </div>
 
-            {/* Landscape Toggle Chips */}
-            <div>
-              <p className="text-xs font-medium text-content-tertiary mb-2.5 uppercase tracking-wide">
-                Landscape
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {LANDSCAPE_OPTIONS.map((option) => {
-                  const Icon = option.icon;
-                  const isActive = landscapeFilters.includes(option.value);
-                  return (
-                    <button
-                      key={option.value}
-                      onClick={() => toggleLandscape(option.value)}
-                      className={`group flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-medium transition-all duration-300 ${isActive ? "text-white shadow-lg" : "text-content-secondary hover:scale-[1.02]"}`}
-                      style={isActive ? {
-                        background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
-                        boxShadow: '0 4px 15px rgba(139,92,246,0.35)',
-                      } : {
-                        background: 'rgba(255,255,255,0.7)',
-                        backdropFilter: 'blur(10px)',
-                        border: '1px solid rgba(0,0,0,0.06)',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                      }}
-                    >
-                      <Icon className="w-4 h-4" />
-                      {option.label}
-                    </button>
-                  );
-                })}
+              <div className="w-px h-6 bg-black/10 hidden md:block" />
+
+              {/* Landscape Filters */}
+              <div className="flex items-center gap-2">
+                <div className="flex gap-1.5 flex-wrap">
+                  {LANDSCAPE_OPTIONS.map((option) => {
+                    const Icon = option.icon;
+                    const isActive = landscapeFilters.includes(option.value);
+                    return (
+                      <button
+                        key={option.value}
+                        onClick={() => toggleLandscape(option.value)}
+                        className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium transition-all duration-200 ${isActive ? "text-white shadow-md" : "text-content-secondary hover:bg-white/50"}`}
+                        style={
+                          isActive
+                            ? {
+                                background:
+                                  "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)",
+                              }
+                            : {
+                                background: "rgba(255,255,255,0.5)",
+                                border: "1px solid rgba(0,0,0,0.04)",
+                              }
+                        }
+                      >
+                        <Icon className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">{option.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Clear Button */}
+              {activeFiltersCount > 0 && (
+                <>
+                  <div className="w-px h-6 bg-black/10 hidden md:block" />
+                  <button
+                    onClick={clearFilters}
+                    className="flex items-center gap-1 px-3 py-2 rounded-xl text-xs font-medium text-content-tertiary hover:text-red-500 transition-colors"
+                  >
+                    <Xmark className="w-3.5 h-3.5" />
+                    Clear
+                  </button>
+                </>
+              )}
+
+              {/* Results Count */}
+              <div className="ml-auto text-xs text-content-tertiary">
+                <span className="font-bold text-primary-600">
+                  {filteredDestinations.length}
+                </span>{" "}
+                found
               </div>
             </div>
-
-            {/* Active Filters Summary */}
-            {activeFiltersCount > 0 && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                className="mt-5 pt-4 border-t border-black/5 dark:border-white/10"
-              >
-                <p className="text-sm text-content-secondary">
-                  Showing{" "}
-                  <span className="font-bold text-primary-600">
-                    {filteredDestinations.length}
-                  </span>{" "}
-                  destinations
-                </p>
-              </motion.div>
-            )}
           </div>
         </motion.div>
 

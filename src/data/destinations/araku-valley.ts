@@ -5,12 +5,12 @@ export const araku_valley: Destination = {
   id: "araku-valley",
   name: "Araku Valley",
   images: [
-    "https://images.unsplash.com/photo-1559599746-8823b38544c6?w=1200&q=80",
-    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1200&q=80",
-    "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
-    "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80", // Valley mountains
+    "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1200&q=80", // Coffee plantation
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80", // Scenic valley
+    "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80", // Green hills
+    "https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?w=1200&q=80", // Train journey
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80", // Misty mountains
   ],
   duration: "5 Days / 4 Nights",
   destination: "Araku Valley",

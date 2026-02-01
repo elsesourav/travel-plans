@@ -5,12 +5,12 @@ export const andaman_islands: Destination = {
   id: "andaman-islands",
   name: "Andaman Islands",
   images: [
-    "https://images.unsplash.com/photo-1589979481223-deb893043163?w=1200&q=80",
-    "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80",
-    "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80",
-    "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1200&q=80",
-    "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=1200&q=80",
+    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80", // Turquoise waters
+    "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=1200&q=80", // Tropical beach
+    "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80", // Clear ocean
+    "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1200&q=80", // Palm trees
+    "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=1200&q=80", // Underwater coral
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80", // Sandy beach
   ],
   duration: "5 Days / 4 Nights",
   destination: "Andaman Islands",
