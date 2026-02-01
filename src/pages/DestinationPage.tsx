@@ -270,47 +270,6 @@ export function DestinationPage() {
           </AnimatePresence>
         </div>
       </section>
-
-      {/* Navigation to Other Destinations */}
-      <section className="py-12 bg-surface-secondary">
-        <div className="container-custom">
-          <h3 className="font-display text-2xl font-bold text-content-primary mb-6">
-            Explore More Destinations
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {destinations
-              .filter(
-                (d: Destination) =>
-                  (d.id || d.slug) !== (destination.id || destination.slug),
-              )
-              .slice(0, 4)
-              .map((dest: Destination) => (
-                <Link
-                  key={dest.id || dest.slug}
-                  to={`/destination/${dest.slug}`}
-                  className="group relative overflow-hidden rounded-xl aspect-4/3"
-                >
-                  <img
-                    src={
-                      (dest.images || [
-                        `/images/destinations/${dest.slug}.jpg`,
-                      ])[0]
-                    }
-                    alt={dest.name || dest.destination}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3">
-                    <div className="font-semibold text-white">
-                      {dest.name || dest.destination}
-                    </div>
-                    <div className="text-sm text-white/70">{dest.state}</div>
-                  </div>
-                </Link>
-              ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

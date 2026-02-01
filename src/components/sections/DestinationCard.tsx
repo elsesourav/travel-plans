@@ -132,16 +132,9 @@ export function DestinationCard({
                     </div>
                   </div>
 
-                  <div className="hidden sm:flex flex-col gap-1">
-                    <span className="text-xs text-content-tertiary font-medium uppercase tracking-wider">
-                      Best Time
-                    </span>
-                    <div className="flex items-center gap-2 text-content-secondary">
-                      <SunLight className="w-5 h-5 text-amber-500" />
-                      <span className="font-medium">
-                        {destination.bestSeason}
-                      </span>
-                    </div>
+                  <div className="hidden sm:flex items-center gap-1.5 text-xs text-content-tertiary">
+                    <SunLight className="w-4 h-4 text-amber-500" />
+                    <span>{destination.bestSeason}</span>
                   </div>
                 </div>
 
