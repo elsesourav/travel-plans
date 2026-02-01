@@ -6,8 +6,8 @@ export const yuksom: Destination = {
   name: "Yuksom",
   images: [
     "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
     "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
     "https://images.unsplash.com/photo-1585136917228-d0a0426b2030?w=1200&q=80",
     "https://images.unsplash.com/photo-1545562083-c583d014b4f2?w=1200&q=80",

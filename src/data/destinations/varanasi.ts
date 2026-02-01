@@ -7,13 +7,13 @@ export const varanasi: Destination = {
   name: "Varanasi",
   images: [
     "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=1200&q=80",
-    "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=80",
     "https://images.unsplash.com/photo-1590077428593-a55bb07c4665?w=1200&q=80",
-    "https://images.unsplash.com/photo-1564804955966-f6f41ea4d3d4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=80",
     "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80",
+    "https://images.unsplash.com/photo-1564804955966-f6f41ea4d3d4?w=1200&q=80",
     "https://images.unsplash.com/photo-1609947017136-9daf32a45e19?w=1200&q=80",
   ],
-  duration: "7 Days / 6 Nights",
+  duration: "5 Days / 4 Nights",
   state: "Uttar Pradesh",
   tagline: "The Spiritual Heart of India",
   info: {

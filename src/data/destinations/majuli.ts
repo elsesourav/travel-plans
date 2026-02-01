@@ -6,8 +6,8 @@ export const majuli: Destination = {
   name: "Majuli",
   images: [
     "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1200&q=80",
-    "https://images.unsplash.com/photo-1552083375-1447ce886485?w=1200&q=80",
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
+    "https://images.unsplash.com/photo-1552083375-1447ce886485?w=1200&q=80",
     "https://images.unsplash.com/photo-1474524955719-b9f87c50ce47?w=1200&q=80",
     "https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=1200&q=80",
     "https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1200&q=80",

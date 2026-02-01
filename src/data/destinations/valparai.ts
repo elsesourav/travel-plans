@@ -6,9 +6,9 @@ export const valparai: Destination = {
   name: "Valparai",
   images: [
     "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=1200&q=80",
+    "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=1200&q=80",
     "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
     "https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1200&q=80",
-    "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=1200&q=80",
     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
     "https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?w=1200&q=80",
   ],

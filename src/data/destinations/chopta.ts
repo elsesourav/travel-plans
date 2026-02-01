@@ -6,10 +6,10 @@ export const chopta: Destination = {
   name: "Chopta",
   images: [
     "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
     "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80",
-    "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
     "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1200&q=80",
+    "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=1200&q=80",
     "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=1200&q=80",
   ],
   duration: "4 Days / 3 Nights",

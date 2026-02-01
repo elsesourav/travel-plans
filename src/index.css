@@ -86,6 +86,17 @@
 
   body {
     @apply bg-surface text-text-primary font-sans;
+    background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    background-size: 20px 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 transparent;
+  }
+
+  /* Apply dotted pattern to surface backgrounds */
+  .bg-surface-primary,
+  .bg-surface-secondary {
+    background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    background-size: 20px 20px;
   }
 
   h1,
@@ -112,6 +123,13 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-linear-to-r from-primary-600 to-secondary-500;
   }
+}
+
+body {
+  background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 transparent;
 }
 
 /* Custom Scrollbar */

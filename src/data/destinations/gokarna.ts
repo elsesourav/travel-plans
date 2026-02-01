@@ -5,8 +5,8 @@ export const gokarna: Destination = {
   id: "gokarna",
   name: "Gokarna",
   images: [
-    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&q=80",
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&q=80",
     "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80",
     "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1200&q=80",
     "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1200&q=80",

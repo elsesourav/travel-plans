@@ -6,9 +6,9 @@ export const khonoma: Destination = {
   name: "Khonoma",
   images: [
     "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
+    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80",
     "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80",
     "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
     "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1200&q=80",
   ],
