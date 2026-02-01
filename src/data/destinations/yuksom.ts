@@ -1,149 +1,157 @@
-import type { Destination } from '../types';
+import type { Destination } from "../types";
 
 export const yuksom: Destination = {
-  "destination": "Yuksom",
-  "state": "Sikkim",
-  "tagline": "Gateway to the Kanchenjunga",
-  "shortDescription": "Historic coronation site and trekking base for Sikkim's highest peaks",
-  "description": "Yuksom, Sikkim's first capital, is where the first Chogyal was crowned in 1642. This peaceful village serves as the gateway to the legendary Goecha La trek offering Kanchenjunga views. Explore Sikkim's oldest monastery, trek through rhododendron forests, and experience the authentic Sikkimese culture in this offbeat Himalayan gem.",
-  "landscape": "Gateway to Kanchenjunga, forest trails, Buddhist heritage",
-  "coordinates": {
-    "latitude": "27.3706°N",
-    "longitude": "88.2217°E"
+  destination: "Yuksom",
+  state: "Sikkim",
+  tagline: "Gateway to the Kanchenjunga",
+  info: {
+    en: "Sikkim's first capital and gateway to the legendary Goecha La trek. Yuksom offers a glimpse of Buddhist heritage with its coronation throne of the first Chogyal. The village is surrounded by cardamom forests and offers pristine views of Kanchenjunga.",
+    hi: "सिक्किम की पहली राजधानी और गोएचा ला ट्रेक का प्रवेश द्वार। युकसोम में पहले चोग्याल के राज्याभिषेक सिंहासन और बौद्ध विरासत मिलती है। गाँव इलायची के जंगलों और कंचनजंगा के मनोरम दृश्यों से घिरा है।",
+    bn: "সিকিমের প্রথম রাজধানী এবং গোয়েচা লা ট্রেকের প্রবেশদ্বার। ইউকসমে প্রথম চোগ্যালের রাজ্যাভিষেক সিংহাসন ও বৌদ্ধ ঐতিহ্যের নিদর্শন রয়েছে। এলাচ বন এবং কাঞ্চনজঙ্ঘার দৃশ্য এই গ্রামকে ঘিরে রেখেছে।",
   },
-  "permits": "ILP required for certain areas (apply at Rangpo/Gangtok)",
-  "bestSeason": "March to May, October to November",
-  "seasonNote": "Spring has rhododendron blooms. Autumn offers clear mountain views. Monsoon has heavy rains.",
-  "keyAttractions": [
+  shortDescription:
+    "Historic coronation site and trekking base for Sikkim's highest peaks",
+  description:
+    "Yuksom, Sikkim's first capital, is where the first Chogyal was crowned in 1642. This peaceful village serves as the gateway to the legendary Goecha La trek offering Kanchenjunga views. Explore Sikkim's oldest monastery, trek through rhododendron forests, and experience the authentic Sikkimese culture in this offbeat Himalayan gem.",
+  landscape: "Gateway to Kanchenjunga, forest trails, Buddhist heritage",
+  coordinates: {
+    latitude: "27.3706°N",
+    longitude: "88.2217°E",
+  },
+  permits: "ILP required for certain areas (apply at Rangpo/Gangtok)",
+  bestSeason: "March to May, October to November",
+  seasonNote:
+    "Spring has rhododendron blooms. Autumn offers clear mountain views. Monsoon has heavy rains.",
+  keyAttractions: [
     "Dubdi Monastery — Sikkim's oldest monastery (1701), hilltop trek",
     "Norbugang Coronation Throne — Where first Sikkimese king was crowned",
     "Goecha La Trek — Gateway to spectacular Kanchenjunga views",
     "Khecheopalri Lake — Sacred wish-fulfilling lake",
-    "Tashiding Monastery — One of Sikkim's holiest monasteries"
+    "Tashiding Monastery — One of Sikkim's holiest monasteries",
   ],
-  "itinerary": [
+  itinerary: [
     {
-      "day": 1,
-      "title": "Travel Day",
-      "plan": "Train: Kolkata → NJP. Shared taxi to Pelling/Yuksom (6-7 hours). Evening rest."
+      day: 1,
+      title: "Travel Day",
+      plan: "Train: Kolkata → NJP. Shared taxi to Pelling/Yuksom (6-7 hours). Evening rest.",
     },
     {
-      "day": 2,
-      "title": "Pelling Sights",
-      "plan": "Pemayangtse Monastery + Rabdentse ruins + Kanchenjunga viewpoint → drive to Yuksom"
+      day: 2,
+      title: "Pelling Sights",
+      plan: "Pemayangtse Monastery + Rabdentse ruins + Kanchenjunga viewpoint → drive to Yuksom",
     },
     {
-      "day": 3,
-      "title": "Yuksom Heritage",
-      "plan": "Dubdi Monastery trek + Norbugang Coronation Throne + Kathok Lake + village walk"
+      day: 3,
+      title: "Yuksom Heritage",
+      plan: "Dubdi Monastery trek + Norbugang Coronation Throne + Kathok Lake + village walk",
     },
     {
-      "day": 4,
-      "title": "Forest Trek",
-      "plan": "Day trek toward Sachen (Dzongri trail start) + forest exploration + wildlife spotting"
+      day: 4,
+      title: "Forest Trek",
+      plan: "Day trek toward Sachen (Dzongri trail start) + forest exploration + wildlife spotting",
     },
     {
-      "day": 5,
-      "title": "Monastery Day",
-      "plan": "Day trip to Tashiding Monastery + prayer wheels + local culture immersion"
+      day: 5,
+      title: "Monastery Day",
+      plan: "Day trip to Tashiding Monastery + prayer wheels + local culture immersion",
     },
     {
-      "day": 6,
-      "title": "Sacred Lake",
-      "plan": "Khecheopalri Lake visit + Rimbi Waterfalls + return to Pelling"
+      day: 6,
+      title: "Sacred Lake",
+      plan: "Khecheopalri Lake visit + Rimbi Waterfalls + return to Pelling",
     },
     {
-      "day": 7,
-      "title": "Departure",
-      "plan": "Pelling/Geyzing → NJP → Train to Kolkata"
-    }
+      day: 7,
+      title: "Departure",
+      plan: "Pelling/Geyzing → NJP → Train to Kolkata",
+    },
   ],
-  "budgetBreakdown": {
-    "perPerson": [
+  budgetBreakdown: {
+    perPerson: [
       {
-        "item": "Train (Kolkata ↔ NJP round trip)",
-        "low": 600,
-        "typical": 1500,
-        "notes": "8-10 hours journey"
+        item: "Train (Kolkata ↔ NJP round trip)",
+        low: 600,
+        typical: 1500,
+        notes: "8-10 hours journey",
       },
       {
-        "item": "Shared taxi (NJP ↔ Yuksom circuit)",
-        "low": 2000,
-        "typical": 4000,
-        "notes": "Via Pelling route"
+        item: "Shared taxi (NJP ↔ Yuksom circuit)",
+        low: 2000,
+        typical: 4000,
+        notes: "Via Pelling route",
       },
       {
-        "item": "Accommodation (6 nights)",
-        "low": 3600,
-        "typical": 6000,
-        "notes": "₹600–1,000/night homestays"
+        item: "Accommodation (6 nights)",
+        low: 3600,
+        typical: 6000,
+        notes: "₹600–1,000/night homestays",
       },
       {
-        "item": "Food (7 days)",
-        "low": 1800,
-        "typical": 3000,
-        "notes": "₹250–400/day"
+        item: "Food (7 days)",
+        low: 1800,
+        typical: 3000,
+        notes: "₹250–400/day",
       },
       {
-        "item": "Permits (if trekking beyond)",
-        "low": 0,
-        "typical": 500,
-        "notes": "Dzongri trek needs permit"
+        item: "Permits (if trekking beyond)",
+        low: 0,
+        typical: 500,
+        notes: "Dzongri trek needs permit",
       },
       {
-        "item": "Local guides & activities",
-        "low": 500,
-        "typical": 1500,
-        "notes": "Trek guides, monastery fees"
+        item: "Local guides & activities",
+        low: 500,
+        typical: 1500,
+        notes: "Trek guides, monastery fees",
       },
       {
-        "item": "Misc (tips, shopping)",
-        "low": 400,
-        "typical": 800,
-        "notes": ""
-      }
+        item: "Misc (tips, shopping)",
+        low: 400,
+        typical: 800,
+        notes: "",
+      },
     ],
-    "total": {
-      "low": 8900,
-      "typical": 17300,
-      "typicalRange": "₹12k–18k"
-    }
+    total: {
+      low: 8900,
+      typical: 17300,
+      typicalRange: "₹12k–18k",
+    },
   },
-  "groupOf6": {
-    "breakdown": [
+  groupOf6: {
+    breakdown: [
       {
-        "category": "Train tickets",
-        "perPerson": "600–1,500"
+        category: "Train tickets",
+        perPerson: "600–1,500",
       },
       {
-        "category": "Shared vehicle (chartered)",
-        "perPerson": "1,200–2,500"
+        category: "Shared vehicle (chartered)",
+        perPerson: "1,200–2,500",
       },
       {
-        "category": "Shared rooms (3 rooms)",
-        "perPerson": "2,400–4,000"
+        category: "Shared rooms (3 rooms)",
+        perPerson: "2,400–4,000",
       },
       {
-        "category": "Food",
-        "perPerson": "1,500–2,500"
+        category: "Food",
+        perPerson: "1,500–2,500",
       },
       {
-        "category": "Permits & guides",
-        "perPerson": "300–1,000"
+        category: "Permits & guides",
+        perPerson: "300–1,000",
       },
       {
-        "category": "Misc",
-        "perPerson": "300–600"
-      }
+        category: "Misc",
+        perPerson: "300–600",
+      },
     ],
-    "total": "₹6,300–12,100"
+    total: "₹6,300–12,100",
   },
-  "bookingTips": [
+  bookingTips: [
     "Perfect base for Goecha La trek (needs 8-10 extra days with permits)",
     "Homestays offer authentic Sikkimese experience and warm hospitality",
     "Carry warm clothes — temperatures drop significantly even in summer",
     "Book shared taxis from NJP in advance during peak season",
-    "Try local Sikkimese thukpa, momos, and chang (millet beer)"
+    "Try local Sikkimese thukpa, momos, and chang (millet beer)",
   ],
-  "slug": "yuksom"
+  slug: "yuksom",
 };

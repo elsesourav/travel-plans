@@ -64,7 +64,7 @@ export function ComparisonSection() {
             <tbody>
               {destinations.map((destination: Destination, index: number) => (
                 <motion.tr
-                  key={destination.id}
+                  key={destination.id || destination.slug}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -74,13 +74,17 @@ export function ComparisonSection() {
                   <td className="p-4 md:p-6">
                     <div className="flex items-center gap-3">
                       <img
-                        src={destination.images[0]}
-                        alt={destination.name}
+                        src={
+                          (destination.images || [
+                            `/images/destinations/${destination.slug}.jpg`,
+                          ])[0]
+                        }
+                        alt={destination.name || destination.destination}
                         className="w-12 h-12 rounded-xl object-cover"
                       />
                       <div>
                         <div className="font-semibold text-content-primary">
-                          {destination.name}
+                          {destination.name || destination.destination}
                         </div>
                         <div className="text-sm text-content-tertiary">
                           {destination.state}
@@ -89,11 +93,16 @@ export function ComparisonSection() {
                     </div>
                   </td>
                   <td className="p-4 md:p-6 text-content-secondary">
-                    {destination.duration}
+                    {destination.duration || "7 Days"}
                   </td>
                   <td className="p-4 md:p-6">
                     <span className="font-semibold text-primary-600">
-                      {formatBudgetRange(destination.totalBudget)}
+                      {formatBudgetRange(
+                        destination.totalBudget || {
+                          min: destination.budgetBreakdown.total.low,
+                          max: destination.budgetBreakdown.total.typical,
+                        },
+                      )}
                     </span>
                   </td>
                   <td className="p-4 md:p-6 text-content-secondary">
@@ -101,18 +110,26 @@ export function ComparisonSection() {
                   </td>
                   <td className="p-4 md:p-6">
                     <div className="flex flex-wrap gap-1">
-                      {destination.tags.slice(0, 2).map((tag: string) => (
-                        <span
-                          key={tag}
-                          className="px-2 py-1 bg-surface-tertiary rounded-full text-xs text-content-secondary"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+                      {(
+                        destination.tags || [
+                          destination.state,
+                          destination.landscape.split(",")[0].trim(),
+                        ]
+                      )
+                        .slice(0, 2)
+                        .map((tag: string) => (
+                          <span
+                            key={tag}
+                            className="px-2 py-1 bg-surface-tertiary rounded-full text-xs text-content-secondary"
+                          >
+                            {tag}
+                          </span>
+                        ))}
                     </div>
                   </td>
                   <td className="p-4 md:p-6">
-                    {destination.permitRequired ? (
+                    {destination.permitRequired ||
+                    destination.permits.toLowerCase().includes("required") ? (
                       <span className="px-2 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">
                         Required
                       </span>

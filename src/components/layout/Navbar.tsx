@@ -30,9 +30,11 @@ export function Navbar() {
     const query = searchQuery.toLowerCase();
     return destinations.filter(
       (dest: Destination) =>
-        dest.name.toLowerCase().includes(query) ||
+        (dest.name || dest.destination).toLowerCase().includes(query) ||
         dest.state.toLowerCase().includes(query) ||
-        dest.tags.some((tag: string) => tag.toLowerCase().includes(query)) ||
+        (dest.tags || []).some((tag: string) =>
+          tag.toLowerCase().includes(query),
+        ) ||
         dest.shortDescription.toLowerCase().includes(query),
     );
   }, [searchQuery]);
@@ -226,16 +228,20 @@ export function Navbar() {
                           className="w-full flex items-center gap-4 p-3 hover:bg-surface-secondary rounded-xl transition-colors text-left"
                         >
                           <img
-                            src={dest.images[0]}
-                            alt={dest.name}
+                            src={
+                              (dest.images || [
+                                `/images/destinations/${dest.slug}.jpg`,
+                              ])[0]
+                            }
+                            alt={dest.name || dest.destination}
                             className="w-16 h-12 object-cover rounded-lg"
                           />
                           <div className="flex-1 min-w-0">
                             <div className="font-semibold text-content-primary">
-                              {dest.name}
+                              {dest.name || dest.destination}
                             </div>
                             <div className="text-sm text-content-tertiary truncate">
-                              {dest.state} • {dest.duration}
+                              {dest.state} • {dest.duration || "7 Days"}
                             </div>
                           </div>
                           <div className="text-sm font-medium text-primary-600">
@@ -293,13 +299,17 @@ export function Navbar() {
                         className="w-full flex items-center gap-3 p-2 hover:bg-surface-secondary rounded-lg transition-colors text-left"
                       >
                         <img
-                          src={dest.images[0]}
-                          alt={dest.name}
+                          src={
+                            (dest.images || [
+                              `/images/destinations/${dest.slug}.jpg`,
+                            ])[0]
+                          }
+                          alt={dest.name || dest.destination}
                           className="w-10 h-8 object-cover rounded"
                         />
                         <div>
                           <div className="font-medium text-sm text-content-primary">
-                            {dest.name}
+                            {dest.name || dest.destination}
                           </div>
                           <div className="text-xs text-content-tertiary">
                             {dest.state}

@@ -63,7 +63,7 @@ export function DestinationsSection() {
             {visibleDestinations.map(
               (destination: Destination, index: number) => (
                 <motion.div
-                  key={destination.id}
+                  key={destination.id || destination.slug}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
@@ -136,7 +136,7 @@ export function DestinationsSection() {
             className="pb-12"
           >
             {destinations.map((destination: Destination, index: number) => (
-              <SwiperSlide key={destination.id}>
+              <SwiperSlide key={destination.id || destination.slug}>
                 <DestinationCard destination={destination} index={index} />
               </SwiperSlide>
             ))}

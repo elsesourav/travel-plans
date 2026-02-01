@@ -58,14 +58,18 @@ export function DestinationPage() {
               thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
           }}
           className="h-full hero-slider"
-          loop={destination.images.length > 1}
+          loop={(destination.images || []).length > 1}
         >
-          {destination.images.map((image: string, index: number) => (
+          {(
+            destination.images || [
+              `/images/destinations/${destination.slug}.jpg`,
+            ]
+          ).map((image: string, index: number) => (
             <SwiperSlide key={index}>
               <div className="relative h-full">
                 <img
                   src={image}
-                  alt={`${destination.name} - ${index + 1}`}
+                  alt={`${destination.name || destination.destination} - ${index + 1}`}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
@@ -88,23 +92,30 @@ export function DestinationPage() {
           <div className="container-custom">
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="default" className="bg-white/90 text-gray-900">
-                {destination.duration}
+                {destination.duration || "7 Days"}
               </Badge>
               {destination.permitRequired && (
                 <Badge variant="amber">Permit Required</Badge>
               )}
-              {destination.tags.slice(0, 3).map((tag: string) => (
-                <Badge
-                  key={tag}
-                  variant="outline"
-                  className="border-white/30 text-white"
-                >
-                  {tag}
-                </Badge>
-              ))}
+              {(
+                destination.tags || [
+                  destination.state,
+                  destination.landscape.split(",")[0].trim(),
+                ]
+              )
+                .slice(0, 3)
+                .map((tag: string) => (
+                  <Badge
+                    key={tag}
+                    variant="outline"
+                    className="border-white/30 text-white"
+                  >
+                    {tag}
+                  </Badge>
+                ))}
             </div>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
-              {destination.name}
+              {destination.name || destination.destination}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-white/80">
               <div className="flex items-center gap-2">
@@ -118,7 +129,12 @@ export function DestinationPage() {
               <div className="flex items-center gap-2">
                 <Wallet className="w-5 h-5" />
                 <span className="font-semibold">
-                  {formatBudgetRange(destination.totalBudget)}
+                  {formatBudgetRange(
+                    destination.totalBudget || {
+                      min: destination.budgetBreakdown.total.low,
+                      max: destination.budgetBreakdown.total.typical,
+                    },
+                  )}
                 </span>
               </div>
             </div>
@@ -143,7 +159,11 @@ export function DestinationPage() {
             }}
             className="thumbs-gallery"
           >
-            {destination.images.map((image: string, index: number) => (
+            {(
+              destination.images || [
+                `/images/destinations/${destination.slug}.jpg`,
+              ]
+            ).map((image: string, index: number) => (
               <SwiperSlide key={index}>
                 <img
                   src={image}
@@ -209,8 +229,13 @@ export function DestinationPage() {
                 transition={{ duration: 0.3 }}
               >
                 <CostsTab
-                  costs={destination.costs}
-                  totalBudget={destination.totalBudget}
+                  costs={destination.costs || []}
+                  totalBudget={
+                    destination.totalBudget || {
+                      min: destination.budgetBreakdown?.total?.low || 0,
+                      max: destination.budgetBreakdown?.total?.typical || 0,
+                    }
+                  }
                   groupCosts={destination.groupCosts}
                 />
               </motion.div>
@@ -225,10 +250,20 @@ export function DestinationPage() {
                 transition={{ duration: 0.3 }}
               >
                 <TipsTab
-                  tips={destination.tips}
-                  highlights={destination.highlights}
-                  attractions={destination.attractions}
-                  permitRequired={destination.permitRequired}
+                  tips={destination.tips || destination.bookingTips}
+                  highlights={
+                    destination.highlights ||
+                    destination.keyAttractions
+                      ?.slice(0, 5)
+                      .map((a: string) => a)
+                  }
+                  attractions={
+                    destination.attractions || destination.keyAttractions
+                  }
+                  permitRequired={
+                    destination.permitRequired ??
+                    destination.permits?.toLowerCase().includes("required")
+                  }
                 />
               </motion.div>
             )}
@@ -244,22 +279,31 @@ export function DestinationPage() {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {destinations
-              .filter((d: Destination) => d.id !== destination.id)
+              .filter(
+                (d: Destination) =>
+                  (d.id || d.slug) !== (destination.id || destination.slug),
+              )
               .slice(0, 4)
               .map((dest: Destination) => (
                 <Link
-                  key={dest.id}
+                  key={dest.id || dest.slug}
                   to={`/destination/${dest.slug}`}
                   className="group relative overflow-hidden rounded-xl aspect-4/3"
                 >
                   <img
-                    src={dest.images[0]}
-                    alt={dest.name}
+                    src={
+                      (dest.images || [
+                        `/images/destinations/${dest.slug}.jpg`,
+                      ])[0]
+                    }
+                    alt={dest.name || dest.destination}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3">
-                    <div className="font-semibold text-white">{dest.name}</div>
+                    <div className="font-semibold text-white">
+                      {dest.name || dest.destination}
+                    </div>
                     <div className="text-sm text-white/70">{dest.state}</div>
                   </div>
                 </Link>
@@ -299,12 +343,14 @@ function ItineraryTab({ itinerary }: { itinerary: ItineraryDay[] }) {
             </div>
 
             <ul className="space-y-2">
-              {day.activities.map((activity: string, i: number) => (
-                <li key={i} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary-500 shrink-0 mt-0.5" />
-                  <span className="text-content-secondary">{activity}</span>
-                </li>
-              ))}
+              {(day.activities || (day.plan ? [day.plan] : [])).map(
+                (activity: string, i: number) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary-500 shrink-0 mt-0.5" />
+                    <span className="text-content-secondary">{activity}</span>
+                  </li>
+                ),
+              )}
             </ul>
 
             {day.overnight && (

@@ -34,8 +34,12 @@ export function DestinationCard({
             {/* Image Section - Increased size to 50% */}
             <div className="relative lg:w-1/2 h-64 lg:h-full overflow-hidden">
               <img
-                src={destination.images[0]}
-                alt={destination.name}
+                src={
+                  (destination.images || [
+                    `/images/destinations/${destination.slug}.jpg`,
+                  ])[0]
+                }
+                alt={destination.name || destination.destination}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-linear-to-t lg:bg-linear-to-r from-black/50 via-transparent to-transparent opacity-60" />
@@ -46,7 +50,7 @@ export function DestinationCard({
                   variant="default"
                   className="bg-white/95 text-gray-900 backdrop-blur-md shadow-lg px-4 py-1.5 text-sm font-medium"
                 >
-                  {destination.duration}
+                  {destination.duration || "7 Days"}
                 </Badge>
                 {destination.permitRequired && (
                   <Badge
@@ -71,11 +75,11 @@ export function DestinationCard({
                     </span>
                   </div>
                   <span className="text-border-primary">•</span>
-                  <span>{destination.coordinates}</span>
+                  <span>{`${destination.coordinates.latitude}, ${destination.coordinates.longitude}`}</span>
                 </div>
 
                 <h3 className="font-display text-3xl lg:text-4xl font-bold text-content-primary mb-4 group-hover:text-primary-600 transition-colors">
-                  {destination.name}
+                  {destination.name || destination.destination}
                 </h3>
 
                 <p className="text-content-secondary text-base lg:text-lg mb-8 line-clamp-2 leading-relaxed">
@@ -88,7 +92,12 @@ export function DestinationCard({
                     Trip Highlights
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4">
-                    {destination.highlights
+                    {(
+                      destination.highlights ||
+                      destination.keyAttractions
+                        .slice(0, 5)
+                        .map((attr) => attr.split("—")[0].trim())
+                    )
                       .slice(0, 4)
                       .map((highlight: string, i: number) => (
                         <div
@@ -113,7 +122,12 @@ export function DestinationCard({
                     <div className="flex items-center gap-2 text-primary-600">
                       <Wallet className="w-5 h-5" />
                       <span className="font-bold text-lg">
-                        {formatBudgetRange(destination.totalBudget)}
+                        {formatBudgetRange(
+                          destination.totalBudget || {
+                            min: destination.budgetBreakdown.total.low,
+                            max: destination.budgetBreakdown.total.typical,
+                          },
+                        )}
                       </span>
                     </div>
                   </div>
@@ -163,8 +177,12 @@ export function DestinationCard({
         {/* Image - Full card coverage */}
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src={destination.images[0]}
-            alt={destination.name}
+            src={
+              (destination.images || [
+                `/images/destinations/${destination.slug}.jpg`,
+              ])[0]
+            }
+            alt={destination.name || destination.destination}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
@@ -176,7 +194,7 @@ export function DestinationCard({
             variant="default"
             className="bg-white/90 text-gray-900 backdrop-blur-sm shadow-md"
           >
-            {destination.duration}
+            {destination.duration || "7 Days"}
           </Badge>
           {destination.permitRequired && (
             <Badge variant="amber" className="backdrop-blur-sm shadow-md">
@@ -193,7 +211,7 @@ export function DestinationCard({
           </div>
 
           <h3 className="font-display text-xl md:text-2xl font-bold text-white mb-2 line-clamp-1">
-            {destination.name}
+            {destination.name || destination.destination}
           </h3>
 
           <p className="text-white/70 text-sm mb-4 line-clamp-2 h-10">
@@ -204,12 +222,19 @@ export function DestinationCard({
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-1.5 text-white/90 text-sm">
                 <Calendar className="w-4 h-4 flex-shrink-0" />
-                <span className="truncate">{destination.duration}</span>
+                <span className="truncate">
+                  {destination.duration || "7 Days"}
+                </span>
               </div>
               <div className="flex items-center gap-1.5 text-white/90 text-sm">
                 <Wallet className="w-4 h-4 flex-shrink-0" />
                 <span className="truncate font-medium">
-                  {formatBudgetRange(destination.totalBudget)}
+                  {formatBudgetRange(
+                    destination.totalBudget || {
+                      min: destination.budgetBreakdown.total.low,
+                      max: destination.budgetBreakdown.total.typical,
+                    },
+                  )}
                 </span>
               </div>
             </div>

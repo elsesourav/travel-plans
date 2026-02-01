@@ -1,6 +1,15 @@
 import type { Destination } from '../types';
 
 export const bodh_gaya: Destination = {
+  "slug": "bodh-gaya",
+  "id": "bodh-gaya",
+  "name": "Bodh Gaya",
+  "images": [
+    "https://images.unsplash.com/photo-1591018653367-4e9f06bb8788?w=1200&q=80",
+    "https://images.unsplash.com/photo-1609947017136-9daf32a45e19?w=1200&q=80",
+    "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80"
+  ],
+  "duration": "7 Days / 6 Nights",
   "destination": "Bodh Gaya",
   "state": "Bihar",
   "tagline": "Where Buddha Found Enlightenment",
@@ -144,5 +153,17 @@ export const bodh_gaya: Destination = {
     "Thai and Japanese monasteries have beautiful architecture worth visiting",
     "Combine with Varanasi (3 hours away) for a spiritual circuit"
   ],
-  "slug": "bodh-gaya"
+  "tags": ["Bihar", "Spiritual", "Buddhist"],
+  "permitRequired": false,
+  "totalBudget": { "min": 5000, "max": 11000 },
+  "highlights": ["Mahabodhi Temple", "Bodhi Tree", "Great Buddha Statue", "International Monasteries", "Rajgir & Nalanda"],
+  "attractions": ["Mahabodhi Temple", "Bodhi Tree", "Great Buddha Statue", "Thai Monastery", "Japanese Temple"],
+  "tips": ["Visit during Buddha Purnima", "Meditate under Bodhi Tree", "Visit international monasteries", "Day trip to Nalanda"],
+  "costs": [
+    { "item": "Train (round trip)", "amount": 1500 },
+    { "item": "Accommodation (6 nights)", "amount": 4200 },
+    { "item": "Food (7 days)", "amount": 2000 },
+    { "item": "Transport & activities", "amount": 1800 },
+    { "item": "Miscellaneous", "amount": 500 }
+  ]
 };

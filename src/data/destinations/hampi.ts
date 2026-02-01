@@ -1,6 +1,15 @@
 import type { Destination } from '../types';
 
 export const hampi: Destination = {
+  "slug": "hampi",
+  "id": "hampi",
+  "name": "Hampi",
+  "images": [
+    "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1200&q=80",
+    "https://images.unsplash.com/photo-1621996659490-3275b4d0d951?w=1200&q=80",
+    "https://images.unsplash.com/photo-1600100397608-71b5b3c39d52?w=1200&q=80"
+  ],
+  "duration": "7 Days / 6 Nights",
   "destination": "Hampi",
   "state": "Karnataka",
   "tagline": "Where Boulders Tell Ancient Stories",
@@ -144,5 +153,17 @@ export const hampi: Destination = {
     "Carry water and sunscreen — ruins area has little shade",
     "Visit Mango Tree restaurant for riverside meals"
   ],
-  "slug": "hampi"
+  "tags": ["Karnataka", "Heritage", "UNESCO"],
+  "permitRequired": false,
+  "totalBudget": { "min": 5500, "max": 12000 },
+  "highlights": ["Virupaksha Temple", "Vittala Temple Complex", "Matanga Hill", "Elephant Stables", "Hippie Island"],
+  "attractions": ["Virupaksha Temple", "Vittala Temple", "Matanga Hill", "Elephant Stables", "Hippie Island"],
+  "tips": ["Rent a bicycle or scooter", "Climb Matanga Hill for sunrise", "Cross to Hippie Island", "Best time October-February"],
+  "costs": [
+    { "item": "Train (round trip)", "amount": 1800 },
+    { "item": "Accommodation (6 nights)", "amount": 4800 },
+    { "item": "Food (7 days)", "amount": 2100 },
+    { "item": "Transport & activities", "amount": 1500 },
+    { "item": "Miscellaneous", "amount": 800 }
+  ]
 };

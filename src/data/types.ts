@@ -4,40 +4,82 @@ export interface MultilingualInfo {
   bn: string;
 }
 
+export interface Coordinates {
+  latitude: string;
+  longitude: string;
+}
+
+export interface BudgetItem {
+  item: string;
+  low: number;
+  typical: number;
+  notes?: string;
+}
+
+export interface BudgetTotal {
+  low: number;
+  typical: number;
+  typicalRange?: string;
+}
+
+export interface BudgetBreakdown {
+  perPerson: BudgetItem[];
+  total: BudgetTotal;
+}
+
+export interface GroupBreakdownItem {
+  category: string;
+  perPerson: string;
+}
+
+export interface GroupBudget {
+  breakdown: GroupBreakdownItem[];
+  total: string;
+}
+
 export interface Destination {
-  id: string;
-  slug: string;
-  name: string;
+  // Primary fields (used in data files)
+  destination: string;
   state: string;
   tagline: string;
+  info?: MultilingualInfo;
   shortDescription: string;
   description: string;
-  coordinates: string;
   landscape: string;
+  coordinates: Coordinates;
   permits: string;
-  permitRequired: boolean;
-  duration: string;
-  totalBudget: { min: number; max: number };
+  bestSeason: string;
+  seasonNote: string;
+  keyAttractions: string[];
+  itinerary: ItineraryDay[];
+  budgetBreakdown: BudgetBreakdown;
+  groupOf6?: GroupBudget;
+  bookingTips: string[];
+  slug: string;
+
+  // Alias fields for component compatibility
+  id?: string;
+  name?: string;
+  images?: string[];
+  duration?: string;
+  permitRequired?: boolean;
+  totalBudget?: { min: number; max: number };
   groupCosts?: {
     costs: CostItem[];
     perPerson: { min: number; max: number };
   };
-  bestSeason: string;
-  seasonNote: string;
-  images: string[];
-  tags: string[];
-  highlights: string[];
-  itinerary: ItineraryDay[];
-  costs: CostItem[];
-  tips: string[];
-  attractions: string[];
-  info?: MultilingualInfo;
+  tags?: string[];
+  highlights?: string[];
+  attractions?: string[];
+  costs?: CostItem[];
+  tips?: string[];
 }
 
 export interface ItineraryDay {
   day: number;
   title: string;
-  activities: string[];
+  plan?: string;
+  activities?: string[];
   overnight?: string;
 }
 

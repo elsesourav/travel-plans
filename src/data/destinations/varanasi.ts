@@ -1,7 +1,16 @@
 import type { Destination } from '../types';
 
 export const varanasi: Destination = {
+  "slug": "varanasi",
   "destination": "Varanasi",
+  "id": "varanasi",
+  "name": "Varanasi",
+  "images": [
+    "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=1200&q=80",
+    "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=80",
+    "https://images.unsplash.com/photo-1590077428593-a55bb07c4665?w=1200&q=80"
+  ],
+  "duration": "7 Days / 6 Nights",
   "state": "Uttar Pradesh",
   "tagline": "The Spiritual Heart of India",
   "info": {
@@ -154,5 +163,18 @@ export const varanasi: Destination = {
     "Hire a local guide for old city lanes — easy to get lost",
     "Try famous Banarasi paan and lassi at Blue Lassi Shop"
   ],
-  "slug": "varanasi"
+  "tags": ["Uttar Pradesh", "Spiritual", "Heritage"],
+  "permitRequired": false,
+  "totalBudget": { "min": 6450, "max": 14800 },
+  "highlights": ["Dashashwamedh Ghat", "Kashi Vishwanath Temple", "Sarnath", "Assi Ghat", "Manikarnika Ghat"],
+  "attractions": ["Dashashwamedh Ghat — Famous for evening Ganga Aarti ceremony", "Kashi Vishwanath Temple — One of 12 Jyotirlingas", "Sarnath — Buddhist pilgrimage site", "Assi Ghat — Peaceful ghat popular with travelers", "Manikarnika Ghat — Sacred cremation ghat"],
+  "tips": ["Book train tickets 60 days in advance", "Ganga Aarti is free from ghats", "Stay near Assi Ghat for peaceful nights", "Hire a local guide for old city lanes", "Try famous Banarasi paan and lassi"],
+  "costs": [
+    { "item": "Train (round trip)", "amount": 2000 },
+    { "item": "Accommodation (6 nights)", "amount": 6000 },
+    { "item": "Food (7 days)", "amount": 2500 },
+    { "item": "Boat rides & transport", "amount": 2300 },
+    { "item": "Sarnath day trip", "amount": 1000 },
+    { "item": "Miscellaneous", "amount": 1000 }
+  ]
 };
