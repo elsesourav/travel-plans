@@ -6,8 +6,11 @@ export const mcleod_ganj: Destination = {
   name: "McLeod Ganj",
   images: [
     "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
+    "https://images.unsplash.com/photo-1609619385002-f40f1df827b8?w=1200&q=80",
+    "https://images.unsplash.com/photo-1555400082-645c3d19f7b9?w=1200&q=80",
     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1545378889-6d7eb2cf1020?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
   ],
   duration: "5 Days / 4 Nights",
   destination: "McLeod Ganj",

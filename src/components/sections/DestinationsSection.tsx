@@ -3,12 +3,15 @@ import type { Destination } from "@/data/types";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Cloud,
-  Filter,
   Flower,
   Leaf,
   NavArrowLeft,
   NavArrowRight,
+  Rain,
   SeaWaves,
+  Snow,
+  SunLight,
+  Wallet,
   Xmark,
 } from "iconoir-react";
 import { useMemo, useRef, useState } from "react";
@@ -22,30 +25,27 @@ import "swiper/css/pagination";
 
 const ITEMS_PER_PAGE = 10;
 
-// Filter options
+// Filter options with icons
 const SEASON_OPTIONS = [
-  { value: "all", label: "All Seasons" },
-  { value: "winter", label: "Winter (Oct-Mar)" },
-  { value: "summer", label: "Summer (Apr-Jun)" },
-  { value: "monsoon", label: "Monsoon (Jul-Sep)" },
+  { value: "winter", label: "Winter", icon: Snow },
+  { value: "summer", label: "Summer", icon: SunLight },
+  { value: "monsoon", label: "Monsoon", icon: Rain },
 ];
 
 const PRICE_OPTIONS = [
-  { value: "all", label: "All Budgets" },
-  { value: "5000", label: "Under ₹5,000" },
-  { value: "10000", label: "Under ₹10,000" },
-  { value: "15000", label: "Under ₹15,000" },
-  { value: "20000", label: "Under ₹20,000" },
-  { value: "above", label: "₹20,000+" },
+  { value: "5000", label: "₹5K" },
+  { value: "10000", label: "₹10K" },
+  { value: "15000", label: "₹15K" },
+  { value: "20000", label: "₹20K" },
+  { value: "above", label: "₹20K+" },
 ];
 
 const LANDSCAPE_OPTIONS = [
-  { value: "all", label: "All Types", icon: Filter },
   { value: "mountain", label: "Mountains", icon: Leaf },
-  { value: "beach", label: "Beach & Coastal", icon: SeaWaves },
+  { value: "beach", label: "Coastal", icon: SeaWaves },
   { value: "spiritual", label: "Spiritual", icon: Flower },
-  { value: "nature", label: "Nature & Forest", icon: Cloud },
-  { value: "desert", label: "Desert", icon: Leaf },
+  { value: "nature", label: "Nature", icon: Cloud },
+  { value: "desert", label: "Desert", icon: SunLight },
 ];
 
 // Helper function to check if destination matches season filter
@@ -146,22 +146,56 @@ const matchesLandscape = (
 
 export function DestinationsSection() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [seasonFilter, setSeasonFilter] = useState("all");
+  const [seasonFilters, setSeasonFilters] = useState<string[]>([]);
   const [priceFilter, setPriceFilter] = useState("all");
-  const [landscapeFilter, setLandscapeFilter] = useState("all");
-  const [showFilters, setShowFilters] = useState(false);
+  const [landscapeFilters, setLandscapeFilters] = useState<string[]>([]);
   const sectionRef = useRef<HTMLElement>(null);
+
+  // Toggle season filter
+  const toggleSeason = (value: string) => {
+    setSeasonFilters((prev) =>
+      prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value],
+    );
+    setCurrentPage(1);
+  };
+
+  // Toggle landscape filter
+  const toggleLandscape = (value: string) => {
+    setLandscapeFilters((prev) =>
+      prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value],
+    );
+    setCurrentPage(1);
+  };
+
+  // Handle price filter
+  const handlePriceChange = (value: string) => {
+    setPriceFilter(priceFilter === value ? "all" : value);
+    setCurrentPage(1);
+  };
+
+  // Filter destinations with multiple selections
+  const matchesSeasonFilters = (dest: Destination) => {
+    if (seasonFilters.length === 0) return true;
+    return seasonFilters.some((season) => matchesSeason(dest, season));
+  };
+
+  const matchesLandscapeFilters = (dest: Destination) => {
+    if (landscapeFilters.length === 0) return true;
+    return landscapeFilters.some((landscape) =>
+      matchesLandscape(dest, landscape),
+    );
+  };
 
   // Filter destinations
   const filteredDestinations = useMemo(() => {
     return destinations.filter((dest) => {
       return (
-        matchesSeason(dest, seasonFilter) &&
+        matchesSeasonFilters(dest) &&
         matchesPrice(dest, priceFilter) &&
-        matchesLandscape(dest, landscapeFilter)
+        matchesLandscapeFilters(dest)
       );
     });
-  }, [seasonFilter, priceFilter, landscapeFilter]);
+  }, [seasonFilters, priceFilter, landscapeFilters]);
 
   // Pagination
   const totalPages = Math.ceil(filteredDestinations.length / ITEMS_PER_PAGE);
@@ -176,25 +210,15 @@ export function DestinationsSection() {
     sectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const activeFiltersCount = [
-    seasonFilter,
-    priceFilter,
-    landscapeFilter,
-  ].filter((f) => f !== "all").length;
+  const activeFiltersCount =
+    seasonFilters.length +
+    landscapeFilters.length +
+    (priceFilter !== "all" ? 1 : 0);
 
   const clearFilters = () => {
-    setSeasonFilter("all");
+    setSeasonFilters([]);
     setPriceFilter("all");
-    setLandscapeFilter("all");
-    setCurrentPage(1);
-  };
-
-  // Reset page when filters change
-  const handleFilterChange = (
-    setter: React.Dispatch<React.SetStateAction<string>>,
-    value: string,
-  ) => {
-    setter(value);
+    setLandscapeFilters([]);
     setCurrentPage(1);
   };
 
@@ -225,139 +249,142 @@ export function DestinationsSection() {
           </p>
         </motion.div>
 
-        {/* Filters */}
+        {/* Glassmorphism Filter Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mb-10"
+          className="mb-10 relative"
         >
-          {/* Mobile Filter Toggle */}
-          <div className="md:hidden flex justify-between items-center mb-4">
-            <button
-              onClick={() => setShowFilters(!showFilters)}
-              className="flex items-center gap-2 px-4 py-2 bg-surface-secondary rounded-xl border border-border-primary"
-            >
-              <Filter className="w-5 h-5" />
-              <span>Filters</span>
-              {activeFiltersCount > 0 && (
-                <span className="w-5 h-5 rounded-full bg-primary-500 text-white text-xs flex items-center justify-center">
-                  {activeFiltersCount}
-                </span>
-              )}
-            </button>
-            {activeFiltersCount > 0 && (
-              <button
-                onClick={clearFilters}
-                className="flex items-center gap-1 text-sm text-content-secondary hover:text-primary-600"
-              >
-                <Xmark className="w-4 h-4" />
-                Clear all
-              </button>
-            )}
-          </div>
-
-          {/* Filter Controls */}
+          {/* Glass background with blur */}
           <div
-            className={`${showFilters ? "block" : "hidden"} md:block bg-surface-secondary rounded-2xl p-4 md:p-6 border border-border-primary`}
-          >
-            <div className="flex flex-col md:flex-row gap-4 md:gap-6 md:items-end">
-              {/* Season Filter */}
-              <div className="flex-1">
-                <label className="block text-sm font-medium text-content-secondary mb-2">
-                  Best Season
-                </label>
-                <select
-                  value={seasonFilter}
-                  onChange={(e) =>
-                    handleFilterChange(setSeasonFilter, e.target.value)
-                  }
-                  className="w-full px-4 py-3 bg-surface-primary border border-border-primary rounded-xl text-content-primary focus:outline-none focus:ring-2 focus:ring-primary-500"
-                >
-                  {SEASON_OPTIONS.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
+            className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/40 via-white/20 to-white/10 dark:from-gray-800/40 dark:via-gray-800/20 dark:to-gray-800/10 backdrop-blur-2xl"
+            style={{
+              boxShadow:
+                "0 8px 32px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.3)",
+            }}
+          />
 
-              {/* Price Filter */}
-              <div className="flex-1">
-                <label className="block text-sm font-medium text-content-secondary mb-2">
-                  Budget Range
-                </label>
-                <select
-                  value={priceFilter}
-                  onChange={(e) =>
-                    handleFilterChange(setPriceFilter, e.target.value)
-                  }
-                  className="w-full px-4 py-3 bg-surface-primary border border-border-primary rounded-xl text-content-primary focus:outline-none focus:ring-2 focus:ring-primary-500"
-                >
-                  {PRICE_OPTIONS.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Landscape Filter */}
-              <div className="flex-1">
-                <label className="block text-sm font-medium text-content-secondary mb-2">
-                  Landscape Type
-                </label>
-                <select
-                  value={landscapeFilter}
-                  onChange={(e) =>
-                    handleFilterChange(setLandscapeFilter, e.target.value)
-                  }
-                  className="w-full px-4 py-3 bg-surface-primary border border-border-primary rounded-xl text-content-primary focus:outline-none focus:ring-2 focus:ring-primary-500"
-                >
-                  {LANDSCAPE_OPTIONS.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Clear Filters - Desktop */}
+          <div className="relative z-10 p-6 md:p-8">
+            {/* Filter Header */}
+            <div className="flex items-center justify-between mb-5">
+              <h3 className="text-sm font-semibold text-content-primary/70 uppercase tracking-wider">
+                Filter by
+              </h3>
               {activeFiltersCount > 0 && (
                 <button
                   onClick={clearFilters}
-                  className="hidden md:flex items-center gap-2 px-4 py-3 text-sm text-content-secondary hover:text-primary-600 transition-colors"
+                  className="flex items-center gap-1.5 text-sm text-content-tertiary hover:text-primary-600 transition-colors"
                 >
                   <Xmark className="w-4 h-4" />
-                  Clear filters
+                  Clear all ({activeFiltersCount})
                 </button>
               )}
             </div>
 
-            {/* Landscape Quick Filters - Desktop */}
-            <div className="hidden md:flex flex-wrap gap-2 mt-4 pt-4 border-t border-border-primary">
-              {LANDSCAPE_OPTIONS.map((option) => {
-                const Icon = option.icon;
-                const isActive = landscapeFilter === option.value;
-                return (
-                  <button
-                    key={option.value}
-                    onClick={() =>
-                      handleFilterChange(setLandscapeFilter, option.value)
-                    }
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                      isActive
-                        ? "bg-primary-500 text-white"
-                        : "bg-surface-primary border border-border-primary text-content-secondary hover:border-primary-300 hover:text-primary-600"
-                    }`}
-                  >
-                    <Icon className="w-4 h-4" />
-                    {option.label}
-                  </button>
-                );
-              })}
+            {/* Season & Budget Row - Same line on desktop */}
+            <div className="flex flex-col md:flex-row md:items-start md:gap-12 mb-5">
+              {/* Season Toggle Buttons */}
+              <div className="mb-5 md:mb-0">
+                <p className="text-xs font-medium text-content-tertiary mb-2.5 uppercase tracking-wide">
+                  Season
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {SEASON_OPTIONS.map((option) => {
+                    const Icon = option.icon;
+                    const isActive = seasonFilters.includes(option.value);
+                    return (
+                      <button
+                        key={option.value}
+                        onClick={() => toggleSeason(option.value)}
+                        className={`group flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+                          isActive
+                            ? "bg-primary-500 text-white shadow-md shadow-primary-500/25"
+                            : "bg-white/60 dark:bg-white/10 text-content-secondary hover:bg-white/80 dark:hover:bg-white/20 border border-black/5 dark:border-white/10"
+                        }`}
+                      >
+                        <Icon className="w-4 h-4" />
+                        {option.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Budget Pills */}
+              <div>
+                <div className="flex items-center gap-2 mb-2.5">
+                  <Wallet className="w-3.5 h-3.5 text-content-tertiary" />
+                  <p className="text-xs font-medium text-content-tertiary uppercase tracking-wide">
+                    Max Budget
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {PRICE_OPTIONS.map((option) => {
+                    const isActive = priceFilter === option.value;
+                    return (
+                      <button
+                        key={option.value}
+                        onClick={() => handlePriceChange(option.value)}
+                        className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${
+                          isActive
+                            ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/25"
+                            : "bg-white/60 dark:bg-white/10 text-content-secondary hover:bg-white/80 dark:hover:bg-white/20 border border-black/5 dark:border-white/10"
+                        }`}
+                      >
+                        {option.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
+
+            {/* Landscape Toggle Chips */}
+            <div>
+              <p className="text-xs font-medium text-content-tertiary mb-2.5 uppercase tracking-wide">
+                Landscape
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {LANDSCAPE_OPTIONS.map((option) => {
+                  const Icon = option.icon;
+                  const isActive = landscapeFilters.includes(option.value);
+                  return (
+                    <button
+                      key={option.value}
+                      onClick={() => toggleLandscape(option.value)}
+                      className={`group flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+                        isActive
+                          ? "bg-violet-500 text-white shadow-md shadow-violet-500/25"
+                          : "bg-white/60 dark:bg-white/10 text-content-secondary hover:bg-white/80 dark:hover:bg-white/20 border border-black/5 dark:border-white/10"
+                      }`}
+                    >
+                      <Icon className="w-4 h-4" />
+                      {option.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Active Filters Summary */}
+            {activeFiltersCount > 0 && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="mt-5 pt-4 border-t border-black/5 dark:border-white/10"
+              >
+                <p className="text-sm text-content-secondary">
+                  Showing{" "}
+                  <span className="font-bold text-primary-600">
+                    {filteredDestinations.length}
+                  </span>{" "}
+                  destinations
+                </p>
+              </motion.div>
+            )}
           </div>
         </motion.div>
 

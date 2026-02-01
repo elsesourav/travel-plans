@@ -5,8 +5,11 @@ export const tawang: Destination = {
   id: "tawang",
   name: "Tawang",
   images: [
+    "https://images.unsplash.com/photo-1609619385002-f40f1df827b8?w=1200&q=80",
+    "https://images.unsplash.com/photo-1545378889-6d7eb2cf1020?w=1200&q=80",
     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1555400082-645c3d19f7b9?w=1200&q=80",
     "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
   ],
   duration: "7 Days / 6 Nights",

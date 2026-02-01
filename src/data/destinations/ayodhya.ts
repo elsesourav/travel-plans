@@ -6,8 +6,11 @@ export const ayodhya: Destination = {
   name: "Ayodhya",
   images: [
     "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80",
-    "https://images.unsplash.com/photo-1574863959826-8f4cd9c69c9b?w=1200&q=80",
     "https://images.unsplash.com/photo-1609947017136-9daf32a45e19?w=1200&q=80",
+    "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1564804955966-f6f41ea4d3d4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=1200&q=80",
+    "https://images.unsplash.com/photo-1623070770273-cb0b85c21b5a?w=1200&q=80",
   ],
   duration: "5 Days / 4 Nights",
   destination: "Ayodhya",

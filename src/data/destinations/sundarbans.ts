@@ -5,9 +5,12 @@ export const sundarbans: Destination = {
   id: "sundarbans",
   name: "Sundarbans",
   images: [
+    "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1200&q=80",
+    "https://images.unsplash.com/photo-1534759926787-89fa60520495?w=1200&q=80",
+    "https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=1200&q=80",
     "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
+    "https://images.unsplash.com/photo-1504006833117-8886a355efbf?w=1200&q=80",
     "https://images.unsplash.com/photo-1585063560546-28db14a0a7d5?w=1200&q=80",
-    "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1200&q=80",
   ],
   duration: "4 Days / 3 Nights",
   destination: "Sundarbans",

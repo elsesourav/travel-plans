@@ -6,8 +6,11 @@ export const leh_ladakh: Destination = {
   name: "Leh Ladakh",
   images: [
     "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&q=80",
+    "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80",
+    "https://images.unsplash.com/photo-1572697390930-7339a01a4f6d?w=1200&q=80",
+    "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?w=1200&q=80",
   ],
   duration: "9 Days / 8 Nights",
   destination: "Leh-Ladakh",

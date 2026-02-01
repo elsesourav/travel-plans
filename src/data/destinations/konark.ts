@@ -5,9 +5,12 @@ export const konark: Destination = {
   id: "konark",
   name: "Konark",
   images: [
-    "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1200&q=80",
     "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80",
     "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80",
+    "https://images.unsplash.com/photo-1564804955966-f6f41ea4d3d4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=1200&q=80",
+    "https://images.unsplash.com/photo-1466442929976-97f336a657be?w=1200&q=80",
+    "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1200&q=80",
   ],
   duration: "2 Days / 1 Night",
   destination: "Konark",

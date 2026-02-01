@@ -6,8 +6,11 @@ export const spiti_valley: Destination = {
   name: "Spiti Valley",
   images: [
     "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&q=80",
+    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80",
     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
     "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1609619385002-f40f1df827b8?w=1200&q=80",
+    "https://images.unsplash.com/photo-1545562083-c583d014b4f2?w=1200&q=80",
   ],
   duration: "9 Days / 8 Nights",
   destination: "Spiti Valley",

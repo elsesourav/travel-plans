@@ -6,8 +6,11 @@ export const andaman_islands: Destination = {
   name: "Andaman Islands",
   images: [
     "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80",
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
     "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80",
+    "https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=1200&q=80",
+    "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80",
+    "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=1200&q=80",
   ],
   duration: "7 Days / 6 Nights",
   destination: "Andaman Islands",

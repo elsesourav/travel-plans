@@ -1,9 +1,9 @@
 import {
-  Hero,
-  DestinationsSection,
   ComparisonSection,
-  TipsSection,
+  DestinationsSection,
+  Hero,
   SeasonsSection,
+  TipsSection,
 } from "@/components/sections";
 
 export function HomePage() {
@@ -12,8 +12,8 @@ export function HomePage() {
       <Hero />
       <DestinationsSection />
       <ComparisonSection />
-      <TipsSection />
       <SeasonsSection />
+      <TipsSection />
     </>
   );
 }
