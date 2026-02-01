@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const pelling: Destination = {
+  slug: "pelling",
+  id: "pelling",
+  name: "Pelling",
+  images: [
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+  ],
+  duration: "5 Days / 4 Nights",
   destination: "Pelling",
   state: "Sikkim",
   tagline: "Kanchenjunga's Grandest View",
@@ -157,5 +166,34 @@ export const pelling: Destination = {
     "Try local cheese from Darap village cheese factory",
     "Pemayangtse Monastery is best visited early morning for peaceful vibes",
   ],
-  slug: "pelling",
+  tags: ["Sikkim", "Kanchenjunga", "Monasteries"],
+  permitRequired: true,
+  totalBudget: { min: 7000, max: 14000 },
+  highlights: [
+    "Kanchenjunga View",
+    "Skywalk",
+    "Pemayangtse Monastery",
+    "Khecheopalri Lake",
+    "Rabdentse Ruins",
+  ],
+  attractions: [
+    "Pelling Skywalk",
+    "Pemayangtse Monastery",
+    "Khecheopalri Lake",
+    "Rabdentse Ruins",
+    "Singshore Bridge",
+  ],
+  tips: [
+    "Best Oct-Dec & Mar-May",
+    "Book Kanchenjunga view room",
+    "Visit Skywalk early",
+    "Explore nearby Yuksom",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 2500 },
+    { item: "Accommodation (4 nights)", amount: 4000 },
+    { item: "Food (5 days)", amount: 2000 },
+    { item: "Permits & sightseeing", amount: 1500 },
+    { item: "Miscellaneous", amount: 600 },
+  ],
 };

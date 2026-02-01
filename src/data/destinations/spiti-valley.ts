@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const spiti_valley: Destination = {
+  slug: "spiti-valley",
+  id: "spiti-valley",
+  name: "Spiti Valley",
+  images: [
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+  ],
+  duration: "9 Days / 8 Nights",
   destination: "Spiti Valley",
   state: "Himachal Pradesh",
   tagline: "The Middle Land Between Worlds",
@@ -148,5 +157,34 @@ export const spiti_valley: Destination = {
     "Homestays in villages offer authentic experience and support locals",
     "Carry Diamox for altitude sickness and plenty of warm layers",
   ],
-  slug: "spiti-valley",
+  tags: ["Himachal Pradesh", "Cold Desert", "Buddhist"],
+  permitRequired: true,
+  totalBudget: { min: 15000, max: 28000 },
+  highlights: [
+    "Key Monastery",
+    "Chandratal Lake",
+    "Kunzum Pass",
+    "Hikkim Post Office",
+    "Kibber Village",
+  ],
+  attractions: [
+    "Key Monastery",
+    "Chandratal",
+    "Dhankar Monastery",
+    "Pin Valley",
+    "Tabo Monastery",
+  ],
+  tips: [
+    "Best Jun-Sep when roads open",
+    "Carry altitude sickness medicine",
+    "Book vehicles in advance",
+    "Limited ATMs carry cash",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 8000 },
+    { item: "Accommodation (8 nights)", amount: 6400 },
+    { item: "Food (9 days)", amount: 4500 },
+    { item: "Permits & guide", amount: 3000 },
+    { item: "Miscellaneous", amount: 1500 },
+  ],
 };

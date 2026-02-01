@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const daringbadi: Destination = {
+  slug: "daringbadi",
+  id: "daringbadi",
+  name: "Daringbadi",
+  images: [
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+  ],
+  duration: "3 Days / 2 Nights",
   destination: "Daringbadi",
   state: "Odisha",
   tagline: "Kashmir of Odisha",
@@ -157,5 +166,34 @@ export const daringbadi: Destination = {
     "Buy local coffee and pepper directly from plantations",
     "Respect Kondh tribal customs — seek permission before photographing",
   ],
-  slug: "daringbadi",
+  tags: ["Odisha", "Hill Station", "Coffee"],
+  permitRequired: false,
+  totalBudget: { min: 3500, max: 7000 },
+  highlights: [
+    "Kashmir of Odisha",
+    "Coffee Plantations",
+    "Pine Forests",
+    "Hill View Point",
+    "Tribal Culture",
+  ],
+  attractions: [
+    "Hill View Point",
+    "Coffee Garden",
+    "Lover's Point",
+    "Nature Park",
+    "Doluri River",
+  ],
+  tips: [
+    "Best Oct-Mar for snowfall",
+    "Visit coffee plantations",
+    "Try local tribal cuisine",
+    "Carry warm clothes",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 1200 },
+    { item: "Accommodation (2 nights)", amount: 1800 },
+    { item: "Food (3 days)", amount: 900 },
+    { item: "Activities", amount: 600 },
+    { item: "Miscellaneous", amount: 300 },
+  ],
 };

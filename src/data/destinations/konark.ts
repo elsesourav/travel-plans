@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const konark: Destination = {
+  slug: "konark",
+  id: "konark",
+  name: "Konark",
+  images: [
+    "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1200&q=80",
+    "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1200&q=80",
+    "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80",
+  ],
+  duration: "2 Days / 1 Night",
   destination: "Konark",
   state: "Odisha",
   tagline: "Where the Sun God Rides His Chariot",
@@ -147,5 +156,34 @@ export const konark: Destination = {
     "Buy Pattachitra art directly from Raghurajpur artists for authenticity",
     "Combine with Puri trip for complete Odisha coastal experience",
   ],
-  slug: "konark",
+  tags: ["Odisha", "Heritage", "UNESCO"],
+  permitRequired: false,
+  totalBudget: { min: 2500, max: 5500 },
+  highlights: [
+    "Sun Temple",
+    "Chandrabhaga Beach",
+    "ASI Museum",
+    "Konark Dance Festival",
+    "Stone Chariot",
+  ],
+  attractions: [
+    "Sun Temple UNESCO",
+    "Chandrabhaga Beach",
+    "Archaeological Museum",
+    "Ramachandi Temple",
+    "Light & Sound Show",
+  ],
+  tips: [
+    "Best visited from Puri",
+    "Visit at sunrise",
+    "Attend Konark Festival in Dec",
+    "Hire a guide for history",
+  ],
+  costs: [
+    { item: "Transport from Puri", amount: 400 },
+    { item: "Entry & guide", amount: 300 },
+    { item: "Accommodation (1 night)", amount: 1500 },
+    { item: "Food (2 days)", amount: 600 },
+    { item: "Miscellaneous", amount: 200 },
+  ],
 };

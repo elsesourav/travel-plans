@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const chakrata: Destination = {
+  slug: "chakrata",
+  id: "chakrata",
+  name: "Chakrata",
+  images: [
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+  ],
+  duration: "4 Days / 3 Nights",
   destination: "Chakrata",
   state: "Uttarakhand",
   tagline: "The Secret Hill Station",
@@ -157,5 +166,34 @@ export const chakrata: Destination = {
     "Limited restaurants — many hotels include meals",
     "Perfect weekend escape from Delhi (6-7 hours drive)",
   ],
-  slug: "chakrata",
+  tags: ["Uttarakhand", "Cantonment", "Offbeat"],
+  permitRequired: false,
+  totalBudget: { min: 4500, max: 9000 },
+  highlights: [
+    "Tiger Falls",
+    "Deoban",
+    "Chilmiri Neck",
+    "Budher Caves",
+    "Kanasar",
+  ],
+  attractions: [
+    "Tiger Falls",
+    "Deoban Forest",
+    "Chilmiri Neck",
+    "Budher Caves",
+    "Kanasar Eco Park",
+  ],
+  tips: [
+    "Best Apr-Jun & Sep-Nov",
+    "Permit needed for Deoban",
+    "Visit Tiger Falls early",
+    "Carry warm clothes",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 1500 },
+    { item: "Accommodation (3 nights)", amount: 2700 },
+    { item: "Food (4 days)", amount: 1200 },
+    { item: "Activities & permits", amount: 800 },
+    { item: "Miscellaneous", amount: 400 },
+  ],
 };

@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const tawang: Destination = {
+  slug: "tawang",
+  id: "tawang",
+  name: "Tawang",
+  images: [
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+  ],
+  duration: "7 Days / 6 Nights",
   destination: "Tawang",
   state: "Arunachal Pradesh",
   tagline: "Monastery in the Clouds",
@@ -158,5 +167,34 @@ export const tawang: Destination = {
     "Roads can be challenging — book experienced drivers through reputed agencies",
     "Visit during Losar (Tibetan New Year, February) for unique cultural experience",
   ],
-  slug: "tawang",
+  tags: ["Arunachal Pradesh", "Buddhist", "Mountains"],
+  permitRequired: true,
+  totalBudget: { min: 12000, max: 22000 },
+  highlights: [
+    "Tawang Monastery",
+    "Sela Pass",
+    "Madhuri Lake",
+    "War Memorial",
+    "Bumla Pass",
+  ],
+  attractions: [
+    "Tawang Monastery",
+    "Sela Pass",
+    "PTSO Lake",
+    "Tawang War Memorial",
+    "Bumla Pass Border",
+  ],
+  tips: [
+    "Get Inner Line Permit",
+    "Acclimatize to altitude",
+    "Best Apr-Jun & Sep-Oct",
+    "Carry altitude sickness medicine",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 5000 },
+    { item: "Accommodation (6 nights)", amount: 6000 },
+    { item: "Food (7 days)", amount: 3500 },
+    { item: "Permits & guide", amount: 2500 },
+    { item: "Miscellaneous", amount: 1000 },
+  ],
 };

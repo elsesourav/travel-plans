@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const mcleod_ganj: Destination = {
+  slug: "mcleod-ganj",
+  id: "mcleod-ganj",
+  name: "McLeod Ganj",
+  images: [
+    "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+  ],
+  duration: "5 Days / 4 Nights",
   destination: "McLeod Ganj",
   state: "Himachal Pradesh",
   tagline: "Little Lhasa of India",
@@ -157,5 +166,34 @@ export const mcleod_ganj: Destination = {
     "Carry warm layers — evenings are cold even in summer",
     "Explore Dharamkot for quieter yoga retreats and cafés",
   ],
-  slug: "mcleod-ganj",
+  tags: ["Himachal Pradesh", "Tibetan", "Dalai Lama"],
+  permitRequired: false,
+  totalBudget: { min: 6000, max: 12000 },
+  highlights: [
+    "Dalai Lama Temple",
+    "Triund Trek",
+    "Bhagsu Waterfall",
+    "Tibetan Market",
+    "Naddi View Point",
+  ],
+  attractions: [
+    "Tsuglagkhang Complex",
+    "Triund",
+    "Bhagsu Nag Temple",
+    "TIPA",
+    "Dharamkot",
+  ],
+  tips: [
+    "Best Mar-Jun & Sep-Nov",
+    "Try Tibetan momos",
+    "Book Triund camping",
+    "Visit Dalai Lama Temple morning",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 2000 },
+    { item: "Accommodation (4 nights)", amount: 3200 },
+    { item: "Food (5 days)", amount: 2000 },
+    { item: "Triund trek & activities", amount: 1500 },
+    { item: "Miscellaneous", amount: 800 },
+  ],
 };

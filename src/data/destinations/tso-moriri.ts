@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const tso_moriri: Destination = {
+  slug: "tso-moriri",
+  id: "tso-moriri",
+  name: "Tso Moriri",
+  images: [
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+  ],
+  duration: "6 Days / 5 Nights",
   destination: "Tso Moriri",
   state: "Ladakh",
   tagline: "The Untouched Jewel of Ladakh",
@@ -157,5 +166,34 @@ export const tso_moriri: Destination = {
     "Carry snacks and water — very limited shops en route",
     "Best for wildlife enthusiasts and photography lovers",
   ],
-  slug: "tso-moriri",
+  tags: ["Ladakh", "Lake", "Remote"],
+  permitRequired: true,
+  totalBudget: { min: 15000, max: 28000 },
+  highlights: [
+    "High Altitude Lake",
+    "Korzok Village",
+    "Changthang Wildlife",
+    "Stargazing",
+    "Nomadic Culture",
+  ],
+  attractions: [
+    "Tso Moriri Lake",
+    "Korzok Monastery",
+    "Karzok Village",
+    "Changthang Plateau",
+    "Wildlife Spotting",
+  ],
+  tips: [
+    "Best Jun-Sep",
+    "Acclimatize properly",
+    "Carry all essentials",
+    "Limited facilities - basic only",
+  ],
+  costs: [
+    { item: "Transport (from Leh)", amount: 6000 },
+    { item: "Accommodation (5 nights)", amount: 4000 },
+    { item: "Food (6 days)", amount: 3000 },
+    { item: "Permits", amount: 1500 },
+    { item: "Miscellaneous", amount: 1000 },
+  ],
 };

@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const araku_valley: Destination = {
+  slug: "araku-valley",
+  id: "araku-valley",
+  name: "Araku Valley",
+  images: [
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+  ],
+  duration: "3 Days / 2 Nights",
   destination: "Araku Valley",
   state: "Andhra Pradesh",
   tagline: "Ooty of Andhra Pradesh",
@@ -157,5 +166,34 @@ export const araku_valley: Destination = {
     "Combine with Vizag beaches for complete coastal experience",
     "Try local bamboo chicken (chicken cooked in bamboo)",
   ],
-  slug: "araku-valley",
+  tags: ["Andhra Pradesh", "Coffee", "Hill Station"],
+  permitRequired: false,
+  totalBudget: { min: 4000, max: 8000 },
+  highlights: [
+    "Borra Caves",
+    "Coffee Plantations",
+    "Tribal Museum",
+    "Scenic Train Ride",
+    "Padmapuram Gardens",
+  ],
+  attractions: [
+    "Borra Caves",
+    "Coffee Museum",
+    "Tribal Museum",
+    "Katiki Waterfalls",
+    "Padmapuram Gardens",
+  ],
+  tips: [
+    "Take Visakhapatnam-Araku train",
+    "Visit Borra Caves early",
+    "Try Araku coffee",
+    "Best Oct-Feb",
+  ],
+  costs: [
+    { item: "Train (round trip)", amount: 400 },
+    { item: "Accommodation (2 nights)", amount: 2400 },
+    { item: "Food (3 days)", amount: 1200 },
+    { item: "Activities", amount: 800 },
+    { item: "Miscellaneous", amount: 400 },
+  ],
 };

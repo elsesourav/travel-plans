@@ -6,14 +6,13 @@ export function ScrollToTop() {
   const prevPathnameRef = useRef<string>("");
 
   useEffect(() => {
-    const isNavigatingBack = 
-      prevPathnameRef.current.includes("/destination/") && 
-      pathname === "/";
-    
+    const isNavigatingBack =
+      prevPathnameRef.current.includes("/destination/") && pathname === "/";
+
     if (!isNavigatingBack) {
       window.scrollTo(0, 0);
     }
-    
+
     prevPathnameRef.current = pathname;
   }, [pathname]);
 

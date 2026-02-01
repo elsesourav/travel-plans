@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const kinnaur: Destination = {
+  slug: "kinnaur",
+  id: "kinnaur",
+  name: "Kinnaur",
+  images: [
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+  ],
+  duration: "7 Days / 6 Nights",
   destination: "Kinnaur",
   state: "Himachal Pradesh",
   tagline: "Land of Gods and Apples",
@@ -157,5 +166,34 @@ export const kinnaur: Destination = {
     "Inner Line Permit needed for Chitkul — available at Reckong Peo",
     "Carry warm layers — temperatures drop significantly at night",
   ],
-  slug: "kinnaur",
+  tags: ["Himachal Pradesh", "Apple Orchards", "Tribal"],
+  permitRequired: true,
+  totalBudget: { min: 12000, max: 22000 },
+  highlights: [
+    "Kinnaur Kailash",
+    "Kalpa",
+    "Sangla Valley",
+    "Chitkul",
+    "Apple Orchards",
+  ],
+  attractions: [
+    "Kalpa",
+    "Chitkul Village",
+    "Sangla Valley",
+    "Reckong Peo",
+    "Kinnaur Kailash",
+  ],
+  tips: [
+    "Best May-Oct",
+    "Inner Line Permit needed",
+    "Try Kinnauri apples",
+    "Carry warm clothes",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 4000 },
+    { item: "Accommodation (6 nights)", amount: 5400 },
+    { item: "Food (7 days)", amount: 3500 },
+    { item: "Permits & activities", amount: 1500 },
+    { item: "Miscellaneous", amount: 1000 },
+  ],
 };

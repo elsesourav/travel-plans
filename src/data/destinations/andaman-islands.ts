@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const andaman_islands: Destination = {
+  slug: "andaman-islands",
+  id: "andaman-islands",
+  name: "Andaman Islands",
+  images: [
+    "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80",
+  ],
+  duration: "7 Days / 6 Nights",
   destination: "Andaman Islands",
   state: "Andaman & Nicobar Islands",
   tagline: "India's Tropical Paradise",
@@ -158,5 +167,35 @@ export const andaman_islands: Destination = {
     "Cellular Jail Light & Sound show is emotional — don't miss it",
     "Try fresh seafood — lobster, crab, and fish are specialties",
   ],
-  slug: "andaman-islands",
+  tags: ["Andaman & Nicobar", "Beach", "Scuba"],
+  permitRequired: false,
+  totalBudget: { min: 20000, max: 40000 },
+  highlights: [
+    "Radhanagar Beach",
+    "Cellular Jail",
+    "Scuba Diving",
+    "Neil Island",
+    "Havelock Island",
+  ],
+  attractions: [
+    "Radhanagar Beach",
+    "Cellular Jail",
+    "Elephant Beach",
+    "Neil Island",
+    "Ross Island",
+  ],
+  tips: [
+    "Book ferries in advance",
+    "Best Oct-May",
+    "Try scuba at Havelock",
+    "Light & Sound show at Cellular Jail",
+  ],
+  costs: [
+    { item: "Flights (round trip)", amount: 12000 },
+    { item: "Accommodation (6 nights)", amount: 9000 },
+    { item: "Food (7 days)", amount: 4200 },
+    { item: "Ferries & transport", amount: 3500 },
+    { item: "Activities & scuba", amount: 5000 },
+    { item: "Miscellaneous", amount: 1500 },
+  ],
 };

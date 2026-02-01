@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const valparai: Destination = {
+  slug: "valparai",
+  id: "valparai",
+  name: "Valparai",
+  images: [
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+    "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
+  ],
+  duration: "4 Days / 3 Nights",
   destination: "Valparai",
   state: "Tamil Nadu",
   tagline: "Where Tea Meets the Rainforest",
@@ -157,5 +166,34 @@ export const valparai: Destination = {
     "Buy fresh tea directly from estates — much cheaper than shops",
     "Athirapally is stunning after monsoon (September–November)",
   ],
-  slug: "valparai",
+  tags: ["Tamil Nadu", "Tea Estates", "Wildlife"],
+  permitRequired: false,
+  totalBudget: { min: 5000, max: 10000 },
+  highlights: [
+    "Tea Plantations",
+    "Sholayar Dam",
+    "Monkey Falls",
+    "Nallamudi Viewpoint",
+    "Athirapally Falls",
+  ],
+  attractions: [
+    "Sholayar Dam",
+    "Monkey Falls",
+    "Nallamudi Poonjolai",
+    "Balaji Temple",
+    "Athirapally Falls",
+  ],
+  tips: [
+    "Best Sep-May",
+    "Drive through 40 hairpin bends",
+    "Visit Athirapally en route",
+    "Carry light woolens",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 1800 },
+    { item: "Accommodation (3 nights)", amount: 3000 },
+    { item: "Food (4 days)", amount: 1600 },
+    { item: "Activities", amount: 800 },
+    { item: "Miscellaneous", amount: 500 },
+  ],
 };

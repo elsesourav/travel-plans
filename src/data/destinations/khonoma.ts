@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const khonoma: Destination = {
+  slug: "khonoma",
+  id: "khonoma",
+  name: "Khonoma",
+  images: [
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+  ],
+  duration: "4 Days / 3 Nights",
   destination: "Khonoma",
   state: "Nagaland",
   tagline: "India's First Green Village",
@@ -147,5 +156,34 @@ export const khonoma: Destination = {
     "Respect local customs — seek permission before photographing people",
     "Try authentic Naga cuisine — smoked pork, axone (fermented soybean)",
   ],
-  slug: "khonoma",
+  tags: ["Nagaland", "Village", "Green Village"],
+  permitRequired: true,
+  totalBudget: { min: 6000, max: 12000 },
+  highlights: [
+    "Green Village",
+    "Angami Culture",
+    "Terrace Farming",
+    "Bird Watching",
+    "Community Homestays",
+  ],
+  attractions: [
+    "Green Village Tour",
+    "Angami War Museum",
+    "Terrace Fields",
+    "Dzukou Valley Trek",
+    "Khonoma Nature Trail",
+  ],
+  tips: [
+    "Get Inner Line Permit",
+    "Stay in community homestays",
+    "Respect local customs",
+    "Best time Oct-Apr",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 2500 },
+    { item: "Accommodation (3 nights)", amount: 2400 },
+    { item: "Food (4 days)", amount: 1600 },
+    { item: "Permits & guide", amount: 1500 },
+    { item: "Miscellaneous", amount: 500 },
+  ],
 };

@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const bir_billing: Destination = {
+  slug: "bir-billing",
+  id: "bir-billing",
+  name: "Bir Billing",
+  images: [
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+  ],
+  duration: "4 Days / 3 Nights",
   destination: "Bir Billing",
   state: "Himachal Pradesh",
   tagline: "Paragliding Capital of India",
@@ -157,5 +166,34 @@ export const bir_billing: Destination = {
     "Trek to Billing early morning for sunrise — magical experience",
     "Combine with McLeod Ganj for complete Himachal experience",
   ],
-  slug: "bir-billing",
+  tags: ["Himachal Pradesh", "Paragliding", "Adventure"],
+  permitRequired: false,
+  totalBudget: { min: 5000, max: 10000 },
+  highlights: [
+    "Paragliding Capital",
+    "Tibetan Colony",
+    "Monasteries",
+    "Rajgundha Trek",
+    "Cafes",
+  ],
+  attractions: [
+    "Paragliding",
+    "Chokling Monastery",
+    "Bir Tibetan Colony",
+    "Rajgundha Valley",
+    "Baijnath Temple",
+  ],
+  tips: [
+    "Best Mar-Jun & Sep-Nov",
+    "Book paragliding in advance",
+    "Stay in Bir village",
+    "Try Tibetan food",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 1500 },
+    { item: "Accommodation (3 nights)", amount: 2400 },
+    { item: "Food (4 days)", amount: 1600 },
+    { item: "Paragliding & activities", amount: 3000 },
+    { item: "Miscellaneous", amount: 500 },
+  ],
 };

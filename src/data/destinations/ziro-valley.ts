@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const ziro_valley: Destination = {
+  slug: "ziro-valley",
+  id: "ziro-valley",
+  name: "Ziro Valley",
+  images: [
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+  ],
+  duration: "5 Days / 4 Nights",
   destination: "Ziro Valley",
   state: "Arunachal Pradesh",
   tagline: "Land of the Apatani Tribe",
@@ -158,5 +167,34 @@ export const ziro_valley: Destination = {
     "Respect Apatani customs — ask before photographing tattooed elders",
     "Try Apatani cuisine — rice beer, smoked meat, bamboo shoot dishes",
   ],
-  slug: "ziro-valley",
+  tags: ["Arunachal Pradesh", "Music Festival", "Tribal"],
+  permitRequired: true,
+  totalBudget: { min: 8000, max: 15000 },
+  highlights: [
+    "Ziro Music Festival",
+    "Apatani Tribe",
+    "Rice Fields",
+    "Pine Forests",
+    "Talley Valley",
+  ],
+  attractions: [
+    "Hong Village",
+    "Ziro Music Festival",
+    "Talley Valley",
+    "Meghna Cave Temple",
+    "Dolo Mando",
+  ],
+  tips: [
+    "Get Inner Line Permit",
+    "Visit during Ziro Festival Sep",
+    "Stay in Apatani homestays",
+    "Carry cash",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 3500 },
+    { item: "Accommodation (4 nights)", amount: 4000 },
+    { item: "Food (5 days)", amount: 2500 },
+    { item: "Permits & guide", amount: 2000 },
+    { item: "Miscellaneous", amount: 1000 },
+  ],
 };

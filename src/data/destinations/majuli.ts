@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const majuli: Destination = {
+  slug: "majuli",
+  id: "majuli",
+  name: "Majuli",
+  images: [
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
+  ],
+  duration: "4 Days / 3 Nights",
   destination: "Majuli",
   state: "Assam",
   tagline: "World's Largest River Island",
@@ -164,5 +173,34 @@ export const majuli: Destination = {
     "Stay in traditional Chang ghar (stilt houses) for authentic experience",
     "Carry cash — very limited ATMs on the island",
   ],
-  slug: "majuli",
+  tags: ["Assam", "Culture", "River Island"],
+  permitRequired: false,
+  totalBudget: { min: 5000, max: 10000 },
+  highlights: [
+    "Largest River Island",
+    "Satras",
+    "Mask Making",
+    "Raas Festival",
+    "Sunset Views",
+  ],
+  attractions: [
+    "Kamalabari Satra",
+    "Auniati Satra",
+    "Mask Making Village",
+    "Mishing Tribal Villages",
+    "Bird Watching",
+  ],
+  tips: [
+    "Visit during Raas Festival",
+    "Stay in eco-cottages",
+    "Learn mask making",
+    "Explore by bicycle",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 2000 },
+    { item: "Accommodation (3 nights)", amount: 3000 },
+    { item: "Food (4 days)", amount: 1600 },
+    { item: "Ferry & activities", amount: 1000 },
+    { item: "Miscellaneous", amount: 400 },
+  ],
 };

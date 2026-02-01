@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const tirthan_valley: Destination = {
+  slug: "tirthan-valley",
+  id: "tirthan-valley",
+  name: "Tirthan Valley",
+  images: [
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+  ],
+  duration: "5 Days / 4 Nights",
   destination: "Tirthan Valley",
   state: "Himachal Pradesh",
   tagline: "Himachal's Best-Kept Secret",
@@ -157,5 +166,34 @@ export const tirthan_valley: Destination = {
     "Carry warm layers — valley temperatures drop quickly in evenings",
     "Try fresh river trout at local dhabas — a Tirthan specialty",
   ],
-  slug: "tirthan-valley",
+  tags: ["Himachal Pradesh", "Nature", "Offbeat"],
+  permitRequired: false,
+  totalBudget: { min: 6000, max: 12000 },
+  highlights: [
+    "Great Himalayan National Park",
+    "Trout Fishing",
+    "Riverside Camps",
+    "Serloskar Lake",
+    "Jalori Pass",
+  ],
+  attractions: [
+    "GHNP Trek",
+    "Tirthan River",
+    "Jalori Pass",
+    "Serloskar Lake",
+    "Chhoie Waterfall",
+  ],
+  tips: [
+    "Best for nature lovers",
+    "Book riverside homestays",
+    "Try trout fishing",
+    "Visit GHNP buffer zone",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 2000 },
+    { item: "Accommodation (4 nights)", amount: 4000 },
+    { item: "Food (5 days)", amount: 2000 },
+    { item: "Activities & treks", amount: 1500 },
+    { item: "Miscellaneous", amount: 500 },
+  ],
 };

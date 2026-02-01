@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const yuksom: Destination = {
+  slug: "yuksom",
+  id: "yuksom",
+  name: "Yuksom",
+  images: [
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+  ],
+  duration: "5 Days / 4 Nights",
   destination: "Yuksom",
   state: "Sikkim",
   tagline: "Gateway to the Kanchenjunga",
@@ -153,5 +162,34 @@ export const yuksom: Destination = {
     "Book shared taxis from NJP in advance during peak season",
     "Try local Sikkimese thukpa, momos, and chang (millet beer)",
   ],
-  slug: "yuksom",
+  tags: ["Sikkim", "Trekking", "Heritage"],
+  permitRequired: true,
+  totalBudget: { min: 6000, max: 12000 },
+  highlights: [
+    "Goecha La Trek",
+    "Dubdi Monastery",
+    "Coronation Throne",
+    "Khangchendzonga View",
+    "Norbugang Park",
+  ],
+  attractions: [
+    "Goecha La Base",
+    "Dubdi Monastery",
+    "Coronation Throne",
+    "Tashiding Monastery",
+    "Khecheopalri Lake",
+  ],
+  tips: [
+    "Base for Goecha La trek",
+    "Acclimatize properly",
+    "Visit Dubdi early morning",
+    "Carry warm clothes",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 2500 },
+    { item: "Accommodation (4 nights)", amount: 3200 },
+    { item: "Food (5 days)", amount: 2000 },
+    { item: "Permits & guide", amount: 1500 },
+    { item: "Miscellaneous", amount: 500 },
+  ],
 };

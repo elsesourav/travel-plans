@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const chopta: Destination = {
+  slug: "chopta",
+  id: "chopta",
+  name: "Chopta",
+  images: [
+    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+  ],
+  duration: "4 Days / 3 Nights",
   destination: "Chopta",
   state: "Uttarakhand",
   tagline: "Mini Switzerland of Uttarakhand",
@@ -147,5 +156,34 @@ export const chopta: Destination = {
     "Camping gear available for rent locally at Chopta",
     "Carry your own snacks — limited shops along trek routes",
   ],
-  slug: "chopta",
+  tags: ["Uttarakhand", "Trekking", "Mini Switzerland"],
+  permitRequired: false,
+  totalBudget: { min: 5000, max: 10000 },
+  highlights: [
+    "Tungnath Temple",
+    "Chandrashila Peak",
+    "Deoriatal Lake",
+    "Bugyals",
+    "Himalayan Views",
+  ],
+  attractions: [
+    "Tungnath Trek",
+    "Chandrashila Summit",
+    "Deoriatal",
+    "Sari Village",
+    "Rohini Bugyal",
+  ],
+  tips: [
+    "Start trek early morning",
+    "Carry warm layers",
+    "Best Apr-Jun & Sep-Nov",
+    "Acclimatize properly",
+  ],
+  costs: [
+    { item: "Transport (round trip)", amount: 1800 },
+    { item: "Accommodation (3 nights)", amount: 2400 },
+    { item: "Food (4 days)", amount: 1600 },
+    { item: "Trek guide & gear", amount: 1200 },
+    { item: "Miscellaneous", amount: 500 },
+  ],
 };

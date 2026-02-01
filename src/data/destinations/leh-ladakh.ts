@@ -1,6 +1,15 @@
 import type { Destination } from "../types";
 
 export const leh_ladakh: Destination = {
+  slug: "leh-ladakh",
+  id: "leh-ladakh",
+  name: "Leh Ladakh",
+  images: [
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&q=80",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+  ],
+  duration: "9 Days / 8 Nights",
   destination: "Leh-Ladakh",
   state: "Ladakh",
   tagline: "Land of High Passes",
@@ -157,5 +166,35 @@ export const leh_ladakh: Destination = {
     "Pangong Lake camps fill fast — book in advance during peak season",
     "Carry warm layers — temperatures drop dramatically at night",
   ],
-  slug: "leh-ladakh",
+  tags: ["Ladakh", "High Altitude", "Adventure"],
+  permitRequired: true,
+  totalBudget: { min: 18000, max: 35000 },
+  highlights: [
+    "Pangong Lake",
+    "Nubra Valley",
+    "Khardung La",
+    "Magnetic Hill",
+    "Thiksey Monastery",
+  ],
+  attractions: [
+    "Pangong Tso",
+    "Nubra Valley",
+    "Khardung La Pass",
+    "Hemis Monastery",
+    "Shanti Stupa",
+  ],
+  tips: [
+    "Acclimatize 2 days in Leh",
+    "Best Jun-Sep",
+    "Get Inner Line Permit",
+    "Carry altitude medicine",
+  ],
+  costs: [
+    { item: "Flights (round trip)", amount: 10000 },
+    { item: "Accommodation (8 nights)", amount: 8000 },
+    { item: "Food (9 days)", amount: 4500 },
+    { item: "Vehicle rentals", amount: 8000 },
+    { item: "Permits & activities", amount: 2500 },
+    { item: "Miscellaneous", amount: 1500 },
+  ],
 };
