@@ -1,0 +1,1294 @@
+[
+  {
+    "destination": "Konark",
+    "landscape": " Heritage site, Sun Temple, coastal Odisha",
+    "state": " Odisha",
+    "coordinates": {
+      "latitude": " 19.8876°N",
+      "longitude": "86.0945°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Konark Sun Temple + Archaeological Museum + Chandrabhaga Beach"
+      },
+      {
+        "day": 3,
+        "plan": "Ramachandi Temple + Beleswar Beach + sunrise photography"
+      },
+      {
+        "day": 4,
+        "plan": "Day trip to Puri (Jagannath Temple + beach)"
+      },
+      {
+        "day": 5,
+        "plan": "Pipili craft village + Raghurajpur artist village + Dhauli Peace Pagoda"
+      },
+      {
+        "day": 6,
+        "plan": "Bhubaneswar temples (Lingaraj, Rajarani) + Udayagiri caves"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Bhubaneswar → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (local)",
+          "low": 500,
+          "typical": 1200,
+          "notes": "Bus/shared taxi"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 2400,
+          "typical": 4800,
+          "notes": "₹400–800/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1200,
+          "typical": 2100,
+          "notes": "₹170–300/day"
+        },
+        {
+          "item": "Entry fees",
+          "low": 200,
+          "typical": 500,
+          "notes": "Sun Temple, museums"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 700,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "5100",
+        "typical": "10700",
+        "typicalRange": "Typical: ₹7k–11k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle",
+          "perPerson": "300–700"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "1,600–3,200"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,000–1,800"
+        },
+        {
+          "category": "Entry fees",
+          "perPerson": "150–400"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–500"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Konark Sun Temple — UNESCO World Heritage, 13th century chariot",
+          "perPerson": ""
+        },
+        {
+          "category": "Chandrabhaga Beach — Pristine beach near temple",
+          "perPerson": ""
+        },
+        {
+          "category": "Raghurajpur — Pattachitra art village",
+          "perPerson": ""
+        },
+        {
+          "category": "Pipili — Famous for appliqué craft",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹5,000–8,500"
+    },
+    "bookingTips": [
+      "Stay in Konark or Puri (more options in Puri)",
+      "Konark Dance Festival (December) features classical dance",
+      "Best season: October–March",
+      "Combine with Puri trip for complete experience"
+    ]
+  },
+  {
+    "destination": "Majuli",
+    "landscape": " World's largest river island, Vaishnavite satras, Assamese culture",
+    "state": " Assam",
+    "coordinates": {
+      "latitude": " 26.9500°N",
+      "longitude": "94.1667°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Arrive Jorhat; ferry to Majuli; explore Kamalabari area"
+      },
+      {
+        "day": 3,
+        "plan": "Satra visits (Auniati, Dakhinpat) + mask making demo"
+      },
+      {
+        "day": 4,
+        "plan": "Cycle through villages + paddy fields + sunset by river"
+      },
+      {
+        "day": 5,
+        "plan": "Garmur Satra + pottery village + Mishing tribal village"
+      },
+      {
+        "day": 6,
+        "plan": "Bird watching at wetlands + Tengapania + traditional weaving"
+      },
+      {
+        "day": 7,
+        "plan": "Ferry to Jorhat → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Ferry (Jorhat ↔ Majuli return)",
+          "low": 100,
+          "typical": 300,
+          "notes": "Government/private ferry"
+        },
+        {
+          "item": "Local transfers",
+          "low": 300,
+          "typical": 700,
+          "notes": "Auto to ghat, island travel"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 2400,
+          "typical": 5400,
+          "notes": "₹400–900/night Chang ghars"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–350/day Assamese cuisine"
+        },
+        {
+          "item": "Cycle rental",
+          "low": 300,
+          "typical": 600,
+          "notes": "₹50–100/day"
+        },
+        {
+          "item": "Satra donations & guides",
+          "low": 200,
+          "typical": 500,
+          "notes": ""
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 700,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "6000",
+        "typical": "13500",
+        "typicalRange": "Typical: ₹10k–15k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Ferry",
+          "perPerson": "80–250"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "1,600–3,600"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,200–2,000"
+        },
+        {
+          "category": "Cycle rental",
+          "perPerson": "250–500"
+        },
+        {
+          "category": "Local transport + guides",
+          "perPerson": "200–600"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–500"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Satras — Neo-Vaishnavite monasteries (Auniati, Kamalabari, Dakhinpat)",
+          "perPerson": ""
+        },
+        {
+          "category": "Mask Making — Traditional craft for Raas festival",
+          "perPerson": ""
+        },
+        {
+          "category": "Mishing Villages — Tribal stilt houses (Chang ghars)",
+          "perPerson": ""
+        },
+        {
+          "category": "River Sunset — Brahmaputra views, peaceful ambiance",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹7,000–11,000"
+    },
+    "bookingTips": [
+      "Ferry timings depend on water levels; check locally",
+      "Cycle is the best way to explore the island",
+      "Best season: October–April (avoid monsoon flooding)",
+      "Raas Mahotsav (November) is spectacular",
+      " 🔵 LOW BUDGET + NATURE (₹14k–₹18k)"
+    ]
+  },
+  {
+    "destination": "Yuksom",
+    "landscape": " Gateway to Kanchenjunga, forest trails, Buddhist heritage",
+    "state": " Sikkim",
+    "coordinates": {
+      "latitude": " 27.3706°N",
+      "longitude": "88.2217°E"
+    },
+    "permits": " ILP required for certain areas (apply at Rangpo/Gangtok)",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Pelling sightseeing (Pemayangtse Monastery) → Yuksom"
+      },
+      {
+        "day": 3,
+        "plan": "Dubdi Monastery trek + Norbugang Coronation Throne + Kathok Lake"
+      },
+      {
+        "day": 4,
+        "plan": "Day trek toward Sachen (Dzongri trail start) + forest exploration"
+      },
+      {
+        "day": 5,
+        "plan": "Village walk + Tashiding Monastery day trip + local culture"
+      },
+      {
+        "day": 6,
+        "plan": "Khecheopalri Lake + Rimbi Waterfalls + return to Pelling"
+      },
+      {
+        "day": 7,
+        "plan": "Pelling/Geyzing → NJP → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Shared taxi (NJP ↔ Yuksom circuit)",
+          "low": 2000,
+          "typical": 4000,
+          "notes": "Via Pelling route"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3600,
+          "typical": 6000,
+          "notes": "₹600–1,000/night homestays"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1800,
+          "typical": 3000,
+          "notes": "₹250–400/day"
+        },
+        {
+          "item": "Permits (if trekking beyond)",
+          "low": 0,
+          "typical": 500,
+          "notes": "Dzongri trek needs permit"
+        },
+        {
+          "item": "Local guides & activities",
+          "low": 500,
+          "typical": 1500,
+          "notes": "Trek guides, monastery fees"
+        },
+        {
+          "item": "Misc",
+          "low": 400,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "8800",
+        "typical": "17300",
+        "typicalRange": "Typical: ₹12k–18k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle (chartered)",
+          "perPerson": "1,200–2,500"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,400–4,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,500–2,500"
+        },
+        {
+          "category": "Permits & guides",
+          "perPerson": "300–1,000"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–600"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Dubdi Monastery — Sikkim's oldest monastery (1701)",
+          "perPerson": ""
+        },
+        {
+          "category": "Norbugang — Coronation throne of first Sikkimese king",
+          "perPerson": ""
+        },
+        {
+          "category": "Dzongri Trek — Gateway to Goecha La trek",
+          "perPerson": ""
+        },
+        {
+          "category": "Khecheopalri Lake — Sacred wish-fulfilling lake",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹8,000–13,000"
+    },
+    "bookingTips": [
+      "Best base for Goecha La trek (needs 4+ extra days)",
+      "Homestays offer authentic experience",
+      "Best season: March–May, October–November",
+      "Carry warm clothes even in summer"
+    ]
+  },
+  {
+    "destination": "Khonoma (Nagaland)",
+    "coordinates": {
+      "latitude": " 25.6167°N",
+      "longitude": "94.2167°E"
+    },
+    "permits": " Usually not required; carry ID",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Dimapur → Kohima → Khonoma (~3 hours)"
+      },
+      {
+        "day": 3,
+        "plan": "Khonoma local: Village walks, conservation trails, birdwatching"
+      },
+      {
+        "day": 4,
+        "plan": "Nearby hikes & cultural visits (Dzuleke / Puliebadze)"
+      },
+      {
+        "day": 5,
+        "plan": "Culture day: Handicrafts, local meals, meet village elders"
+      },
+      {
+        "day": 6,
+        "plan": "Return: Khonoma → Kohima → Dimapur (evening)"
+      },
+      {
+        "day": 7,
+        "plan": "Train/flight: Dimapur → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (shared taxi)",
+          "low": 600,
+          "typical": 1800,
+          "notes": "₹300–400/leg"
+        },
+        {
+          "item": "Accommodation (6 nights, homestay)",
+          "low": 3000,
+          "typical": 6000,
+          "notes": "Village guesthouses"
+        },
+        {
+          "item": "Food (7 days, local)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–400/day"
+        },
+        {
+          "item": "Local guides/activities",
+          "low": 400,
+          "typical": 1200,
+          "notes": "Birdwatch, tribal visits"
+        },
+        {
+          "item": "Permits/entry",
+          "low": 0,
+          "typical": 300,
+          "notes": "If applicable"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "6900",
+        "typical": "15100",
+        "typicalRange": "Typical: ₹8k–16k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,400–4,000"
+        },
+        {
+          "category": "Road transfers",
+          "perPerson": "350–900"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,400–2,000"
+        },
+        {
+          "category": "Guides/activities",
+          "perPerson": "200–700"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "250–500"
+        }
+      ],
+      "total": "₹5,600–11,600"
+    },
+    "bookingTips": [
+      "Book train to Dimapur or flight for faster travel",
+      "Prefer homestays/guesthouses; bring cash and medicines",
+      "Best for offbeat, low-crowd village experience"
+    ]
+  },
+  {
+    "destination": "Ziro Valley (Arunachal Pradesh)",
+    "landscape": " Emerald rice fields, pine groves, Apatani tribal villages",
+    "state": " Arunachal Pradesh",
+    "coordinates": {
+      "latitude": " 27.5950°N",
+      "longitude": "93.8333°E"
+    },
+    "permits": " Inner Line Permit (ILP) REQUIRED — Apply online at [eILP Portal](https://arunachalilp.com/)",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Guwahati → Naharlagun/Itanagar (overnight enroute)"
+      },
+      {
+        "day": 3,
+        "plan": "Road: Naharlagun → Ziro (arrive, check-in)"
+      },
+      {
+        "day": 4,
+        "plan": "Ziro sightseeing: Apatani villages, rice fields, craft visits"
+      },
+      {
+        "day": 5,
+        "plan": "Local hikes / valley viewpoints / cultural exchange"
+      },
+      {
+        "day": 6,
+        "plan": "Buffer / festival day (Ziro Music Fest) / relax"
+      },
+      {
+        "day": 7,
+        "plan": "Return road to Guwahati → train/flight to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (shared cab)",
+          "low": 1800,
+          "typical": 4500,
+          "notes": "Guwahati ↔ Ziro"
+        },
+        {
+          "item": "Accommodation (6 nights, homestay)",
+          "low": 3600,
+          "typical": 7200,
+          "notes": "Rates vary with season"
+        },
+        {
+          "item": "Food (7 days, local)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–400/day"
+        },
+        {
+          "item": "Local transport & guides",
+          "low": 700,
+          "typical": 1800,
+          "notes": "Village guides, local taxi"
+        },
+        {
+          "item": "Permits (e-ILP)",
+          "low": 300,
+          "typical": 500,
+          "notes": "Tourist e-ILP (up to 14 days)"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "9100",
+        "typical": "21300",
+        "typicalRange": "Typical: ₹10k–20k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared cab (split)",
+          "perPerson": "1,000–2,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "3,000–6,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,400–2,000"
+        },
+        {
+          "category": "ILP (one-time)",
+          "perPerson": "50–100"
+        },
+        {
+          "category": "Local guides",
+          "perPerson": "150–500"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–500"
+        }
+      ],
+      "total": "₹6,700–14,600"
+    },
+    "bookingTips": [
+      "Apply ILP online before travel — carry printed copy",
+      "Consider overnight stop at Itanagar/Naharlagun",
+      "Book early during Ziro Music Festival (late September)"
+    ]
+  },
+  {
+    "destination": "Tirthan Valley",
+    "landscape": " River valley, trout streams, Great Himalayan National Park",
+    "state": " Himachal Pradesh",
+    "coordinates": {
+      "latitude": " 31.6079°N",
+      "longitude": "77.4523°E"
+    },
+    "permits": " GHNP entry permit required for treks inside park",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Chandigarh → Tirthan Valley; evening riverside walk"
+      },
+      {
+        "day": 3,
+        "plan": "Jibhi waterfalls + Serolsar Lake trek"
+      },
+      {
+        "day": 4,
+        "plan": "Great Himalayan National Park entrance + Tirthan river fishing"
+      },
+      {
+        "day": 5,
+        "plan": "Jalori Pass + Raghupur Fort trek + village exploration"
+      },
+      {
+        "day": 6,
+        "plan": "Riverside relaxation + local craft + trout fishing"
+      },
+      {
+        "day": 7,
+        "plan": "Tirthan → Chandigarh → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (Chandigarh ↔ Tirthan)",
+          "low": 2000,
+          "typical": 4000,
+          "notes": "Shared taxi/bus"
+        },
+        {
+          "item": "Accommodation (6 nights, homestay/riverside)",
+          "low": 3600,
+          "typical": 7200,
+          "notes": "₹600–1,200/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1800,
+          "typical": 3000,
+          "notes": "₹250–400/day"
+        },
+        {
+          "item": "GHNP permit & guides",
+          "low": 500,
+          "typical": 1500,
+          "notes": "Park entry + trek guide"
+        },
+        {
+          "item": "Local activities (fishing, etc.)",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Trout fishing ₹200–500"
+        },
+        {
+          "item": "Misc",
+          "low": 400,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "9700",
+        "typical": "20000",
+        "typicalRange": "Typical: ₹12k–18k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle",
+          "perPerson": "1,200–2,500"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,400–4,800"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,500–2,500"
+        },
+        {
+          "category": "GHNP & guides",
+          "perPerson": "350–1,000"
+        },
+        {
+          "category": "Activities",
+          "perPerson": "300–700"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–600"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Tirthan River — Crystal clear trout streams",
+          "perPerson": ""
+        },
+        {
+          "category": "Great Himalayan National Park — UNESCO World Heritage",
+          "perPerson": ""
+        },
+        {
+          "category": "Jalori Pass — High altitude pass (3,120m)",
+          "perPerson": ""
+        },
+        {
+          "category": "Jibhi & Serolsar Lake — Scenic treks",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹8,000–13,000"
+    },
+    "bookingTips": [
+      "Riverside homestays offer best experience",
+      "Book GHNP permits in advance for deep treks",
+      "Best season: March–June, September–November",
+      "Trout fishing requires permit (₹200–500)"
+    ]
+  },
+  {
+    "destination": "Chopta",
+    "landscape": " Alpine meadows, Tungnath temple, Chandrashila peak",
+    "state": " Uttarakhand",
+    "coordinates": {
+      "latitude": " 30.4403°N",
+      "longitude": "79.2149°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Haridwar → Chopta; evening meadow walk"
+      },
+      {
+        "day": 3,
+        "plan": "Tungnath trek (highest Shiva temple) + Chandrashila summit"
+      },
+      {
+        "day": 4,
+        "plan": "Deoria Tal lake trek + camping/return"
+      },
+      {
+        "day": 5,
+        "plan": "Explore Sari village + Rohini Bugyal meadows"
+      },
+      {
+        "day": 6,
+        "plan": "Buffer day / Kedarnath Wildlife Sanctuary birding"
+      },
+      {
+        "day": 7,
+        "plan": "Chopta → Haridwar → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (Haridwar ↔ Chopta)",
+          "low": 2000,
+          "typical": 4000,
+          "notes": "Shared taxi"
+        },
+        {
+          "item": "Accommodation (6 nights, camp/homestay)",
+          "low": 3000,
+          "typical": 6000,
+          "notes": "₹500–1,000/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1800,
+          "typical": 3000,
+          "notes": "₹250–400/day"
+        },
+        {
+          "item": "Trek guides & porters",
+          "low": 500,
+          "typical": 1500,
+          "notes": "Optional but recommended"
+        },
+        {
+          "item": "Misc",
+          "low": 400,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "8500",
+        "typical": "17500",
+        "typicalRange": "Typical: ₹12k–18k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle",
+          "perPerson": "1,200–2,500"
+        },
+        {
+          "category": "Shared camps/homestays",
+          "perPerson": "2,000–4,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,500–2,500"
+        },
+        {
+          "category": "Trek guides",
+          "perPerson": "300–900"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–600"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Tungnath Temple — World's highest Shiva temple (3,680m)",
+          "perPerson": ""
+        },
+        {
+          "category": "Chandrashila Peak — 360° Himalayan views (4,000m)",
+          "perPerson": ""
+        },
+        {
+          "category": "Deoria Tal — Pristine high-altitude lake",
+          "perPerson": ""
+        },
+        {
+          "category": "Bugyals — Alpine meadows, wildflowers",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹8,000–13,000"
+    },
+    "bookingTips": [
+      "Winter (Dec–Feb) has heavy snow; best avoided",
+      "Carry warm clothes even in summer",
+      "Best season: March–May, September–November",
+      "Camping gear available for rent locally"
+    ]
+  },
+  {
+    "destination": "Daringbadi",
+    "landscape": " Hills, pine forests, waterfalls, Odisha's Kashmir",
+    "state": " Odisha",
+    "coordinates": {
+      "latitude": " 19.8917°N",
+      "longitude": "84.3817°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Berhampur → Daringbadi; Nature Park evening walk"
+      },
+      {
+        "day": 3,
+        "plan": "Hill View Point + Midubanda Waterfalls + Coffee/pepper farms"
+      },
+      {
+        "day": 4,
+        "plan": "Lovers' Point + Doluri River + tribal village visit"
+      },
+      {
+        "day": 5,
+        "plan": "Putudi Waterfalls + pine forest trekking"
+      },
+      {
+        "day": 6,
+        "plan": "Belghar Nature Camp + local markets"
+      },
+      {
+        "day": 7,
+        "plan": "Daringbadi → Berhampur → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (Berhampur ↔ Daringbadi)",
+          "low": 500,
+          "typical": 1200,
+          "notes": "Shared taxi/bus"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 2400,
+          "typical": 4800,
+          "notes": "₹400–800/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–350/day"
+        },
+        {
+          "item": "Local transport & activities",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Village visits, jeep"
+        },
+        {
+          "item": "Entry fees",
+          "low": 200,
+          "typical": 400,
+          "notes": "Nature parks"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 700,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "5800",
+        "typical": "12200",
+        "typicalRange": "Typical: ₹10k–15k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle",
+          "perPerson": "300–700"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "1,600–3,200"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,200–2,000"
+        },
+        {
+          "category": "Local transport",
+          "perPerson": "250–600"
+        },
+        {
+          "category": "Entry fees",
+          "perPerson": "150–350"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–500"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Hill View Point — Panoramic valley views",
+          "perPerson": ""
+        },
+        {
+          "category": "Midubanda Waterfalls — Scenic cascade",
+          "perPerson": ""
+        },
+        {
+          "category": "Coffee & Pepper Plantations — Unique to Odisha",
+          "perPerson": ""
+        },
+        {
+          "category": "Tribal Villages — Authentic Kondh culture",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹7,000–11,000"
+    },
+    "bookingTips": [
+      "Known as \"Kashmir of Odisha\" for cool climate",
+      "Monsoon creates lush greenery but roads may be tricky",
+      "Best season: October–March",
+      "Limited ATMs; carry cash",
+      " 🟣 LOW–MID BUDGET (₹18k–₹25k)"
+    ]
+  },
+  {
+    "destination": "Tawang (Arunachal Pradesh)",
+    "landscape": " Alpine mountains, Buddhist culture, snow-clad passes",
+    "coordinates": {
+      "latitude": " 27.5859°N",
+      "longitude": "91.8678°E"
+    },
+    "permits": " Inner Line Permit (ILP) REQUIRED",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Guwahati → Dirang or Bomdila"
+      },
+      {
+        "day": 3,
+        "plan": "Road to Tawang via Sela Pass"
+      },
+      {
+        "day": 4,
+        "plan": "Tawang sightseeing (Monastery, War Memorial, markets)"
+      },
+      {
+        "day": 5,
+        "plan": "Excursion to Bumla Pass / Madhuri Lake (if permitted)"
+      },
+      {
+        "day": 6,
+        "plan": "Road return: Tawang → Bomdila/Dirang"
+      },
+      {
+        "day": 7,
+        "plan": "Road to Guwahati → Train/flight to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (round trip)",
+          "low": 8000,
+          "typical": 15000,
+          "notes": "Sumo/taxi shared/private"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 6000,
+          "typical": 12000,
+          "notes": "Budget mountain hotels"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 2000,
+          "typical": 3500,
+          "notes": "Local meals"
+        },
+        {
+          "item": "Local transport & sightseeing",
+          "low": 800,
+          "typical": 2000,
+          "notes": "Auto/taxi for spots"
+        },
+        {
+          "item": "Permits (ILP)",
+          "low": 300,
+          "typical": 500,
+          "notes": "Required for entry"
+        },
+        {
+          "item": "Misc",
+          "low": 500,
+          "typical": 1200,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "19600",
+        "typical": "40200",
+        "typicalRange": ""
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Road transfers (shared)",
+          "perPerson": "4,000–7,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,400–4,200"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,800–3,000"
+        },
+        {
+          "category": "Local transport & sightseeing",
+          "perPerson": "400–1,200"
+        },
+        {
+          "category": "Permits",
+          "perPerson": "300–500"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–700"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Tawang Monastery — One of India's largest Buddhist monasteries",
+          "perPerson": ""
+        },
+        {
+          "category": "Sela Pass & Lakes — High altitude snow views",
+          "perPerson": ""
+        },
+        {
+          "category": "Madhuri Lake / Bumla Pass — Scenic glacial waters",
+          "perPerson": ""
+        },
+        {
+          "category": "War Memorial — Culture & history",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹11,000–22,100"
+    },
+    "bookingTips": [
+      "Package tours from Kolkata: ₹25,000+ (6–8 days with transport & stays)",
+      "ILP is mandatory — many tours include this",
+      "Best season: March–June, September–October"
+    ]
+  },
+  {
+    "destination": "Spiti Valley (Himachal Pradesh)",
+    "landscape": " High-altitude cold desert, rugged mountains, ancient monasteries",
+    "state": " Himachal Pradesh",
+    "coordinates": {
+      "latitude": " ~32.2460°N",
+      "longitude": "78.0349°E"
+    },
+    "permits": " Not required for most areas",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Chandigarh → Shimla → Narkanda"
+      },
+      {
+        "day": 3,
+        "plan": "Road: Narkanda → Sangla → Kalpa"
+      },
+      {
+        "day": 4,
+        "plan": "Road: Kalpa → Nako → Tabo"
+      },
+      {
+        "day": 5,
+        "plan": "Spiti sightseeing (Tabo, Dhankar, Kaza)"
+      },
+      {
+        "day": 6,
+        "plan": "Spiti (Komic, Langza, Hikkim & Pin Valley)"
+      },
+      {
+        "day": 7,
+        "plan": "Return toward Manali/Chandigarh → train/flight to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (to/within Spiti)",
+          "low": 10000,
+          "typical": 18000,
+          "notes": "Shared cabs/local taxi"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 6000,
+          "typical": 10000,
+          "notes": "Homestays/guesthouses"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 2000,
+          "typical": 3000,
+          "notes": "Simple meals"
+        },
+        {
+          "item": "Local transport & sightseeing",
+          "low": 1000,
+          "typical": 3000,
+          "notes": "Shared jeeps, fuel"
+        },
+        {
+          "item": "Misc",
+          "low": 500,
+          "typical": 1500,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "21500",
+        "typical": "43500",
+        "typicalRange": ""
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared road vehicle (split six ways)",
+          "perPerson": "7,500–11,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "3,600–6,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "2,000–3,000"
+        },
+        {
+          "category": "Local tours & permits",
+          "perPerson": "500–1,500"
+        },
+        {
+          "category": "Activities & buffer",
+          "perPerson": "600–1,800"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "400–1,000"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Kaza — Main town, base for exploration",
+          "perPerson": ""
+        },
+        {
+          "category": "Key Monastery — Iconic hilltop monastery",
+          "perPerson": ""
+        },
+        {
+          "category": "Chandratal Lake — High-altitude crescent lake",
+          "perPerson": ""
+        },
+        {
+          "category": "Komic & Langza — Highest villages with fossils",
+          "perPerson": ""
+        },
+        {
+          "category": "Pin Valley — Snow leopard habitat",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹16,600–31,500"
+    },
+    "bookingTips": [
+      "Budget tour packages: ₹16,000–30,000 for 7 days from Delhi/Chandigarh",
+      "Multi-stop driving needs acclimatization",
+      "Road passes can close in winter",
+      "Best season: May–October"
+    ]
+  }
+]

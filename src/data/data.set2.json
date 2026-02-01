@@ -1,0 +1,1368 @@
+[
+  {
+    "destination": "McLeod Ganj",
+    "landscape": " Hill station, Tibetan culture, Dharamshala, Himalayan views",
+    "state": " Himachal Pradesh",
+    "coordinates": {
+      "latitude": " 32.2396°N",
+      "longitude": "76.3191°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Pathankot → McLeod Ganj; Tsuglagkhang Complex evening"
+      },
+      {
+        "day": 3,
+        "plan": "Bhagsu Nag Temple + Bhagsu Waterfall + Shiva Café"
+      },
+      {
+        "day": 4,
+        "plan": "Triund trek (day trek or overnight camping)"
+      },
+      {
+        "day": 5,
+        "plan": "Tibetan Museum + Norbulingka Institute + local markets"
+      },
+      {
+        "day": 6,
+        "plan": "Dharamkot + Naddi viewpoint + St. John's Church"
+      },
+      {
+        "day": 7,
+        "plan": "McLeod Ganj → Pathankot → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (Pathankot ↔ McLeod Ganj)",
+          "low": 600,
+          "typical": 1500,
+          "notes": "Shared taxi/bus"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3600,
+          "typical": 7200,
+          "notes": "₹600–1,200/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 2000,
+          "typical": 3500,
+          "notes": "₹280–500/day café/Tibetan"
+        },
+        {
+          "item": "Triund trek (guide + camping)",
+          "low": 500,
+          "typical": 2000,
+          "notes": "Optional guide"
+        },
+        {
+          "item": "Local transport & entry",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Auto, taxi"
+        },
+        {
+          "item": "Misc",
+          "low": 400,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "8700",
+        "typical": "19000",
+        "typicalRange": "Typical: ₹14k–22k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle",
+          "perPerson": "400–1,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,400–4,800"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,800–3,000"
+        },
+        {
+          "category": "Triund trek",
+          "perPerson": "350–1,500"
+        },
+        {
+          "category": "Local transport",
+          "perPerson": "250–600"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–600"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Tsuglagkhang Complex — Dalai Lama's residence",
+          "perPerson": ""
+        },
+        {
+          "category": "Triund Trek — Popular overnight trek, stunning views",
+          "perPerson": ""
+        },
+        {
+          "category": "Bhagsu Waterfall — Scenic cascade near town",
+          "perPerson": ""
+        },
+        {
+          "category": "Norbulingka Institute — Tibetan arts & crafts",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹10,000–16,000"
+    },
+    "bookingTips": [
+      "Try to attend public teachings by Dalai Lama (schedule online)",
+      "Tibetan cafés offer great food at reasonable prices",
+      "Best season: March–June, September–November",
+      "Monsoon (July–August) sees heavy rainfall"
+    ]
+  },
+  {
+    "destination": "Bir Billing",
+    "landscape": " Paragliding capital of India, tea gardens, Tibetan settlements",
+    "state": " Himachal Pradesh",
+    "coordinates": {
+      "latitude": " 31.8833°N",
+      "longitude": "76.7167°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Pathankot → Bir; evening monastery visit"
+      },
+      {
+        "day": 3,
+        "plan": "Paragliding from Billing to Bir (main activity!)"
+      },
+      {
+        "day": 4,
+        "plan": "Tibetan colony + Chokling Monastery + tea gardens"
+      },
+      {
+        "day": 5,
+        "plan": "Trek to Billing takeoff site + local village exploration"
+      },
+      {
+        "day": 6,
+        "plan": "Gunehar waterfall + camping/relaxation + local café"
+      },
+      {
+        "day": 7,
+        "plan": "Bir → Pathankot → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (Pathankot ↔ Bir)",
+          "low": 800,
+          "typical": 2000,
+          "notes": "Shared taxi/bus"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3000,
+          "typical": 6000,
+          "notes": "₹500–1,000/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1800,
+          "typical": 3000,
+          "notes": "₹250–400/day"
+        },
+        {
+          "item": "Paragliding",
+          "low": 2500,
+          "typical": 4000,
+          "notes": "Tandem flight (15–30 min)"
+        },
+        {
+          "item": "Local transport & activities",
+          "low": 500,
+          "typical": 1200,
+          "notes": "Trekking, camping"
+        },
+        {
+          "item": "Misc",
+          "low": 400,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "10200",
+        "typical": "20000",
+        "typicalRange": "Typical: ₹14k–22k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle",
+          "perPerson": "500–1,200"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,000–4,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,500–2,500"
+        },
+        {
+          "category": "Paragliding",
+          "perPerson": "2,500–4,000"
+        },
+        {
+          "category": "Activities",
+          "perPerson": "350–800"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–600"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Paragliding — World-class tandem flights from Billing",
+          "perPerson": ""
+        },
+        {
+          "category": "Chokling Monastery — Beautiful Tibetan monastery",
+          "perPerson": ""
+        },
+        {
+          "category": "Tea Gardens — Scenic walks and photography",
+          "perPerson": ""
+        },
+        {
+          "category": "Gunehar Waterfall — Hidden gem near Bir",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹10,000–16,000"
+    },
+    "bookingTips": [
+      "Paragliding best during March–June, September–November",
+      "Book paragliding with certified operators only",
+      "Bir has great café culture for backpackers",
+      "Avoid monsoon for paragliding (July–August)"
+    ]
+  },
+  {
+    "destination": "Chakrata",
+    "landscape": " Quiet hill station, deodar forests, Tiger Falls",
+    "state": " Uttarakhand",
+    "coordinates": {
+      "latitude": " 30.7000°N",
+      "longitude": "77.8667°E"
+    },
+    "permits": " Some areas require permits (Jaunsar tribal region)",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Dehradun → Chakrata; evening forest walk"
+      },
+      {
+        "day": 3,
+        "plan": "Tiger Falls trek (highest waterfall in Uttarakhand)"
+      },
+      {
+        "day": 4,
+        "plan": "Deoban peak trek + panoramic Himalayan views"
+      },
+      {
+        "day": 5,
+        "plan": "Chilmiri Neck viewpoint + Budher caves"
+      },
+      {
+        "day": 6,
+        "plan": "Jaunsar tribal village + local culture + relaxation"
+      },
+      {
+        "day": 7,
+        "plan": "Chakrata → Dehradun → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (Dehradun ↔ Chakrata)",
+          "low": 600,
+          "typical": 1500,
+          "notes": "Shared taxi/bus"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3000,
+          "typical": 6000,
+          "notes": "₹500–1,000/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1800,
+          "typical": 3000,
+          "notes": "₹250–400/day"
+        },
+        {
+          "item": "Trek guides & activities",
+          "low": 400,
+          "typical": 1200,
+          "notes": "Tiger Falls, Deoban"
+        },
+        {
+          "item": "Local transport",
+          "low": 300,
+          "typical": 800,
+          "notes": "Local taxi"
+        },
+        {
+          "item": "Misc",
+          "low": 400,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "7400",
+        "typical": "15800",
+        "typicalRange": "Typical: ₹12k–18k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle",
+          "perPerson": "400–1,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,000–4,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,500–2,500"
+        },
+        {
+          "category": "Trek guides",
+          "perPerson": "250–800"
+        },
+        {
+          "category": "Local transport",
+          "perPerson": "200–500"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–600"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Tiger Falls — 312 ft waterfall (highest in Uttarakhand)",
+          "perPerson": ""
+        },
+        {
+          "category": "Deoban Peak — Snow-capped Himalayan views",
+          "perPerson": ""
+        },
+        {
+          "category": "Chilmiri Neck — Sunset viewpoint",
+          "perPerson": ""
+        },
+        {
+          "category": "Budher Caves — Ancient rock formations",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹8,000–13,000"
+    },
+    "bookingTips": [
+      "Very offbeat; fewer tourists than Mussoorie",
+      "Army cantonment town; peaceful atmosphere",
+      "Best season: March–June, September–November",
+      "Winter (Dec–Feb) sees snowfall"
+    ]
+  },
+  {
+    "destination": "Pelling",
+    "landscape": " Kanchenjunga views, monasteries, waterfalls",
+    "state": " Sikkim",
+    "coordinates": {
+      "latitude": " 27.3000°N",
+      "longitude": "88.2333°E"
+    },
+    "permits": " ILP required for certain areas (apply at Rangpo/Gangtok)",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Arrive evening; Kanchenjunga sunset view from hotel"
+      },
+      {
+        "day": 3,
+        "plan": "Pemayangtse Monastery + Rabdentse ruins + Sangachoeling"
+      },
+      {
+        "day": 4,
+        "plan": "Khecheopalri Lake + Kanchenjunga Falls + Rimbi waterfalls"
+      },
+      {
+        "day": 5,
+        "plan": "Skywalk + Darap village + cheese factory"
+      },
+      {
+        "day": 6,
+        "plan": "Singshore Bridge + buffer day for views/relaxation"
+      },
+      {
+        "day": 7,
+        "plan": "Pelling → NJP → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Shared taxi (NJP ↔ Pelling)",
+          "low": 1500,
+          "typical": 3000,
+          "notes": "Direct shared taxi"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3600,
+          "typical": 7200,
+          "notes": "₹600–1,200/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1800,
+          "typical": 3000,
+          "notes": "₹250–400/day"
+        },
+        {
+          "item": "Local sightseeing transport",
+          "low": 1000,
+          "typical": 2500,
+          "notes": "Shared taxi for spots"
+        },
+        {
+          "item": "Entry fees",
+          "low": 300,
+          "typical": 600,
+          "notes": "Skywalk, monasteries"
+        },
+        {
+          "item": "Misc",
+          "low": 400,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "9100",
+        "typical": "18600",
+        "typicalRange": "Typical: ₹14k–22k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle (chartered)",
+          "perPerson": "900–2,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,400–4,800"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,500–2,500"
+        },
+        {
+          "category": "Sightseeing transport",
+          "perPerson": "600–1,500"
+        },
+        {
+          "category": "Entry fees",
+          "perPerson": "250–500"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–600"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Kanchenjunga Views — Best from Pelling hotels/viewpoints",
+          "perPerson": ""
+        },
+        {
+          "category": "Pemayangtse Monastery — 17th century, one of Sikkim's oldest",
+          "perPerson": ""
+        },
+        {
+          "category": "Khecheopalri Lake — Sacred wish-fulfilling lake",
+          "perPerson": ""
+        },
+        {
+          "category": "Singshore Bridge — Highest bridge in Sikkim",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹10,000–16,000"
+    },
+    "bookingTips": [
+      "Book Kanchenjunga-facing room for sunrise views",
+      "Clear views best in October–November, March–April",
+      "Best season: March–May, October–November",
+      "Combine with Yuksom trip for complete experience",
+      " 🔴 MID BUDGET (₹25k–₹35k)"
+    ]
+  },
+  {
+    "destination": "Andaman Islands",
+    "landscape": " Tropical islands, white sandy beaches, coral reefs, clear blue sea",
+    "state/ut": " Andaman & Nicobar Islands",
+    "coordinates": {
+      "latitude": " 11.7401°N",
+      "longitude": "92.6586°E"
+    },
+    "permits": " Not required for most islands (restricted for some tribal areas)",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Ferry: Port Blair → Havelock Island; Radhanagar Beach"
+      },
+      {
+        "day": 3,
+        "plan": "Elephant Beach sightseeing (snorkeling / water sports)"
+      },
+      {
+        "day": 4,
+        "plan": "Ferry: Havelock → Neil Island; Beach visits"
+      },
+      {
+        "day": 5,
+        "plan": "Explore Neil Island; Laxmanpur Beach & Natural Bridge"
+      },
+      {
+        "day": 6,
+        "plan": "Return: Neil Island → Port Blair; Ross Island or North Bay"
+      },
+      {
+        "day": 7,
+        "plan": "Port Blair → Kolkata flight"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Ferry transfers (inter-island)",
+          "low": 1500,
+          "typical": 3000,
+          "notes": "Port Blair ↔ Havelock ↔ Neil"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 6000,
+          "typical": 12000,
+          "notes": "Budget to mid-range"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 2000,
+          "typical": 3500,
+          "notes": "Local/restaurant meals"
+        },
+        {
+          "item": "Water sports/snorkeling",
+          "low": 1500,
+          "typical": 6500,
+          "notes": "Optional: diving extra"
+        },
+        {
+          "item": "Local sightseeing & transport",
+          "low": 1000,
+          "typical": 2500,
+          "notes": "Port Blair & island taxis"
+        },
+        {
+          "item": "Misc",
+          "low": 500,
+          "typical": 1000,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "21500",
+        "typical": "44500",
+        "typicalRange": ""
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Ferries (shared bookings)",
+          "perPerson": "1,200–2,500"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "4,500–9,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "2,000–3,000"
+        },
+        {
+          "category": "Water sports/snorkeling",
+          "perPerson": "800–4,000"
+        },
+        {
+          "category": "Local transport & sightseeing",
+          "perPerson": "800–2,000"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "400–800"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Port Blair: Cellular Jail, Light & Sound Show, Corbyn's Cove",
+          "perPerson": ""
+        },
+        {
+          "category": "Havelock Island: Radhanagar Beach (Asia's best), Elephant Beach",
+          "perPerson": ""
+        },
+        {
+          "category": "Neil Island: Laxmanpur, Bharatpur beaches",
+          "perPerson": ""
+        },
+        {
+          "category": "Optional: Baratang Island (mud volcanoes), North Bay (snorkeling)",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹17,700–37,300"
+    },
+    "bookingTips": [
+      "Book flight + hotel together early (Oct–May is peak season)",
+      "Book ferry in advance for best slots",
+      "Basic snorkeling cheaper than full scuba diving",
+      "Package tours: ₹15,000–70,000+ (6N/7D from Kolkata)"
+    ]
+  },
+  {
+    "destination": "Leh-Ladakh",
+    "landscape": " High-altitude Himalayan desert, lakes, passes, monasteries",
+    "state/ut": " Ladakh",
+    "coordinates": {
+      "latitude": " 34.1526°N",
+      "longitude": "77.5771°E"
+    },
+    "permits": " Required for Nubra, Pangong, and border areas",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Acclimatization in Leh; local market + monastery visit"
+      },
+      {
+        "day": 3,
+        "plan": "Leh → Nubra Valley via Khardung La Pass"
+      },
+      {
+        "day": 4,
+        "plan": "Explore Nubra (Diskit Monastery + camel ride)"
+      },
+      {
+        "day": 5,
+        "plan": "Nubra → Pangong Lake (via Shyok River route)"
+      },
+      {
+        "day": 6,
+        "plan": "Pangong Lake → back to Leh"
+      },
+      {
+        "day": 7,
+        "plan": "Leh → Kolkata flight"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 6000,
+          "typical": 12000,
+          "notes": "Guesthouses"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 2000,
+          "typical": 3500,
+          "notes": "Simple meals"
+        },
+        {
+          "item": "Shared taxi/jeep transfers",
+          "low": 8000,
+          "typical": 15000,
+          "notes": "Pangong, Nubra excursions"
+        },
+        {
+          "item": "Permits",
+          "low": 0,
+          "typical": 500,
+          "notes": "Usually handled by tour"
+        },
+        {
+          "item": "Local sightseeing",
+          "low": 1000,
+          "typical": 3000,
+          "notes": "Entry/toll/guide"
+        },
+        {
+          "item": "Misc",
+          "low": 500,
+          "typical": 1000,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "30000",
+        "typical": "55500",
+        "typicalRange": ""
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared taxi/jeep circuit",
+          "perPerson": "7,000–10,500"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "3,000–6,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "2,000–3,000"
+        },
+        {
+          "category": "Permits",
+          "perPerson": "300–600"
+        },
+        {
+          "category": "Local sightseeing & add-ons",
+          "perPerson": "800–2,000"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "400–800"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Leh Town: Leh Palace, monasteries, markets",
+          "perPerson": ""
+        },
+        {
+          "category": "Nubra Valley: Diskit Monastery, camel rides on sand dunes",
+          "perPerson": ""
+        },
+        {
+          "category": "Pangong Lake: Famous high-altitude lake",
+          "perPerson": ""
+        },
+        {
+          "category": "Khardung La Pass: World's highest motorable roads",
+          "perPerson": ""
+        },
+        {
+          "category": "Optional: Tso Moriri, Hemis Festival (seasonal)",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹25,500–41,900"
+    },
+    "bookingTips": [
+      "Book flights early for best prices",
+      "Acclimatize in Leh first (1–2 days) to avoid altitude sickness",
+      "Shared jeeps for Pangong/Nubra cheaper than private cabs",
+      "Package tours: ₹19,000–40,000+ (7–8 days from Kolkata)",
+      "Best season: May–September"
+    ]
+  },
+  {
+    "destination": "Tso Moriri",
+    "landscape": " High-altitude alpine lake, remote Changthang plateau",
+    "state/ut": " Ladakh",
+    "coordinates": {
+      "latitude": " 32.9167°N",
+      "longitude": "78.3167°E"
+    },
+    "permits": " Inner Line Permit (ILP) required",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Acclimatization in Leh; Shanti Stupa + local market"
+      },
+      {
+        "day": 3,
+        "plan": "Leh → Korzok (Tso Moriri) via Chumathang hot springs"
+      },
+      {
+        "day": 4,
+        "plan": "Explore Tso Moriri lake + Korzok monastery + wildlife spotting"
+      },
+      {
+        "day": 5,
+        "plan": "Return via Tso Kar lake (white salt lake) → Leh"
+      },
+      {
+        "day": 6,
+        "plan": "Leh sightseeing: Hemis Monastery + Thiksey Monastery"
+      },
+      {
+        "day": 7,
+        "plan": "Leh → Kolkata flight"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Shared taxi/jeep (Leh circuits)",
+          "low": 10000,
+          "typical": 18000,
+          "notes": "Tso Moriri + local sightseeing"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 6000,
+          "typical": 10000,
+          "notes": "Guesthouses + Korzok homestay"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 2000,
+          "typical": 3500,
+          "notes": "Simple meals"
+        },
+        {
+          "item": "Permits",
+          "low": 500,
+          "typical": 800,
+          "notes": "ILP for Changthang"
+        },
+        {
+          "item": "Local sightseeing",
+          "low": 500,
+          "typical": 1500,
+          "notes": "Entry fees, guides"
+        },
+        {
+          "item": "Misc",
+          "low": 500,
+          "typical": 1200,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "31500",
+        "typical": "55000",
+        "typicalRange": "Typical: ₹32k–58k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared taxi (chartered)",
+          "perPerson": "6,500–11,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "3,000–5,500"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,800–3,000"
+        },
+        {
+          "category": "Permits",
+          "perPerson": "400–700"
+        },
+        {
+          "category": "Local sightseeing",
+          "perPerson": "350–1,000"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "400–800"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Tso Moriri Lake — Pristine high-altitude lake, less crowded than Pangong",
+          "perPerson": ""
+        },
+        {
+          "category": "Korzok Monastery — Ancient monastery on lake shore",
+          "perPerson": ""
+        },
+        {
+          "category": "Tso Kar Lake — White salt lake, wildlife habitat",
+          "perPerson": ""
+        },
+        {
+          "category": "Changthang Plateau — Nomadic Changpa settlements",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹26,000–44,000"
+    },
+    "bookingTips": [
+      "Less touristy than Pangong; more authentic experience",
+      "Combine with Pangong for extended 9–10 day trip",
+      "Best season: May–September",
+      "Very cold; carry adequate warm clothing"
+    ]
+  },
+  {
+    "destination": "Kinnaur",
+    "landscape": " Apple orchards, Kinnaur Kailash, Sutlej river valley",
+    "state": " Himachal Pradesh",
+    "coordinates": {
+      "latitude": " 31.5836°N",
+      "longitude": "78.4712°E"
+    },
+    "permits": " Inner Line Permit for areas near Tibet border",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Chandigarh → Sarahan (Bhimakali Temple)"
+      },
+      {
+        "day": 3,
+        "plan": "Sarahan → Sangla Valley (apple orchards + Kamru Fort)"
+      },
+      {
+        "day": 4,
+        "plan": "Chitkul village (last Indian village on Tibet border)"
+      },
+      {
+        "day": 5,
+        "plan": "Sangla → Kalpa (Kinnaur Kailash views + Reckong Peo)"
+      },
+      {
+        "day": 6,
+        "plan": "Kalpa sightseeing + Suicide Point + monastery"
+      },
+      {
+        "day": 7,
+        "plan": "Kalpa → Shimla → Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (circuit)",
+          "low": 4000,
+          "typical": 8000,
+          "notes": "Shared taxi/bus"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 4800,
+          "typical": 9000,
+          "notes": "₹800–1,500/night homestays"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 2100,
+          "typical": 3500,
+          "notes": "₹300–500/day"
+        },
+        {
+          "item": "Permits (if going to restricted areas)",
+          "low": 0,
+          "typical": 500,
+          "notes": "Some areas need ILP"
+        },
+        {
+          "item": "Local transport & activities",
+          "low": 600,
+          "typical": 1500,
+          "notes": "Local taxi, entry fees"
+        },
+        {
+          "item": "Misc",
+          "low": 500,
+          "typical": 1000,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "13200",
+        "typical": "26500",
+        "typicalRange": "Typical: ₹18k–30k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle (chartered)",
+          "perPerson": "2,500–5,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "3,200–6,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,800–3,000"
+        },
+        {
+          "category": "Permits",
+          "perPerson": "0–400"
+        },
+        {
+          "category": "Local transport",
+          "perPerson": "400–1,000"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "400–800"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Chitkul — Last Indian village, stunning valley views",
+          "perPerson": ""
+        },
+        {
+          "category": "Kalpa — Kinnaur Kailash sunrise views",
+          "perPerson": ""
+        },
+        {
+          "category": "Sangla Valley — Apple orchards, Kamru Fort",
+          "perPerson": ""
+        },
+        {
+          "category": "Bhimakali Temple — Ancient temple at Sarahan",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹13,000–22,000"
+    },
+    "bookingTips": [
+      "Apple season (August–October) is spectacular",
+      "Combine with Spiti for extended circuit",
+      "Best season: April–June, September–November",
+      "Some areas near border need Inner Line Permit"
+    ]
+  },
+  {
+    "destination": "Araku Valley",
+    "landscape": " Coffee plantations, tribal culture, Eastern Ghats hills",
+    "state": " Andhra Pradesh",
+    "coordinates": {
+      "latitude": " 18.3273°N",
+      "longitude": "82.8758°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Vizag beach + evening RK Beach + Kailasagiri ropeway"
+      },
+      {
+        "day": 3,
+        "plan": "Toy train: Vizag → Araku (most scenic rail journey in India!)"
+      },
+      {
+        "day": 4,
+        "plan": "Borra Caves + Tribal Museum + coffee plantation visit"
+      },
+      {
+        "day": 5,
+        "plan": "Padmapuram Gardens + Chaparai waterfalls + local tribal village"
+      },
+      {
+        "day": 6,
+        "plan": "Return to Vizag; Submarine Museum + INS Kurusura"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Visakhapatnam → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Toy train (Vizag ↔ Araku)",
+          "low": 200,
+          "typical": 500,
+          "notes": "Scenic journey"
+        },
+        {
+          "item": "Road transfers (local)",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Araku local transport"
+        },
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3600,
+          "typical": 6600,
+          "notes": "₹600–1,100/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1800,
+          "typical": 3000,
+          "notes": "₹250–400/day"
+        },
+        {
+          "item": "Entry fees & activities",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Borra caves, museum"
+        },
+        {
+          "item": "Misc",
+          "low": 400,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "7600",
+        "typical": "15100",
+        "typicalRange": "Typical: ₹12k–18k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Toy train",
+          "perPerson": "150–400"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,400–4,400"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,500–2,500"
+        },
+        {
+          "category": "Local transport (shared)",
+          "perPerson": "250–600"
+        },
+        {
+          "category": "Entry fees",
+          "perPerson": "300–800"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–600"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Toy Train Journey — 58 tunnels, stunning valley views",
+          "perPerson": ""
+        },
+        {
+          "category": "Borra Caves — Million-year-old limestone caves",
+          "perPerson": ""
+        },
+        {
+          "category": "Coffee Plantations — Fresh Araku coffee tasting",
+          "perPerson": ""
+        },
+        {
+          "category": "Tribal Museum — Authentic tribal heritage",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹8,000–13,000"
+    },
+    "bookingTips": [
+      "Toy train tickets book fast; reserve early",
+      "Araku coffee is famous; buy at source",
+      "Best season: October–March",
+      "Combine with Vizag beach for complete experience"
+    ]
+  },
+  {
+    "destination": "Valparai",
+    "landscape": " Tea estates, Western Ghats, rainforest, wildlife",
+    "state": " Tamil Nadu",
+    "coordinates": {
+      "latitude": " 10.3271°N",
+      "longitude": "76.9499°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Road: Coimbatore → Valparai (40 hairpin bends!); evening walk"
+      },
+      {
+        "day": 3,
+        "plan": "Sholayar Dam + Monkey Falls + Balaji Temple"
+      },
+      {
+        "day": 4,
+        "plan": "Nallamudi viewpoint + tea factory visit + sunset at estate"
+      },
+      {
+        "day": 5,
+        "plan": "Athirapally Falls day trip (Kerala border) — India's Niagara"
+      },
+      {
+        "day": 6,
+        "plan": "Grass Hills + wildlife spotting + local village"
+      },
+      {
+        "day": 7,
+        "plan": "Valparai → Coimbatore → Flight/Train to Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Road transfers (Coimbatore ↔ Valparai)",
+          "low": 800,
+          "typical": 2000,
+          "notes": "Shared taxi/bus"
+        },
+        {
+          "item": "Accommodation (6 nights, estate bungalows)",
+          "low": 4800,
+          "typical": 9000,
+          "notes": "₹800–1,500/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 2100,
+          "typical": 3500,
+          "notes": "₹300–500/day"
+        },
+        {
+          "item": "Athirapally day trip",
+          "low": 800,
+          "typical": 2000,
+          "notes": "Taxi + entry"
+        },
+        {
+          "item": "Local transport & activities",
+          "low": 500,
+          "typical": 1500,
+          "notes": "Tea tours, jeep safaris"
+        },
+        {
+          "item": "Misc",
+          "low": 500,
+          "typical": 1000,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "12500",
+        "typical": "27000",
+        "typicalRange": "Typical: ₹15k–24k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared vehicle",
+          "perPerson": "500–1,200"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "3,200–6,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,800–3,000"
+        },
+        {
+          "category": "Athirapally trip (shared)",
+          "perPerson": "500–1,200"
+        },
+        {
+          "category": "Activities",
+          "perPerson": "350–1,000"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "400–800"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Tea Estates — Endless green carpets of tea gardens",
+          "perPerson": ""
+        },
+        {
+          "category": "Athirapally Falls — Largest waterfall in South India",
+          "perPerson": ""
+        },
+        {
+          "category": "Sholayar Dam — Scenic reservoir views",
+          "perPerson": ""
+        },
+        {
+          "category": "Wildlife — Lion-tailed macaques, elephants, Nilgiri tahr",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹10,000–17,000"
+    },
+    "bookingTips": [
+      "Stay in estate bungalows for authentic experience",
+      "40 hairpin bends road is an adventure itself",
+      "Best season: September–May (monsoon has heavy rain)",
+      "Carry light woollens; mornings are cool"
+    ]
+  }
+]

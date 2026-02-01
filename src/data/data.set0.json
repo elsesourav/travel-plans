@@ -1,0 +1,1253 @@
+[
+  {
+    "destination": "Varanasi",
+    "landscape": "River ghats, temples, narrow old-city lanes (Ganga sunrise + Ganga Aarti)",
+    "coordinates": {
+      "latitude": "25.3176°N",
+      "longitude": "82.9739°E"
+    },
+    "permits": "Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 1,
+        "plan": "Train: Kolkata → Varanasi (arrive evening)"
+      },
+      {
+        "day": 2,
+        "plan": "Sunrise boat on Ganga + Ghat walk + evening Ganga Aarti (Dashashwamedh / Namo Ghat)"
+      },
+      {
+        "day": 3,
+        "plan": "Temple tours (Kashi Vishwanath) + old city lanes + local markets"
+      },
+      {
+        "day": 4,
+        "plan": "Full day trip to Sarnath (Buddhist site) + return by evening"
+      },
+      {
+        "day": 5,
+        "plan": "Heritage walk / silk market / optional cooking class or more ghats"
+      },
+      {
+        "day": 6,
+        "plan": "Free / buffer day (rest, extra boat, photography)"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Varanasi → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Train (Kolkata ↔ Varanasi — sleeper/3A round trip)",
+          "low": 800,
+          "typical": 2000,
+          "notes": "Sleeper to AC 3A range"
+        },
+        {
+          "item": "Accommodation (6 nights, budget guesthouse)",
+          "low": 3000,
+          "typical": 6000,
+          "notes": "₹400–1,200/night"
+        },
+        {
+          "item": "Food (7 days, local meals)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–400/day"
+        },
+        {
+          "item": "Sunrise boat (Ganga)",
+          "low": 250,
+          "typical": 800,
+          "notes": "Shared boat starts ₹250"
+        },
+        {
+          "item": "Local transport & guides",
+          "low": 400,
+          "typical": 1500,
+          "notes": "Auto/boat/short taxis"
+        },
+        {
+          "item": "Sarnath day trip",
+          "low": 300,
+          "typical": 1000,
+          "notes": "Transport + entry + guide"
+        },
+        {
+          "item": "Misc (shopping, tips)",
+          "low": 300,
+          "typical": 1000,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": 6450,
+        "typical": 14800,
+        "typicalRange": "₹9k–13k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Train tickets (3A or sleeper)",
+          "perPerson": "400–1,800"
+        },
+        {
+          "category": "Shared hotel rooms (3 rooms)",
+          "perPerson": "3,000–4,500"
+        },
+        {
+          "category": "Food (local)",
+          "perPerson": "2,000–2,500"
+        },
+        {
+          "category": "Ganga boat (shared)",
+          "perPerson": "250–600"
+        },
+        {
+          "category": "Local transport (shared autos)",
+          "perPerson": "200–700"
+        },
+        {
+          "category": "Sarnath trip (sharing car)",
+          "perPerson": "200–800"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–800"
+        }
+      ],
+      "total": "₹6,350–11,700"
+    },
+    "bookingTips": [
+      "Book train tickets early via IRCTC / MakeMyTrip / ixigo",
+      "Ganga Aarti is free from ghats; pay only for boat view (shared starts ₹250)",
+      "Stay near Assi Ghat or Cantt area for quieter nights"
+    ]
+  },
+  {
+    "destination": "Hampi",
+    "landscape": "Boulder-strewn rocky hills, UNESCO ruins, temples, river islands",
+    "coordinates": {
+      "latitude": "15.3350°N",
+      "longitude": "76.4600°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Arrival + rest / sunset viewpoint near Hampi Bazaar"
+      },
+      {
+        "day": 3,
+        "plan": "Full day: Hampi ruins (Virupaksha, Vittala, stone chariot) — bike/scooter day"
+      },
+      {
+        "day": 4,
+        "plan": "Hills & viewpoints (Matanga Hill sunrise, monkey temple) + Coracle/river area"
+      },
+      {
+        "day": 5,
+        "plan": "Local village walk / heritage sites + craft shops"
+      },
+      {
+        "day": 6,
+        "plan": "Buffer / slow day / extra spots + relax by the river"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Hospet → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3000,
+          "typical": 6000,
+          "notes": "₹500–1,200/night"
+        },
+        {
+          "item": "Food (7 days, local)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–400/day"
+        },
+        {
+          "item": "Bike/scooter rental (1–2 days)",
+          "low": 800,
+          "typical": 1400,
+          "notes": "₹399–599/day"
+        },
+        {
+          "item": "Local transport & entry fees",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Autos, guides, donations"
+        },
+        {
+          "item": "Misc (souvenirs)",
+          "low": 300,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "7100",
+        "typical": "14700",
+        "typicalRange": "Typical: ₹10k–14k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared hotel rooms (3 rooms)",
+          "perPerson": "3,000–4,800"
+        },
+        {
+          "category": "Food (basic)",
+          "perPerson": "2,000–2,500"
+        },
+        {
+          "category": "Bike rental (shared cost)",
+          "perPerson": "300–600"
+        },
+        {
+          "category": "Local transport / entry",
+          "perPerson": "300–900"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "300–800"
+        }
+      ],
+      "total": "₹6,650–12,000"
+    },
+    "bookingTips": [
+      "Book train early; alternative route: Kolkata → Bengaluru + bus to Hampi",
+      "Bike/scooter is cheapest way to explore ruins (₹399/day onwards)",
+      "Stay in Hampi Bazaar or Kamalapura for easy access"
+    ]
+  },
+  {
+    "destination": "Bodh Gaya",
+    "landscape": " Spiritual town, Buddhist pilgrimage site, calm environment",
+    "state": " Bihar",
+    "coordinates": {
+      "latitude": " 24.6961°N",
+      "longitude": "84.9869°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Mahabodhi Temple + Bodhi Tree + morning meditation"
+      },
+      {
+        "day": 3,
+        "plan": "Visit international monasteries (Thai, Japanese, Tibetan, Chinese)"
+      },
+      {
+        "day": 4,
+        "plan": "Day trip to Rajgir & Nalanda University ruins"
+      },
+      {
+        "day": 5,
+        "plan": "Great Buddha Statue + Archaeological Museum + local markets"
+      },
+      {
+        "day": 6,
+        "plan": "Sujata Kuti + Dungeshwari Cave (where Buddha meditated)"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Gaya → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 2400,
+          "typical": 4800,
+          "notes": "₹400–800/night monasteries"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1200,
+          "typical": 2100,
+          "notes": "₹170–300/day"
+        },
+        {
+          "item": "Rajgir/Nalanda day trip",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Shared taxi + entry"
+        },
+        {
+          "item": "Local transport",
+          "low": 300,
+          "typical": 800,
+          "notes": "Auto/cycle rickshaw"
+        },
+        {
+          "item": "Misc",
+          "low": 200,
+          "typical": 600,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "5000",
+        "typical": "10800",
+        "typicalRange": "Typical: ₹6k–10k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "1,600–3,200"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,200–1,800"
+        },
+        {
+          "category": "Rajgir trip (shared vehicle)",
+          "perPerson": "200–500"
+        },
+        {
+          "category": "Local transport",
+          "perPerson": "150–400"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "150–400"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Mahabodhi Temple — UNESCO site, where Buddha attained enlightenment",
+          "perPerson": ""
+        },
+        {
+          "category": "Bodhi Tree — Sacred fig tree descendant",
+          "perPerson": ""
+        },
+        {
+          "category": "International Monasteries — Thai, Japanese, Tibetan, Chinese, Bhutanese",
+          "perPerson": ""
+        },
+        {
+          "category": "Rajgir & Nalanda — Ancient Buddhist university ruins",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹4,500–8,000"
+    },
+    "bookingTips": [
+      "Many monasteries offer accommodation at very low rates",
+      "Book train tickets early via IRCTC",
+      "Best season: October–March",
+      "Carry light cotton clothes and comfortable walking shoes"
+    ]
+  },
+  {
+    "destination": "Ayodhya",
+    "landscape": " Heritage town, Ram Janmabhoomi, Saryu river ghats",
+    "state": " Uttar Pradesh",
+    "coordinates": {
+      "latitude": " 26.7922°N",
+      "longitude": "82.1998°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Arrive morning; Ram Mandir darshan + Saryu Ghat evening aarti"
+      },
+      {
+        "day": 3,
+        "plan": "Hanuman Garhi + Kanak Bhawan + Nageshwarnath Temple"
+      },
+      {
+        "day": 4,
+        "plan": "Saryu river boat ride + Guptar Ghat + Treta Ke Thakur"
+      },
+      {
+        "day": 5,
+        "plan": "Day trip to Naimisharanya (optional) or local exploration"
+      },
+      {
+        "day": 6,
+        "plan": "Ram Ki Paidi ghats + local markets + heritage walk"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Ayodhya → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 2400,
+          "typical": 4200,
+          "notes": "₹400–700/night dharamshalas"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1200,
+          "typical": 2100,
+          "notes": "₹170–300/day"
+        },
+        {
+          "item": "Local transport",
+          "low": 300,
+          "typical": 800,
+          "notes": "E-rickshaw, auto"
+        },
+        {
+          "item": "Saryu boat ride",
+          "low": 100,
+          "typical": 300,
+          "notes": "Shared boat cheap"
+        },
+        {
+          "item": "Misc",
+          "low": 200,
+          "typical": 600,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "4800",
+        "typical": "9800",
+        "typicalRange": "Typical: ₹6k–9k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "1,500–2,800"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,200–1,800"
+        },
+        {
+          "category": "Local transport (shared)",
+          "perPerson": "150–400"
+        },
+        {
+          "category": "Boat ride",
+          "perPerson": "80–200"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "150–400"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Ram Mandir — Newly built grand temple at Ram Janmabhoomi",
+          "perPerson": ""
+        },
+        {
+          "category": "Hanuman Garhi — 10th century temple on hilltop",
+          "perPerson": ""
+        },
+        {
+          "category": "Saryu Ghats — Evening aarti, morning boat rides",
+          "perPerson": ""
+        },
+        {
+          "category": "Kanak Bhawan — Beautiful palace-temple",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹4,000–7,000"
+    },
+    "bookingTips": [
+      "Dharamshalas offer very affordable stays",
+      "Book darshan slots online for Ram Mandir during peak times",
+      "Best season: October–March",
+      "Avoid major festival days for less crowd"
+    ]
+  },
+  {
+    "destination": "Sundarbans",
+    "landscape": " Mangrove forest, river delta, Royal Bengal Tigers",
+    "state": " West Bengal",
+    "coordinates": {
+      "latitude": " 21.9497°N",
+      "longitude": "88.8965°E"
+    },
+    "permits": " Forest entry permit (usually included in tour packages)",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Sajnekhali Tiger Reserve + watchtower + bird sanctuary"
+      },
+      {
+        "day": 3,
+        "plan": "Sudhanyakhali watchtower + deep forest boat safari"
+      },
+      {
+        "day": 4,
+        "plan": "Dobanki watchtower (canopy walk) + Netidhopani ruins"
+      },
+      {
+        "day": 5,
+        "plan": "Village visit + local fishing community + handicrafts"
+      },
+      {
+        "day": 6,
+        "plan": "Pakhiralay (bird island) + mangrove exploration + sunset cruise"
+      },
+      {
+        "day": 7,
+        "plan": "Return boat to Godkhali → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Boat + forest permits",
+          "low": 1500,
+          "typical": 3000,
+          "notes": "Usually in package"
+        },
+        {
+          "item": "Accommodation (6 nights, eco-lodge)",
+          "low": 3000,
+          "typical": 5400,
+          "notes": "₹500–900/night"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–350/day"
+        },
+        {
+          "item": "Safari & activities",
+          "low": 800,
+          "typical": 1500,
+          "notes": "Watchtower fees, guides"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 600,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "7400",
+        "typical": "14000",
+        "typicalRange": "Typical: ₹7k–12k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared boat (charter split)",
+          "perPerson": "1,000–2,000"
+        },
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,000–3,600"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,200–2,000"
+        },
+        {
+          "category": "Safari & permits",
+          "perPerson": "500–1,000"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–400"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Sajnekhali Bird Sanctuary — Diverse bird species, crocodile enclosure",
+          "perPerson": ""
+        },
+        {
+          "category": "Tiger Watchtowers — Sudhanyakhali, Dobanki (canopy walk)",
+          "perPerson": ""
+        },
+        {
+          "category": "Mangrove Boat Safari — Narrow creeks, wildlife spotting",
+          "perPerson": ""
+        },
+        {
+          "category": "Village Life — Fishing communities, honey collectors",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹5,000–9,000"
+    },
+    "bookingTips": [
+      "Book tour packages from Kolkata for hassle-free experience",
+      "2N/3D packages start ~₹4,500; 3N/4D from ₹6,500",
+      "Best season: October–March (avoid monsoon)",
+      "Carry binoculars, insect repellent, light clothes"
+    ]
+  },
+  {
+    "destination": "Puri",
+    "landscape": " Beach town, Jagannath Temple, coastal Odisha",
+    "state": " Odisha",
+    "coordinates": {
+      "latitude": " 19.8135°N",
+      "longitude": "85.8312°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Jagannath Temple darshan + Puri beach + local market"
+      },
+      {
+        "day": 3,
+        "plan": "Day trip to Konark Sun Temple (35 km) + Chandrabhaga Beach"
+      },
+      {
+        "day": 4,
+        "plan": "Chilika Lake boat ride + Kalijai Temple + dolphin spotting"
+      },
+      {
+        "day": 5,
+        "plan": "Raghurajpur artist village + Pipili appliqué craft village"
+      },
+      {
+        "day": 6,
+        "plan": "Beach day + Gundicha Temple + Sudarshan Crafts Museum"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Puri → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3000,
+          "typical": 5400,
+          "notes": "₹500–900/night sea-facing"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–350/day seafood"
+        },
+        {
+          "item": "Konark day trip",
+          "low": 300,
+          "typical": 800,
+          "notes": "Shared auto/bus"
+        },
+        {
+          "item": "Chilika Lake trip",
+          "low": 500,
+          "typical": 1200,
+          "notes": "Boat + transport"
+        },
+        {
+          "item": "Local transport",
+          "low": 300,
+          "typical": 800,
+          "notes": "Beach auto, e-rickshaw"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 700,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "6400",
+        "typical": "12900",
+        "typicalRange": "Typical: ₹8k–12k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,000–3,600"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,200–2,000"
+        },
+        {
+          "category": "Konark trip (shared)",
+          "perPerson": "150–400"
+        },
+        {
+          "category": "Chilika trip (shared boat)",
+          "perPerson": "300–700"
+        },
+        {
+          "category": "Local transport",
+          "perPerson": "150–500"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–500"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Jagannath Temple — One of Char Dham, ancient Hindu temple",
+          "perPerson": ""
+        },
+        {
+          "category": "Puri Beach — Golden sand beach, sunrise views",
+          "perPerson": ""
+        },
+        {
+          "category": "Konark Sun Temple — UNESCO heritage, 13th century marvel",
+          "perPerson": ""
+        },
+        {
+          "category": "Chilika Lake — Asia's largest brackish water lagoon",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹5,500–9,000"
+    },
+    "bookingTips": [
+      "Book train tickets early; Howrah-Puri Express is popular",
+      "Seafront hotels cost more; budget options near main road",
+      "Best season: October–March",
+      "Rath Yatra (June/July) is spectacular but very crowded",
+      " 🟡 VERY LOW BUDGET (₹10k–₹14k)"
+    ]
+  },
+  {
+    "destination": "Gokarna",
+    "landscape": " Coastal hills, pristine beaches, temple town",
+    "state": " Karnataka",
+    "coordinates": {
+      "latitude": " 14.5479°N",
+      "longitude": "74.3188°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Arrive morning; Om Beach + sunset + beachside café"
+      },
+      {
+        "day": 3,
+        "plan": "Kudle Beach + beach trek to Half Moon Beach"
+      },
+      {
+        "day": 4,
+        "plan": "Paradise Beach + kayaking/snorkeling (optional)"
+      },
+      {
+        "day": 5,
+        "plan": "Mahabaleshwar Temple + Gokarna Beach + town exploration"
+      },
+      {
+        "day": 6,
+        "plan": "Mirjan Fort day trip + Yana Caves (optional) + beach relaxation"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Gokarna Road → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3600,
+          "typical": 6000,
+          "notes": "₹600–1,000/night beach shacks"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1800,
+          "typical": 3000,
+          "notes": "₹250–400/day café food"
+        },
+        {
+          "item": "Beach activities",
+          "low": 500,
+          "typical": 1500,
+          "notes": "Kayaking, snorkeling"
+        },
+        {
+          "item": "Local transport",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Auto, boat to beaches"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 800,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "7800",
+        "typical": "15300",
+        "typicalRange": "Typical: ₹10k–15k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,400–4,000"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,500–2,500"
+        },
+        {
+          "category": "Beach activities",
+          "perPerson": "300–1,000"
+        },
+        {
+          "category": "Local transport (shared)",
+          "perPerson": "250–600"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–500"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Om Beach — Famous Om-shaped beach, cafés",
+          "perPerson": ""
+        },
+        {
+          "category": "Kudle Beach — Backpacker favorite, sunset views",
+          "perPerson": ""
+        },
+        {
+          "category": "Paradise Beach — Secluded, boat access only",
+          "perPerson": ""
+        },
+        {
+          "category": "Mahabaleshwar Temple — Ancient Shiva temple",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹7,000–11,000"
+    },
+    "bookingTips": [
+      "Beach shacks/huts offer best budget stays",
+      "Book train early for Konkan route (scenic)",
+      "Best season: October–March",
+      "Trek between beaches to save on boat costs"
+    ]
+  },
+  {
+    "destination": "Shantiniketan",
+    "landscape": " Cultural town, Tagore's university, rural Bengal",
+    "state": " West Bengal",
+    "coordinates": {
+      "latitude": " 23.6814°N",
+      "longitude": "87.6855°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Uttarayan (Tagore's house) + Kala Bhavana art gallery"
+      },
+      {
+        "day": 3,
+        "plan": "Amar Kutir handicrafts + Sonajhuri forest + Saturday haat"
+      },
+      {
+        "day": 4,
+        "plan": "Day trip to Kenduli mela / Bakreswar hot springs"
+      },
+      {
+        "day": 5,
+        "plan": "Cycle ride through villages + pottery village Khoai"
+      },
+      {
+        "day": 6,
+        "plan": "Kopai river bank + evening Baul music + local crafts"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Bolpur → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 2400,
+          "typical": 4800,
+          "notes": "₹400–800/night guesthouses"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1200,
+          "typical": 2100,
+          "notes": "₹170–300/day local Bengali"
+        },
+        {
+          "item": "Cycle rental",
+          "low": 300,
+          "typical": 600,
+          "notes": "₹50–100/day"
+        },
+        {
+          "item": "Entry fees & guides",
+          "low": 200,
+          "typical": 500,
+          "notes": "Visva-Bharati, museums"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 700,
+          "notes": "Handicrafts, tips"
+        }
+      ],
+      "total": {
+        "low": "4600",
+        "typical": "9200",
+        "typicalRange": "Typical: ₹6k–10k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "1,800–3,200"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,000–1,800"
+        },
+        {
+          "category": "Cycle rental",
+          "perPerson": "250–500"
+        },
+        {
+          "category": "Entry fees",
+          "perPerson": "150–400"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–500"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Visva-Bharati University — Tagore's open-air school",
+          "perPerson": ""
+        },
+        {
+          "category": "Uttarayan — Tagore's residence, now museum",
+          "perPerson": ""
+        },
+        {
+          "category": "Sonajhuri — Saturday handicraft haat (market)",
+          "perPerson": ""
+        },
+        {
+          "category": "Baul Singers — Living folk music tradition",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹4,500–7,500"
+    },
+    "bookingTips": [
+      "Visit during Poush Mela (December) or Basanta Utsav (March)",
+      "Book guesthouses near university campus",
+      "Best season: October–March",
+      "Cycle is the best way to explore"
+    ]
+  },
+  {
+    "destination": "Mandarmani",
+    "landscape": " Long quiet beach, red crabs, weekend getaway",
+    "state": " West Bengal",
+    "coordinates": {
+      "latitude": " 21.6683°N",
+      "longitude": "87.7059°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Sunrise beach walk + red crab spotting + ATV ride"
+      },
+      {
+        "day": 3,
+        "plan": "Day trip to Digha + Udaipur Beach + Chandaneswar Temple"
+      },
+      {
+        "day": 4,
+        "plan": "Tajpur (nearby quiet beach) + kayaking/boat ride"
+      },
+      {
+        "day": 5,
+        "plan": "Beach relaxation + seafood lunch + sunset photography"
+      },
+      {
+        "day": 6,
+        "plan": "Shankarpur fishing village + fresh catch + evening bonfire"
+      },
+      {
+        "day": 7,
+        "plan": "Mandarmani → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 3000,
+          "typical": 5400,
+          "notes": "₹500–900/night beach resorts"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1400,
+          "typical": 2500,
+          "notes": "₹200–350/day seafood"
+        },
+        {
+          "item": "Beach activities (ATV, kayak)",
+          "low": 400,
+          "typical": 1000,
+          "notes": "Optional activities"
+        },
+        {
+          "item": "Day trips (Digha, Tajpur)",
+          "low": 300,
+          "typical": 800,
+          "notes": "Shared auto"
+        },
+        {
+          "item": "Misc",
+          "low": 200,
+          "typical": 500,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "5800",
+        "typical": "11400",
+        "typicalRange": "Typical: ₹6k–10k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "2,000–3,600"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,200–2,000"
+        },
+        {
+          "category": "Beach activities",
+          "perPerson": "300–700"
+        },
+        {
+          "category": "Day trips (shared)",
+          "perPerson": "150–500"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "150–400"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "13 km Beach Stretch — Longest drivable beach in Bengal",
+          "perPerson": ""
+        },
+        {
+          "category": "Red Crabs — Unique sighting during low tide",
+          "perPerson": ""
+        },
+        {
+          "category": "Tajpur Beach — Quieter alternative",
+          "perPerson": ""
+        },
+        {
+          "category": "Shankarpur — Fishing village, fresh seafood",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹4,500–8,000"
+    },
+    "bookingTips": [
+      "Weekend rates higher; visit weekdays for deals",
+      "Beachfront resorts cost more than roadside hotels",
+      "Best season: October–March",
+      "Carry sunscreen and beach essentials"
+    ]
+  },
+  {
+    "destination": "Ujjain",
+    "landscape": " Temple town, Shipra river, Mahakaleshwar Jyotirlinga",
+    "state": " Madhya Pradesh",
+    "coordinates": {
+      "latitude": " 23.1765°N",
+      "longitude": "75.7885°E"
+    },
+    "permits": " Not required for Indian citizens",
+    "itinerary": [
+      {
+        "day": 2,
+        "plan": "Arrive morning; Mahakaleshwar Temple + Bhasma Aarti (pre-book)"
+      },
+      {
+        "day": 3,
+        "plan": "Ram Ghat + Shipra river boat ride + evening aarti"
+      },
+      {
+        "day": 4,
+        "plan": "Day trip to Omkareshwar (one of 12 Jyotirlingas) — ~140 km"
+      },
+      {
+        "day": 5,
+        "plan": "Kal Bhairav Temple + Ved Shala (ancient observatory) + Harsiddhi Temple"
+      },
+      {
+        "day": 6,
+        "plan": "Sandipani Ashram + ISKCON + local markets"
+      },
+      {
+        "day": 7,
+        "plan": "Train: Ujjain → Kolkata"
+      }
+    ],
+    "budgetBreakdown": {
+      "perPerson": [
+        {
+          "item": "Accommodation (6 nights)",
+          "low": 2400,
+          "typical": 4800,
+          "notes": "₹400–800/night dharamshalas"
+        },
+        {
+          "item": "Food (7 days)",
+          "low": 1200,
+          "typical": 2100,
+          "notes": "₹170–300/day"
+        },
+        {
+          "item": "Omkareshwar day trip",
+          "low": 600,
+          "typical": 1500,
+          "notes": "Shared vehicle"
+        },
+        {
+          "item": "Local transport",
+          "low": 300,
+          "typical": 800,
+          "notes": "Auto, e-rickshaw"
+        },
+        {
+          "item": "Misc",
+          "low": 300,
+          "typical": 700,
+          "notes": ""
+        }
+      ],
+      "total": {
+        "low": "5600",
+        "typical": "12100",
+        "typicalRange": "Typical: ₹8k–12k"
+      }
+    },
+    "groupOf6": {
+      "breakdown": [
+        {
+          "category": "Shared rooms (3 rooms)",
+          "perPerson": "1,600–3,200"
+        },
+        {
+          "category": "Food",
+          "perPerson": "1,000–1,800"
+        },
+        {
+          "category": "Omkareshwar (shared cab)",
+          "perPerson": "350–800"
+        },
+        {
+          "category": "Local transport",
+          "perPerson": "150–500"
+        },
+        {
+          "category": "Misc",
+          "perPerson": "200–500"
+        },
+        {
+          "category": " Key Attractions",
+          "perPerson": ""
+        },
+        {
+          "category": "Mahakaleshwar Temple — One of 12 Jyotirlingas, Bhasma Aarti",
+          "perPerson": ""
+        },
+        {
+          "category": "Ram Ghat — Shipra river ghats, evening aarti",
+          "perPerson": ""
+        },
+        {
+          "category": "Omkareshwar — Island temple, another Jyotirlinga",
+          "perPerson": ""
+        },
+        {
+          "category": "Ved Shala — Ancient astronomical observatory",
+          "perPerson": ""
+        }
+      ],
+      "total": "₹5,500–9,000"
+    },
+    "bookingTips": [
+      "Book Bhasma Aarti online in advance (limited slots)",
+      "Dharamshalas near temple very affordable",
+      "Best season: October–March",
+      "Simhastha Kumbh Mela every 12 years (very crowded)"
+    ]
+  }
+]
