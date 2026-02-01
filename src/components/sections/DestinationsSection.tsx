@@ -2,7 +2,7 @@ import { destinations } from "@/data/destinations";
 import type { Destination } from "@/data/types";
 import { AnimatePresence, motion } from "framer-motion";
 import { NavArrowDown } from "iconoir-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { DestinationCard } from "./DestinationCard";
@@ -11,10 +11,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const INITIAL_SHOW_COUNT = 4;
+const INITIAL_SHOW_COUNT = 6;
 
 export function DestinationsSection() {
   const [showAll, setShowAll] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  const toggleShowAll = () => {
+    if (!showAll) {
+      sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    setShowAll(!showAll);
+  };
 
   const visibleDestinations = showAll
     ? destinations
@@ -23,7 +31,11 @@ export function DestinationsSection() {
   const remainingCount = destinations.length - INITIAL_SHOW_COUNT;
 
   return (
-    <section id="destinations" className="py-20 md:py-32 bg-surface-primary">
+    <section
+      id="destinations"
+      ref={sectionRef}
+      className="py-20 md:py-32 bg-surface-primary"
+    >
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
@@ -37,7 +49,7 @@ export function DestinationsSection() {
             Explore Destinations
           </span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-content-primary mb-6">
-            8 Incredible Places
+            {destinations.length} Incredible Places
           </h2>
           <p className="text-lg text-content-secondary max-w-2xl mx-auto">
             From spiritual Varanasi to adventurous Ladakh, each destination
@@ -45,17 +57,17 @@ export function DestinationsSection() {
           </p>
         </motion.div>
 
-        {/* Destinations Row Layout - Desktop */}
-        <div className="hidden lg:flex flex-col gap-8">
+        {/* Destinations List Layout - Tablet/Desktop */}
+        <div className="hidden md:flex flex-col gap-8 md:gap-12">
           <AnimatePresence mode="sync">
             {visibleDestinations.map(
               (destination: Destination, index: number) => (
                 <motion.div
                   key={destination.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <DestinationCard
                     destination={destination}
@@ -75,7 +87,7 @@ export function DestinationsSection() {
               className="flex justify-center mt-4"
             >
               <button
-                onClick={() => setShowAll(!showAll)}
+                onClick={toggleShowAll}
                 className="group flex items-center gap-3 px-8 py-4 bg-surface-secondary hover:bg-surface-tertiary border border-border-primary rounded-2xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
                 <span className="font-semibold text-content-primary">
@@ -95,8 +107,8 @@ export function DestinationsSection() {
           )}
         </div>
 
-        {/* Destinations Slider - Mobile/Tablet */}
-        <div className="lg:hidden">
+        {/* Destinations Slider - Mobile Only */}
+        <div className="md:hidden">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}

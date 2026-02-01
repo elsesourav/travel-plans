@@ -1,0 +1,143 @@
+import type { Destination } from '../types';
+
+export const chopta: Destination = {
+  "destination": "Chopta",
+  "state": "Uttarakhand",
+  "tagline": "Mini Switzerland of Uttarakhand",
+  "shortDescription": "Alpine meadows leading to the world's highest Shiva temple",
+  "description": "Chopta, at 2,680m, is a tiny hamlet surrounded by alpine meadows and dense rhododendron forests. It's the base for the spectacular Tungnath-Chandrashila trek — leading to the world's highest Shiva temple and 360-degree Himalayan panoramas. For trekkers seeking both spirituality and adventure, Chopta delivers magic without the crowds.",
+  "landscape": "Alpine meadows, Tungnath temple, Chandrashila peak",
+  "coordinates": {
+    "latitude": "30.4403°N",
+    "longitude": "79.2149°E"
+  },
+  "permits": "Not required for Indian citizens",
+  "bestSeason": "March to June, September to November",
+  "seasonNote": "Spring has rhododendron blooms. Autumn offers clear Himalayan views. Winter has heavy snow.",
+  "keyAttractions": [
+    "Tungnath Temple — World's highest Shiva temple (3,680m)",
+    "Chandrashila Peak — 360° Himalayan panorama at 4,000m",
+    "Deoria Tal — Pristine high-altitude lake reflecting mountains",
+    "Alpine Bugyals — Rolling meadows with wildflowers",
+    "Kedarnath Wildlife Sanctuary — Rich birdlife and wildlife"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Travel Day",
+      "plan": "Train: Kolkata → Haridwar (overnight). Or fly to Dehradun + car."
+    },
+    {
+      "day": 2,
+      "title": "Road to Chopta",
+      "plan": "Road: Haridwar → Chopta via Rishikesh, Devprayag (8 hours). Evening meadow walk."
+    },
+    {
+      "day": 3,
+      "title": "Tungnath Trek",
+      "plan": "Trek to Tungnath temple (3.5 km) + continue to Chandrashila summit (1.5 km) for sunrise/sunset"
+    },
+    {
+      "day": 4,
+      "title": "Deoria Tal",
+      "plan": "Trek to Deoria Tal lake from Sari village (3 km) + camping/picnic + return"
+    },
+    {
+      "day": 5,
+      "title": "Village Exploration",
+      "plan": "Explore Sari village + Rohini Bugyal meadows + local culture + birding"
+    },
+    {
+      "day": 6,
+      "title": "Leisure Day",
+      "plan": "Buffer day for weather / Kedarnath Wildlife Sanctuary birding / meadow relaxation"
+    },
+    {
+      "day": 7,
+      "title": "Departure",
+      "plan": "Chopta → Haridwar → Train/Flight to Kolkata"
+    }
+  ],
+  "budgetBreakdown": {
+    "perPerson": [
+      {
+        "item": "Train (Kolkata ↔ Haridwar round trip)",
+        "low": 800,
+        "typical": 2000,
+        "notes": "Or fly Dehradun ₹5,000–10,000"
+      },
+      {
+        "item": "Road transfers (Haridwar ↔ Chopta)",
+        "low": 2000,
+        "typical": 4000,
+        "notes": "Shared taxi"
+      },
+      {
+        "item": "Accommodation (6 nights)",
+        "low": 3000,
+        "typical": 6000,
+        "notes": "₹500–1,000/night camps/homestays"
+      },
+      {
+        "item": "Food (7 days)",
+        "low": 1800,
+        "typical": 3000,
+        "notes": "₹250–400/day"
+      },
+      {
+        "item": "Trek guides & porters",
+        "low": 500,
+        "typical": 1500,
+        "notes": "Optional but recommended"
+      },
+      {
+        "item": "Misc (tips, shopping)",
+        "low": 400,
+        "typical": 800,
+        "notes": ""
+      }
+    ],
+    "total": {
+      "low": 8500,
+      "typical": 17300,
+      "typicalRange": "₹12k–18k"
+    }
+  },
+  "groupOf6": {
+    "breakdown": [
+      {
+        "category": "Train tickets",
+        "perPerson": "800–2,000"
+      },
+      {
+        "category": "Shared vehicle",
+        "perPerson": "1,200–2,500"
+      },
+      {
+        "category": "Shared camps/homestays",
+        "perPerson": "2,000–4,000"
+      },
+      {
+        "category": "Food",
+        "perPerson": "1,500–2,500"
+      },
+      {
+        "category": "Trek guides",
+        "perPerson": "300–900"
+      },
+      {
+        "category": "Misc",
+        "perPerson": "300–600"
+      }
+    ],
+    "total": "₹6,100–12,500"
+  },
+  "bookingTips": [
+    "Winter (December–February) has heavy snow — trek routes may be closed",
+    "Carry warm clothes even in summer — temperatures drop at night",
+    "Start Chandrashila trek early (4-5 AM) for sunrise at summit",
+    "Camping gear available for rent locally at Chopta",
+    "Carry your own snacks — limited shops along trek routes"
+  ],
+  "slug": "chopta"
+};

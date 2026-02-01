@@ -23,10 +23,7 @@ export function Logo({ className, size = "md", variant = "full" }: LogoProps) {
 
       {variant === "full" && (
         <span
-          className={cn(
-            "font-display font-bold tracking-tight",
-            sizes[size].text,
-          )}
+          className={cn("font-bold tracking-tight font-sans", sizes[size].text)}
         >
           TravelPlans
         </span>

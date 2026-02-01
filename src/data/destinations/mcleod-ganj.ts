@@ -1,0 +1,153 @@
+import type { Destination } from '../types';
+
+export const mcleod_ganj: Destination = {
+  "destination": "McLeod Ganj",
+  "state": "Himachal Pradesh",
+  "tagline": "Little Lhasa of India",
+  "shortDescription": "Tibetan exile capital with monasteries, cafés, and Himalayan treks",
+  "description": "McLeod Ganj, the residence of the Dalai Lama and heart of the Tibetan exile community, offers a unique blend of spirituality, adventure, and café culture. Trek to Triund for stunning mountain views, explore Tibetan monasteries, and savor momos while soaking in the bohemian backpacker vibe of this charming hill station.",
+  "landscape": "Hill station, Tibetan culture, Dharamshala, Himalayan views",
+  "coordinates": {
+    "latitude": "32.2396°N",
+    "longitude": "76.3191°E"
+  },
+  "permits": "Not required for Indian citizens",
+  "bestSeason": "March to June, September to November",
+  "seasonNote": "Pleasant weather for trekking. Monsoon (July–August) has heavy rainfall. Check for Dalai Lama's public teachings schedule.",
+  "keyAttractions": [
+    "Tsuglagkhang Complex — Dalai Lama's residence and main temple",
+    "Triund Trek — Popular overnight trek with stunning Dhauladhar views",
+    "Bhagsu Waterfall — Scenic cascade with famous Shiva Café nearby",
+    "Norbulingka Institute — Tibetan arts, crafts, and culture center",
+    "Tibetan Museum — History of Tibet and the exile journey"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Travel Day",
+      "plan": "Train: Kolkata → Pathankot (overnight). Or fly to Dharamshala."
+    },
+    {
+      "day": 2,
+      "title": "Arrival & Exploration",
+      "plan": "Road: Pathankot → McLeod Ganj (4 hours). Tsuglagkhang Complex evening visit."
+    },
+    {
+      "day": 3,
+      "title": "Bhagsu Day",
+      "plan": "Bhagsu Nag Temple + Bhagsu Waterfall + Shiva Café + evening market stroll"
+    },
+    {
+      "day": 4,
+      "title": "Triund Trek",
+      "plan": "Triund trek (day trek or overnight camping). Stunning Dhauladhar panoramas."
+    },
+    {
+      "day": 5,
+      "title": "Culture Day",
+      "plan": "Tibetan Museum + Norbulingka Institute + local Tibetan markets + momos"
+    },
+    {
+      "day": 6,
+      "title": "Viewpoints",
+      "plan": "Dharamkot village + Naddi viewpoint sunrise + St. John's Church + cafés"
+    },
+    {
+      "day": 7,
+      "title": "Departure",
+      "plan": "McLeod Ganj → Pathankot → Train/Flight to Kolkata"
+    }
+  ],
+  "budgetBreakdown": {
+    "perPerson": [
+      {
+        "item": "Train (Kolkata ↔ Pathankot round trip)",
+        "low": 800,
+        "typical": 2000,
+        "notes": "Or fly Dharamshala ₹5,000–10,000"
+      },
+      {
+        "item": "Road transfers (Pathankot ↔ McLeod Ganj)",
+        "low": 600,
+        "typical": 1500,
+        "notes": "Shared taxi/bus"
+      },
+      {
+        "item": "Accommodation (6 nights)",
+        "low": 3600,
+        "typical": 7200,
+        "notes": "₹600–1,200/night"
+      },
+      {
+        "item": "Food (7 days)",
+        "low": 2000,
+        "typical": 3500,
+        "notes": "₹280–500/day café/Tibetan"
+      },
+      {
+        "item": "Triund trek (guide + camping)",
+        "low": 500,
+        "typical": 2000,
+        "notes": "Optional guide"
+      },
+      {
+        "item": "Local transport & entry",
+        "low": 400,
+        "typical": 1000,
+        "notes": "Auto, taxi"
+      },
+      {
+        "item": "Misc (shopping, tips)",
+        "low": 400,
+        "typical": 800,
+        "notes": ""
+      }
+    ],
+    "total": {
+      "low": 8300,
+      "typical": 18000,
+      "typicalRange": "₹12k–20k"
+    }
+  },
+  "groupOf6": {
+    "breakdown": [
+      {
+        "category": "Train tickets",
+        "perPerson": "800–2,000"
+      },
+      {
+        "category": "Shared vehicle",
+        "perPerson": "400–1,000"
+      },
+      {
+        "category": "Shared rooms (3 rooms)",
+        "perPerson": "2,400–4,800"
+      },
+      {
+        "category": "Food",
+        "perPerson": "1,800–3,000"
+      },
+      {
+        "category": "Triund trek",
+        "perPerson": "350–1,500"
+      },
+      {
+        "category": "Local transport",
+        "perPerson": "250–600"
+      },
+      {
+        "category": "Misc",
+        "perPerson": "300–600"
+      }
+    ],
+    "total": "₹6,300–13,500"
+  },
+  "bookingTips": [
+    "Check Dalai Lama's public teachings schedule online — life-changing experience",
+    "Tibetan cafés offer great food at reasonable prices — try thukpa and momos",
+    "Book Triund camping in advance during peak season (April–June)",
+    "Carry warm layers — evenings are cold even in summer",
+    "Explore Dharamkot for quieter yoga retreats and cafés"
+  ],
+  "slug": "mcleod-ganj"
+};

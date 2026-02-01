@@ -1,3 +1,9 @@
+export interface MultilingualInfo {
+  en: string;
+  hi: string;
+  bn: string;
+}
+
 export interface Destination {
   id: string;
   slug: string;
@@ -25,6 +31,7 @@ export interface Destination {
   costs: CostItem[];
   tips: string[];
   attractions: string[];
+  info?: MultilingualInfo;
 }
 
 export interface ItineraryDay {

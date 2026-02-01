@@ -1,15 +1,19 @@
 import { Layout } from "@/components/layout";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { DestinationPage, HomePage } from "@/pages";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="destination/:slug" element={<DestinationPage />} />
-      </Route>
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="destination/:slug" element={<DestinationPage />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
