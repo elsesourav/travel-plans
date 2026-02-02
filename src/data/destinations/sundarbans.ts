@@ -5,13 +5,58 @@ export const sundarbans: Destination = {
   id: "sundarbans",
   name: "Sundarbans",
   images: [
-    "https://images.unsplash.com/photo-1534759926787-89fa60520495?w=1200&q=80",
-    "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
-    "https://images.unsplash.com/photo-1585063560546-28db14a0a7d5?w=1200&q=80",
-    "https://images.unsplash.com/photo-1504006833117-8886a355efbf?w=1200&q=80",
-    "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1200&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
+    {
+      placeName: "Sajnekhali Tiger Reserve",
+      urls: [
+      "https://indiantigersafaris.com/wp-content/uploads/2024/09/sun-4-2.webp",
+      "https://wallpapercave.com/wp/wp9587310.jpg",
+      "https://indiantigersafaris.com/wp-content/uploads/2024/09/sun-banner-3.webp",
+      "https://assets.shortpedia.com/Voices/wp-content/uploads/2021/07/old-image-of-sunderbans-tiger-reserve.jpg",
+      "https://c8.alamy.com/comp/GJEG6F/entrance-to-the-sajnekhali-tiger-reserve-in-the-sundarbans-national-GJEG6F.jpg",
+      ],
+    },
+    {
+      placeName: "Sudhanyakhali Watchtower",
+      urls: [
+      "https://1.bp.blogspot.com/-41u9vMN-7bo/WIiv9OtGLaI/AAAAAAAAFrM/Yh1M5jmuQig2KbDQmxo3ntZDhJHFT9qiQCK4B/s1600/DSC04403.JPG",
+      "https://indiano.travel/wp-content/uploads/2022/02/Beautiful-inside-view-of-Sudhanyakhali-Watch-Tower-.webp",
+      "https://sundarbantours.in/assets/sundarban-images/sudhanyakhali-watch-tower56e97a98f959dc6218283add96c0d550202006040153.webp",
+      "https://sundarbanroyalbengaltourism.com/wp-content/uploads/2025/04/sudhanyakhali-min.jpg",
+      "https://media.istockphoto.com/id/1169169638/photo/sundarbans-river-delta-an-unesco-heritage-site-view-from-watch-tower-at-bonnie-camp.jpg?s=612x612&w=0&k=20&c=GAFNUBEdjpNyEk9_gPpgrZCL07gGaQckBXLTud0Euvo=",
+      ],
+    },
+    {
+      placeName: "Dobanki Watchtower",
+      urls: [
+      "https://c8.alamy.com/compfr/gjege9/dobanki-camp-dans-le-parc-national-des-sundarbans-west-bengal-india-gjege9.jpg",
+      "https://sundarbantours.in/assets/sundarban-images/dobanki-watch-towerbfabbe1064acd12de8e1d1fdb5a0238f202006040154.webp",
+      "https://www.nritravelogue.com/wp-content/uploads/2025/03/Dobanki-Watchtower-860x574.jpg",
+      "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2024/06/05113351/The-canopy-walk-at-the-Dobanki-Watch-Tower-1.jpg",
+      "https://sundarban-tour.com/res/image/meta-image/dobanki-watchtour.png",
+      ],
+    },
+    {
+      placeName: "Netidhopani",
+      urls: [
+      "https://c8.alamy.com/comp/2BRCD42/beautiful-landscape-of-sundarbans-that-shows-a-river-and-mangrove-trees-west-bengal-india-its-the-largest-delta-in-the-world-2BRCD42.jpg",
+      "https://c8.alamy.com/comp/2WM55NX/the-beautiful-rural-village-landscape-of-sundarban-island-at-west-bengal-in-india-2WM55NX.jpg",
+      "https://c8.alamy.com/comp/2WM54N0/the-beautiful-rural-village-landscape-of-sundarban-island-at-west-bengal-in-india-2WM54N0.jpg",
+      "https://c8.alamy.com/comp/2BRCDA5/beautiful-landscape-of-sundarbans-that-shows-a-river-and-mangrove-trees-west-bengal-india-its-the-largest-delta-in-the-world-2BRCDA5.jpg",
+      "https://c8.alamy.com/comp/2WM54N1/the-beautiful-rural-village-landscape-of-sundarban-island-at-west-bengal-in-india-2WM54N1.jpg",
+      ],
+    },
+    {
+      placeName: "Pakhiralay",
+      urls: [
+      "https://c8.alamy.com/comp/2BRCD3N/beautiful-landscape-of-sundarbans-that-shows-a-river-and-mangrove-trees-west-bengal-india-its-the-largest-delta-in-the-world-2BRCD3N.jpg",
+      "https://c8.alamy.com/comp/2XPPR2R/aerial-view-of-a-canoe-in-the-sundarbans-mangrove-area-pakhiralay-near-gosaba-south-24-parganas-district-west-bengal-india-asia-2XPPR2R.jpg",
+      "https://c8.alamy.com/comp/2BRCDA5/beautiful-landscape-of-sundarbans-that-shows-a-river-and-mangrove-trees-west-bengal-india-its-the-largest-delta-in-the-world-2BRCDA5.jpg",
+      "https://c8.alamy.com/comp/2BRCD42/beautiful-landscape-of-sundarbans-that-shows-a-river-and-mangrove-trees-west-bengal-india-its-the-largest-delta-in-the-world-2BRCD42.jpg",
+      "https://c8.alamy.com/comp/2WM55NX/the-beautiful-rural-village-landscape-of-sundarban-island-at-west-bengal-in-india-2WM55NX.jpg",
+      ],
+    },
   ],
+  
   duration: "5 Days / 4 Nights",
   destination: "Sundarbans",
   state: "West Bengal",
@@ -79,78 +124,72 @@ export const sundarbans: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Transport (Kolkata ↔ Godkhali)",
-        low: 400,
-        typical: 800,
-        notes: "Bus/train + local transport",
+    perPerson: {
+      items: [
+        {
+          item: "Transport (Kolkata ↔ Godkhali)",
+          low: 400,
+          typical: 800,
+          notes: "Bus/train + local transport",
+        },
+        {
+          item: "Boat + forest permits",
+          low: 1500,
+          typical: 3000,
+          notes: "Usually in package",
+        },
+        {
+          item: "Accommodation (6 nights, eco-lodge)",
+          low: 3000,
+          typical: 5400,
+          notes: "₹500–900/night",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1400,
+          typical: 2500,
+          notes: "₹200–350/day, fresh fish",
+        },
+        {
+          item: "Safari & activities",
+          low: 800,
+          typical: 1500,
+          notes: "Watchtower fees, guides",
+        },
+        {
+          item: "Misc (tips, shopping)",
+          low: 300,
+          typical: 600,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 7400,
+        typical: 13800,
+        typicalRange: "₹7k–12k",
       },
-      {
-        item: "Boat + forest permits",
-        low: 1500,
-        typical: 3000,
-        notes: "Usually in package",
-      },
-      {
-        item: "Accommodation (6 nights, eco-lodge)",
-        low: 3000,
-        typical: 5400,
-        notes: "₹500–900/night",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1400,
-        typical: 2500,
-        notes: "₹200–350/day, fresh fish",
-      },
-      {
-        item: "Safari & activities",
-        low: 800,
-        typical: 1500,
-        notes: "Watchtower fees, guides",
-      },
-      {
-        item: "Misc (tips, shopping)",
-        low: 300,
-        typical: 600,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 7400,
-      typical: 13800,
-      typicalRange: "₹7k–12k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Transport (shared vehicle)",
-        perPerson: "250–500",
-      },
-      {
-        category: "Shared boat (charter split)",
-        perPerson: "1,000–2,000",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,000–3,600",
-      },
-      {
-        category: "Food",
-        perPerson: "1,200–2,000",
-      },
-      {
-        category: "Safari & permits",
-        perPerson: "500–1,000",
-      },
-      {
-        category: "Misc",
-        perPerson: "200–400",
-      },
-    ],
-    total: "₹5,150–9,500",
+    sixPerson: {
+      items: [
+        {
+          item: "Transport (shared vehicle)",
+          low: 250,
+          typical: 500,
+          notes: "",
+        },
+        {
+          item: "Shared boat (charter split)",
+          low: 1000,
+          typical: 2000,
+          notes: "",
+        },
+        { item: "Shared rooms (3 rooms)", low: 2000, typical: 3600, notes: "" },
+        { item: "Food", low: 1200, typical: 2000, notes: "" },
+        { item: "Safari & permits", low: 500, typical: 1000, notes: "" },
+        { item: "Misc", low: 200, typical: 400, notes: "" },
+      ],
+      total: { low: 5150, typical: 9500, typicalRange: "₹5,150–9,500" },
+    },
   },
   bookingTips: [
     "Book tour packages from Kolkata for hassle-free experience",

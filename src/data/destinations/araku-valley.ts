@@ -5,13 +5,58 @@ export const araku_valley: Destination = {
   id: "araku-valley",
   name: "Araku Valley",
   images: [
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80", // Valley mountains
-    "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1200&q=80", // Coffee plantation
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80", // Scenic valley
-    "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80", // Green hills
-    "https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?w=1200&q=80", // Train journey
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80", // Misty mountains
+    {
+      placeName: "Toy Train Journey",
+      urls: [
+        "https://thetravelshots.com/wp-content/uploads/2023/01/Araku-Valley.jpg",
+        "https://www.easeindiatrip.com/blog/wp-content/uploads/2025/06/Andhra-Pradesh-Araku-Valley-Train-03-1024x592.jpg",
+        "https://www.easeindiatrip.com/blog/wp-content/uploads/2025/06/Andhra-Pradesh-Araku-Valley-Train-02-768x446.jpg",
+        "https://i.ytimg.com/vi/9wvNXr6hjhM/maxresdefault.jpg",
+        "https://c8.alamy.com/comp/2G350Y5/indian-railways-train-kirandul-passenger-running-through-araku-valley-andhra-pradesh-india-2G350Y5.jpg",
+      ],
+    },
+    {
+      placeName: "Borra Caves",
+      urls: [
+        "https://3.bp.blogspot.com/-RSHY4LONink/TY9_1L7cYzI/AAAAAAAAA4s/RdEZ3hMYMTY/s1600/Picture15.jpg",
+        "https://www.easeindiatrip.com/blog/wp-content/uploads/2025/01/Andhra-Borra-Caves-Araku-02.jpg",
+        "https://wildindiatravels.com/wp-content/uploads/2021/07/Borra_Caves_in_Araku_Valley_20-scaled.jpg",
+        "https://c8.alamy.com/comp/DAXXKF/footpath-in-a-cave-borra-caves-ananthagiri-hills-araku-valley-visakhapatnam-DAXXKF.jpg",
+        "https://c8.alamy.com/comp/DAXXY4/entrance-of-a-cave-borra-caves-ananthagiri-hills-araku-valley-visakhapatnam-DAXXY4.jpg",
+      ],
+    },
+    {
+      placeName: "Araku Coffee",
+      urls: [
+        "https://www.india.com/wp-content/uploads/2024/11/Coffee-Plantations-1.jpg",
+        "https://theoneliner.in/wp-content/uploads/2022/12/2-4-1024x542.png",
+        "https://tourismquest.com/wp-content/uploads/2022/09/Araku-Valley-Andhra-Pradesh.jpg",
+        "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/05/15224353/Featured-Inside-21.jpg",
+        "https://indiacsr.in/wp-content/uploads/2023/10/Araku-Valley-The-Deep-rooted-Coffee-Connection_IndiaCSR.jpg",
+      ],
+    },
+    {
+      placeName: "Tribal Museum",
+      urls: [
+        "https://www.easeindiatrip.com/blog/wp-content/uploads/2025/01/Andhra-Borra-Caves-Araku-Tribal-Museum.jpg",
+        "https://images.herzindagi.info/image/2023/Jun/Araku-Tribal-Museum.jpg",
+        "https://media1.thrillophilia.com/filestore/glyzhr87cg6yf9pv9fxlzzz0d7pe_1584165502_shutterstock_1268518096.jpg?w=1440&dpr=2",
+        "https://imvoyager.com/wp-content/uploads/2019/01/DSC_0133-e1548945042869.jpg",
+        "https://www.shutterstock.com/image-photo/tribal-museum-araku-valley-andhra-600w-1213394959.jpg",
+      ],
+    },
+    {
+      placeName: "Vizag Beaches",
+      urls: [
+        "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/beach-in-andhra-pradesh.jpg",
+        "https://feeds.abplive.com/onecms/images/uploaded-images/2024/10/24/61a9ac2e254b315552babb3e010f173117297614413861090_original.png",
+        "https://1.bp.blogspot.com/-rv93RSjMd5E/WB6yAZxwlqI/AAAAAAAACO4/voHADhG3cE4I-rxzigJmPe5_lYj_QVKJgCLcB/s1600/DSC_0507_564.jpg",
+        "https://english.cdn.zeenews.com/sites/default/files/2020/10/13/892434-vizag-beach.gif",
+        "https://framedventures.com/wp-content/uploads/2022/04/araku-valley-tourism-768x384.jpg",
+      ],
+    },
   ],
+
   duration: "5 Days / 4 Nights",
   destination: "Araku Valley",
   state: "Andhra Pradesh",
@@ -79,88 +124,74 @@ export const araku_valley: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Vizag round trip)",
-        low: 700,
-        typical: 1800,
-        notes: "12-14 hours journey",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Vizag round trip)",
+          low: 700,
+          typical: 1800,
+          notes: "12-14 hours journey",
+        },
+        {
+          item: "Toy train (Vizag → Araku)",
+          low: 200,
+          typical: 500,
+          notes: "Scenic journey",
+        },
+        {
+          item: "Road transfers (local + return)",
+          low: 600,
+          typical: 1500,
+          notes: "Araku local + return to Vizag",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3600,
+          typical: 6600,
+          notes: "₹600–1,100/night",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1800,
+          typical: 3000,
+          notes: "₹250–400/day",
+        },
+        {
+          item: "Entry fees & activities",
+          low: 400,
+          typical: 1000,
+          notes: "Borra caves, museums",
+        },
+        {
+          item: "Misc (coffee, crafts)",
+          low: 400,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 7700,
+        typical: 15200,
+        typicalRange: "₹10k–18k",
       },
-      {
-        item: "Toy train (Vizag → Araku)",
-        low: 200,
-        typical: 500,
-        notes: "Scenic journey",
-      },
-      {
-        item: "Road transfers (local + return)",
-        low: 600,
-        typical: 1500,
-        notes: "Araku local + return to Vizag",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3600,
-        typical: 6600,
-        notes: "₹600–1,100/night",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1800,
-        typical: 3000,
-        notes: "₹250–400/day",
-      },
-      {
-        item: "Entry fees & activities",
-        low: 400,
-        typical: 1000,
-        notes: "Borra caves, museums",
-      },
-      {
-        item: "Misc (coffee, crafts)",
-        low: 400,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 7700,
-      typical: 15200,
-      typicalRange: "₹10k–18k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets (Kolkata ↔ Vizag)",
-        perPerson: "700–1,800",
-      },
-      {
-        category: "Toy train",
-        perPerson: "150–400",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,400–4,400",
-      },
-      {
-        category: "Food",
-        perPerson: "1,500–2,500",
-      },
-      {
-        category: "Local transport (shared)",
-        perPerson: "350–900",
-      },
-      {
-        category: "Entry fees",
-        perPerson: "300–700",
-      },
-      {
-        category: "Misc",
-        perPerson: "300–600",
-      },
-    ],
-    total: "₹5,700–11,300",
+    sixPerson: {
+      items: [
+        {
+          item: "Train tickets (Kolkata ↔ Vizag)",
+          low: 700,
+          typical: 1800,
+          notes: "",
+        },
+        { item: "Toy train", low: 150, typical: 400, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2400, typical: 4400, notes: "" },
+        { item: "Food", low: 1500, typical: 2500, notes: "" },
+        { item: "Local transport (shared)", low: 350, typical: 900, notes: "" },
+        { item: "Entry fees", low: 300, typical: 700, notes: "" },
+        { item: "Misc", low: 300, typical: 600, notes: "" },
+      ],
+      total: { low: 5700, typical: 11300, typicalRange: "₹5,700–11,300" },
+    },
   },
   bookingTips: [
     "Book toy train tickets online in advance — fills up fast",

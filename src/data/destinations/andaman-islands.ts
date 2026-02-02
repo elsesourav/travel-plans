@@ -5,13 +5,58 @@ export const andaman_islands: Destination = {
   id: "andaman-islands",
   name: "Andaman Islands",
   images: [
-    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80", // Turquoise waters
-    "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=1200&q=80", // Tropical beach
-    "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80", // Clear ocean
-    "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1200&q=80", // Palm trees
-    "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=1200&q=80", // Underwater coral
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80", // Sandy beach
+    {
+      placeName: "Radhanagar Beach",
+      urls: [
+      "https://www.worldbeachguide.com/photos/radhanagar.jpg",
+      "https://www.tripplannersindia.com/assets/blog/images/beachesinandaman/radhanagar_beach.webp",
+      "https://c8.alamy.com/comp/T38E6E/stunning-view-of-radhanagar-beach-on-havelock-island-havelock-island-is-a-beautiful-small-island-belonging-to-the-indian-andaman-nicobar-islands-par-T38E6E.jpg",
+      "https://img.freepik.com/premium-photo/radhanagar-beach-andaman-nicobar-island-india_431724-7097.jpg",
+      "https://www.go2andaman.com/wp-content/uploads/2020/11/Radhanagar-Beach-Havelock-Go2andaman-01.jpg",
+      ],
+    },
+    {
+      placeName: "Cellular Jail",
+      urls: [
+      "https://c8.alamy.com/comp/2E6HN59/historic-cellular-jail-or-kala-pani-on-south-andaman-island-andaman-and-nicobar-islands-india-2E6HN59.jpg",
+      "https://c8.alamy.com/comp/H3JA3M/famous-cellular-jail-at-port-blair-andaman-and-nicobar-india-H3JA3M.jpg",
+      "https://c8.alamy.com/comp/DJ88FX/cellular-jail-port-blair-andaman-islands-india-DJ88FX.jpg",
+      "https://c8.alamy.com/comp/ET17YX/cellular-jail-port-blair-andaman-and-nicobar-islands-union-territory-ET17YX.jpg",
+      "https://as2.ftcdn.net/v2/jpg/04/86/34/03/1000_F_486340304_nim7U2xL5SsoG70whFZfYrqnEELSuiur.jpg",
+      ],
+    },
+    {
+      placeName: "Elephant Beach",
+      urls: [
+      "https://c8.alamy.com/comp/2A1D3JC/beautiful-elephant-beach-on-the-havelock-island-of-the-andaman-and-nicobar-islands-india-2A1D3JC.jpg",
+      "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_365085719_20200116102256_20200116102320.png",
+      "https://c8.alamy.com/comp/2ST5Y9M/elephant-beach-havelock-island-andaman-and-nicobar-islands-india-2ST5Y9M.jpg",
+      "https://c8.alamy.com/comp/2ST5Y61/elephant-beach-havelock-island-andaman-and-nicobar-islands-india-2ST5Y61.jpg",
+      "https://andamantourism.org.in/images/places-to-visit/header/elephant-beach-andaman-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+      ],
+    },
+    {
+      placeName: "Neil Island",
+      urls: [
+      "https://travelogyindia.b-cdn.net/storage/app/upload/neil-island-andaman.jpg",
+      "https://c8.alamy.com/comp/2XYB2EH/low-tide-at-the-natural-bridge-landmark-arch-rock-formation-in-a-landscape-of-neil-island-of-the-andaman-and-nicobar-islands-of-india-2XYB2EH.jpg",
+      "https://www.india.com/wp-content/uploads/2024/05/Neil-Island.jpg",
+      "https://www.andamanisland.in/uploads/andamanislands/attachchments/main/602e33fee563b117_neil-island-3.png",
+      "https://www.trawell.in/admin/images/upload/171363457Andaman_Neil_Island_Main.jpg",
+      ],
+    },
+    {
+      placeName: "Scuba Diving",
+      urls: [
+      "https://www.andamantourplanner.com/images-new/water-sports/scuba-diving-andaman.webp",
+      "https://www.india.com/wp-content/uploads/2024/07/Scuba-Diving-in-Havelock-Island.jpg",
+      "https://trekalone.com/wp-content/uploads/2021/05/Best-Scuba-Diving-Place-In-Andaman-1024x450.jpg",
+      "https://www.swantour.com/blogs/wp-content/uploads/2019/05/Scuba-Diving-in-Andaman-1.jpg",
+      "https://www.andamantourism.org/wp-content/uploads/2023/07/Scuba-Diving-in-Andaman.jpg",
+      ],
+    },
   ],
+  
   duration: "5 Days / 4 Nights",
   destination: "Andaman Islands",
   state: "Andaman & Nicobar Islands",
@@ -80,88 +125,83 @@ export const andaman_islands: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Flight (Kolkata ↔ Port Blair round trip)",
-        low: 8000,
-        typical: 15000,
-        notes: "Book early for deals",
+    perPerson: {
+      items: [
+        {
+          item: "Flight (Kolkata ↔ Port Blair round trip)",
+          low: 8000,
+          typical: 15000,
+          notes: "Book early for deals",
+        },
+        {
+          item: "Ferry transfers (inter-island)",
+          low: 1500,
+          typical: 3000,
+          notes: "Port Blair ↔ Havelock ↔ Neil",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 6000,
+          typical: 12000,
+          notes: "Budget to mid-range",
+        },
+        {
+          item: "Food (7 days)",
+          low: 2000,
+          typical: 3500,
+          notes: "₹280–500/day seafood",
+        },
+        {
+          item: "Water sports & snorkeling",
+          low: 1500,
+          typical: 5000,
+          notes: "Scuba diving extra",
+        },
+        {
+          item: "Local transport & sightseeing",
+          low: 1000,
+          typical: 2500,
+          notes: "Island taxis, entry fees",
+        },
+        {
+          item: "Misc (shopping, tips)",
+          low: 500,
+          typical: 1000,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 20500,
+        typical: 42000,
+        typicalRange: "₹25k–45k",
       },
-      {
-        item: "Ferry transfers (inter-island)",
-        low: 1500,
-        typical: 3000,
-        notes: "Port Blair ↔ Havelock ↔ Neil",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 6000,
-        typical: 12000,
-        notes: "Budget to mid-range",
-      },
-      {
-        item: "Food (7 days)",
-        low: 2000,
-        typical: 3500,
-        notes: "₹280–500/day seafood",
-      },
-      {
-        item: "Water sports & snorkeling",
-        low: 1500,
-        typical: 5000,
-        notes: "Scuba diving extra",
-      },
-      {
-        item: "Local transport & sightseeing",
-        low: 1000,
-        typical: 2500,
-        notes: "Island taxis, entry fees",
-      },
-      {
-        item: "Misc (shopping, tips)",
-        low: 500,
-        typical: 1000,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 20500,
-      typical: 42000,
-      typicalRange: "₹25k–45k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Flight tickets",
-        perPerson: "8,000–15,000",
+    sixPerson: {
+      items: [
+        { item: "Flight tickets", low: 8000, typical: 15000, notes: "" },
+        {
+          item: "Ferries (shared bookings)",
+          low: 1200,
+          typical: 2500,
+          notes: "",
+        },
+        { item: "Shared rooms (3 rooms)", low: 4000, typical: 8000, notes: "" },
+        { item: "Food", low: 1800, typical: 3000, notes: "" },
+        {
+          item: "Water sports/snorkeling",
+          low: 1000,
+          typical: 4000,
+          notes: "",
+        },
+        { item: "Local transport", low: 600, typical: 1500, notes: "" },
+        { item: "Misc", low: 400, typical: 800, notes: "" },
+      ],
+      total: {
+        low: 17000,
+        typical: 34800,
+        typicalRange: "₹17k–35k",
       },
-      {
-        category: "Ferries (shared bookings)",
-        perPerson: "1,200–2,500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "4,000–8,000",
-      },
-      {
-        category: "Food",
-        perPerson: "1,800–3,000",
-      },
-      {
-        category: "Water sports/snorkeling",
-        perPerson: "1,000–4,000",
-      },
-      {
-        category: "Local transport",
-        perPerson: "600–1,500",
-      },
-      {
-        category: "Misc",
-        perPerson: "400–800",
-      },
-    ],
-    total: "₹17,000–34,800",
+    },
   },
   bookingTips: [
     "Book flights 2-3 months ahead for best prices",

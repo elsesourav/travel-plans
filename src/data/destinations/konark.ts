@@ -5,13 +5,58 @@ export const konark: Destination = {
   id: "konark",
   name: "Konark",
   images: [
-    "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80",
-    "https://images.unsplash.com/photo-1466442929976-97f336a657be?w=1200&q=80",
-    "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=1200&q=80",
-    "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1200&q=80",
-    "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&q=80",
-    "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&q=80",
+    {
+      placeName: "Konark Sun Temple",
+      urls: [
+      "https://as2.ftcdn.net/v2/jpg/05/45/40/15/1000_F_545401584_r4Fs1INFeiCzvz3Mi4Tk7cCqQNZp1dQn.jpg",
+      "https://as2.ftcdn.net/jpg/05/45/40/13/1000_F_545401328_b4dkjsn5CCNpwF5fLmIeSI7zHeFGLB90.jpg",
+      "https://www.tripsavvy.com/thmb/VKkW0ZlYDrVkhBjRgQEwacq_Feg=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-461158269_Darkroom-7bafddcd9fb94662a75041a04068a823.jpg",
+      "https://c8.alamy.com/comp/DA8E60/konark-sun-temple-at-konark-orissa-india-landscape-view-DA8E60.jpg",
+      "https://cdn.britannica.com/19/251919-050-D3E64798/konark-sun-temple-orissa-india-unesco-heritage-site.jpg",
+      ],
+    },
+    {
+      placeName: "Chandrabhaga Beach",
+      urls: [
+      "https://www.trawell.in/admin/images/upload/403298814Konark_Chandrabhaga_Beach.jpg",
+      "https://odishatour.in/wp-content/uploads/2020/11/Chandrabhaga-Sea-Beach-konark-puri6.jpg",
+      "https://odishatour.in/wp-content/uploads/2021/08/Chandrabhaga-Sea-Beach-konark-puri9.jpg",
+      "http://www.luxurytrailsofindia.com/wp-content/uploads/2017/09/chandrabhaga-beach.jpg",
+      "https://www.clubmahindra.com/blog/images/Chandrabhaga-Beach-Konark-resized.jpg",
+      ],
+    },
+    {
+      placeName: "Archaeological Museum",
+      urls: [
+      "https://www.luxurytrailsofindia.com/wp-content/uploads/2017/09/archaeological-survey-of-india-museum.jpg",
+      "https://www.nritravelogue.com/wp-content/uploads/2025/03/Konark-Archaeological-Museum-615x410.jpg",
+      "https://tripxl.com/blog/wp-content/uploads/2024/10/Konark-Archaeological-Museum.jpg",
+      "https://indiano.travel/wp-content/uploads/2022/04/Blog-image-size-23.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1mdHEgg8BybtYOlF8SOr3RXlUbawtJjegXy25ZWoyzK6GBWx7d9UfC2LTEIL9fR7FwJ_AdGR4j8r0V33ZtKCB5L0KlZGJoQwoCHB-1Gs9YLmV-BU5N26IYTdBY57A7RNcdc5L7dJXNAlY1oTmRPthXn-0RDP12cb_bNw6WMwZ7BYzKdpvjiY_Cl8bvyo/w1200-h630-p-k-no-nu/Archeological%20Museum%20in%20Konark%20is%20a%20great%20place%20to%20appreciate%20how%20Konark%20Sun%20Temple%20is%20restored%20by%20multiple%20people%20over%20the%20decades-7.jpg",
+      ],
+    },
+    {
+      placeName: "Raghurajpur",
+      urls: [
+      "https://c8.alamy.com/comp/DA8E60/konark-sun-temple-at-konark-orissa-india-landscape-view-DA8E60.jpg",
+      "https://th-i.thgim.com/public/incoming/69clz/article69399523.ece/alternates/FREE_1200/010Rpur.jpg",
+      "https://www.modernworldtravel.com/sites/default/files/konark_temple-_eps.jpg",
+      "https://curlytales.com/wp-content/uploads/2023/11/Raghurajpur-village.jpg",
+      "https://odishaheritage.com/wp-content/uploads/2023/09/Craft-in-Raghurajpur-Odisha.jpg",
+      ],
+    },
+    {
+      placeName: "Pipili",
+      urls: [
+      "https://www.tripbibo.com/blog/wp-content/uploads/2021/03/Konark_temple-_EPS-1024x683.jpg",
+      "https://static.toiimg.com/photo/msid-56196528,width-96,height-65.cms",
+      "https://c8.alamy.com/comp/DA8E60/konark-sun-temple-at-konark-orissa-india-landscape-view-DA8E60.jpg",
+      "https://dynamic.tourtravelworld.com/package-images/photo-big/dir_13/361181/124035.jpg",
+      "https://as2.ftcdn.net/v2/jpg/04/34/51/83/1000_F_434518318_gMDj1EJmUz7t7pCmJs8Nm25tXx5S5l0c.jpg",
+      ],
+    },
   ],
+  
   duration: "5 Days / 4 Nights",
   destination: "Konark",
   state: "Odisha",
@@ -79,78 +124,62 @@ export const konark: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Bhubaneswar round trip)",
-        low: 500,
-        typical: 1200,
-        notes: "6-7 hours journey",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Bhubaneswar round trip)",
+          low: 500,
+          typical: 1200,
+          notes: "6-7 hours journey",
+        },
+        {
+          item: "Road transfers (local)",
+          low: 500,
+          typical: 1200,
+          notes: "Bus/shared taxi",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 2400,
+          typical: 4800,
+          notes: "₹400–800/night",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1200,
+          typical: 2100,
+          notes: "₹170–300/day",
+        },
+        {
+          item: "Entry fees",
+          low: 200,
+          typical: 500,
+          notes: "Sun Temple, museums, caves",
+        },
+        {
+          item: "Misc (crafts, tips)",
+          low: 300,
+          typical: 700,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 5100,
+        typical: 10500,
+        typicalRange: "₹7k–11k",
       },
-      {
-        item: "Road transfers (local)",
-        low: 500,
-        typical: 1200,
-        notes: "Bus/shared taxi",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 2400,
-        typical: 4800,
-        notes: "₹400–800/night",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1200,
-        typical: 2100,
-        notes: "₹170–300/day",
-      },
-      {
-        item: "Entry fees",
-        low: 200,
-        typical: 500,
-        notes: "Sun Temple, museums, caves",
-      },
-      {
-        item: "Misc (crafts, tips)",
-        low: 300,
-        typical: 700,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 5100,
-      typical: 10500,
-      typicalRange: "₹7k–11k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "500–1,200",
-      },
-      {
-        category: "Shared vehicle",
-        perPerson: "300–700",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "1,600–3,200",
-      },
-      {
-        category: "Food",
-        perPerson: "1,000–1,800",
-      },
-      {
-        category: "Entry fees",
-        perPerson: "150–400",
-      },
-      {
-        category: "Misc",
-        perPerson: "200–500",
-      },
-    ],
-    total: "₹3,750–7,800",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 500, typical: 1200, notes: "" },
+        { item: "Shared vehicle", low: 300, typical: 700, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 1600, typical: 3200, notes: "" },
+        { item: "Food", low: 1000, typical: 1800, notes: "" },
+        { item: "Entry fees", low: 150, typical: 400, notes: "" },
+        { item: "Misc", low: 200, typical: 500, notes: "" },
+      ],
+      total: { low: 3750, typical: 7800, typicalRange: "₹3,750–7,800" },
+    },
   },
   bookingTips: [
     "Stay in Puri (more options) and day-trip to Konark (35 km)",

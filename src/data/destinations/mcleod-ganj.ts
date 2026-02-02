@@ -5,13 +5,59 @@ export const mcleod_ganj: Destination = {
   id: "mcleod-ganj",
   name: "McLeod Ganj",
   images: [
-    "https://images.unsplash.com/photo-1609619385002-f40f1df827b8?w=1200&q=80",
-    "https://images.unsplash.com/photo-1545378889-6d7eb2cf1020?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1585136917228-d0a0426b2030?w=1200&q=80",
-    "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
+    {
+      placeName: "Triund Trek",
+      urls: [
+        "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1024,h_576/w_63,x_11,y_11,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/lvlgcgguc7za5sut3czm/2D1NTriundTrekFromMcLeodGanj.jpg",
+        "https://c8.alamy.com/comp/2F99B5C/view-enroute-to-triund-hiking-trail-through-lush-green-landscape-at-mcleodganj-dharamsala-himachal-pradesh-india-triund-hill-top-offers-view-of-hi-2F99B5C.jpg",
+        "https://c8.alamy.com/comp/2F997RD/view-enroute-to-triund-hiking-trail-through-lush-green-landscape-at-mcleodganj-dharamsala-himachal-pradesh-india-triund-hill-top-offers-view-of-hi-2F997RD.jpg",
+        "https://c8.alamy.com/comp/2F99B78/view-enroute-to-triund-hiking-trail-through-lush-green-landscape-at-mcleodganj-dharamsala-himachal-pradesh-india-triund-hill-top-offers-view-of-hi-2F99B78.jpg",
+        "https://l450v.alamy.com/450v/2f997yd/view-enroute-to-triund-hiking-trail-through-lush-green-landscape-at-mcleodganj-dharamsala-himachal-pradesh-india-triund-hill-top-offers-view-of-hi-2f997yd.jpg",
+      ],
+    },
+    {
+      placeName: "Tsuglagkhang Complex",
+      urls: [
+        "https://c8.alamy.com/comp/2P9BJYP/stupa-in-lhagyal-rinear-tsuglagkhang-complexin-background-the-himalaya-mountainsmcleod-ganj-dharamsala-himachal-pradesh-state-india-asia-2P9BJYP.jpg",
+        "https://c8.alamy.com/comp/BCFG15/view-looking-up-to-the-namgyal-temple-and-tsuglagkhang-complex-home-BCFG15.jpg",
+        "https://c8.alamy.com/comp/2P9BJMB/stupa-in-lhagyal-rinear-tsuglagkhang-complexin-background-the-himalaya-mountainsmcleod-ganj-dharamsala-himachal-pradesh-state-india-asia-2P9BJMB.jpg",
+        "https://c8.alamy.com/comp/2FT0B0J/mcleod-ganj-india-may-2021-a-buddhist-monk-walking-around-the-tsuglagkhang-complex-on-may-21-2021-in-dharamshala-himachal-pradesh-india-2FT0B0J.jpg",
+        "https://c8.alamy.com/comp/J56GC5/stupa-near-the-tsuglagkhang-complex-at-mcleod-ganj-himachal-prad–esh-J56GC5.jpg",
+      ],
+    },
+
+    {
+      placeName: "Bhagsu Waterfall",
+      urls: [
+        "https://c8.alamy.com/comp/2F99BGM/majestic-landscape-of-bhagsu-nag-waterfall-and-green-forest-around-at-mcleodganj-himachal-pradesh-india-2F99BGM.jpg",
+        "https://www.tusktravel.com/blog/wp-content/uploads/2024/04/Bhagsu-Waterfalls-McLeodganj-Himachal.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/0c/ae/98/0d/view-of-bhagsu-waterfall.jpg",
+        "https://c8.alamy.com/comp/2A3FK3M/bhagsu-waterfall-in-bhagsu-himachal-pradesh-india-2A3FK3M.jpg",
+        "https://c8.alamy.com/comp/2DBG2M4/cascade-of-bhagsu-waterfall-in-bhagsu-himachal-pradesh-india-2DBG2M4.jpg",
+      ],
+    },
+    {
+      placeName: "Norbulingka Institute",
+      urls: [
+        "https://www.trawell.in/admin/images/upload/368054328Dharamshala_Norbulingka_Monastery_Main.jpg",
+        "https://cdn.audleytravel.com/1400/1000/60/187852-norbulingka-institute-dharamshala.jpg",
+        "https://l450v.alamy.com/450v/apkdy3/india-himachal-pradesh-sidhpur-norbulinka-institute-apkdy3.jpg",
+        "https://c8.alamy.com/comp/KA6CRF/institute-of-norbulingka-in-the-background-of-the-himalayas-western-KA6CRF.jpg",
+        "https://c8.alamy.com/comp/2SR9RK1/norbulingka-institute-dharamsala-himachal-pradesh-india-asia-2SR9RK1.jpg",
+      ],
+    },
+    {
+      placeName: "Tibetan Museum",
+      urls: [
+        "https://c.myholidays.com/blog/2023/4/261217_Tibetan%20Museum.webp",
+        "https://l450v.alamy.com/450v/bcegc7/the-tibet-museum-near-the-tsuglagkhang-complex-home-of-the-dalai-lama-bcegc7.jpg",
+        "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2023/02/Tibet-Museum-Dharamsala-Mcleod-Ganj-Himachal.jpg?w=1200&ssl=1",
+        "https://www.tourindiawithdriver.com/UPLOAD/1344_Mcleod-Ganj-2.jpg",
+        "https://www.hlimg.com/images/things2do/738X538/cddw_1523595525t.jpg",
+      ],
+    },
   ],
+
   duration: "4 Days / 3 Nights",
   destination: "McLeod Ganj",
   state: "Himachal Pradesh",
@@ -31,7 +77,7 @@ export const mcleod_ganj: Destination = {
     longitude: "76.3191°E",
   },
   permits: "Not required for Indian citizens",
-  bestSeason: "March to June, September to November",
+  bestSeason: "Mar to Jun, Sep to Nov",
   seasonNote:
     "Pleasant weather for trekking. Monsoon (July–August) has heavy rainfall. Check for Dalai Lama's public teachings schedule.",
   keyAttractions: [
@@ -79,88 +125,69 @@ export const mcleod_ganj: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Pathankot round trip)",
-        low: 800,
-        typical: 2000,
-        notes: "Or fly Dharamshala ₹5,000–10,000",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Pathankot round trip)",
+          low: 800,
+          typical: 2000,
+          notes: "Or fly Dharamshala ₹5,000–10,000",
+        },
+        {
+          item: "Road transfers (Pathankot ↔ McLeod Ganj)",
+          low: 600,
+          typical: 1500,
+          notes: "Shared taxi/bus",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3600,
+          typical: 7200,
+          notes: "₹600–1,200/night",
+        },
+        {
+          item: "Food (7 days)",
+          low: 2000,
+          typical: 3500,
+          notes: "₹280–500/day café/Tibetan",
+        },
+        {
+          item: "Triund trek (guide + camping)",
+          low: 500,
+          typical: 2000,
+          notes: "Optional guide",
+        },
+        {
+          item: "Local transport & entry",
+          low: 400,
+          typical: 1000,
+          notes: "Auto, taxi",
+        },
+        {
+          item: "Misc (shopping, tips)",
+          low: 400,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 8300,
+        typical: 18000,
+        typicalRange: "₹12k–20k",
       },
-      {
-        item: "Road transfers (Pathankot ↔ McLeod Ganj)",
-        low: 600,
-        typical: 1500,
-        notes: "Shared taxi/bus",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3600,
-        typical: 7200,
-        notes: "₹600–1,200/night",
-      },
-      {
-        item: "Food (7 days)",
-        low: 2000,
-        typical: 3500,
-        notes: "₹280–500/day café/Tibetan",
-      },
-      {
-        item: "Triund trek (guide + camping)",
-        low: 500,
-        typical: 2000,
-        notes: "Optional guide",
-      },
-      {
-        item: "Local transport & entry",
-        low: 400,
-        typical: 1000,
-        notes: "Auto, taxi",
-      },
-      {
-        item: "Misc (shopping, tips)",
-        low: 400,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 8300,
-      typical: 18000,
-      typicalRange: "₹12k–20k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "800–2,000",
-      },
-      {
-        category: "Shared vehicle",
-        perPerson: "400–1,000",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,400–4,800",
-      },
-      {
-        category: "Food",
-        perPerson: "1,800–3,000",
-      },
-      {
-        category: "Triund trek",
-        perPerson: "350–1,500",
-      },
-      {
-        category: "Local transport",
-        perPerson: "250–600",
-      },
-      {
-        category: "Misc",
-        perPerson: "300–600",
-      },
-    ],
-    total: "₹6,300–13,500",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 800, typical: 2000, notes: "" },
+        { item: "Shared vehicle", low: 400, typical: 1000, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2400, typical: 4800, notes: "" },
+        { item: "Food", low: 1800, typical: 3000, notes: "" },
+        { item: "Triund trek", low: 350, typical: 1500, notes: "" },
+        { item: "Local transport", low: 250, typical: 600, notes: "" },
+        { item: "Misc", low: 300, typical: 600, notes: "" },
+      ],
+      total: { low: 6300, typical: 13500, typicalRange: "₹6,300–13,500" },
+    },
   },
   bookingTips: [
     "Check Dalai Lama's public teachings schedule online — life-changing experience",

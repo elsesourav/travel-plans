@@ -5,12 +5,56 @@ export const puri: Destination = {
   id: "puri",
   name: "Puri",
   images: [
-    "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80", // Temple architecture
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80", // Beach
-    "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80", // Beach sunset
-    "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1200&q=80", // Ocean waves
-    "https://images.unsplash.com/photo-1520454974749-611b7248ffdb?w=1200&q=80", // Coastal view
-    "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1200&q=80", // Temple tower
+    {
+      placeName: "Jagannath Temple",
+      urls: [
+        "https://www.tourmyindia.com/blog/wp-content/uploads/2023/12/Shree-Jagannatha-Temple-Puri-Odisha.jpg",
+        "https://media.istockphoto.com/id/1069137628/photo/top-of-the-jagannath-temple-puri-odisha-india.jpg?s=1024x1024&w=is&k=20&c=TjNBkUbHRL7nT1qHd2uW8YW5CuT6RU--xHaPZGD8Agc=",
+        "https://www.tripsavvy.com/thmb/wdbjlbZRP1QmjHSGja3zH7qA1w0=/3559x2357/filters:fill(auto,1)/_DSC0713_Snapseed_Fotor-56a3c23a3df78cf7727f07e8.jpg",
+        "https://www.treebo.com/blog/wp-content/uploads/2020/01/Shri-Jagannath-Temple.jpg",
+        "https://www.tripsavvy.com/thmb/CqvMyrnnVy5fNLFYTr5zW13s-XE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/_DSC0713_Snapseed_Darkroom-819d0b229974460e8141622c4494e2ed.jpg",
+      ],
+    },
+    {
+      placeName: "Puri Beach",
+      urls: [
+        "https://c8.alamy.com/comp/3AY5EWJ/sunrise-over-beach-at-puri-in-odisha-india-sunrise-by-the-sea-on-the-beach-at-puri-beautiful-romantic-landscape-with-nature-colorful-sky-at-sunris-3AY5EWJ.jpg",
+        "https://odishatourism.gov.in/content/dam/tourism/home/discover/attractions/beaches/new-stb/puri-beach/Puri%20Beach-3.jpg",
+        "https://www.namasteindiatrip.org/wp-content/uploads/2021/10/Puri-Beach.jpg",
+        "https://c8.alamy.com/comp/3AY5EWX/sunrise-over-beach-at-puri-in-odisha-india-sunrise-by-the-sea-on-the-beach-at-puri-beautiful-romantic-landscape-with-nature-colorful-sky-at-sunris-3AY5EWX.jpg",
+        "https://c8.alamy.com/comp/3AY5GMX/sunrise-over-beach-at-puri-in-odisha-india-sunrise-by-the-sea-on-the-beach-at-puri-beautiful-romantic-landscape-with-nature-colorful-sky-at-sunris-3AY5GMX.jpg",
+      ],
+    },
+    {
+      placeName: "Konark Sun Temple",
+      urls: [
+        "https://as2.ftcdn.net/jpg/05/45/40/13/1000_F_545401328_b4dkjsn5CCNpwF5fLmIeSI7zHeFGLB90.jpg",
+        "https://as2.ftcdn.net/v2/jpg/05/45/40/15/1000_F_545401584_r4Fs1INFeiCzvz3Mi4Tk7cCqQNZp1dQn.jpg",
+        "https://www.tripvaani.com/wp-content/uploads/2020/05/Konark-Sun-Temple-or-Black-Pagoda-The-Chariot-of-Sun.jpg",
+        "https://www.tripsavvy.com/thmb/VKkW0ZlYDrVkhBjRgQEwacq_Feg=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-461158269_Darkroom-7bafddcd9fb94662a75041a04068a823.jpg",
+        "https://c8.alamy.com/comp/2J8X969/ancient-konark-sun-temple-at-sunrise-konark-sun-temple-was-built-in-the-the-13th-century-at-puri-odisha-india-designated-as-a-unesco-world-heritage-2J8X969.jpg",
+      ],
+    },
+    {
+      placeName: "Chilika Lake",
+      urls: [
+        "https://banasri.in/wp-content/uploads/2024/07/Chilika-Lake-Odisha.jpg",
+        "https://trip2odisha.in/wp-content/uploads/2024/05/Chilika-Lake.jpg",
+        "https://localdrive.in/wp-content/uploads/2025/07/Chilika-Lake-Odisha-A-Journey-Through-Heritage-Legends-Scenic-Beauty-1024x576.webp",
+        "https://travelandtrekking.com/wp-content/uploads/2020/02/kalijai-temple-and-chilika-lake.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9DCkDoj9xhHggb_R8VhtgqTbSxSS__Vtlb0UYxSndseMI1HZkmZxXwDsJCHpKmDkSkbLBds7NaQri7yPEr1F8yyxo-56Ah3NdVQ9EmC9TptL3Cs3t4fsU-f2cUdJlxhKTO8boLYtCZJnayF3RU5QuancQQAAFH4ixNQ4R39fuNCcxEjF9NzSfb0N5/s640/Chilika_Lake.jpg",
+      ],
+    },
+    {
+      placeName: "Raghurajpur",
+      urls: [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKS05daZyUMP_mvLjqsIA5fKDnmOtnA710stb55yIYreNkr2f-zxNX0iW95aWclgu79Tkk5nXyYdACytwTz5_bavcSXFk6Dc4SCOCh2_k2LUnPxupnHbXTLwv8O28VDoDXFCEj855h-9Icg7MMVm07c6QiaHVADu3XAdX3iLd02zyOlHt_jhbeuop85gM/s16000/The%20best%20day%20in%20Odisha%20by%20exploring%20Art%20and%20Artists%20of%20Raghurajpur%20village%20near%20Puri-1.jpg",
+        "https://th-i.thgim.com/public/incoming/69clz/article69399523.ece/alternates/FREE_1200/010Rpur.jpg",
+        "https://www.india.com/wp-content/uploads/2024/02/Raghurajpur-Puri.jpg",
+        "https://live.staticflickr.com/601/23273259012_52fd05f772_b.jpg",
+        "https://cultureandheritage.org/wp-content/uploads/2023/05/xyz-1.webp",
+      ],
+    },
   ],
   duration: "5 Days / 4 Nights",
   destination: "Puri",
@@ -79,88 +123,74 @@ export const puri: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Puri round trip)",
-        low: 600,
-        typical: 1500,
-        notes: "Howrah-Puri Express",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Puri round trip)",
+          low: 600,
+          typical: 1500,
+          notes: "Howrah-Puri Express",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3000,
+          typical: 5400,
+          notes: "₹500–900/night sea-facing",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1400,
+          typical: 2500,
+          notes: "₹200–350/day, fresh seafood",
+        },
+        {
+          item: "Konark day trip",
+          low: 300,
+          typical: 800,
+          notes: "Shared auto/bus + entry",
+        },
+        {
+          item: "Chilika Lake trip",
+          low: 500,
+          typical: 1200,
+          notes: "Boat + transport",
+        },
+        {
+          item: "Local transport",
+          low: 300,
+          typical: 800,
+          notes: "Beach auto, e-rickshaw",
+        },
+        {
+          item: "Misc (crafts, tips)",
+          low: 300,
+          typical: 700,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 6400,
+        typical: 12900,
+        typicalRange: "₹8k–12k",
       },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3000,
-        typical: 5400,
-        notes: "₹500–900/night sea-facing",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1400,
-        typical: 2500,
-        notes: "₹200–350/day, fresh seafood",
-      },
-      {
-        item: "Konark day trip",
-        low: 300,
-        typical: 800,
-        notes: "Shared auto/bus + entry",
-      },
-      {
-        item: "Chilika Lake trip",
-        low: 500,
-        typical: 1200,
-        notes: "Boat + transport",
-      },
-      {
-        item: "Local transport",
-        low: 300,
-        typical: 800,
-        notes: "Beach auto, e-rickshaw",
-      },
-      {
-        item: "Misc (crafts, tips)",
-        low: 300,
-        typical: 700,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 6400,
-      typical: 12900,
-      typicalRange: "₹8k–12k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "600–1,500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,000–3,600",
-      },
-      {
-        category: "Food",
-        perPerson: "1,200–2,000",
-      },
-      {
-        category: "Konark trip (shared)",
-        perPerson: "150–400",
-      },
-      {
-        category: "Chilika trip (shared boat)",
-        perPerson: "300–700",
-      },
-      {
-        category: "Local transport",
-        perPerson: "150–500",
-      },
-      {
-        category: "Misc",
-        perPerson: "200–500",
-      },
-    ],
-    total: "₹4,600–9,200",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 600, typical: 1500, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2000, typical: 3600, notes: "" },
+        { item: "Food", low: 1200, typical: 2000, notes: "" },
+        { item: "Konark trip (shared)", low: 150, typical: 400, notes: "" },
+        {
+          item: "Chilika trip (shared boat)",
+          low: 300,
+          typical: 700,
+          notes: "",
+        },
+        { item: "Local transport", low: 150, typical: 500, notes: "" },
+        { item: "Misc", low: 200, typical: 500, notes: "" },
+      ],
+      total: { low: 4600, typical: 9200, typicalRange: "₹4,600–9,200" },
+    },
   },
   bookingTips: [
     "Book Howrah-Puri Express early — very popular route",

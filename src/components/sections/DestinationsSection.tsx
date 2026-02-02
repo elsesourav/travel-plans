@@ -1,10 +1,12 @@
 import { destinations } from "@/data/destinations";
 import type { Destination } from "@/data/types";
+import { getMinBudget } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Cloud,
   Flower,
   Leaf,
+  Lock,
   NavArrowLeft,
   NavArrowRight,
   Rain,
@@ -15,7 +17,7 @@ import {
   Xmark,
 } from "iconoir-react";
 import { useMemo, useRef, useState } from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { DestinationCard } from "./DestinationCard";
 
@@ -46,6 +48,12 @@ const LANDSCAPE_OPTIONS = [
   { value: "spiritual", label: "Spiritual", icon: Flower },
   { value: "nature", label: "Nature", icon: Cloud },
   { value: "desert", label: "Desert", icon: SunLight },
+];
+
+// Permit filter options (toggleable)
+const PERMIT_OPTIONS = [
+  { value: "required", label: "Permit" },
+  { value: "not-required", label: "No Permit" },
 ];
 
 // Helper function to check if destination matches season filter
@@ -82,7 +90,7 @@ const matchesSeason = (destination: Destination, season: string): boolean => {
 // Helper function to check if destination matches price filter
 const matchesPrice = (destination: Destination, price: string): boolean => {
   if (price === "all") return true;
-  const minBudget = destination.totalBudget?.min || 0;
+  const minBudget = getMinBudget(destination);
   if (price === "above") return minBudget >= 20000;
   const maxPrice = parseInt(price);
   return minBudget < maxPrice;
@@ -149,6 +157,7 @@ export function DestinationsSection() {
   const [seasonFilters, setSeasonFilters] = useState<string[]>([]);
   const [priceFilter, setPriceFilter] = useState("all");
   const [landscapeFilters, setLandscapeFilters] = useState<string[]>([]);
+  const [permitFilters, setPermitFilters] = useState<string[]>([]);
   const sectionRef = useRef<HTMLElement>(null);
 
   // Toggle season filter
@@ -173,6 +182,14 @@ export function DestinationsSection() {
     setCurrentPage(1);
   };
 
+  // Toggle permit filter
+  const togglePermit = (value: string) => {
+    setPermitFilters((prev) =>
+      prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value],
+    );
+    setCurrentPage(1);
+  };
+
   // Filter destinations
   const filteredDestinations = useMemo(() => {
     return destinations.filter((dest) => {
@@ -186,13 +203,26 @@ export function DestinationsSection() {
         landscapeFilters.length === 0 ||
         landscapeFilters.some((landscape) => matchesLandscape(dest, landscape));
 
+      // Check permit filter (both selected or none selected = show all)
+      const matchesPermitFilter = () => {
+        if (permitFilters.length === 0 || permitFilters.length === 2)
+          return true;
+        const needsPermit =
+          dest.permitRequired ??
+          dest.permits?.toLowerCase().includes("required");
+        if (permitFilters.includes("required")) return needsPermit;
+        if (permitFilters.includes("not-required")) return !needsPermit;
+        return true;
+      };
+
       return (
         matchesSeasonsFilter &&
         matchesPrice(dest, priceFilter) &&
-        matchesLandscapesFilter
+        matchesLandscapesFilter &&
+        matchesPermitFilter()
       );
     });
-  }, [seasonFilters, priceFilter, landscapeFilters]);
+  }, [seasonFilters, priceFilter, landscapeFilters, permitFilters]);
 
   // Pagination
   const totalPages = Math.ceil(filteredDestinations.length / ITEMS_PER_PAGE);
@@ -210,12 +240,14 @@ export function DestinationsSection() {
   const activeFiltersCount =
     seasonFilters.length +
     landscapeFilters.length +
-    (priceFilter !== "all" ? 1 : 0);
+    (priceFilter !== "all" ? 1 : 0) +
+    (permitFilters.length === 1 ? 1 : 0);
 
   const clearFilters = () => {
     setSeasonFilters([]);
     setPriceFilter("all");
     setLandscapeFilters([]);
+    setPermitFilters([]);
     setCurrentPage(1);
   };
 
@@ -369,6 +401,38 @@ export function DestinationsSection() {
                 </div>
               </div>
 
+              <div className="w-px h-6 bg-black/10 hidden md:block" />
+
+              {/* Permit Filter */}
+              <div className="flex items-center gap-2">
+                <Lock className="w-3.5 h-3.5 text-content-tertiary hidden sm:block" />
+                <div className="flex gap-1.5">
+                  {PERMIT_OPTIONS.map((option) => {
+                    const isActive = permitFilters.includes(option.value);
+                    return (
+                      <button
+                        key={option.value}
+                        onClick={() => togglePermit(option.value)}
+                        className={`px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-200 ${isActive ? "text-white shadow-md" : "text-content-secondary hover:bg-white/50"}`}
+                        style={
+                          isActive
+                            ? {
+                                background:
+                                  "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+                              }
+                            : {
+                                background: "rgba(255,255,255,0.5)",
+                                border: "1px solid rgba(0,0,0,0.04)",
+                              }
+                        }
+                      >
+                        {option.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
               {/* Clear Button */}
               {activeFiltersCount > 0 && (
                 <>
@@ -487,32 +551,32 @@ export function DestinationsSection() {
         </div>
 
         {/* Destinations Slider - Mobile Only */}
-        <div className="md:hidden">
+        <div className="md:hidden overflow-hidden">
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1.2}
+            modules={[Navigation, Autoplay]}
+            spaceBetween={16}
+            slidesPerView={1}
             centeredSlides={false}
-            pagination={{ clickable: true }}
+            loop={filteredDestinations.length > 1}
             autoplay={{
-              delay: 4000,
+              delay: 3500,
               disableOnInteraction: false,
             }}
             breakpoints={{
-              480: {
+              400: {
+                slidesPerView: 1.1,
+                spaceBetween: 16,
+              },
+              500: {
+                slidesPerView: 1.3,
+                spaceBetween: 16,
+              },
+              640: {
                 slidesPerView: 1.5,
                 spaceBetween: 20,
               },
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 24,
-              },
-              768: {
-                slidesPerView: 2.5,
-                spaceBetween: 24,
-              },
             }}
-            className="pb-12"
+            className="pb-4"
           >
             {filteredDestinations.map(
               (destination: Destination, index: number) => (

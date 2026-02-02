@@ -5,13 +5,58 @@ export const shantiniketan: Destination = {
   id: "shantiniketan",
   name: "Shantiniketan",
   images: [
-    "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1200&q=80",
-    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
-    "https://images.unsplash.com/photo-1459908676235-d5f02a50184b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=1200&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
+    {
+      placeName: "Visva-Bharati University",
+      urls: [
+        "https://www.santiniketan.com/wp-content/uploads/Visva-bharati-university-1-580x435.jpg",
+        "https://c8.alamy.com/comp/PE9MR8/chhatimtala-of-the-visva-bharati-university-santiniketan-bolpur-in-the-birbhum-district-of-west-bengal-india-PE9MR8.jpg",
+        "https://c8.alamy.com/comp/2YWY0E3/old-fairground-of-the-visva-bharati-university-santiniketan-bolpur-in-the-birbhum-district-of-west-bengal-india-2YWY0E3.jpg",
+        "https://c8.alamy.com/comp/PE9HF6/chhatimtala-of-the-visva-bharati-university-santiniketan-bolpur-in-the-birbhum-district-of-west-bengal-india-PE9HF6.jpg",
+        "https://c8.alamy.com/comp/PE9HG7/gateway-of-the-santiniketan-griha-visva-bharati-university-santiniketan-bolpur-in-the-birbhum-district-of-west-bengal-india-PE9HG7.jpg",
+      ],
+    },
+    {
+      placeName: "Uttarayan",
+      urls: [
+        "https://hblimg.mmtcdn.com/content/hubble/img/shantiniketan/mmt/destination/m_destination-shantiniketan-landscape_l_400_640.jpg",
+        "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/23/deeb5f8e7ee3c7eecf87e60ae94c2b49_1000x1000.jpg",
+        "https://travel-india.in/wp-content/uploads/2023/11/Shantiniketan-visva-bharati2.jpg",
+        "https://my-ride.in/uploads/2024/12/shantiniketan-a-gem-in-india-s-world-heritage-landscape.webp",
+        "https://expatria.in/blog/wp-content/uploads/2023/03/shantiniketan.jpg",
+      ],
+    },
+    {
+      placeName: "Kala Bhavana",
+      urls: [
+        "https://mapacademy.io/wp-content/uploads/2023/08/kalabhavana-3m.jpg",
+        "https://www.santiniketan.com/wp-content/uploads/kala-bhavana-scaled.jpg",
+        "https://imagescdn.gettyimagesbank.com/500/23/047/608/0/1694835821.jpg",
+        "https://www.santiniketan.com/wp-content/uploads/Kala_Bhavana_15-scaled.jpg",
+        "https://media.gettyimages.com/id/500399307/photo/kala-bhavan-shantiniketan-west-bengal-india.jpg?s=1024x1024&w=gi&k=20&c=uY-kmh49MJSp7Nq0iONlYWasOLDXtXuwXtSexUU0o80=",
+      ],
+    },
+    {
+      placeName: "Sonajhuri",
+      urls: [
+        "https://www.hlimg.com/images/things2do/738X538/b_1523534971t.jpg",
+        "https://travel-india.in/wp-content/uploads/2023/11/Shantiniketan_Sonajhuri_Forest2.jpg",
+        "https://media.cntraveller.in/wp-content/uploads/2020/05/Bengal-tagore-1366x768.jpg",
+        "https://c8.alamy.com/comp/2HNBD0R/sonajhuri-forest-ballavpur-birbhum-west-bengal-india-2HNBD0R.jpg",
+        "https://c8.alamy.com/comp/2HNBCEH/sonajhuri-forest-ballavpur-birbhum-west-bengal-india-2HNBCEH.jpg",
+      ],
+    },
+    {
+      placeName: "Amar Kutir",
+      urls: [
+        "https://eindiatourism.in/wp-content/uploads/2024/07/Amar-Kutir12.jpeg",
+        "https://eindiatourism.in/wp-content/uploads/2024/07/Amar-Kutir.jpeg",
+        "https://en-media.thebetterindia.com/uploads/2023/05/amar-kutir-1684242885-500x261.jpg",
+        "https://eindiatourism.in/wp-content/uploads/2024/07/21Amar-Kutir.jpeg",
+        "https://www.indianetzone.com/public/admin/uploadImage/Amar_Kutir__2.jpg",
+      ],
+    },
   ],
+
   duration: "5 Days / 4 Nights",
   destination: "Shantiniketan",
   state: "West Bengal",
@@ -79,78 +124,62 @@ export const shantiniketan: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Bolpur round trip)",
-        low: 200,
-        typical: 500,
-        notes: "Short 2.5 hour journey",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Bolpur round trip)",
+          low: 200,
+          typical: 500,
+          notes: "Short 2.5 hour journey",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 2400,
+          typical: 4800,
+          notes: "₹400–800/night guesthouses",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1200,
+          typical: 2100,
+          notes: "₹170–300/day Bengali food",
+        },
+        {
+          item: "Cycle rental",
+          low: 300,
+          typical: 600,
+          notes: "₹50–100/day",
+        },
+        {
+          item: "Entry fees & guides",
+          low: 200,
+          typical: 500,
+          notes: "Visva-Bharati, museums",
+        },
+        {
+          item: "Misc (handicrafts, tips)",
+          low: 300,
+          typical: 700,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 4600,
+        typical: 9200,
+        typicalRange: "₹6k–10k",
       },
-      {
-        item: "Accommodation (6 nights)",
-        low: 2400,
-        typical: 4800,
-        notes: "₹400–800/night guesthouses",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1200,
-        typical: 2100,
-        notes: "₹170–300/day Bengali food",
-      },
-      {
-        item: "Cycle rental",
-        low: 300,
-        typical: 600,
-        notes: "₹50–100/day",
-      },
-      {
-        item: "Entry fees & guides",
-        low: 200,
-        typical: 500,
-        notes: "Visva-Bharati, museums",
-      },
-      {
-        item: "Misc (handicrafts, tips)",
-        low: 300,
-        typical: 700,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 4600,
-      typical: 9200,
-      typicalRange: "₹6k–10k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "200–500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "1,800–3,200",
-      },
-      {
-        category: "Food",
-        perPerson: "1,000–1,800",
-      },
-      {
-        category: "Cycle rental",
-        perPerson: "250–500",
-      },
-      {
-        category: "Entry fees",
-        perPerson: "150–400",
-      },
-      {
-        category: "Misc",
-        perPerson: "200–500",
-      },
-    ],
-    total: "₹3,600–6,900",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 200, typical: 500, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 1800, typical: 3200, notes: "" },
+        { item: "Food", low: 1000, typical: 1800, notes: "" },
+        { item: "Cycle rental", low: 250, typical: 500, notes: "" },
+        { item: "Entry fees", low: 150, typical: 400, notes: "" },
+        { item: "Misc", low: 200, typical: 500, notes: "" },
+      ],
+      total: { low: 3600, typical: 6900, typicalRange: "₹3,600–6,900" },
+    },
   },
   bookingTips: [
     "Visit during Poush Mela (December) or Basanta Utsav (March) for festivals",

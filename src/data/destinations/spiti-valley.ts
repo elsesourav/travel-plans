@@ -5,13 +5,58 @@ export const spiti_valley: Destination = {
   id: "spiti-valley",
   name: "Spiti Valley",
   images: [
-    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1609619385002-f40f1df827b8?w=1200&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1545378889-6d7eb2cf1020?w=1200&q=80",
-    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+    {
+      placeName: "Key Monastery",
+      urls: [
+        "https://media.cntraveller.in/wp-content/uploads/2017/01/spiti-lead-image-1366x768.jpg",
+        "https://c8.alamy.com/comp/2AF2HKW/view-of-the-ancient-key-monastery-flanked-by-the-high-himalayas-and-the-spiti-river-and-valley-on-a-summers-day-near-kaza-himachal-pradesh-india-2AF2HKW.jpg",
+        "https://himalayasdigital.com/wp-content/uploads/2025/06/Key-Monastery-Spiti-valley-1024x677.webp",
+        "https://c8.alamy.com/comp/3ANR4TR/aerial-view-of-key-monastery-in-snow-covered-spiti-valley-himachal-pradesh-india-3ANR4TR.jpg",
+        "https://c8.alamy.com/comp/F5RPKK/key-monastery-spiti-valley-himachal-pradesh-india-asia-F5RPKK.jpg",
+      ],
+    },
+    {
+      placeName: "Chandratal Lake",
+      urls: [
+        "https://as2.ftcdn.net/v2/jpg/03/62/20/95/1000_F_362209574_rNryKHuWrcAEkhRPgaGCaKXrrSr16sFo.jpg",
+        "https://www.transformingtravels.com/wp-content/uploads/2022/01/Chandratal-Lake.jpg",
+        "https://pushpendragautam.in/Images%20for%20Posts/2017/Jul/chandratal/Chandratal-lake-himachal-pradesh-spiti-valley-pics-chandratal-lake-moon-lake-india-travel-pics-best-travel-photographer-india-1.jpg",
+        "https://himalayasdigital.com/wp-content/uploads/2025/05/chandratal-lake.webp",
+        "https://pushpendragautam.in/Images%20for%20Posts/2017/Jul/chandratal/Chandratal-lake-himachal-pradesh-spiti-valley-pics-chandratal-lake-moon-lake-india-travel-pics-best-travel-photographer-india-3.jpg",
+      ],
+    },
+    {
+      placeName: "Komic & Langza",
+      urls: [
+        "https://www.shutterstock.com/image-photo/view-hikkim-village-komic-spiti-260nw-2241933449.jpg",
+        "https://c8.alamy.com/comp/2s1bc96/an-aerial-view-of-komic-village-with-beautiful-himalaya-mountains-and-komic-monastery-komic-village-is-the-worlds-highest-motorable-village-in-spiti-valley-himachal-pradesh-india-2s1bc96.jpg",
+        "https://c8.alamy.com/comp/2F99D0B/panoramic-view-of-langza-village-in-the-cold-desert-valley-of-spiti-in-the-himalayas-of-himachal-pradesh-india-it-is-famous-for-fossils-of-marine-an-2F99D0B.jpg",
+        "https://image.shutterstock.com/image-photo/panoramic-landscape-spiti-valley-snow-260nw-1628084956.jpg",
+        "https://image.shutterstock.com/image-photo/spiti-valley-himachal-pradesh-india-260nw-1593367042.jpg",
+      ],
+    },
+    {
+      placeName: "Hikkim",
+      urls: [
+        "https://c8.alamy.com/comp/KWE287/himalayan-landscapes-around-chandra-taal-during-spiti-valley-road-KWE287.jpg",
+        "https://holidays.tripfactory.com/blogs/wp-content/uploads/sites/6/2025/01/Spiti-Valley-Himachal-Pradesh.webp",
+        "https://c8.alamy.com/comp/2H2DRGA/landscape-in-the-spiti-valley-and-a-herd-of-wild-ibex-among-sparse-vegetation-under-harsh-sun-and-blue-sky-near-hikkim-himachal-pradesh-india-2H2DRGA.jpg",
+        "https://c8.alamy.com/comp/2ABKFW8/hikkim-himachal-pradesh-india-himalayan-ibex-forage-in-the-barren-landscape-of-the-spiti-valley-flanked-by-snow-peaked-himalayas-near-hikkim-himac-2ABKFW8.jpg",
+        "https://c8.alamy.com/comp/2G71BA9/hikkim-india-june-2021-view-of-hikkim-village-in-the-spiti-valley-in-the-himalayas-on-june-29-2021-in-himachal-pradesh-india-2G71BA9.jpg",
+      ],
+    },
+    {
+      placeName: "Pin Valley",
+      urls: [
+        "https://www.himalayancrest.com/wp-content/uploads/2018/12/Pin-Valley-Spiti-Himachal-pradesh-1.jpg",
+        "https://static.wixstatic.com/media/9b64ce_8e215f7c89b240788fd49a2d807f2e4b~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/9b64ce_8e215f7c89b240788fd49a2d807f2e4b~mv2.jpg",
+        "https://i.postimg.cc/Kc1j3x8p/Pin-valley.jpg",
+        "https://media1.thrillophilia.com/filestore/qpykps0ep7m1elch8uiz3klddkut_1577278146_shutterstock_1376647736.jpg?w=1440&dpr=2",
+        "https://static.wixstatic.com/media/9b64ce_6c12d2db17824a6f94da94fd6ab43eed~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01/9b64ce_6c12d2db17824a6f94da94fd6ab43eed~mv2.jpg",
+      ],
+    },
   ],
+
   duration: "2 Days / 1 Night",
   destination: "Spiti Valley",
   state: "Himachal Pradesh",
@@ -80,78 +125,72 @@ export const spiti_valley: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Flight (Kolkata ↔ Delhi/Chandigarh round trip)",
-        low: 5000,
-        typical: 10000,
-        notes: "Book early for deals",
+    perPerson: {
+      items: [
+        {
+          item: "Flight (Kolkata ↔ Delhi/Chandigarh round trip)",
+          low: 5000,
+          typical: 10000,
+          notes: "Book early for deals",
+        },
+        {
+          item: "Road transfers (to/within Spiti)",
+          low: 10000,
+          typical: 18000,
+          notes: "Shared cabs/local taxi",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3600,
+          typical: 7200,
+          notes: "₹600–1,200/night homestays",
+        },
+        {
+          item: "Food (7 days)",
+          low: 2000,
+          typical: 3500,
+          notes: "₹280–500/day simple meals",
+        },
+        {
+          item: "Local transport & sightseeing",
+          low: 1000,
+          typical: 3000,
+          notes: "Shared jeeps, fuel",
+        },
+        {
+          item: "Misc (monasteries, tips)",
+          low: 500,
+          typical: 1500,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 22100,
+        typical: 43200,
+        typicalRange: "₹25k–45k",
       },
-      {
-        item: "Road transfers (to/within Spiti)",
-        low: 10000,
-        typical: 18000,
-        notes: "Shared cabs/local taxi",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3600,
-        typical: 7200,
-        notes: "₹600–1,200/night homestays",
-      },
-      {
-        item: "Food (7 days)",
-        low: 2000,
-        typical: 3500,
-        notes: "₹280–500/day simple meals",
-      },
-      {
-        item: "Local transport & sightseeing",
-        low: 1000,
-        typical: 3000,
-        notes: "Shared jeeps, fuel",
-      },
-      {
-        item: "Misc (monasteries, tips)",
-        low: 500,
-        typical: 1500,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 22100,
-      typical: 43200,
-      typicalRange: "₹25k–45k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Flight tickets",
-        perPerson: "5,000–10,000",
-      },
-      {
-        category: "Shared road vehicle (split)",
-        perPerson: "6,000–10,000",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,400–4,800",
-      },
-      {
-        category: "Food",
-        perPerson: "1,800–3,000",
-      },
-      {
-        category: "Local tours & sightseeing",
-        perPerson: "600–1,800",
-      },
-      {
-        category: "Misc",
-        perPerson: "400–1,000",
-      },
-    ],
-    total: "₹16,200–30,600",
+    sixPerson: {
+      items: [
+        { item: "Flight tickets", low: 5000, typical: 10000, notes: "" },
+        {
+          item: "Shared road vehicle (split)",
+          low: 6000,
+          typical: 10000,
+          notes: "",
+        },
+        { item: "Shared rooms (3 rooms)", low: 2400, typical: 4800, notes: "" },
+        { item: "Food", low: 1800, typical: 3000, notes: "" },
+        {
+          item: "Local tours & sightseeing",
+          low: 600,
+          typical: 1800,
+          notes: "",
+        },
+        { item: "Misc", low: 400, typical: 1000, notes: "" },
+      ],
+      total: { low: 16200, typical: 30600, typicalRange: "₹16,200–30,600" },
+    },
   },
   bookingTips: [
     "Roads open only May–October — check pass status before travel",

@@ -5,13 +5,58 @@ export const yuksom: Destination = {
   id: "yuksom",
   name: "Yuksom",
   images: [
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1585136917228-d0a0426b2030?w=1200&q=80",
-    "https://images.unsplash.com/photo-1545562083-c583d014b4f2?w=1200&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+    {
+      placeName: "Dubdi Monastery",
+      urls: [
+        "https://www.oddessemania.in/wp-content/uploads/2023/08/Dubdi-monastery.jpg",
+        "https://alchetron.com/cdn/dubdi-monastery-b43e43e1-c2ec-4409-8bf4-a75179fe921-resize-750.jpeg",
+        "https://adventuresindbad.com/wp-content/uploads/2019/07/Dubdi-Monastery-Yuksom-Sikkim-1024x683.jpg",
+        "https://img.traveltriangle.com/blog/wp-content/uploads/2024/08/Dubdi-Monastery.jpg",
+        "https://static.toiimg.com/photo/msid-91382791,width-96,height-65.cms",
+      ],
+    },
+    {
+      placeName: "Norbugang Coronation Throne",
+      urls: [
+        "https://oddessemania.in/wp-content/uploads/2024/09/Coronation-Throne-of-Norbugang-one-of-the-famous-historical-places-of-Sikkim.jpg",
+        "https://www.tourmyindia.com/states/sikkim/images/norbugang-coronation-throne1.jpg",
+        "https://www.tourmyindia.com/images/norbugang-coronation-throne3.jpg",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b0/6a/29/caption.jpg?w=600&h=600&s=1",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/59/92/2b/caption.jpg?w=600&h=600&s=1",
+      ],
+    },
+    {
+      placeName: "Goecha La Trek",
+      urls: [
+        "https://www.bontravelindia.com/wp-content/uploads/2022/05/Goecha-La-Trek-Sikkim.jpg",
+        "https://c8.alamy.com/comp/GCGMKF/amazing-landscape-photographed-in-goecha-la-trekking-route-in-sikkim-GCGMKF.jpg",
+        "https://nomadsofindia.com/wp-content/uploads/2023/07/Goechala-Trek.jpg",
+        "https://i0.wp.com/www.singhontrek.in/wp-content/uploads/2020/09/Cholamu-e1601126089202.jpg?fit=700%2C417&ssl=1",
+        "https://www.himalayajourneys.com/assets/images/india/sikkim-goecha-la-trek.jpg",
+      ],
+    },
+    {
+      placeName: "Khecheopalri Lake",
+      urls: [
+        "https://heroesofadventure.com/wp-content/uploads/2019/07/khecheopalri-lake-sikkim.jpg",
+        "https://img.traveltriangle.com/blog/wp-content/uploads/2017/08/khecheopalri-lake.jpg",
+        "https://indiano.travel/wp-content/uploads/2022/03/Khecheopalri-Lake.jpg",
+        "https://indiano.travel/wp-content/uploads/2022/03/Khecheopalri-Lake-is-a-holy-lake-in-Sikkim-India.-It-is-in-the-shape-of-a-footprint-believed-to-be-the-foot-of-Guru-Padmasambhava.jpg",
+        "https://image.shutterstock.com/shutterstock/photos/1383582590/display_1500/stock-photo-khecheopalri-lake-geyzing-sikkim-india-1383582590.jpg",
+      ],
+    },
+    {
+      placeName: "Tashiding Monastery",
+      urls: [
+        "https://assets.traveltriangle.com/blog/wp-content/uploads/2019/10/Tashiding-MonasteryYuksom0310.jpg",
+        "https://live.staticflickr.com/5642/20593976208_a9a4d00ab1_b.jpg",
+        "https://beyonder.travel/wp-content/uploads/2020/06/Tashiding-Monastery-Sikkim.jpg",
+        "https://sikkimtourism.org/wp-content/uploads/2022/07/Tashiding-Monastery-700x500.jpg",
+        "https://assets.traveltriangle.com/blog/wp-content/uploads/2017/11/The-gompas-of-Tashiding-Monastery-overlooking-mountains-in-Sikkim-ss28112016.jpg",
+      ],
+    },
   ],
+
   duration: "5 Days / 4 Nights",
   destination: "Yuksom",
   state: "Sikkim",
@@ -31,7 +76,7 @@ export const yuksom: Destination = {
     longitude: "88.2217°E",
   },
   permits: "ILP required for certain areas (apply at Rangpo/Gangtok)",
-  bestSeason: "March to May, October to November",
+  bestSeason: "Mar to May, Oct to Nov",
   seasonNote:
     "Spring has rhododendron blooms. Autumn offers clear mountain views. Monsoon has heavy rains.",
   keyAttractions: [
@@ -79,84 +124,73 @@ export const yuksom: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ NJP round trip)",
-        low: 600,
-        typical: 1500,
-        notes: "8-10 hours journey",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ NJP round trip)",
+          low: 600,
+          typical: 1500,
+          notes: "8-10 hours journey",
+        },
+        {
+          item: "Shared taxi (NJP ↔ Yuksom circuit)",
+          low: 2000,
+          typical: 4000,
+          notes: "Via Pelling route",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3600,
+          typical: 6000,
+          notes: "₹600–1,000/night homestays",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1800,
+          typical: 3000,
+          notes: "₹250–400/day",
+        },
+        {
+          item: "Permits (if trekking beyond)",
+          low: 0,
+          typical: 500,
+          notes: "Dzongri trek needs permit",
+        },
+        {
+          item: "Local guides & activities",
+          low: 500,
+          typical: 1500,
+          notes: "Trek guides, monastery fees",
+        },
+        {
+          item: "Misc (tips, shopping)",
+          low: 400,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 8900,
+        typical: 17300,
+        typicalRange: "₹12k–18k",
       },
-      {
-        item: "Shared taxi (NJP ↔ Yuksom circuit)",
-        low: 2000,
-        typical: 4000,
-        notes: "Via Pelling route",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3600,
-        typical: 6000,
-        notes: "₹600–1,000/night homestays",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1800,
-        typical: 3000,
-        notes: "₹250–400/day",
-      },
-      {
-        item: "Permits (if trekking beyond)",
-        low: 0,
-        typical: 500,
-        notes: "Dzongri trek needs permit",
-      },
-      {
-        item: "Local guides & activities",
-        low: 500,
-        typical: 1500,
-        notes: "Trek guides, monastery fees",
-      },
-      {
-        item: "Misc (tips, shopping)",
-        low: 400,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 8900,
-      typical: 17300,
-      typicalRange: "₹12k–18k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "600–1,500",
-      },
-      {
-        category: "Shared vehicle (chartered)",
-        perPerson: "1,200–2,500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,400–4,000",
-      },
-      {
-        category: "Food",
-        perPerson: "1,500–2,500",
-      },
-      {
-        category: "Permits & guides",
-        perPerson: "300–1,000",
-      },
-      {
-        category: "Misc",
-        perPerson: "300–600",
-      },
-    ],
-    total: "₹6,300–12,100",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 600, typical: 1500, notes: "" },
+        {
+          item: "Shared vehicle (chartered)",
+          low: 1200,
+          typical: 2500,
+          notes: "",
+        },
+        { item: "Shared rooms (3 rooms)", low: 2400, typical: 4000, notes: "" },
+        { item: "Food", low: 1500, typical: 2500, notes: "" },
+        { item: "Permits & guides", low: 300, typical: 1000, notes: "" },
+        { item: "Misc", low: 300, typical: 600, notes: "" },
+      ],
+      total: { low: 6300, typical: 12100, typicalRange: "₹6,300–12,100" },
+    },
   },
   bookingTips: [
     "Perfect base for Goecha La trek (needs 8-10 extra days with permits)",

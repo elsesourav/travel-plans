@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { DestinationPage, HomePage } from "@/pages";
+import { ComparePage, DestinationPage, HomePage, TipsPage } from "@/pages";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -11,6 +11,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="destination/:slug" element={<DestinationPage />} />
+          <Route path="compare" element={<ComparePage />} />
+          <Route path="tips" element={<TipsPage />} />
         </Route>
       </Routes>
     </>

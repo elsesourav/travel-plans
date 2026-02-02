@@ -5,13 +5,58 @@ export const khonoma: Destination = {
   id: "khonoma",
   name: "Khonoma",
   images: [
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
-    "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1200&q=80",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+    {
+      placeName: "Khonoma Village",
+      urls: [
+      "https://magikindia.com/wp-content/uploads/2018/07/khonoma-nagaland-1024x683.jpg",
+      "https://static2.tripoto.com/media/filter/nl/img/371044/TripDocument/1505033855_mg_3439.jpg",
+      "https://static.toiimg.com/photo/102086480/Khonoma.jpg?width=748&resize=4",
+      "https://3.bp.blogspot.com/-8wG07h0sKCs/V0ILmfGL8ZI/AAAAAAAAC_M/k-TbSLfMNCIW0ivwEArEiK44ndKlA_oKACLcB/s1600/khonoma%2Bgreen%2Bvillage%2Bnagaland%2Bterrace%2Bfields.jpg",
+      "https://magikindia.com/wp-content/uploads/2017/05/khonoma-8.jpg",
+      ],
+    },
+    {
+      placeName: "Dzuleke Village",
+      urls: [
+      "https://i2.wp.com/unconventionalandvivid.com/wp-content/uploads/2019/07/imgonline-com-ua-compressed-25dFO0slSL.jpg?resize=866%2C577&ssl=1",
+      "https://nnnagischool.edu.in/sites/default/files/2022-02/IMG-20211211-WA0056.jpg",
+      "https://th-i.thgim.com/public/migration_catalog/article14033281.ece/alternates/LANDSCAPE_1200/05_YT_Dzuleke.jpg",
+      "https://static-blog.treebo.com/wp-content/uploads/2023/09/Dzuleke-1024x675.jpg",
+      "https://discovernagaland.in/wp-content/uploads/2018/03/TY_6730-FILEminimizer.jpg",
+      ],
+    },
+    {
+      placeName: "Angami Heritage",
+      urls: [
+      "https://magikindia.com/wp-content/uploads/2018/07/khonoma-nagaland-1024x683.jpg",
+      "https://media.istockphoto.com/id/1772397415/photo/khonoma-indias-first-green-village.jpg?s=612x612&w=0&k=20&c=HpkjIb7QJjQ5zqq_vJwwL6rtcSbKj35iDcAjzpaTh30=",
+      "https://l450v.alamy.com/450v/2pptj3c/nagalands-khonoma-famously-known-as-the-first-green-village-of-asia-where-hunting-is-banned-and-tribe-of-angami-is-committed-to-protecting-nature-2pptj3c.jpg",
+      "https://static.toiimg.com/photo/102086480/Khonoma.jpg?width=748&resize=4",
+      "https://api.breakbag.com/storage/images/adobestock_424010318-1u1rrl6fn39ts7h9-1720763695857.jpg",
+      ],
+    },
+    {
+      placeName: "Tragopan Trail",
+      urls: [
+      "https://www.birdquest-tours.com/wp-content/uploads/2024/07/Climbing-the-Tragopan-trail-in-Nagaland-NE-INDIA-2024-HJ.jpg",
+      "https://nenow.in/wp-content/uploads/2021/05/Khonoma-Nature-Conservation-750x375.jpg",
+      "https://static-blog.treebo.com/wp-content/uploads/2023/09/Khonoma-Nature-Conservation-and-Tragopan-Sanctuary.jpg",
+      "https://peopleplaces.in/wp-content/uploads/2023/04/Khonoma-Nature-Conservation-Tragopan-Sanctuary.jpg",
+      "https://www.morungexpress.com/uploads/2021/05/71804934_1621701002_view%20of%20khonoma_morung%20file%20photo.jpg",
+      ],
+    },
+    {
+      placeName: "Kohima",
+      urls: [
+      "https://3.bp.blogspot.com/--_UBkzTEOsY/V0INiqadCBI/AAAAAAAAC_s/FuNIHSaI1qMMeUxW0P2XFDc7VShLWq7YACLcB/s1600/khonoma%2Bgreen%2Bvillage%2Bnagaland%2Bfields.jpg",
+      "https://media.istockphoto.com/photos/green-hilly-landscape-of-nagaland-picture-id1289872995?k=20&m=1289872995&s=612x612&w=0&h=WfH2nYnKW6Snk4xc3-l8mc9JXiJllxH58AB2I8IGEvQ=",
+      "https://magikindia.com/wp-content/uploads/2018/07/khonoma-nagaland-1024x683.jpg",
+      "https://media.istockphoto.com/id/1772397415/photo/khonoma-indias-first-green-village.jpg?s=612x612&w=0&k=20&c=HpkjIb7QJjQ5zqq_vJwwL6rtcSbKj35iDcAjzpaTh30=",
+      "https://c8.alamy.com/comp/DGPF53/landscape-view-from-kohima-nagaland-india-DGPF53.jpg",
+      ],
+    },
   ],
+  
   duration: "4 Days / 3 Nights",
   destination: "Khonoma",
   state: "Nagaland",
@@ -79,78 +124,62 @@ export const khonoma: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Flight (Kolkata ↔ Dimapur round trip)",
-        low: 5000,
-        typical: 10000,
-        notes: "Or train ₹1,500–3,000",
+    perPerson: {
+      items: [
+        {
+          item: "Flight (Kolkata ↔ Dimapur round trip)",
+          low: 5000,
+          typical: 10000,
+          notes: "Or train ₹1,500–3,000",
+        },
+        {
+          item: "Road transfers (Dimapur ↔ Khonoma)",
+          low: 600,
+          typical: 1800,
+          notes: "₹300–400/leg shared taxi",
+        },
+        {
+          item: "Accommodation (6 nights, homestay)",
+          low: 3000,
+          typical: 6000,
+          notes: "Village guesthouses",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1400,
+          typical: 2500,
+          notes: "₹200–400/day Naga cuisine",
+        },
+        {
+          item: "Local guides & activities",
+          low: 400,
+          typical: 1200,
+          notes: "Birdwatching, tribal visits",
+        },
+        {
+          item: "Misc (crafts, tips)",
+          low: 300,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 10700,
+        typical: 22300,
+        typicalRange: "₹12k–22k",
       },
-      {
-        item: "Road transfers (Dimapur ↔ Khonoma)",
-        low: 600,
-        typical: 1800,
-        notes: "₹300–400/leg shared taxi",
-      },
-      {
-        item: "Accommodation (6 nights, homestay)",
-        low: 3000,
-        typical: 6000,
-        notes: "Village guesthouses",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1400,
-        typical: 2500,
-        notes: "₹200–400/day Naga cuisine",
-      },
-      {
-        item: "Local guides & activities",
-        low: 400,
-        typical: 1200,
-        notes: "Birdwatching, tribal visits",
-      },
-      {
-        item: "Misc (crafts, tips)",
-        low: 300,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 10700,
-      typical: 22300,
-      typicalRange: "₹12k–22k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Flight/Train tickets",
-        perPerson: "5,000–10,000",
-      },
-      {
-        category: "Shared vehicle",
-        perPerson: "350–900",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,000–4,000",
-      },
-      {
-        category: "Food",
-        perPerson: "1,200–2,000",
-      },
-      {
-        category: "Guides & activities",
-        perPerson: "250–700",
-      },
-      {
-        category: "Misc",
-        perPerson: "200–500",
-      },
-    ],
-    total: "₹9,000–18,100",
+    sixPerson: {
+      items: [
+        { item: "Flight/Train tickets", low: 5000, typical: 10000, notes: "" },
+        { item: "Shared vehicle", low: 350, typical: 900, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2000, typical: 4000, notes: "" },
+        { item: "Food", low: 1200, typical: 2000, notes: "" },
+        { item: "Guides & activities", low: 250, typical: 700, notes: "" },
+        { item: "Misc", low: 200, typical: 500, notes: "" },
+      ],
+      total: { low: 9000, typical: 18100, typicalRange: "₹9,000–18,100" },
+    },
   },
   bookingTips: [
     "Visit during Hornbill Festival (December) in Kohima for incredible cultural experience",

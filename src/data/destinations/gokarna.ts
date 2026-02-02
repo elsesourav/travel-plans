@@ -5,13 +5,58 @@ export const gokarna: Destination = {
   id: "gokarna",
   name: "Gokarna",
   images: [
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1200&q=80",
-    "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1200&q=80",
-    "https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?w=1200&q=80",
-    "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80",
+    {
+      placeName: "Om Beach",
+      urls: [
+        "https://img.freepik.com/premium-photo/beautiful-om-beach-with-yellow-sand-gokarna-karnataka-india_431724-2980.jpg",
+        "https://image.shutterstock.com/image-photo/beautiful-om-beach-gokarna-karnataka-600w-491757385.jpg",
+        "https://c8.alamy.com/comp/2DAM1BF/om-beach-in-gokarna-summer-landscape-karnataka-india-2DAM1BF.jpg",
+        "https://c8.alamy.com/comp/2CJT7G7/landscape-serene-view-with-sea-horizon-and-dense-green-forests-image-is-taken-at-om-beach-gokarna-karnataka-india-from-mountain-top-it-is-showing-the-2CJT7G7.jpg",
+        "https://c8.alamy.com/comp/2CJT7C0/landscape-serene-view-with-sea-horizon-and-dense-green-forests-image-is-taken-at-om-beach-gokarna-karnataka-india-from-mountain-top-it-is-showing-the-2CJT7C0.jpg",
+      ],
+    },
+    {
+      placeName: "Kudle Beach",
+      urls: [
+        "http://gokarnatourism.co.in/images/places-to-visit/header/kudle-beach-gokarna-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+        "https://s3.india.com/travel/wp-content/uploads/2018/01/Gokarna-photo-3.jpg",
+        "https://c8.alamy.com/comp/E7F4GH/kudle-beach-gokarna-karnataka-india-E7F4GH.jpg",
+        "https://hblimg.mmtcdn.com/content/hubble/img/gokarna/mmt/activities/m_Kudle%20Beach-2_l_421_928.jpg",
+        "https://media.gettyimages.com/id/158776034/photo/kudle-beach-in-gokarna-karnataka-india.jpg?s=612x612&w=gi&k=20&c=tTEts13hXe5yhBRm6fxFjSQLNOorSGu6trsYoHFNPPA=",
+      ],
+    },
+    {
+      placeName: "Paradise Beach",
+      urls: [
+        "https://media.istockphoto.com/photos/paradise-beach-in-gokarna-beautiful-deserted-landscape-with-clean-picture-id654960130?k=6&m=654960130&s=612x612&w=0&h=NB5Tvi7eNEClXlfMR5J1k83J38iCUl9zekStbaiR37Q=",
+        "https://c8.alamy.com/comp/M9EB3E/paradise-beach-in-gokarna-india-beautiful-deserted-landscape-with-clean-sand-and-wave-view-from-the-sea-to-the-shore-M9EB3E.jpg",
+        "https://www.holidify.com/images/cmsuploads/compressed/Paradise-Beach_20180308143511.jpg",
+        "https://static.india.com/wp-content/uploads/2022/07/Paradise-Beach-Gokarna.jpg",
+        "https://static2.tripoto.com/media/filter/nl/img/395463/TripDocument/1568458658_gopr0275_01.jpg",
+      ],
+    },
+    {
+      placeName: "Mahabaleshwar Temple",
+      urls: [
+        "https://static.toiimg.com/photo/47596395/.jpg",
+        "https://www.poojn.in/wp-content/uploads/2025/06/Mahabaleshwar-Temple-Gokarna-The-2025-Visitors-Guide.jpeg.jpg",
+        "https://c8.alamy.com/comp/2S0RGTX/the-mahabaleshwar-temple-is-a-hindu-temple-located-in-gokarna-karnataka-state-in-india-2S0RGTX.jpg",
+        "https://i1.wp.com/blog.templesofindia.org/wp-content/uploads/2021/10/Cc6l-_0UsAAsE2H.jpg?w=800&ssl=1",
+        "https://im.whatshot.in/img/2022/Jun/header-cropped-1654251066-1654501960.jpg",
+      ],
+    },
+    {
+      placeName: "Half Moon Beach",
+      urls: [
+        "https://static.thehosteller.com/blogimage/Half%20Moon%20Beach-1688713942927.JPG",
+        "https://edge.ixigo.com/ixi-api/img/511a2777e4b015f836876f3a_600x315.jpg",
+        "http://3.bp.blogspot.com/-FbthO6nunSs/U0EAiKOfU3I/AAAAAAAABuM/xav7wGB8H_Q/s1600/HalfMoonBeach+SirsiTourism.blogspot.com+(1).jpg",
+        "https://bookmetickets.com/static/falcon/img/stock/page/5bb2d94d04a28675b2b99da3/6130901204a28615b770acf9/Half_Moon_Beach_new.jpg",
+        "https://gokarnatourism.co.in/images/places-to-visit/header/half-moon-beach-gokarna-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+      ],
+    },
   ],
+
   duration: "5 Days / 4 Nights",
   destination: "Gokarna",
   state: "Karnataka",
@@ -79,78 +124,62 @@ export const gokarna: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Gokarna Road round trip)",
-        low: 1200,
-        typical: 2500,
-        notes: "Konkan route is scenic",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Gokarna Road round trip)",
+          low: 1200,
+          typical: 2500,
+          notes: "Konkan route is scenic",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3600,
+          typical: 6000,
+          notes: "₹600–1,000/night beach shacks",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1800,
+          typical: 3000,
+          notes: "₹250–400/day café food",
+        },
+        {
+          item: "Beach activities",
+          low: 500,
+          typical: 1500,
+          notes: "Kayaking, snorkeling, boat rides",
+        },
+        {
+          item: "Local transport",
+          low: 400,
+          typical: 1000,
+          notes: "Auto, boat to beaches",
+        },
+        {
+          item: "Misc (shopping, tips)",
+          low: 300,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 7800,
+        typical: 14800,
+        typicalRange: "₹10k–15k",
       },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3600,
-        typical: 6000,
-        notes: "₹600–1,000/night beach shacks",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1800,
-        typical: 3000,
-        notes: "₹250–400/day café food",
-      },
-      {
-        item: "Beach activities",
-        low: 500,
-        typical: 1500,
-        notes: "Kayaking, snorkeling, boat rides",
-      },
-      {
-        item: "Local transport",
-        low: 400,
-        typical: 1000,
-        notes: "Auto, boat to beaches",
-      },
-      {
-        item: "Misc (shopping, tips)",
-        low: 300,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 7800,
-      typical: 14800,
-      typicalRange: "₹10k–15k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "1,200–2,500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,400–4,000",
-      },
-      {
-        category: "Food",
-        perPerson: "1,500–2,500",
-      },
-      {
-        category: "Beach activities",
-        perPerson: "300–1,000",
-      },
-      {
-        category: "Local transport (shared)",
-        perPerson: "250–600",
-      },
-      {
-        category: "Misc",
-        perPerson: "200–500",
-      },
-    ],
-    total: "₹5,850–11,100",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 1200, typical: 2500, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2400, typical: 4000, notes: "" },
+        { item: "Food", low: 1500, typical: 2500, notes: "" },
+        { item: "Beach activities", low: 300, typical: 1000, notes: "" },
+        { item: "Local transport (shared)", low: 250, typical: 600, notes: "" },
+        { item: "Misc", low: 200, typical: 500, notes: "" },
+      ],
+      total: { low: 5850, typical: 11100, typicalRange: "₹5,850–11,100" },
+    },
   },
   bookingTips: [
     "Beach shacks/huts offer authentic experience and best budget stays",

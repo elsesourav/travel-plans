@@ -5,13 +5,58 @@ export const valparai: Destination = {
   id: "valparai",
   name: "Valparai",
   images: [
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
-    "https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?w=1200&q=80",
-    "https://images.unsplash.com/photo-1432889490240-84df33d47091?w=1200&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
+    {
+      placeName: "Athirapally Falls",
+      urls: [
+        "https://irisholidays.com/keralatourism/wp-content/uploads/2019/01/Athirapally-Falls.jpg",
+        "https://www.holidaylandmark.com/blog/wp-content/uploads/2022/04/athirapally-waterfall-02.jpg",
+        "https://www.petravalparai.com/img/tourist-places/athirappily-falls.jpg",
+        "https://www.scrolldroll.com/wp-content/uploads/2017/11/Athirapally-Falls-Kerala-Most-Beautiful-Waterfalls-Of-India.jpg",
+        "https://irisholidays.com/keralatourism/wp-content/uploads/2019/01/Athirapally_Water_falls.jpg",
+      ],
+    },
+    {
+      placeName: "Tea Estates",
+      urls: [
+        "https://media.istockphoto.com/id/1455469949/zh/%E7%85%A7%E7%89%87/spectacular-view-of-valparai-tea-estate-tea-gardens-tea-plantations-in-valparai-tamil-nadu-india.jpg?s=612x612&w=is&k=20&c=n3d-ffvkwGy2H89Ms0B2NKEZXUn7rgc2U8SQWdNbjAg=",
+        "https://media.istockphoto.com/id/1455469940/photo/spectacular-view-of-valparai-tea-estate-tea-gardens-tea-plantations-in-valparai-tamil-nadu.jpg?s=612x612&w=is&k=20&c=qZPwAaiMdGVvL-QPoYEW2Gts35HWgM29LlW1BQ7otss=",
+        "https://media.istockphoto.com/id/1455469789/photo/beauty-of-tea-gardens-tea-plantations-tea-estates-in-valparai-tamil-nadu-india.jpg?s=1024x1024&w=is&k=20&c=An3URsZOk6qhsKfdxoR_t8azZceQ95zFTN00X5A8RP4=",
+        "https://c8.alamy.com/comp/W5PHNA/valparai-tea-estate-and-the-wildlife-inside-it-in-tamilnadu-india-W5PHNA.jpg",
+        "https://c8.alamy.com/comp/P2PX6F/tea-plantations-in-the-valparai-forest-tamil-nadu-district-india-P2PX6F.jpg",
+      ],
+    },
+    {
+      placeName: "Lion-tailed Macaques",
+      urls: [
+        "https://c8.alamy.com/comp/2A28JA3/lion-tail-macaque-seen-at-valparaitamil-naduindia-2A28JA3.jpg",
+        "https://c8.alamy.com/comp/KRB93G/the-image-of-lion-tailed-macaque-macaca-silenus-at-valparaitamil-nadu-KRB93G.jpg",
+        "https://l450v.alamy.com/450v/2a28j6e/lion-tail-macaque-seen-at-valparaitamil-naduindia-2a28j6e.jpg",
+        "https://c8.alamy.com/comp/2SRP344/lion-tailed-macaque-valparai-tamil-nadu-india-asia-2SRP344.jpg",
+        "https://l450v.alamy.com/450v/2a28j9k/lion-tail-macaque-seen-at-valparaitamil-naduindia-2a28j9k.jpg",
+      ],
+    },
+    {
+      placeName: "Sholayar Dam",
+      urls: [
+        "https://www.tripbeam.com/blog/wp-content/uploads/2023/05/Sholayar-Dam.jpg",
+        "https://pixahive.com/wp-content/uploads/2020/09/Sholayar-Dam-Valparai-74901-pixahive.jpg",
+        "https://media.istockphoto.com/id/1468090517/photo/sholayar-reservoir-in-summer-valparai-tamil-nadu-india.jpg?s=1024x1024&w=is&k=20&c=VJ8qywd5Izsg8YpyVz3pu8GddGbbPCAZehuRI9jb_VM=",
+        "https://i.pinimg.com/originals/9a/22/80/9a2280e6d64bd13c02aee5ad82c1d92d.jpg",
+        "https://www.luxurytrailsofindia.com/wp-content/uploads/2017/08/sholayar-dam.jpg",
+      ],
+    },
+    {
+      placeName: "40 Hairpin Bends",
+      urls: [
+        "https://c8.alamy.com/comp/T2RCJM/valparai-is-a-taluk-and-hill-station-in-the-coimbatore-district-of-tamil-nadu-india-there-are-40-hairpin-bends-on-the-way-up-to-valparai-to-azhiyar-T2RCJM.jpg",
+        "https://c8.alamy.com/comp/T2RCKF/valparai-is-a-taluk-and-hill-station-in-the-coimbatore-district-of-tamil-nadu-india-there-are-40-hairpin-bends-on-the-way-up-to-valparai-to-azhiyar-T2RCKF.jpg",
+        "https://l450v.alamy.com/450v/t2rcjm/valparai-is-a-taluk-and-hill-station-in-the-coimbatore-district-of-tamil-nadu-india-there-are-40-hairpin-bends-on-the-way-up-to-valparai-to-azhiyar-t2rcjm.jpg",
+        "https://i.ytimg.com/vi/_pD-fXAAAYc/maxresdefault.jpg",
+        "https://c8.alamy.com/comp/T2RCK4/valparai-is-a-taluk-and-hill-station-in-the-coimbatore-district-of-tamil-nadu-india-there-are-40-hairpin-bends-on-the-way-up-to-valparai-to-azhiyar-T2RCK4.jpg",
+      ],
+    },
   ],
+
   duration: "4 Days / 3 Nights",
   destination: "Valparai",
   state: "Tamil Nadu",
@@ -79,88 +124,74 @@ export const valparai: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Flight (Kolkata ↔ Coimbatore round trip)",
-        low: 5000,
-        typical: 10000,
-        notes: "Book early for deals",
+    perPerson: {
+      items: [
+        {
+          item: "Flight (Kolkata ↔ Coimbatore round trip)",
+          low: 5000,
+          typical: 10000,
+          notes: "Book early for deals",
+        },
+        {
+          item: "Road transfers (Coimbatore ↔ Valparai)",
+          low: 800,
+          typical: 2000,
+          notes: "Shared taxi/bus",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 4800,
+          typical: 9000,
+          notes: "₹800–1,500/night estate bungalows",
+        },
+        {
+          item: "Food (7 days)",
+          low: 2100,
+          typical: 3500,
+          notes: "₹300–500/day",
+        },
+        {
+          item: "Athirapally day trip",
+          low: 800,
+          typical: 2000,
+          notes: "Taxi + entry",
+        },
+        {
+          item: "Local transport & activities",
+          low: 500,
+          typical: 1500,
+          notes: "Tea tours, jeep safaris",
+        },
+        {
+          item: "Misc (tea, tips)",
+          low: 500,
+          typical: 1000,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 14500,
+        typical: 29000,
+        typicalRange: "₹18k–32k",
       },
-      {
-        item: "Road transfers (Coimbatore ↔ Valparai)",
-        low: 800,
-        typical: 2000,
-        notes: "Shared taxi/bus",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 4800,
-        typical: 9000,
-        notes: "₹800–1,500/night estate bungalows",
-      },
-      {
-        item: "Food (7 days)",
-        low: 2100,
-        typical: 3500,
-        notes: "₹300–500/day",
-      },
-      {
-        item: "Athirapally day trip",
-        low: 800,
-        typical: 2000,
-        notes: "Taxi + entry",
-      },
-      {
-        item: "Local transport & activities",
-        low: 500,
-        typical: 1500,
-        notes: "Tea tours, jeep safaris",
-      },
-      {
-        item: "Misc (tea, tips)",
-        low: 500,
-        typical: 1000,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 14500,
-      typical: 29000,
-      typicalRange: "₹18k–32k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Flight tickets",
-        perPerson: "5,000–10,000",
-      },
-      {
-        category: "Shared vehicle",
-        perPerson: "500–1,200",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "3,200–6,000",
-      },
-      {
-        category: "Food",
-        perPerson: "1,800–3,000",
-      },
-      {
-        category: "Athirapally trip (shared)",
-        perPerson: "500–1,200",
-      },
-      {
-        category: "Activities",
-        perPerson: "350–1,000",
-      },
-      {
-        category: "Misc",
-        perPerson: "400–800",
-      },
-    ],
-    total: "₹11,750–23,200",
+    sixPerson: {
+      items: [
+        { item: "Flight tickets", low: 5000, typical: 10000, notes: "" },
+        { item: "Shared vehicle", low: 500, typical: 1200, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 3200, typical: 6000, notes: "" },
+        { item: "Food", low: 1800, typical: 3000, notes: "" },
+        {
+          item: "Athirapally trip (shared)",
+          low: 500,
+          typical: 1200,
+          notes: "",
+        },
+        { item: "Activities", low: 350, typical: 1000, notes: "" },
+        { item: "Misc", low: 400, typical: 800, notes: "" },
+      ],
+      total: { low: 11750, typical: 23200, typicalRange: "₹11,750–23,200" },
+    },
   },
   bookingTips: [
     "Stay in colonial tea estate bungalows for authentic experience",

@@ -17,7 +17,7 @@ export function Logo({ className, size = "md", variant = "full" }: LogoProps) {
     <div className={cn("flex items-center gap-2", className)}>
       <img
         src="/favicon.png"
-        alt="TravelPlans Logo"
+        alt="Travel Plans Logo"
         className={cn(sizes[size].icon, "object-contain")}
       />
 
@@ -25,7 +25,7 @@ export function Logo({ className, size = "md", variant = "full" }: LogoProps) {
         <span
           className={cn("font-bold tracking-tight font-sans", sizes[size].text)}
         >
-          TravelPlans
+          Travel Plans
         </span>
       )}
     </div>

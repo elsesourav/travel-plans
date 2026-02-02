@@ -1,6 +1,10 @@
 import { Badge } from "@/components/ui";
 import type { Destination } from "@/data/types";
-import { formatBudgetRange } from "@/lib/utils";
+import {
+  formatBudgetRange,
+  getBudgetRange,
+  getDestinationImage,
+} from "@/lib/utils";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -34,11 +38,7 @@ export function DestinationCard({
             {/* Image Section - Increased size to 50% */}
             <div className="relative lg:w-1/2 h-64 lg:h-full overflow-hidden">
               <img
-                src={
-                  (destination.images || [
-                    `/images/destinations/${destination.slug}.jpg`,
-                  ])[0]
-                }
+                src={getDestinationImage(destination)}
                 alt={destination.name || destination.destination}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -122,12 +122,7 @@ export function DestinationCard({
                     <div className="flex items-center gap-2 text-primary-600">
                       <Wallet className="w-5 h-5" />
                       <span className="font-bold text-lg">
-                        {formatBudgetRange(
-                          destination.totalBudget || {
-                            min: destination.budgetBreakdown.total.low,
-                            max: destination.budgetBreakdown.total.typical,
-                          },
-                        )}
+                        {formatBudgetRange(getBudgetRange(destination))}
                       </span>
                     </div>
                   </div>
@@ -177,11 +172,7 @@ export function DestinationCard({
         {/* Image - Full card coverage */}
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src={
-              (destination.images || [
-                `/images/destinations/${destination.slug}.jpg`,
-              ])[0]
-            }
+            src={getDestinationImage(destination)}
             alt={destination.name || destination.destination}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
@@ -229,12 +220,7 @@ export function DestinationCard({
               <div className="flex items-center gap-1.5 text-white/90 text-sm">
                 <Wallet className="w-4 h-4 flex-shrink-0" />
                 <span className="truncate font-medium">
-                  {formatBudgetRange(
-                    destination.totalBudget || {
-                      min: destination.budgetBreakdown.total.low,
-                      max: destination.budgetBreakdown.total.typical,
-                    },
-                  )}
+                  {formatBudgetRange(getBudgetRange(destination))}
                 </span>
               </div>
             </div>

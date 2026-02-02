@@ -5,13 +5,58 @@ export const chopta: Destination = {
   id: "chopta",
   name: "Chopta",
   images: [
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1200&q=80",
-    "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=1200&q=80",
-    "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=1200&q=80",
-    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    {
+      placeName: "Tungnath Temple",
+      urls: [
+      "https://ukdigital.in/wp-content/uploads/wpforo/default_attachments/1614668068-Tungnath-Temple.jpg",
+      "https://static.toiimg.com/photo/90976826/Tungnath.jpg?width=748&resize=4",
+      "https://choptatourpackage.com/wp-content/uploads/2024/12/chopta2-1.webp",
+      "https://enchanttours.com/wp-content/uploads/2021/03/deoriatal-tungnath-chadrashila-trek-enchant-tours-02-2.jpg",
+      "https://wallpaperaccess.com/full/6129563.jpg",
+      ],
+    },
+    {
+      placeName: "Chandrashila Peak",
+      urls: [
+      "https://c8.alamy.com/comp/2C71B0P/beautiful-panoramic-landscape-view-of-the-sunrise-of-himalayan-snow-mountains-from-chandrashila-peak-in-chopta-uttarakhand-india-2C71B0P.jpg",
+      "https://dmgupcwbwy0wl.cloudfront.net/system/images/000/237/752/3fbfde4528e89119784dd3cff77c322a/x600gt/chandrashila-top-view.jpg?1552062079",
+      "https://c8.alamy.com/comp/2C71B2J/beautiful-panoramic-landscape-view-of-the-sunrise-of-himalayan-snow-mountains-from-chandrashila-peak-in-chopta-uttarakhand-india-2C71B2J.jpg",
+      "https://c8.alamy.com/comp/2F996PH/panoramic-view-himalayan-mountains-view-from-chandrashila-summit-chopta-chandrashila-is-a-peak-in-the-himalayan-ranges-in-uttarakhand-state-of-india-2F996PH.jpg",
+      "https://c8.alamy.com/comp/2F996R0/panoramic-view-himalayan-mountains-view-from-chandrashila-summit-chopta-chandrashila-is-a-peak-in-the-himalayan-ranges-in-uttarakhand-state-of-india-2F996R0.jpg",
+      ],
+    },
+    {
+      placeName: "Deoria Tal",
+      urls: [
+      "https://image.shutterstock.com/image-photo/mesmerizing-view-deoria-tal-lake-600w-769774828.jpg",
+      "https://c8.alamy.com/comp/2F996JH/mesmerizing-view-at-deoria-tal-or-lake-nestled-in-garhwal-himalayas-at-chopta-uttarakhand-india-this-lake-is-a-camping-location-for-tungnath-chand-2F996JH.jpg",
+      "https://media.istockphoto.com/id/1063035344/photo/deoria-tal-uttarakhand.jpg?s=1024x1024&w=is&k=20&c=Ch-7k7CX8yX1QO73pLoagTeBFWMaSbkHVrgA6nh16rI=",
+      "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/05/Deoria-Tal.jpg",
+      "https://media.gettyimages.com/id/1454035779/photo/scenic-view-of-lake-against-clear-blue-sky-deoria-tal-uttarakhand-india.jpg?s=612x612&w=gi&k=20&c=Dz8HG9IEkIhDTN6icvwbEJu7he2pvY14wUPAxWF8c-o=",
+      ],
+    },
+    {
+      placeName: "Alpine Bugyals",
+      urls: [
+      "https://media.istockphoto.com/id/1156753412/photo/bugyals-flat-lands-at-upper-himalayas-uttarakhand-india.jpg?s=1024x1024&w=is&k=20&c=IvsF3Nam4NrE3k_rv9nwEqeWtUScRQmRRQmwaKoipQY=",
+      "https://rishikeshdaytour.com/blog/wp-content/uploads/2019/12/The-Bugyals-Natural-Grasslands-in-the-Land-of-Gods-Uttarakhand.jpg",
+      "https://media.assettype.com/outlooktraveller/2023-10/fe89c539-1d7f-4e9c-a6be-7f3fdcca2177/Bugyal.jpg?w=1200&auto=format%2Ccompress&fit=max",
+      "https://curlytales.com/wp-content/uploads/2022/06/Untitled-design-2022-06-06T103258.391.jpg",
+      "https://www.chardhamtour.in/blog/wp-content/uploads/2019/01/Ali-Bugyal.jpg",
+      ],
+    },
+    {
+      placeName: "Kedarnath Wildlife Sanctuary",
+      urls: [
+      "https://media.gettyimages.com/id/898652380/photo/chopta-kedarnath-wildlife-sanctuary-uttarakhand-india.jpg?s=1024x1024&w=gi&k=20&c=8vmUuZQdRTsp-eh6oc2AiWNHEp72I4nRgNeW8TTCiFs=",
+      "https://media.gettyimages.com/id/902470016/photo/himalayan-tahr-in-chopta-kedarnath-wildlife-sanctuary-uttarakhand-india.jpg?s=612x612&w=gi&k=20&c=mcqVwlZa9Lf5h_K20xerZXwdOltfH8i0FbgYzcCO1as=",
+      "https://media.gettyimages.com/id/898652430/photo/chopta-kedarnath-wildlife-sanctuary-uttarakhand-india.jpg?s=1024x1024&w=gi&k=20&c=d54z7-Gr3999SnbA2gJKZnr32mOifkxjSqdsbB4XDhk=",
+      "https://c8.alamy.com/comp/2F996M8/beautiful-landscape-of-alpine-meadows-and-glaciated-peaks-in-kedarnath-wildlife-sanctuary-trail-from-chopta-to-tungnath-shrine-offers-this-kind-mesme-2F996M8.jpg",
+      "https://media.gettyimages.com/id/902470084/photo/himalayan-tahr-in-chopta-kedarnath-wildlife-sanctuary-uttarakhand-india.jpg?s=612x612&w=gi&k=20&c=ii951hkIMnlmLGcMoJq3y8hNuZSr97wFYNhUsM_OedY=",
+      ],
+    },
   ],
+  
   duration: "4 Days / 3 Nights",
   destination: "Chopta",
   state: "Uttarakhand",
@@ -31,7 +76,7 @@ export const chopta: Destination = {
     longitude: "79.2149°E",
   },
   permits: "Not required for Indian citizens",
-  bestSeason: "March to June, September to November",
+  bestSeason: "Mar to Jun, Sep to Nov",
   seasonNote:
     "Spring has rhododendron blooms. Autumn offers clear Himalayan views. Winter has heavy snow.",
   keyAttractions: [
@@ -79,78 +124,62 @@ export const chopta: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Haridwar round trip)",
-        low: 800,
-        typical: 2000,
-        notes: "Or fly Dehradun ₹5,000–10,000",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Haridwar round trip)",
+          low: 800,
+          typical: 2000,
+          notes: "Or fly Dehradun ₹5,000–10,000",
+        },
+        {
+          item: "Road transfers (Haridwar ↔ Chopta)",
+          low: 2000,
+          typical: 4000,
+          notes: "Shared taxi",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3000,
+          typical: 6000,
+          notes: "₹500–1,000/night camps/homestays",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1800,
+          typical: 3000,
+          notes: "₹250–400/day",
+        },
+        {
+          item: "Trek guides & porters",
+          low: 500,
+          typical: 1500,
+          notes: "Optional but recommended",
+        },
+        {
+          item: "Misc (tips, shopping)",
+          low: 400,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 8500,
+        typical: 17300,
+        typicalRange: "₹12k–18k",
       },
-      {
-        item: "Road transfers (Haridwar ↔ Chopta)",
-        low: 2000,
-        typical: 4000,
-        notes: "Shared taxi",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3000,
-        typical: 6000,
-        notes: "₹500–1,000/night camps/homestays",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1800,
-        typical: 3000,
-        notes: "₹250–400/day",
-      },
-      {
-        item: "Trek guides & porters",
-        low: 500,
-        typical: 1500,
-        notes: "Optional but recommended",
-      },
-      {
-        item: "Misc (tips, shopping)",
-        low: 400,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 8500,
-      typical: 17300,
-      typicalRange: "₹12k–18k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "800–2,000",
-      },
-      {
-        category: "Shared vehicle",
-        perPerson: "1,200–2,500",
-      },
-      {
-        category: "Shared camps/homestays",
-        perPerson: "2,000–4,000",
-      },
-      {
-        category: "Food",
-        perPerson: "1,500–2,500",
-      },
-      {
-        category: "Trek guides",
-        perPerson: "300–900",
-      },
-      {
-        category: "Misc",
-        perPerson: "300–600",
-      },
-    ],
-    total: "₹6,100–12,500",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 800, typical: 2000, notes: "" },
+        { item: "Shared vehicle", low: 1200, typical: 2500, notes: "" },
+        { item: "Shared camps/homestays", low: 2000, typical: 4000, notes: "" },
+        { item: "Food", low: 1500, typical: 2500, notes: "" },
+        { item: "Trek guides", low: 300, typical: 900, notes: "" },
+        { item: "Misc", low: 300, typical: 600, notes: "" },
+      ],
+      total: { low: 6100, typical: 12500, typicalRange: "₹6,100–12,500" },
+    },
   },
   bookingTips: [
     "Winter (December–February) has heavy snow — trek routes may be closed",

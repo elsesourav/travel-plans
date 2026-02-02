@@ -5,13 +5,58 @@ export const ziro_valley: Destination = {
   id: "ziro-valley",
   name: "Ziro Valley",
   images: [
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1200&q=80",
+    {
+      placeName: "Apatani Villages",
+      urls: [
+      "https://images.prismic.io/indiahike/39414-feature-Talley-Valley-trek-Ziro-and-surrounding-villages-Indiahikes-1.jpg?auto=compress,format&rect=0,0,1280,720&w=1280&h=720",
+      "https://c8.alamy.com/comp/2M4AWEW/traditional-village-hong-of-the-apatani-tribe-in-the-hills-of-ziro-area-2M4AWEW.jpg",
+      "https://trendingbites.in/wp-content/uploads/2025/03/Explore-Ziro-Valley.jpg",
+      "https://www.tusktravel.com/blog/wp-content/uploads/2021/12/Ziro-Valley-Arunachal-Pradesh2.jpg",
+      "https://www.onacheaptrip.com/wp-content/uploads/Amazing-scenes-at-Ziro-Valley-Arunachal-Pradesh.jpg",
+      ],
+    },
+    {
+      placeName: "Rice Terraces",
+      urls: [
+      "https://trendingbites.in/wp-content/uploads/2025/03/Explore-Ziro-Valley.jpg",
+      "https://c8.alamy.com/comp/2GCDB1H/countryside-tarnish-framing-rice-field-with-mountain-background-at-morning-image-is-taken-at-ziro-arunachal-pradesh-india-2GCDB1H.jpg",
+      "https://c8.alamy.com/comp/2HK6BC4/countryside-tarnish-framing-rice-field-with-flat-sky-at-morning-image-is-taken-at-ziro-arunachal-pradesh-india-2HK6BC4.jpg",
+      "https://c8.alamy.com/comp/2GCDAW0/countryside-tarnish-framing-rice-field-with-small-resting-huts-at-morning-image-is-taken-at-ziro-arunachal-pradesh-india-2GCDAW0.jpg",
+      "https://as2.ftcdn.net/v2/jpg/05/77/31/13/1000_F_577311336_LL4x0JKLbAdVAtjBOTKNlI123dnDeT0g.jpg",
+      ],
+    },
+    {
+      placeName: "Ziro Music Festival",
+      urls: [
+      "https://stillunseen.com/wp-content/uploads/2025/05/Ziro-Music-Festival-2025-1024x576.webp",
+      "https://www.revv.co.in/blogs/wp-content/uploads/2025/09/ziro-festival-arunachal-pradesh-800x445.png",
+      "https://www.easeindiatrip.com/blog/wp-content/uploads/2025/09/Arunachal-Pradesh-Ziro-Music-Festival-01.jpg",
+      "https://static.toiimg.com/photo/msid-93612643,width-96,height-65.cms",
+      "https://static-blog.treebo.com/wp-content/uploads/2023/09/Why-Should-You-Visit-Ziro-Music-Festival_2-1-1024x675.jpg",
+      ],
+    },
+    {
+      placeName: "Talley Valley Wildlife Sanctuary",
+      urls: [
+      "https://www.naturespeakz.com/wp-content/uploads/2023/04/96.jpg",
+      "https://indiain360.com/wp-content/uploads/2021/01/Talle-Valley.jpg",
+      "https://static.tripzilla.in/media/91295/conversions/9faff190-6a8c-4c55-9080-ed97fdb1c124-w768.webp",
+      "https://holidays.tripfactory.com/blogs/wp-content/uploads/sites/6/2024/12/Ziro-Valley.webp",
+      "https://www.india.com/wp-content/uploads/2024/10/Walk-through-Ziro-Valley.jpg",
+      ],
+    },
+    {
+      placeName: "Pine Groves",
+      urls: [
+      "https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20201111094047/iStock-1178712785-scaled.jpg",
+      "https://www.tourmyindia.com/states/arunachalpradesh/images/pine-grove1.jpg",
+      "https://dzongholidays.com/wp-content/uploads/2022/06/ziro-870x555.jpg",
+      "https://www.india.com/wp-content/uploads/2024/07/Explore-Ziro-Valley.jpg",
+      "https://media.tripinvites.com/places/ziro/pine-grove/pine-grove-featured.jpg",
+      ],
+    },
   ],
+  
   duration: "3 Days / 2 Nights",
   destination: "Ziro Valley",
   state: "Arunachal Pradesh",
@@ -80,88 +125,69 @@ export const ziro_valley: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Flight (Kolkata ↔ Guwahati round trip)",
-        low: 4000,
-        typical: 8000,
-        notes: "Book early for deals",
+    perPerson: {
+      items: [
+        {
+          item: "Flight (Kolkata ↔ Guwahati round trip)",
+          low: 4000,
+          typical: 8000,
+          notes: "Book early for deals",
+        },
+        {
+          item: "Road transfers (Guwahati ↔ Ziro)",
+          low: 1800,
+          typical: 4500,
+          notes: "Shared cab, long journey",
+        },
+        {
+          item: "Accommodation (6 nights, homestay)",
+          low: 3600,
+          typical: 7200,
+          notes: "Rates vary with season",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1400,
+          typical: 2500,
+          notes: "₹200–400/day local food",
+        },
+        {
+          item: "Local transport & guides",
+          low: 700,
+          typical: 1800,
+          notes: "Village guides, local taxi",
+        },
+        {
+          item: "ILP permit",
+          low: 100,
+          typical: 200,
+          notes: "E-ILP valid up to 30 days",
+        },
+        {
+          item: "Misc (crafts, tips)",
+          low: 300,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 11900,
+        typical: 25000,
+        typicalRange: "₹14k–25k",
       },
-      {
-        item: "Road transfers (Guwahati ↔ Ziro)",
-        low: 1800,
-        typical: 4500,
-        notes: "Shared cab, long journey",
-      },
-      {
-        item: "Accommodation (6 nights, homestay)",
-        low: 3600,
-        typical: 7200,
-        notes: "Rates vary with season",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1400,
-        typical: 2500,
-        notes: "₹200–400/day local food",
-      },
-      {
-        item: "Local transport & guides",
-        low: 700,
-        typical: 1800,
-        notes: "Village guides, local taxi",
-      },
-      {
-        item: "ILP permit",
-        low: 100,
-        typical: 200,
-        notes: "E-ILP valid up to 30 days",
-      },
-      {
-        item: "Misc (crafts, tips)",
-        low: 300,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 11900,
-      typical: 25000,
-      typicalRange: "₹14k–25k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Flight tickets",
-        perPerson: "4,000–8,000",
-      },
-      {
-        category: "Shared cab (split)",
-        perPerson: "1,000–2,500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,400–4,800",
-      },
-      {
-        category: "Food",
-        perPerson: "1,200–2,000",
-      },
-      {
-        category: "ILP permit",
-        perPerson: "100–200",
-      },
-      {
-        category: "Local guides",
-        perPerson: "200–600",
-      },
-      {
-        category: "Misc",
-        perPerson: "200–500",
-      },
-    ],
-    total: "₹9,100–18,600",
+    sixPerson: {
+      items: [
+        { item: "Flight tickets", low: 4000, typical: 8000, notes: "" },
+        { item: "Shared cab (split)", low: 1000, typical: 2500, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2400, typical: 4800, notes: "" },
+        { item: "Food", low: 1200, typical: 2000, notes: "" },
+        { item: "ILP permit", low: 100, typical: 200, notes: "" },
+        { item: "Local guides", low: 200, typical: 600, notes: "" },
+        { item: "Misc", low: 200, typical: 500, notes: "" },
+      ],
+      total: { low: 9100, typical: 18600, typicalRange: "₹9,100–18,600" },
+    },
   },
   bookingTips: [
     "Apply for ILP online before travel — carry printed copy always",

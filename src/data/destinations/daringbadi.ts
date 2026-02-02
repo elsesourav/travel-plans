@@ -5,13 +5,58 @@ export const daringbadi: Destination = {
   id: "daringbadi",
   name: "Daringbadi",
   images: [
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
-    "https://images.unsplash.com/photo-1432889490240-84df33d47091?w=1200&q=80",
-    "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1200&q=80",
-    "https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?w=1200&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
+    {
+      placeName: "Hill View Point",
+      urls: [
+      "https://static.vecteezy.com/system/resources/previews/010/011/984/large_2x/the-freshness-of-greenery-hill-view-of-daringbadi-of-odisha-photo.JPG",
+      "https://chaloghumane.com/wp-content/uploads/2023/09/daringbadi-Hill-View-Point.jpg",
+      "https://odishatour.in/wp-content/uploads/2021/10/Hill-view-park-Daringbadi-Kandhamal1-1024x581.jpg?v=1659551020",
+      "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/12/Daringbadi-hill-station-odisha-1.jpg?resize=1536%2C946&ssl=1",
+      "https://odishatour.in/wp-content/uploads/2021/10/Hill-view-park-Daringbadi-3.jpg?v=1659551021",
+      ],
+    },
+    {
+      placeName: "Midubanda Waterfalls",
+      urls: [
+      "https://odishatour.in/wp-content/uploads/2021/10/Midubanda-Waterfall-Daringbadi-Kandhamal-3-1024x574.jpg?v=1659551021",
+      "https://odishatour.in/wp-content/uploads/2021/08/Midubanda-Waterfall-Daringbadi-Kandhamal-1024x581.jpg?v=1656949543",
+      "https://www.shutterstock.com/image-photo/scenic-view-waterfall-forest-260nw-1774098221.jpg",
+      "https://www.dreamtrix.com/wp-content/uploads/2023/05/Midubanda-Waterfall.jpeg",
+      "https://c8.alamy.com/comp/2F918AM/scenic-midubanda-waterfalls-in-odisha-at-daringbadi-also-known-as-dashingbadi-falls-2F918AM.jpg",
+      ],
+    },
+    {
+      placeName: "Coffee & Pepper Plantations",
+      urls: [
+      "https://odishatour.in/wp-content/uploads/2020/12/Coffee-Gardens-Daringbadi-Kandhamal-2.jpg?v=1659551028",
+      "https://www.treebo.com/blog/wp-content/uploads/2025/10/Coffee-and-Pepper-Plantations-1024x675.jpg",
+      "https://odishatour.in/wp-content/uploads/2020/12/Coffee-Gardens-Daringbadi-Kandhamal-1-300x170.jpg?v=1659551027",
+      "https://cdn.guidetour.in/wp-content/uploads/2018/01/Coffee-and-Black-Pepper-Plantation.jpg.webp",
+      "https://static-blog.treebo.com/wp-content/uploads/2023/12/Daringbadi-1024x675.jpg",
+      ],
+    },
+    {
+      placeName: "Kondh Tribal Villages",
+      urls: [
+      "https://www.thegrandindianroute.com/wp-content/uploads/2024/03/Kutia-kondh-tribe-1-1024x768.jpg",
+      "https://www.namasteindiatrip.com/blog/wp-content/uploads/2024/10/Daringbadi-the-Kashmir-of-Odisha.jpg",
+      "https://www.taleof2backpackers.com/wp-content/uploads/2019/06/Tribal-villate-at-Daringbadi-Odisha.jpg",
+      "https://c8.alamy.com/comp/HP99PM/india-odisha-orissa-raygada-tribal-village-kodesu-dongria-kondh-tribe-HP99PM.jpg",
+      "https://static.vecteezy.com/system/resources/previews/010/011/984/large_2x/the-freshness-of-greenery-hill-view-of-daringbadi-of-odisha-photo.JPG",
+      ],
+    },
+    {
+      placeName: "Belghar Nature Camp",
+      urls: [
+      "https://orissaguide.com/wp-content/uploads/2024/01/Belghar-Nature-Camp-10.jpg",
+      "https://odishatour.in/wp-content/uploads/2024/11/belghar-eco-resort.jpg",
+      "https://orissaguide.com/wp-content/uploads/2024/01/Belghar-Nature-Camp-9.jpg",
+      "https://odishatour.in/wp-content/uploads/2024/11/Belghar-Nature-Camp-kotgarh-1024x581.jpg",
+      "https://odishatour.in/wp-content/uploads/2024/11/Belghar-Nature-Camp-800x450.jpg",
+      ],
+    },
   ],
+  
   duration: "5 Days / 4 Nights",
   destination: "Daringbadi",
   state: "Odisha",
@@ -79,88 +124,69 @@ export const daringbadi: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Berhampur round trip)",
-        low: 600,
-        typical: 1500,
-        notes: "10-12 hours journey",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Berhampur round trip)",
+          low: 600,
+          typical: 1500,
+          notes: "10-12 hours journey",
+        },
+        {
+          item: "Road transfers (Berhampur ↔ Daringbadi)",
+          low: 500,
+          typical: 1200,
+          notes: "Shared taxi/bus",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 2400,
+          typical: 4800,
+          notes: "₹400–800/night",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1400,
+          typical: 2500,
+          notes: "₹200–350/day",
+        },
+        {
+          item: "Local transport & activities",
+          low: 400,
+          typical: 1000,
+          notes: "Village visits, jeep",
+        },
+        {
+          item: "Entry fees",
+          low: 200,
+          typical: 400,
+          notes: "Nature parks, waterfalls",
+        },
+        {
+          item: "Misc (coffee, crafts)",
+          low: 300,
+          typical: 700,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 5800,
+        typical: 12100,
+        typicalRange: "₹8k–14k",
       },
-      {
-        item: "Road transfers (Berhampur ↔ Daringbadi)",
-        low: 500,
-        typical: 1200,
-        notes: "Shared taxi/bus",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 2400,
-        typical: 4800,
-        notes: "₹400–800/night",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1400,
-        typical: 2500,
-        notes: "₹200–350/day",
-      },
-      {
-        item: "Local transport & activities",
-        low: 400,
-        typical: 1000,
-        notes: "Village visits, jeep",
-      },
-      {
-        item: "Entry fees",
-        low: 200,
-        typical: 400,
-        notes: "Nature parks, waterfalls",
-      },
-      {
-        item: "Misc (coffee, crafts)",
-        low: 300,
-        typical: 700,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 5800,
-      typical: 12100,
-      typicalRange: "₹8k–14k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "600–1,500",
-      },
-      {
-        category: "Shared vehicle",
-        perPerson: "300–700",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "1,600–3,200",
-      },
-      {
-        category: "Food",
-        perPerson: "1,200–2,000",
-      },
-      {
-        category: "Local transport",
-        perPerson: "250–600",
-      },
-      {
-        category: "Entry fees",
-        perPerson: "150–350",
-      },
-      {
-        category: "Misc",
-        perPerson: "200–500",
-      },
-    ],
-    total: "₹4,300–8,850",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 600, typical: 1500, notes: "" },
+        { item: "Shared vehicle", low: 300, typical: 700, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 1600, typical: 3200, notes: "" },
+        { item: "Food", low: 1200, typical: 2000, notes: "" },
+        { item: "Local transport", low: 250, typical: 600, notes: "" },
+        { item: "Entry fees", low: 150, typical: 350, notes: "" },
+        { item: "Misc", low: 200, typical: 500, notes: "" },
+      ],
+      total: { low: 4300, typical: 8850, typicalRange: "₹4,300–8,850" },
+    },
   },
   bookingTips: [
     "One of the few places in Odisha to experience frost/light snow",

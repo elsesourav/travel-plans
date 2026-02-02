@@ -5,13 +5,58 @@ export const hampi: Destination = {
   id: "hampi",
   name: "Hampi",
   images: [
-    "https://images.unsplash.com/photo-1600100397608-71b5b3c39d52?w=1200&q=80",
-    "https://images.unsplash.com/photo-1621996659490-3275b4d0d951?w=1200&q=80",
-    "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&q=80",
-    "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=1200&q=80",
-    "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1200&q=80",
-    "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&q=80",
+    {
+      placeName: "Virupaksha Temple",
+      urls: [
+        "https://mapacademy.io/wp-content/uploads/2022/07/virupaksha-temple-hampi-karnataka-india-2l.jpg",
+        "https://www.shutterstock.com/image-photo/historic-virupaksha-temple-scenic-hampi-260nw-2285942879.jpg",
+        "https://www.templepurohit.com/wp-content/uploads/2016/04/Virupaksha-Temple-hampi.jpg",
+        "https://karnatakatourism.org/wp-content/uploads/2020/06/Stone-Chariot-Hampi-heritage-land.jpg",
+        "https://as1.ftcdn.net/v2/jpg/03/11/13/26/1000_F_311132686_OSZBFEPtGk6cEJ7FbVK1BWxz8FqFaPAo.jpg",
+      ],
+    },
+    {
+      placeName: "Vittala Temple Complex",
+      urls: [
+        "https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2025/02/21211035/1620px-stone_chariot_vittala_temple.jpeg",
+        "https://c8.alamy.com/comp/2T70XF8/stone-temple-ruins-at-vijaya-vittala-temple-complex-with-scenic-landscape-at-hampi-karnataka-india-2T70XF8.jpg",
+        "https://c8.alamy.com/comp/2T70X31/stone-temple-ruins-at-vijaya-vittala-temple-complex-with-scenic-landscape-at-hampi-karnataka-india-2T70X31.jpg",
+        "https://c8.alamy.com/comp/W8D672/vijaya-vittala-temple-hampi-unesco-world-heritge-site-karnataka-india-W8D672.jpg",
+        "https://img.peapix.com/d2b4518995bf4317a388be3ba5212c1e_UHD.jpg?attachment&modal",
+      ],
+    },
+    {
+      placeName: "Matanga Hill",
+      urls: [
+        "https://c8.alamy.com/comp/2G7G2R2/view-of-matanga-hill-during-the-sunrise-in-the-morning-in-the-unesco-world-heritage-town-in-hampi-karnataka-india-2G7G2R2.jpg",
+        "https://c8.alamy.com/comp/2G7G2YE/view-of-matanga-hill-during-the-sunrise-in-the-morning-in-the-unesco-world-heritage-town-in-hampi-karnataka-india-2G7G2YE.jpg",
+        "https://c8.alamy.com/comp/2G7G32X/view-of-matanga-hill-during-the-sunrise-in-the-morning-in-the-unesco-world-heritage-town-in-hampi-karnataka-india-2G7G32X.jpg",
+        "https://c8.alamy.com/comp/2CET6JH/mountain-sunrise-with-dramatic-sky-at-morning-flat-angle-shot-image-is-taken-at-matanga-hill-hampi-karnataka-india-it-described-as-the-saint-matanga-2CET6JH.jpg",
+        "https://c8.alamy.com/comp/PYD683/scenic-sunset-over-landscape-dotted-with-giant-boulders-and-ruins-beside-tungabhadra-river-as-viewed-from-matanga-hill-top-hampi-karnataka-india-PYD683.jpg",
+      ],
+    },
+    {
+      placeName: "Elephant Stables",
+      urls: [
+        "https://c8.alamy.com/comp/W7P6FB/gajashala-or-elephant-stables-seen-from-guards-quarters-hampi-unesco-world-heritge-site-karnataka-india-W7P6FB.jpg",
+        "https://c8.alamy.com/comp/W7P6HF/gajashala-or-elephant-stables-hampi-unesco-world-heritge-site-karnataka-india-W7P6HF.jpg",
+        "https://c8.alamy.com/comp/W7P66B/gajashala-or-elephant-stables-seen-from-guards-quarters-hampi-unesco-world-heritge-site-karnataka-india-W7P66B.jpg",
+        "https://c8.alamy.com/comp/W7P658/gajashala-or-elephant-stables-seen-from-guards-quarters-hampi-unesco-world-heritge-site-karnataka-india-W7P658.jpg",
+        "https://c8.alamy.com/comp/2RA8H1H/elephant-stables-view-from-guards-quarters-in-hampi-karnataka-south-india-india-asia-unesco-world-heritage-site-2RA8H1H.jpg",
+      ],
+    },
+    {
+      placeName: "Hippie Island (Virupapur Gaddi)",
+      urls: [
+        "https://www.fabhotels.com/blog/wp-content/uploads/2024/03/bc8bbe79-hippie-island.jpg",
+        "https://drifterplanet.com/wp-content/uploads/2015/10/Sunset-View-Point.jpg",
+        "https://visitplacesindia.com/wp-content/uploads/2024/11/hippie-island-humpi.jpg",
+        "https://xploretheearth.com/wp-content/uploads/2020/09/Hampi-Hippie-Island-2-1024x576.jpg?is-pending-load=1",
+        "https://c8.alamy.com/comp/3BJ0PNB/tungabhadra-river-with-boulders-in-hampi-view-to-hippie-island-landscape-south-india-karnataka-travel-destination-3BJ0PNB.jpg",
+      ],
+    },
   ],
+
   duration: "5 Days / 4 Nights",
   destination: "Hampi",
   state: "Karnataka",
@@ -79,78 +124,67 @@ export const hampi: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Hospet round trip)",
-        low: 1200,
-        typical: 2500,
-        notes: "Sleeper to 3A range",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Hospet round trip)",
+          low: 1200,
+          typical: 2500,
+          notes: "Sleeper to 3A range",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3000,
+          typical: 6000,
+          notes: "₹500–1,200/night",
+        },
+        {
+          item: "Food (7 days, local)",
+          low: 1400,
+          typical: 2500,
+          notes: "₹200–400/day",
+        },
+        {
+          item: "Bike/scooter rental (3–4 days)",
+          low: 800,
+          typical: 1400,
+          notes: "₹300–500/day",
+        },
+        {
+          item: "Local transport & entry fees",
+          low: 400,
+          typical: 1000,
+          notes: "Autos, guides, donations",
+        },
+        {
+          item: "Misc (souvenirs, tips)",
+          low: 300,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 7100,
+        typical: 14200,
+        typicalRange: "₹10k–14k",
       },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3000,
-        typical: 6000,
-        notes: "₹500–1,200/night",
-      },
-      {
-        item: "Food (7 days, local)",
-        low: 1400,
-        typical: 2500,
-        notes: "₹200–400/day",
-      },
-      {
-        item: "Bike/scooter rental (3–4 days)",
-        low: 800,
-        typical: 1400,
-        notes: "₹300–500/day",
-      },
-      {
-        item: "Local transport & entry fees",
-        low: 400,
-        typical: 1000,
-        notes: "Autos, guides, donations",
-      },
-      {
-        item: "Misc (souvenirs, tips)",
-        low: 300,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 7100,
-      typical: 14200,
-      typicalRange: "₹10k–14k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "1,200–2,500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,000–4,000",
-      },
-      {
-        category: "Food (local cafés)",
-        perPerson: "1,500–2,500",
-      },
-      {
-        category: "Bike rental (shared cost)",
-        perPerson: "400–700",
-      },
-      {
-        category: "Entry fees & transport",
-        perPerson: "300–700",
-      },
-      {
-        category: "Misc",
-        perPerson: "300–600",
-      },
-    ],
-    total: "₹5,700–10,500",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 1200, typical: 2500, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2000, typical: 4000, notes: "" },
+        { item: "Food (local cafés)", low: 1500, typical: 2500, notes: "" },
+        {
+          item: "Bike rental (shared cost)",
+          low: 400,
+          typical: 700,
+          notes: "",
+        },
+        { item: "Entry fees & transport", low: 300, typical: 700, notes: "" },
+        { item: "Misc", low: 300, typical: 600, notes: "" },
+      ],
+      total: { low: 5700, typical: 10500, typicalRange: "₹5,700–10,500" },
+    },
   },
   bookingTips: [
     "Book train early; alternative: Fly to Hubli/Bengaluru + bus to Hampi",

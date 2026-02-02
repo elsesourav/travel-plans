@@ -1,7 +1,19 @@
 import { Badge } from "@/components/ui";
 import { destinations } from "@/data/destinations";
-import type { CostItem, Destination, ItineraryDay } from "@/data/types";
-import { cn, formatBudgetRange, formatCurrency } from "@/lib/utils";
+import type {
+  BudgetBreakdown,
+  Destination,
+  ItineraryDay,
+  MultilingualInfo,
+} from "@/data/types";
+import {
+  cn,
+  formatBudgetRange,
+  formatCurrency,
+  getAllImageUrls,
+  getBudgetRange,
+  getImagesByPlace,
+} from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -9,6 +21,8 @@ import {
   Calendar,
   CheckCircle,
   Clock,
+  Globe,
+  Group,
   InfoCircle,
   MapPin,
   Wallet,
@@ -29,9 +43,10 @@ import "swiper/css/thumbs";
 export function DestinationPage() {
   const { slug } = useParams<{ slug: string }>();
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
-  const [activeTab, setActiveTab] = useState<"itinerary" | "costs" | "tips">(
-    "itinerary",
-  );
+  const [activeTab, setActiveTab] = useState<
+    "itinerary" | "costs" | "tips" | "info"
+  >("itinerary");
+  const [language, setLanguage] = useState<"en" | "hi" | "bn">("en");
 
   const destination = destinations.find((d: Destination) => d.slug === slug);
 
@@ -39,10 +54,15 @@ export function DestinationPage() {
     return <Navigate to="/" replace />;
   }
 
+  // Get all image URLs from the new structure
+  const allImages = getAllImageUrls(destination);
+  const imagesByPlace = getImagesByPlace(destination);
+
   const tabs = [
     { id: "itinerary" as const, label: "Day-by-Day" },
     { id: "costs" as const, label: "Cost Breakdown" },
     { id: "tips" as const, label: "Tips & Info" },
+    ...(destination.info ? [{ id: "info" as const, label: "About" }] : []),
   ];
 
   return (
@@ -58,20 +78,24 @@ export function DestinationPage() {
               thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
           }}
           className="h-full hero-slider"
-          loop={(destination.images || []).length > 1}
+          loop={allImages.length > 1}
         >
-          {(
-            destination.images || [
-              `/images/destinations/${destination.slug}.jpg`,
-            ]
+          {(allImages.length > 0
+            ? allImages
+            : [`/images/destinations/${destination.slug}.jpg`]
           ).map((image: string, index: number) => (
             <SwiperSlide key={index}>
               <div className="relative h-full">
                 <img
                   src={image}
-                  alt={`${destination.name || destination.destination} - ${index + 1}`}
+                  alt={`${destination.name || destination.destination} - ${imagesByPlace[index]?.placeName || index + 1}`}
                   className="w-full h-full object-cover"
                 />
+                {imagesByPlace[index]?.placeName && (
+                  <div className="absolute bottom-24 right-6 px-3 py-1.5 bg-black/50 backdrop-blur-md rounded-lg text-white text-sm">
+                    {imagesByPlace[index].placeName}
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
               </div>
             </SwiperSlide>
@@ -129,12 +153,7 @@ export function DestinationPage() {
               <div className="flex items-center gap-2">
                 <Wallet className="w-5 h-5" />
                 <span className="font-semibold">
-                  {formatBudgetRange(
-                    destination.totalBudget || {
-                      min: destination.budgetBreakdown.total.low,
-                      max: destination.budgetBreakdown.total.typical,
-                    },
-                  )}
+                  {formatBudgetRange(getBudgetRange(destination))}
                 </span>
               </div>
             </div>
@@ -159,10 +178,9 @@ export function DestinationPage() {
             }}
             className="thumbs-gallery"
           >
-            {(
-              destination.images || [
-                `/images/destinations/${destination.slug}.jpg`,
-              ]
+            {(allImages.length > 0
+              ? allImages
+              : [`/images/destinations/${destination.slug}.jpg`]
             ).map((image: string, index: number) => (
               <SwiperSlide key={index}>
                 <img
@@ -228,16 +246,7 @@ export function DestinationPage() {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                <CostsTab
-                  costs={destination.costs || []}
-                  totalBudget={
-                    destination.totalBudget || {
-                      min: destination.budgetBreakdown?.total?.low || 0,
-                      max: destination.budgetBreakdown?.total?.typical || 0,
-                    }
-                  }
-                  groupCosts={destination.groupCosts}
-                />
+                <CostsTab budgetBreakdown={destination.budgetBreakdown} />
               </motion.div>
             )}
 
@@ -264,6 +273,26 @@ export function DestinationPage() {
                     destination.permitRequired ??
                     destination.permits?.toLowerCase().includes("required")
                   }
+                />
+              </motion.div>
+            )}
+
+            {activeTab === "info" && destination.info && (
+              <motion.div
+                key="info"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <InfoTab
+                  info={destination.info}
+                  language={language}
+                  setLanguage={setLanguage}
+                  tagline={destination.tagline}
+                  seasonNote={destination.seasonNote}
+                  landscape={destination.landscape}
+                  coordinates={destination.coordinates}
                 />
               </motion.div>
             )}
@@ -325,85 +354,217 @@ function ItineraryTab({ itinerary }: { itinerary: ItineraryDay[] }) {
   );
 }
 
-function CostsTab({
-  costs,
-  totalBudget,
-  groupCosts,
-}: {
-  costs: CostItem[];
-  totalBudget: { min: number; max: number };
-  groupCosts?: { costs: CostItem[]; perPerson: { min: number; max: number } };
-}) {
+function CostsTab({ budgetBreakdown }: { budgetBreakdown: BudgetBreakdown }) {
+  const [viewMode, setViewMode] = useState<"solo" | "group">("solo");
+  const hasSixPerson = !!budgetBreakdown.sixPerson;
+
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {/* Solo Budget */}
-      <div className="bg-surface-secondary rounded-2xl p-6">
-        <h4 className="font-display text-xl font-bold text-content-primary mb-6">
-          Solo Traveler Budget
-        </h4>
-        <div className="space-y-4">
-          {costs.map((item: CostItem, index: number) => (
-            <motion.div
-              key={item.item}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: index * 0.05 }}
-              className="flex items-center justify-between py-3 border-b border-border-primary last:border-0"
-            >
-              <span className="text-content-secondary">{item.item}</span>
-              <span className="font-semibold text-content-primary">
-                {formatCurrency(item.amount)}
-              </span>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="mt-6 pt-4 border-t-2 border-primary-200 flex items-center justify-between">
-          <span className="font-semibold text-lg text-content-primary">
-            Total Budget
-          </span>
-          <span className="font-bold text-2xl text-primary-600">
-            {formatBudgetRange(totalBudget)}
-          </span>
-        </div>
-      </div>
-
-      {/* Group Budget (if available) */}
-      {groupCosts && (
-        <div className="bg-linear-to-br from-secondary-50 to-primary-50 rounded-2xl p-6">
-          <h4 className="font-display text-xl font-bold text-content-primary mb-2">
-            Group of 6 Budget
-          </h4>
-          <p className="text-sm text-content-tertiary mb-6">
-            Per person cost when traveling in a group
-          </p>
-          <div className="space-y-4">
-            {groupCosts.costs.map((item: CostItem, index: number) => (
-              <motion.div
-                key={item.item}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.05 }}
-                className="flex items-center justify-between py-3 border-b border-white/50 last:border-0"
-              >
-                <span className="text-content-secondary">{item.item}</span>
-                <span className="font-semibold text-content-primary">
-                  {formatCurrency(item.amount)}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="mt-6 pt-4 border-t-2 border-secondary-300 flex items-center justify-between">
-            <span className="font-semibold text-lg text-content-primary">
-              Per Person
-            </span>
-            <span className="font-bold text-2xl text-secondary-600">
-              {formatBudgetRange(groupCosts.perPerson)}
-            </span>
-          </div>
+    <div className="space-y-6">
+      {/* Toggle between Solo and Group view */}
+      {hasSixPerson && (
+        <div className="flex items-center gap-2 p-1 bg-surface-secondary rounded-full w-fit">
+          <button
+            onClick={() => setViewMode("solo")}
+            className={cn(
+              "flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all",
+              viewMode === "solo"
+                ? "bg-primary-500 text-white"
+                : "text-content-secondary hover:text-content-primary",
+            )}
+          >
+            <Wallet className="w-4 h-4" />
+            Solo Traveler
+          </button>
+          <button
+            onClick={() => setViewMode("group")}
+            className={cn(
+              "flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all",
+              viewMode === "group"
+                ? "bg-secondary-500 text-white"
+                : "text-content-secondary hover:text-content-primary",
+            )}
+          >
+            <Group className="w-4 h-4" />
+            Group of 6
+          </button>
         </div>
       )}
+
+      <AnimatePresence mode="wait">
+        {viewMode === "solo" ? (
+          <motion.div
+            key="solo"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 20 }}
+            className="bg-surface-secondary rounded-2xl p-6"
+          >
+            <h4 className="font-display text-xl font-bold text-content-primary mb-6 flex items-center gap-2">
+              <Wallet className="w-5 h-5 text-primary-500" />
+              Solo Traveler Budget
+            </h4>
+
+            {/* Budget Items Table */}
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-border-primary text-left">
+                    <th className="pb-3 font-semibold text-content-tertiary text-sm">
+                      Item
+                    </th>
+                    <th className="pb-3 font-semibold text-content-tertiary text-sm text-right">
+                      Budget
+                    </th>
+                    <th className="pb-3 font-semibold text-content-tertiary text-sm text-right">
+                      Typical
+                    </th>
+                    <th className="pb-3 font-semibold text-content-tertiary text-sm hidden sm:table-cell">
+                      Notes
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {budgetBreakdown.perPerson.items.map((item, index) => (
+                    <motion.tr
+                      key={item.item}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                      className="border-b border-border-primary/50"
+                    >
+                      <td className="py-3 text-content-secondary">
+                        {item.item}
+                      </td>
+                      <td className="py-3 text-right font-medium text-emerald-600">
+                        {formatCurrency(item.low)}
+                      </td>
+                      <td className="py-3 text-right font-medium text-content-primary">
+                        {formatCurrency(item.typical)}
+                      </td>
+                      <td className="py-3 text-content-tertiary text-sm hidden sm:table-cell">
+                        {item.notes || "—"}
+                      </td>
+                    </motion.tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Total */}
+            <div className="mt-6 pt-4 border-t-2 border-primary-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <span className="font-semibold text-lg text-content-primary">
+                Total Budget Range
+              </span>
+              <div className="flex items-center gap-3">
+                <span className="text-emerald-600 font-semibold">
+                  {formatCurrency(budgetBreakdown.perPerson.total.low)}
+                </span>
+                <span className="text-content-tertiary">to</span>
+                <span className="font-bold text-xl text-primary-600">
+                  {formatCurrency(budgetBreakdown.perPerson.total.typical)}
+                </span>
+              </div>
+            </div>
+          </motion.div>
+        ) : (
+          <motion.div
+            key="group"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            className="bg-linear-to-br from-secondary-50 to-primary-50 rounded-2xl p-6"
+          >
+            <h4 className="font-display text-xl font-bold text-content-primary mb-2 flex items-center gap-2">
+              <Group className="w-5 h-5 text-secondary-500" />
+              Group of 6 Budget
+            </h4>
+            <p className="text-sm text-content-tertiary mb-6">
+              Per person cost when traveling in a group
+            </p>
+
+            {budgetBreakdown.sixPerson && (
+              <>
+                {/* Budget Items Table */}
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="border-b border-secondary-200/50 text-left">
+                        <th className="pb-3 font-semibold text-content-tertiary text-sm">
+                          Item
+                        </th>
+                        <th className="pb-3 font-semibold text-content-tertiary text-sm text-right">
+                          Budget
+                        </th>
+                        <th className="pb-3 font-semibold text-content-tertiary text-sm text-right">
+                          Typical
+                        </th>
+                        <th className="pb-3 font-semibold text-content-tertiary text-sm hidden sm:table-cell">
+                          Notes
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {budgetBreakdown.sixPerson.items.map((item, index) => (
+                        <motion.tr
+                          key={item.item}
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: index * 0.05 }}
+                          className="border-b border-secondary-200/30"
+                        >
+                          <td className="py-3 text-content-secondary">
+                            {item.item}
+                          </td>
+                          <td className="py-3 text-right font-medium text-emerald-600">
+                            {formatCurrency(item.low)}
+                          </td>
+                          <td className="py-3 text-right font-medium text-content-primary">
+                            {formatCurrency(item.typical)}
+                          </td>
+                          <td className="py-3 text-content-tertiary text-sm hidden sm:table-cell">
+                            {item.notes || "—"}
+                          </td>
+                        </motion.tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Total */}
+                <div className="mt-6 pt-4 border-t-2 border-secondary-300 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <span className="font-semibold text-lg text-content-primary">
+                    Per Person Total
+                  </span>
+                  <div className="flex items-center gap-3">
+                    <span className="text-emerald-600 font-semibold">
+                      {formatCurrency(budgetBreakdown.sixPerson.total.low)}
+                    </span>
+                    <span className="text-content-tertiary">to</span>
+                    <span className="font-bold text-xl text-secondary-600">
+                      {formatCurrency(budgetBreakdown.sixPerson.total.typical)}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Savings callout */}
+                <div className="mt-4 p-3 bg-emerald-50 rounded-lg flex items-center gap-2 text-sm">
+                  <CheckCircle className="w-4 h-4 text-emerald-600" />
+                  <span className="text-emerald-700">
+                    Save up to{" "}
+                    <strong>
+                      {formatCurrency(
+                        budgetBreakdown.perPerson.total.typical -
+                          budgetBreakdown.sixPerson.total.typical,
+                      )}
+                    </strong>{" "}
+                    per person by traveling in a group!
+                  </span>
+                </div>
+              </>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
@@ -513,6 +674,113 @@ function TipsTab({
             </p>
           </div>
         )}
+      </div>
+    </div>
+  );
+}
+
+function InfoTab({
+  info,
+  language,
+  setLanguage,
+  tagline,
+  seasonNote,
+  landscape,
+  coordinates,
+}: {
+  info: MultilingualInfo;
+  language: "en" | "hi" | "bn";
+  setLanguage: (lang: "en" | "hi" | "bn") => void;
+  tagline: string;
+  seasonNote: string;
+  landscape: string;
+  coordinates: { latitude: string; longitude: string };
+}) {
+  const languageLabels = {
+    en: "English",
+    hi: "हिंदी",
+    bn: "বাংলা",
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* Language Selector */}
+      <div className="flex items-center gap-3">
+        <Globe className="w-5 h-5 text-content-tertiary" />
+        <span className="text-sm text-content-tertiary">Read in:</span>
+        <div className="flex items-center gap-1 p-1 bg-surface-secondary rounded-full">
+          {(Object.keys(languageLabels) as Array<"en" | "hi" | "bn">).map(
+            (lang) => (
+              <button
+                key={lang}
+                onClick={() => setLanguage(lang)}
+                className={cn(
+                  "px-4 py-1.5 rounded-full text-sm font-medium transition-all",
+                  language === lang
+                    ? "bg-primary-500 text-white"
+                    : "text-content-secondary hover:text-content-primary",
+                )}
+              >
+                {languageLabels[lang]}
+              </button>
+            ),
+          )}
+        </div>
+      </div>
+
+      {/* Tagline */}
+      {tagline && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-2xl font-display font-bold text-primary-600 italic"
+        >
+          "{tagline}"
+        </motion.div>
+      )}
+
+      {/* Main Info */}
+      <motion.div
+        key={language}
+        initial={{ opacity: 0, x: 10 }}
+        animate={{ opacity: 1, x: 0 }}
+        className="bg-surface-secondary rounded-2xl p-6"
+      >
+        <p className="text-lg leading-relaxed text-content-secondary">
+          {info[language]}
+        </p>
+      </motion.div>
+
+      {/* Additional Details */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Landscape */}
+        <div className="bg-surface-secondary rounded-xl p-4">
+          <h5 className="font-semibold text-content-primary mb-2 flex items-center gap-2">
+            <MapPin className="w-4 h-4 text-emerald-500" />
+            Landscape
+          </h5>
+          <p className="text-sm text-content-secondary">{landscape}</p>
+        </div>
+
+        {/* Season Note */}
+        <div className="bg-surface-secondary rounded-xl p-4">
+          <h5 className="font-semibold text-content-primary mb-2 flex items-center gap-2">
+            <Calendar className="w-4 h-4 text-amber-500" />
+            Season Note
+          </h5>
+          <p className="text-sm text-content-secondary">{seasonNote}</p>
+        </div>
+
+        {/* Coordinates */}
+        <div className="bg-surface-secondary rounded-xl p-4">
+          <h5 className="font-semibold text-content-primary mb-2 flex items-center gap-2">
+            <Globe className="w-4 h-4 text-blue-500" />
+            Coordinates
+          </h5>
+          <p className="text-sm text-content-secondary font-mono">
+            {coordinates.latitude}, {coordinates.longitude}
+          </p>
+        </div>
       </div>
     </div>
   );

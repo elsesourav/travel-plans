@@ -5,13 +5,58 @@ export const tirthan_valley: Destination = {
   id: "tirthan-valley",
   name: "Tirthan Valley",
   images: [
-    "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1200&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
+    {
+      placeName: "Tirthan River",
+      urls: [
+        "https://shivatells.com/wp-content/uploads/2025/01/Tirthan-Valley-River-1024x576.jpg",
+        "https://c8.alamy.com/comp/2PE7XJ9/tirthan-river-in-the-eco-zone-of-the-great-himalayan-national-park-in-the-tirthan-valley-of-himachal-pradesh-2PE7XJ9.jpg",
+        "https://hikerwolf.com/wp-content/uploads/2020/03/Tirthan-Valley.jpg",
+        "https://l450v.alamy.com/450v/2pe7wkw/the-tirthan-river-flowing-through-the-scenic-tirthan-valley-in-himachal-pradesh-2pe7wkw.jpg",
+        "https://media.gettyimages.com/id/1580724302/photo/river-at-tirthan-valley-himachal-pradesh-india.jpg?s=612x612&w=gi&k=20&c=ptbiluMm6f9XR_TxuWNeHSkbQqkCO_Zt989an-dVazs=",
+      ],
+    },
+    {
+      placeName: "Great Himalayan National Park",
+      urls: [
+        "https://c8.alamy.com/comp/2PE7XJ9/tirthan-river-in-the-eco-zone-of-the-great-himalayan-national-park-in-the-tirthan-valley-of-himachal-pradesh-2PE7XJ9.jpg",
+        "https://www.easeindiatrip.com/blog/wp-content/uploads/2025/03/Tirthan-Valley-Great-Himalayan-National-Park.jpg",
+        "https://static2.tripoto.com/media/filter/nl/img/2200455/TripDocument/1641655281_the_great_himalayan_national_park_a_hidden_gem_of_himachal_pradesh.jpg",
+        "https://www.worldatlas.com/r/w768/upload/47/44/41/shutterstock-1550272457.jpg",
+        "https://en-media.thebetterindia.com/uploads/2016/06/DSC00098.jpg",
+      ],
+    },
+    {
+      placeName: "Jalori Pass",
+      urls: [
+        "https://c8.alamy.com/comp/2C4HKAK/mountain-ranges-jalori-pass-tirthan-valley-himachal-pradesh-india-2C4HKAK.jpg",
+        "https://c8.alamy.com/comp/2C4HK5N/mountain-ranges-jalori-pass-tirthan-valley-himachal-pradesh-india-2C4HK5N.jpg",
+        "https://c8.alamy.com/comp/2C4HJMG/mountain-ranges-jalori-pass-tirthan-valley-himachal-pradesh-india-2C4HJMG.jpg",
+        "https://c8.alamy.com/comp/2C4HK2R/a-forest-trail-jalori-pass-tirthan-valley-himachal-pradesh-india-2C4HK2R.jpg",
+        "https://c8.alamy.com/comp/2C4HJMN/mountain-ranges-jalori-pass-tirthan-valley-himachal-pradesh-india-2C4HJMN.jpg",
+      ],
+    },
+    {
+      placeName: "Serolsar Lake",
+      urls: [
+        "https://i0.wp.com/www.crossroadadventure.com/wp-content/uploads/2020/12/LRM_EXPORT_635821070678497_20181231_111004351-1.jpg?fit=1920%2C1280&ssl=1",
+        "https://manalitourplanner.com/wp-content/uploads/2025/01/Serolsar-Lake-2-2048x1368.jpg",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/de/2e/e7/caption.jpg?w=1200&h=-1&s=1",
+        "https://mytriphack.com/wp-content/uploads/2018/07/Serolsar-lake.jpg",
+        "https://assets.traveltriangle.com/blog/wp-content/uploads/2024/11/Serolsar-Lake.jpg",
+      ],
+    },
+    {
+      placeName: "Jibhi",
+      urls: [
+        "https://vl-prod-static.b-cdn.net/system/images/000/479/898/6828c2b4ce87be65e4ed08eebcdb2f1e/x1000gt/Tirthan-Valley.jpg?1613151493",
+        "https://c8.alamy.com/comp/2C4HJ8B/a-mountain-valley-jibhi-tirthan-valley-himachal-pradesh-india-2C4HJ8B.jpg",
+        "https://img.freepik.com/premium-photo/mountain-valley-jibhi-tirthan-valley-himachal-prad_952778-22476.jpg?w=2000",
+        "https://c8.alamy.com/comp/2C4HJ5M/a-mountain-valley-jibhi-tirthan-valley-himachal-pradesh-india-2C4HJ5M.jpg",
+        "https://c8.alamy.com/comp/2C4HJ3W/a-mountain-valley-jibhi-tirthan-valley-himachal-pradesh-india-2C4HJ3W.jpg",
+      ],
+    },
   ],
+
   duration: "4 Days / 3 Nights",
   destination: "Tirthan Valley",
   state: "Himachal Pradesh",
@@ -31,7 +76,7 @@ export const tirthan_valley: Destination = {
     longitude: "77.4523°E",
   },
   permits: "GHNP entry permit required for treks inside park",
-  bestSeason: "March to June, September to November",
+  bestSeason: "Mar to Jun, Sep to Nov",
   seasonNote:
     "Spring and autumn are ideal. Monsoons have leeches on trails. Winters are cold but beautiful.",
   keyAttractions: [
@@ -79,88 +124,69 @@ export const tirthan_valley: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Chandigarh round trip)",
-        low: 1200,
-        typical: 3000,
-        notes: "Or fly Delhi ₹5,000–10,000",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Chandigarh round trip)",
+          low: 1200,
+          typical: 3000,
+          notes: "Or fly Delhi ₹5,000–10,000",
+        },
+        {
+          item: "Road transfers (Chandigarh ↔ Tirthan)",
+          low: 2000,
+          typical: 4000,
+          notes: "Shared taxi/bus",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3600,
+          typical: 7200,
+          notes: "₹600–1,200/night riverside",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1800,
+          typical: 3000,
+          notes: "₹250–400/day",
+        },
+        {
+          item: "GHNP permit & guides",
+          low: 500,
+          typical: 1500,
+          notes: "Park entry + trek guide",
+        },
+        {
+          item: "Fishing & activities",
+          low: 400,
+          typical: 1000,
+          notes: "Trout fishing ₹200–500",
+        },
+        {
+          item: "Misc (tips, shopping)",
+          low: 400,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 9900,
+        typical: 20500,
+        typicalRange: "₹12k–20k",
       },
-      {
-        item: "Road transfers (Chandigarh ↔ Tirthan)",
-        low: 2000,
-        typical: 4000,
-        notes: "Shared taxi/bus",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3600,
-        typical: 7200,
-        notes: "₹600–1,200/night riverside",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1800,
-        typical: 3000,
-        notes: "₹250–400/day",
-      },
-      {
-        item: "GHNP permit & guides",
-        low: 500,
-        typical: 1500,
-        notes: "Park entry + trek guide",
-      },
-      {
-        item: "Fishing & activities",
-        low: 400,
-        typical: 1000,
-        notes: "Trout fishing ₹200–500",
-      },
-      {
-        item: "Misc (tips, shopping)",
-        low: 400,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 9900,
-      typical: 20500,
-      typicalRange: "₹12k–20k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "1,200–3,000",
-      },
-      {
-        category: "Shared vehicle",
-        perPerson: "1,200–2,500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,400–4,800",
-      },
-      {
-        category: "Food",
-        perPerson: "1,500–2,500",
-      },
-      {
-        category: "GHNP & guides",
-        perPerson: "350–1,000",
-      },
-      {
-        category: "Activities",
-        perPerson: "300–700",
-      },
-      {
-        category: "Misc",
-        perPerson: "300–600",
-      },
-    ],
-    total: "₹7,250–15,100",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 1200, typical: 3000, notes: "" },
+        { item: "Shared vehicle", low: 1200, typical: 2500, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2400, typical: 4800, notes: "" },
+        { item: "Food", low: 1500, typical: 2500, notes: "" },
+        { item: "GHNP & guides", low: 350, typical: 1000, notes: "" },
+        { item: "Activities", low: 300, typical: 700, notes: "" },
+        { item: "Misc", low: 300, typical: 600, notes: "" },
+      ],
+      total: { low: 7250, typical: 15100, typicalRange: "₹7,250–15,100" },
+    },
   },
   bookingTips: [
     "Riverside homestays offer the best experience — book directly",

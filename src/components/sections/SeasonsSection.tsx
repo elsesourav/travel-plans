@@ -42,17 +42,17 @@ const seasons = [
 
 export function SeasonsSection() {
   return (
-    <section id="seasons" className="py-20 md:py-32 relative overflow-hidden">
-      {/* Gradient Texture Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-teal-50/50 to-cyan-50 dark:from-emerald-950/30 dark:via-teal-950/20 dark:to-cyan-950/30" />
+    <section
+      id="seasons"
+      className="py-16 md:py-24 relative overflow-hidden bg-linear-to-b from-emerald-50/30 to-transparent"
+    >
+      {/* Subtle Background Pattern */}
       <div
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2310b981' fill-opacity='0.3'%3E%3Ccircle cx='20' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-300/50 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-teal-300/50 to-transparent" />
 
       <div className="container-custom relative z-10">
         {/* Section Header */}
@@ -61,67 +61,71 @@ export function SeasonsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-14"
         >
-          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-3 py-1.5 bg-emerald-50 text-emerald-600  rounded-full text-sm font-medium mb-3">
             Best Seasons
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-content-primary mb-6">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-content-primary mb-4">
             When to Travel
           </h2>
-          <p className="text-lg text-content-secondary max-w-2xl mx-auto">
-            Plan your trip during the perfect season for each destination.
+          <p className="text-base md:text-lg text-content-secondary max-w-xl mx-auto">
+            Plan your trip during the perfect season.
           </p>
         </motion.div>
 
         {/* Seasons Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
           {seasons.map((season, index) => (
             <motion.div
               key={season.name}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-2xl bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm border border-white/50 dark:border-white/10 p-6 shadow-lg shadow-black/5"
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+              className="group relative overflow-hidden rounded-xl bg-white backdrop-blur-sm border border-gray-200/50 p-4 md:p-5 hover:shadow-lg transition-all"
             >
-              {/* Gradient Background */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${season.color} opacity-0 group-hover:opacity-15 transition-opacity duration-300`}
-              />
+              {/* Glass shine effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute -top-24 -right-24 w-48 h-48 bg-gradient-to-br from-white/30 to-transparent rounded-full blur-2xl opacity-50" />
 
               {/* Content */}
               <div className="relative">
                 <div
-                  className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${season.color} flex items-center justify-center mb-4`}
+                  className={`w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br ${season.color} flex items-center justify-center mb-3`}
                 >
-                  <season.icon className="w-8 h-8 text-white" />
+                  <season.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
 
-                <h3 className="font-display text-2xl font-bold text-content-primary mb-1">
+                <h3 className="font-display text-lg md:text-xl font-bold text-content-primary mb-0.5">
                   {season.name}
                 </h3>
-                <p className="text-content-tertiary text-sm mb-4">
+                <p className="text-content-tertiary text-xs mb-2">
                   {season.months}
                 </p>
 
-                <p className="text-content-secondary text-sm mb-4 leading-relaxed">
+                <p className="text-content-secondary text-xs md:text-sm mb-3 leading-relaxed line-clamp-2 md:line-clamp-none">
                   {season.description}
                 </p>
 
-                <div className="space-y-2">
-                  <div className="text-xs font-semibold text-content-tertiary uppercase tracking-wider">
+                <div className="space-y-1.5">
+                  <div className="text-[10px] md:text-xs font-semibold text-content-tertiary uppercase tracking-wider">
                     Best for:
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {season.destinations.map((dest) => (
+                  <div className="flex flex-wrap gap-1">
+                    {season.destinations.slice(0, 2).map((dest) => (
                       <span
                         key={dest}
-                        className="px-2 py-1 bg-emerald-100/50 dark:bg-emerald-900/30 rounded-full text-xs text-content-secondary"
+                        className="px-1.5 py-0.5 bg-gray-100 rounded text-[10px] md:text-xs text-content-secondary"
                       >
                         {dest}
                       </span>
                     ))}
+                    {season.destinations.length > 2 && (
+                      <span className="text-[10px] md:text-xs text-content-tertiary">
+                        +{season.destinations.length - 2}
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>

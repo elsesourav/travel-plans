@@ -5,13 +5,58 @@ export const tso_moriri: Destination = {
   id: "tso-moriri",
   name: "Tso Moriri",
   images: [
-    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1572697390930-7339a01a4f6d?w=1200&q=80",
-    "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=1200&q=80",
+    {
+      placeName: "Tso Moriri Lake",
+      urls: [
+      "https://www.transformingtravels.com/wp-content/uploads/2021/10/Tso-Moriri-1920x960.jpg",
+      "https://img.freepik.com/free-photo/panorama-tso-moriri-sunset-ladakh_163782-2731.jpg?size=626&ext=jpg",
+      "https://himachalwatcher.com/wp-content/uploads/2014/04/Tso-Moriri-lake.jpg",
+      "https://discoverlehladakh.in/wp-content/uploads/2020/06/Tso-Moriri-Lake-1032x530.jpg",
+      "https://www.extremetoursindia.com/wp-content/uploads/2015/04/tso-moriri-lake-Ladakh-India.png",
+      ],
+    },
+    {
+      placeName: "Korzok Monastery",
+      urls: [
+      "https://c8.alamy.com/comp/2DKG1WB/panorama-of-the-korzok-monastery-and-village-with-mountains-and-tso-moriri-lake-himalayas-ladakh-india-2DKG1WB.jpg",
+      "https://l450v.alamy.com/450v/f4pgkh/korzok-gompa-a-monastery-at-tso-moriri-a-lake-at-an-altitude-of-4500-f4pgkh.jpg",
+      "http://www.thelandofsnows.com/wp-content/uploads/2015/04/untitled20130704-1024x678.jpg",
+      "https://www.ladakh-tourism.net/wp-content/uploads/2021/07/Karzok-Monastery-1-1024x536.jpeg",
+      "https://img.freepik.com/premium-photo/north-indian-traditional-korzok-village-tso-moriri-ladakh-4500-meters-sea_163782-20053.jpg?w=2000",
+      ],
+    },
+    {
+      placeName: "Tso Kar Lake",
+      urls: [
+      "https://img.freepik.com/free-photo/panorama-tso-moriri-sunset-ladakh_163782-2731.jpg?size=626&ext=jpg",
+      "https://llic.b-cdn.net/pictures/travel/tso-kar-lake-54.jpeg",
+      "https://www.tourmyindia.com/states/ladakh/imagess/tso-kar-lake-ladakh2.jpg",
+      "https://www.tourmyindia.com/states/ladakh/imagess/tso-kar-lake-ladakh4.jpg",
+      "https://www.transformingtravels.com/wp-content/uploads/2021/10/Tso-Moriri-1920x960.jpg",
+      ],
+    },
+    {
+      placeName: "Changthang Plateau",
+      urls: [
+      "https://c8.alamy.com/comp/2CAF30B/ladakh-india-tso-moriri-lake-in-changthang-plateau-ladakh-jammu-and-kashmir-india-it-is-part-of-ramsar-convention-2CAF30B.jpg",
+      "https://c8.alamy.com/comp/2CABRMT/ladakh-india-tso-moriri-lake-in-changthang-plateau-ladakh-jammu-and-kashmir-india-it-is-part-of-ramsar-convention-2CABRMT.jpg",
+      "https://c8.alamy.com/comp/2CAF3KD/ladakh-india-tso-moriri-lake-in-changthang-plateau-ladakh-jammu-and-kashmir-india-it-is-part-of-ramsar-convention-2CAF3KD.jpg",
+      "https://c8.alamy.com/comp/F7XAP9/landscape-of-tso-moriri-or-lake-moriri-ladakh-changthang-plateau-jammu-F7XAP9.jpg",
+      "https://c8.alamy.com/comp/2CAF3FP/ladakh-india-tso-moriri-lake-in-changthang-plateau-ladakh-jammu-and-kashmir-india-it-is-part-of-ramsar-convention-2CAF3FP.jpg",
+      ],
+    },
+    {
+      placeName: "Wildlife",
+      urls: [
+      "https://www.wildimages-phototours.com/wp-content/uploads/2017/08/Tso-Moriri-Ladakh-Mark-Beaman-4105.jpg",
+      "https://peakvisor.com/photo/Changthang-Wildlife-Sanctuary-Tso-Moriri.jpg",
+      "https://l450v.alamy.com/450v/pwa96k/goats-grazing-along-tso-moriri-lake-the-gem-of-ladakh-india-pwa96k.jpg",
+      "https://peakvisor.com/photo/Changthang-Wildlife-Sanctuary-Tso-Miori.jpg",
+      "https://l450v.alamy.com/450v/pwa96c/goats-grazing-along-tso-moriri-lake-the-gem-of-ladakh-india-pwa96c.jpg",
+      ],
+    },
   ],
+  
   duration: "3 Days / 2 Nights",
   destination: "Tso Moriri",
   state: "Ladakh",
@@ -79,88 +124,69 @@ export const tso_moriri: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Flights (Kolkata ↔ Leh via Delhi)",
-        low: 12000,
-        typical: 22000,
-        notes: "Book early for deals",
+    perPerson: {
+      items: [
+        {
+          item: "Flights (Kolkata ↔ Leh via Delhi)",
+          low: 12000,
+          typical: 22000,
+          notes: "Book early for deals",
+        },
+        {
+          item: "Shared taxi/jeep (Leh circuits)",
+          low: 10000,
+          typical: 18000,
+          notes: "Tso Moriri + local sightseeing",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 6000,
+          typical: 10000,
+          notes: "Guesthouses + Korzok homestay",
+        },
+        {
+          item: "Food (7 days)",
+          low: 2000,
+          typical: 3500,
+          notes: "Simple meals",
+        },
+        {
+          item: "Permits",
+          low: 500,
+          typical: 800,
+          notes: "ILP for Changthang",
+        },
+        {
+          item: "Local sightseeing",
+          low: 500,
+          typical: 1500,
+          notes: "Entry fees, guides",
+        },
+        {
+          item: "Misc (tips, shopping)",
+          low: 500,
+          typical: 1200,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 31500,
+        typical: 57000,
+        typicalRange: "₹35k–60k",
       },
-      {
-        item: "Shared taxi/jeep (Leh circuits)",
-        low: 10000,
-        typical: 18000,
-        notes: "Tso Moriri + local sightseeing",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 6000,
-        typical: 10000,
-        notes: "Guesthouses + Korzok homestay",
-      },
-      {
-        item: "Food (7 days)",
-        low: 2000,
-        typical: 3500,
-        notes: "Simple meals",
-      },
-      {
-        item: "Permits",
-        low: 500,
-        typical: 800,
-        notes: "ILP for Changthang",
-      },
-      {
-        item: "Local sightseeing",
-        low: 500,
-        typical: 1500,
-        notes: "Entry fees, guides",
-      },
-      {
-        item: "Misc (tips, shopping)",
-        low: 500,
-        typical: 1200,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 31500,
-      typical: 57000,
-      typicalRange: "₹35k–60k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Flight tickets",
-        perPerson: "12,000–22,000",
-      },
-      {
-        category: "Shared taxi (chartered)",
-        perPerson: "6,000–10,000",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "3,000–5,500",
-      },
-      {
-        category: "Food",
-        perPerson: "1,800–3,000",
-      },
-      {
-        category: "Permits",
-        perPerson: "400–700",
-      },
-      {
-        category: "Local sightseeing",
-        perPerson: "350–1,000",
-      },
-      {
-        category: "Misc",
-        perPerson: "400–800",
-      },
-    ],
-    total: "₹23,950–43,000",
+    sixPerson: {
+      items: [
+        { item: "Flight tickets", low: 12000, typical: 22000, notes: "" },
+        { item: "Shared taxi (chartered)", low: 6000, typical: 10000, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 3000, typical: 5500, notes: "" },
+        { item: "Food", low: 1800, typical: 3000, notes: "" },
+        { item: "Permits", low: 400, typical: 700, notes: "" },
+        { item: "Local sightseeing", low: 350, typical: 1000, notes: "" },
+        { item: "Misc", low: 400, typical: 800, notes: "" },
+      ],
+      total: { low: 23950, typical: 43000, typicalRange: "₹23,950–43,000" },
+    },
   },
   bookingTips: [
     "Much less touristy than Pangong — true wilderness experience",

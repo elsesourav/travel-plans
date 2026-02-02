@@ -5,13 +5,58 @@ export const bodh_gaya: Destination = {
   id: "bodh-gaya",
   name: "Bodh Gaya",
   images: [
-    "https://images.unsplash.com/photo-1545378889-6d7eb2cf1020?w=1200&q=80",
-    "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
-    "https://images.unsplash.com/photo-1555400082-645c3d19f7b9?w=1200&q=80",
-    "https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80",
-    "https://images.unsplash.com/photo-1609619385002-f40f1df827b8?w=1200&q=80",
-    "https://images.unsplash.com/photo-1585136917228-d0a0426b2030?w=1200&q=80",
+    {
+      placeName: "Mahabodhi Temple",
+      urls: [
+      "https://cdn.britannica.com/12/94612-050-B4EEB84A/temple-Buddhist-Mahabodhi-Bihar-India-Bodh-Gaya.jpg",
+      "https://www.tripsavvy.com/thmb/QZUBiTCTl2BvMAAla9vmUBqQEAk=/2120x1414/filters:fill(auto,1)/GettyImages-618355052-b865a78b33cf412b915909ad9d941f27.jpg",
+      "https://c8.alamy.com/comp/C8FE5D/mahabodhi-temple-unesco-world-heritage-site-bodh-gaya-bodhgaya-gaya-C8FE5D.jpg",
+      "https://static.vecteezy.com/system/resources/previews/009/585/133/non_2x/mahabodhi-temple-bodh-gaya-india-free-photo.jpg",
+      "https://1.bp.blogspot.com/-UgUleoX7y80/XQiX0iurb2I/AAAAAAAAAcA/JdA9wOPaP6cGkevTd7TGSS6CX7CtibPGwCLcBGAs/s1600/bodh-gaya-mahabodhi-temple-148393958715-orijgp.jpg",
+      ],
+    },
+    {
+      placeName: "Bodhi Tree",
+      urls: [
+      "https://treevitalize.com/wp-content/uploads/2024/04/Bodhi-tree-near-Mahabodhi-Temple-at-Bodh-Gaya-Bihar-India.jpg",
+      "https://mnmtravels.in/images/blogs/5a4c67d651c1b0ef3570eab44e4adea3.PNG",
+      "https://media-cdn.tripadvisor.com/media/photo-s/03/bc/d8/ab/bodhi-tree.jpg",
+      "https://www.hlimg.com/images/things2do/738X538/Famous-Trees-12_1511157517t.jpg",
+      "https://as2.ftcdn.net/jpg/10/02/04/33/1000_F_1002043350_R7m0R9SQ64sTaRjw5FADLMBtkqW5LCr1.jpg",
+      ],
+    },
+    {
+      placeName: "Great Buddha Statue",
+      urls: [
+      "https://www.gosahin.com/go/p/h/1551637384_great-buddha-statue1.jpg",
+      "https://c8.alamy.com/comp/E2GT8W/india-bihar-state-bodh-gaya-great-buddha-statue-E2GT8W.jpg",
+      "https://c8.alamy.com/comp/2ST6KTB/the-great-buddha-statue-80-feet-long-bodhgaya-bihar-india-2ST6KTB.jpg",
+      "https://c8.alamy.com/comp/2XNX4C5/the-80-foot-high-great-buddha-statue-daibutsu-built-by-the-daijokyo-sect-of-nagoya-bodh-gaya-bihar-india-2XNX4C5.jpg",
+      "https://visitplacesindia.com/wp-content/uploads/2024/12/great-buddha-statue.jpg",
+      ],
+    },
+    {
+      placeName: "International Monasteries",
+      urls: [
+      "https://c8.alamy.com/comp/2NWY9AP/beautiful-view-of-royal-bhutan-monastery-bodh-gaya-bihar-india-2NWY9AP.jpg",
+      "https://c8.alamy.com/comp/2SRCBAP/view-of-buddhist-monastery-at-bodh-gaya-bihar-india-asia-2SRCBAP.jpg",
+      "https://vardhmanvacations.com/blog/wp-content/uploads/2024/11/mahabodhi-temple-bodh-gaya-bihar-1536x848.jpg",
+      "https://c8.alamy.com/comp/CE6688/tibetan-monastery-bodh-gaya-bihar-india-asia-CE6688.jpg",
+      "https://c8.alamy.com/comp/2NWYCNE/backside-view-of-royal-bhutan-monastery-bodh-gaya-bihar-india-2NWYCNE.jpg",
+      ],
+    },
+    {
+      placeName: "Rajgir & Nalanda",
+      urls: [
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/e4/12/76.jpg",
+      "https://travelotourism.in/wp-content/uploads/2025/08/Shanti_Stupa_at_Bodh_Gaya_Nalanda_Rajgir_Tour_Package-tot1-2048x1526.jpg",
+      "https://www.trawell.in/admin/images/upload/125543940Rajgir_Main1.jpg",
+      "https://www.trawell.in/admin/images/upload/125543521Rajgir_Vishwa_Shanti_Stupa_Main.jpg",
+      "https://www.trawell.in/admin/images/upload/081367647nalandauniversity.jpg",
+      ],
+    },
   ],
+  
   duration: "5 Days / 4 Nights",
   destination: "Bodh Gaya",
   state: "Bihar",
@@ -79,78 +124,62 @@ export const bodh_gaya: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Gaya round trip)",
-        low: 600,
-        typical: 1500,
-        notes: "4–5 hours journey",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Gaya round trip)",
+          low: 600,
+          typical: 1500,
+          notes: "4–5 hours journey",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 2400,
+          typical: 4800,
+          notes: "₹400–800/night, monasteries cheaper",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1200,
+          typical: 2100,
+          notes: "₹170–300/day",
+        },
+        {
+          item: "Rajgir/Nalanda day trip",
+          low: 400,
+          typical: 1000,
+          notes: "Shared taxi + entry fees",
+        },
+        {
+          item: "Local transport",
+          low: 300,
+          typical: 800,
+          notes: "Auto/cycle rickshaw",
+        },
+        {
+          item: "Misc (donations, souvenirs)",
+          low: 200,
+          typical: 600,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 5100,
+        typical: 10800,
+        typicalRange: "₹6k–10k",
       },
-      {
-        item: "Accommodation (6 nights)",
-        low: 2400,
-        typical: 4800,
-        notes: "₹400–800/night, monasteries cheaper",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1200,
-        typical: 2100,
-        notes: "₹170–300/day",
-      },
-      {
-        item: "Rajgir/Nalanda day trip",
-        low: 400,
-        typical: 1000,
-        notes: "Shared taxi + entry fees",
-      },
-      {
-        item: "Local transport",
-        low: 300,
-        typical: 800,
-        notes: "Auto/cycle rickshaw",
-      },
-      {
-        item: "Misc (donations, souvenirs)",
-        low: 200,
-        typical: 600,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 5100,
-      typical: 10800,
-      typicalRange: "₹6k–10k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "600–1,500",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "1,600–3,200",
-      },
-      {
-        category: "Food",
-        perPerson: "1,200–1,800",
-      },
-      {
-        category: "Rajgir trip (shared vehicle)",
-        perPerson: "200–500",
-      },
-      {
-        category: "Local transport",
-        perPerson: "150–400",
-      },
-      {
-        category: "Misc",
-        perPerson: "150–400",
-      },
-    ],
-    total: "₹3,900–7,800",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 600, typical: 1500, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 1600, typical: 3200, notes: "" },
+        { item: "Food", low: 1200, typical: 1800, notes: "" },
+        { item: "Rajgir trip (shared vehicle)", low: 200, typical: 500, notes: "" },
+        { item: "Local transport", low: 150, typical: 400, notes: "" },
+        { item: "Misc", low: 150, typical: 400, notes: "" },
+      ],
+      total: { low: 3900, typical: 7800, typicalRange: "₹3,900–7,800" },
+    },
   },
   bookingTips: [
     "Many monasteries offer accommodation at very low rates — book directly",

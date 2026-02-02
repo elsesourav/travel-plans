@@ -5,13 +5,58 @@ export const bir_billing: Destination = {
   id: "bir-billing",
   name: "Bir Billing",
   images: [
-    "https://images.unsplash.com/photo-1544735716-ea9ef790f501?w=1200&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?w=1200&q=80",
-    "https://images.unsplash.com/photo-1545378889-6d7eb2cf1020?w=1200&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
+    {
+      placeName: "Paragliding",
+      urls: [
+        "https://static.wixstatic.com/media/08582b_4a9c88a046f44876898640bc815ae467~mv2.jpg/v1/fill/w_750,h_500,al_c,q_85/08582b_4a9c88a046f44876898640bc815ae467~mv2.jpg",
+        "https://manuadventuresindia.com/wp-content/uploads/2023/04/bir_billing_himachal_pradesh.webp",
+        "https://www.shutterstock.com/shutterstock/photos/2563324307/display_1500/stock-photo-paragliding-at-bir-billing-himachal-pradesh-india-pm-december-2563324307.jpg",
+        "https://indianexpress.com/wp-content/uploads/2024/11/Billing-1.jpg?resize=768",
+        "https://www.campoakview.com/wp-content/uploads/2017/11/Bir-landing-area-view-from-Billing.jpg",
+      ],
+    },
+    {
+      placeName: "Chokling Monastery",
+      urls: [
+        "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2019/09/09173849/Chokling-Monastery.jpg",
+        "https://www.holidify.com/images/cmsuploads/compressed/443_20200629132353.jpg",
+        "https://3.bp.blogspot.com/-e33C9k9tOo8/W7EIpdunC4I/AAAAAAAABgs/FlQOOH7jZ10uKTcuqMJw6FE7m4h77yWXACLcBGAs/s1600/chokling-monastery-bir_pgqfqg.jpg",
+        "https://c.myholidays.com/blog/2023/5/201434_Chokling%20Monastery.webp",
+        "https://c8.alamy.com/comp/2G61KAY/monastery-at-bir-billing-himachal-2G61KAY.jpg",
+      ],
+    },
+    {
+      placeName: "Tea Gardens",
+      urls: [
+        "https://www.shutterstock.com/image-photo/beautiful-tea-gardens-bir-billing-260nw-1219856284.jpg",
+        "https://indiathrills.com/wp-content/uploads/2022/11/Chowgan-Tea-Gardens-410x250.jpg",
+        "https://www.shutterstock.com/image-photo/beautiful-tea-gardens-bir-billing-260nw-1219856287.jpg",
+        "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2022/06/Chowgan-Tea-Garden-Bir-Billing-Himachal.jpg?resize=902%2C598&ssl=1",
+        "https://c.myholidays.com/blog/2023/5/201445_Chowgan%20Tea%20Gardens.webp",
+      ],
+    },
+    {
+      placeName: "Gunehar Waterfall",
+      urls: [
+        "https://www.clubmahindra.com/blog/images/gunehar-waterfall-resized.jpg",
+        "https://wanderon-images.gumlet.io/blogs/new/2024/12/gunehar-waterfall-1.jpg",
+        "https://www.holidify.com/images/cmsuploads/compressed/GuneharWaterfall_20200413155738_20200413155756.jpeg",
+        "https://visitplacesindia.com/wp-content/uploads/2024/11/gunehar-waterfall.jpg",
+        "https://www.shutterstock.com/image-photo/trek-gunehar-waterfall-bir-billing-260nw-2434601275.jpg",
+      ],
+    },
+    {
+      placeName: "Billing Takeoff Site",
+      urls: [
+        "https://c8.alamy.com/comp/2BY955D/green-natural-beauty-with-clear-blue-skies-of-bir-and-billing-himachal-pradesh-india-asia-bir-billing-is-famous-for-paragliding-and-trekking-2BY955D.jpg",
+        "https://www.indiaimagine.com/wp-content/uploads/2020/09/Bir-Billing-Landscape.jpg",
+        "https://www.travelbirbilling.com/wp-content/uploads/Bir-Billing-Site-1024x681.jpg",
+        "https://c8.alamy.com/comp/2CF1XN1/bir-village-from-a-high-trekking-point-in-himachal-pradesh-india-bir-billing-is-famous-for-paragliding-trekking-mountain-terrain-biking-and-camps-2CF1XN1.jpg",
+        "https://c8.alamy.com/comp/G208EB/a-paraglider-flyer-gets-ready-for-take-off-at-bir-billing-himachal-G208EB.jpg",
+      ],
+    },
   ],
+
   duration: "5 Days / 4 Nights",
   destination: "Bir Billing",
   state: "Himachal Pradesh",
@@ -31,7 +76,7 @@ export const bir_billing: Destination = {
     longitude: "76.7167°E",
   },
   permits: "Not required for Indian citizens",
-  bestSeason: "March to June, September to November",
+  bestSeason: "Mar to Jun, Sep to Nov",
   seasonNote:
     "Best paragliding weather. Avoid monsoon (July–August) — no flying possible. October–November has clearest skies.",
   keyAttractions: [
@@ -79,88 +124,69 @@ export const bir_billing: Destination = {
     },
   ],
   budgetBreakdown: {
-    perPerson: [
-      {
-        item: "Train (Kolkata ↔ Pathankot round trip)",
-        low: 800,
-        typical: 2000,
-        notes: "Or fly Dharamshala ₹5,000–10,000",
+    perPerson: {
+      items: [
+        {
+          item: "Train (Kolkata ↔ Pathankot round trip)",
+          low: 800,
+          typical: 2000,
+          notes: "Or fly Dharamshala ₹5,000–10,000",
+        },
+        {
+          item: "Road transfers (Pathankot ↔ Bir)",
+          low: 800,
+          typical: 2000,
+          notes: "Shared taxi/bus",
+        },
+        {
+          item: "Accommodation (6 nights)",
+          low: 3000,
+          typical: 6000,
+          notes: "₹500–1,000/night",
+        },
+        {
+          item: "Food (7 days)",
+          low: 1800,
+          typical: 3000,
+          notes: "₹250–400/day",
+        },
+        {
+          item: "Paragliding",
+          low: 2500,
+          typical: 4000,
+          notes: "Tandem flight 15–30 min",
+        },
+        {
+          item: "Local transport & activities",
+          low: 500,
+          typical: 1200,
+          notes: "Trekking, camping",
+        },
+        {
+          item: "Misc (tips, shopping)",
+          low: 400,
+          typical: 800,
+          notes: "",
+        },
+      ],
+      total: {
+        low: 9800,
+        typical: 19000,
+        typicalRange: "₹12k–20k",
       },
-      {
-        item: "Road transfers (Pathankot ↔ Bir)",
-        low: 800,
-        typical: 2000,
-        notes: "Shared taxi/bus",
-      },
-      {
-        item: "Accommodation (6 nights)",
-        low: 3000,
-        typical: 6000,
-        notes: "₹500–1,000/night",
-      },
-      {
-        item: "Food (7 days)",
-        low: 1800,
-        typical: 3000,
-        notes: "₹250–400/day",
-      },
-      {
-        item: "Paragliding",
-        low: 2500,
-        typical: 4000,
-        notes: "Tandem flight 15–30 min",
-      },
-      {
-        item: "Local transport & activities",
-        low: 500,
-        typical: 1200,
-        notes: "Trekking, camping",
-      },
-      {
-        item: "Misc (tips, shopping)",
-        low: 400,
-        typical: 800,
-        notes: "",
-      },
-    ],
-    total: {
-      low: 9800,
-      typical: 19000,
-      typicalRange: "₹12k–20k",
     },
-  },
-  groupOf6: {
-    breakdown: [
-      {
-        category: "Train tickets",
-        perPerson: "800–2,000",
-      },
-      {
-        category: "Shared vehicle",
-        perPerson: "500–1,200",
-      },
-      {
-        category: "Shared rooms (3 rooms)",
-        perPerson: "2,000–4,000",
-      },
-      {
-        category: "Food",
-        perPerson: "1,500–2,500",
-      },
-      {
-        category: "Paragliding",
-        perPerson: "2,500–4,000",
-      },
-      {
-        category: "Activities",
-        perPerson: "350–800",
-      },
-      {
-        category: "Misc",
-        perPerson: "300–600",
-      },
-    ],
-    total: "₹7,950–15,100",
+    sixPerson: {
+      items: [
+        { item: "Train tickets", low: 800, typical: 2000, notes: "" },
+        { item: "Shared vehicle", low: 500, typical: 1200, notes: "" },
+        { item: "Shared rooms (3 rooms)", low: 2000, typical: 4000, notes: "" },
+        { item: "Food", low: 1500, typical: 2500, notes: "" },
+        { item: "Paragliding", low: 2500, typical: 4000, notes: "" },
+        { item: "Activities", low: 350, typical: 800, notes: "" },
+        { item: "Misc", low: 300, typical: 600, notes: "" },
+      ],
+      total: { low: 7950, typical: 15100, typicalRange: "₹7,950–15,100" },
+    },
   },
   bookingTips: [
     "Book paragliding with CERTIFIED operators only — safety first",

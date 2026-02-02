@@ -9,6 +9,11 @@ export interface Coordinates {
   longitude: string;
 }
 
+export interface PlaceImage {
+  placeName: string;
+  urls: string[];
+}
+
 export interface BudgetItem {
   item: string;
   low: number;
@@ -23,18 +28,14 @@ export interface BudgetTotal {
 }
 
 export interface BudgetBreakdown {
-  perPerson: BudgetItem[];
-  total: BudgetTotal;
-}
-
-export interface GroupBreakdownItem {
-  category: string;
-  perPerson: string;
-}
-
-export interface GroupBudget {
-  breakdown: GroupBreakdownItem[];
-  total: string;
+  perPerson: {
+    items: BudgetItem[];
+    total: BudgetTotal;
+  };
+  sixPerson?: {
+    items: BudgetItem[];
+    total: BudgetTotal;
+  };
 }
 
 export interface Destination {
@@ -53,14 +54,13 @@ export interface Destination {
   keyAttractions: string[];
   itinerary: ItineraryDay[];
   budgetBreakdown: BudgetBreakdown;
-  groupOf6?: GroupBudget;
   bookingTips: string[];
   slug: string;
 
   // Alias fields for component compatibility
   id?: string;
   name?: string;
-  images?: string[];
+  images?: PlaceImage[];
   duration?: string;
   permitRequired?: boolean;
   totalBudget?: { min: number; max: number };
