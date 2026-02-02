@@ -187,7 +187,8 @@ export function DestinationCard({
           >
             {destination.duration || "7 Days"}
           </Badge>
-          {destination.permitRequired && (
+          {(destination.permitRequired ||
+            destination.permits?.toLowerCase().includes("required")) && (
             <Badge variant="amber" className="backdrop-blur-sm shadow-md">
               Permit Required
             </Badge>
@@ -197,7 +198,7 @@ export function DestinationCard({
         {/* Content - Fixed at bottom */}
         <div className="absolute bottom-0 left-0 right-0 p-5">
           <div className="flex items-center gap-2 text-white/80 text-sm mb-2">
-            <MapPin className="w-4 h-4 flex-shrink-0" />
+            <MapPin className="w-4 h-4 shrink-0" />
             <span className="truncate">{destination.state}</span>
           </div>
 
@@ -212,20 +213,20 @@ export function DestinationCard({
           <div className="flex items-center justify-between pt-3 border-t border-white/20">
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-1.5 text-white/90 text-sm">
-                <Calendar className="w-4 h-4 flex-shrink-0" />
+                <Calendar className="w-4 h-4 shrink-0" />
                 <span className="truncate">
                   {destination.duration || "7 Days"}
                 </span>
               </div>
               <div className="flex items-center gap-1.5 text-white/90 text-sm">
-                <Wallet className="w-4 h-4 flex-shrink-0" />
+                <Wallet className="w-4 h-4 shrink-0" />
                 <span className="truncate font-medium">
                   {formatBudgetRange(getBudgetRange(destination))}
                 </span>
               </div>
             </div>
 
-            <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary-500 flex-shrink-0">
+            <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary-500 shrink-0">
               <ArrowRight className="w-5 h-5 text-white transition-transform group-hover:translate-x-0.5" />
             </div>
           </div>

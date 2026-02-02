@@ -1,5 +1,13 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Calendar, Compass, MapPin, Wallet } from "iconoir-react";
+import {
+  ArrowDown,
+  Calendar,
+  Compass,
+  Group,
+  MapPin,
+  Wallet,
+} from "iconoir-react";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
@@ -97,7 +105,7 @@ export function Hero() {
             },
             {
               icon: Calendar,
-              value: "7",
+              value: "5-7",
               label: "Days Each",
               color: "from-teal-400 to-secondary-500",
             },
@@ -106,6 +114,12 @@ export function Hero() {
               value: "₹5K-75K",
               label: "Budget Range",
               color: "from-amber-400 to-orange-500",
+            },
+            {
+              icon: Group,
+              value: "1/6",
+              label: "Solo,Group",
+              color: "from-purple-400 to-violet-500",
             },
           ].map((stat, index) => (
             <motion.div
@@ -128,7 +142,7 @@ export function Hero() {
                 <stat.icon className="w-6 h-6 text-white" />
               </div>
               <div className="text-left">
-                <div className="text-2xl md:text-3xl font-bold">
+                <div className="text-2xl md:text-3xl font-bold leading-tight">
                   {stat.value}
                 </div>
                 <div className="text-sm text-white/60">{stat.label}</div>
@@ -151,8 +165,8 @@ export function Hero() {
             Explore Destinations
             <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
           </a>
-          <a
-            href="#comparison"
+          <Link
+            to="/compare"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105"
             style={{
               background: "rgba(255,255,255,0.15)",
@@ -162,7 +176,7 @@ export function Hero() {
             }}
           >
             Compare Plans
-          </a>
+          </Link>
         </motion.div>
       </div>
 

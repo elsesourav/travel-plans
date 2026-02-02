@@ -186,7 +186,7 @@ export function ComparePage() {
                     <img
                       src={getDestinationImage(destination)}
                       alt={destination.name || destination.destination}
-                      className="w-10 h-10 md:w-12 md:h-12 rounded-lg object-cover flex-shrink-0"
+                      className="w-10 h-10 md:w-12 md:h-12 rounded-lg object-cover shrink-0"
                     />
                     <div className="min-w-0">
                       <h3 className="font-semibold text-content-primary text-sm truncate">
@@ -210,15 +210,8 @@ export function ComparePage() {
                     <span className="text-content-secondary">
                       {destination.bestSeason}
                     </span>
-                    {destination.permitRequired ||
-                    destination.permits?.toLowerCase().includes("required") ? (
-                      <span className="px-2 py-0.5 bg-amber-50 text-amber-600 rounded text-[10px] font-medium">
-                        Permit
-                      </span>
-                    ) : (
-                      <span className="px-2 py-0.5 bg-green-50 text-green-600 rounded text-[10px] font-medium">
-                        No Permit
-                      </span>
+                    {destination.permitRequired && (
+                      <span className="text-xs text-amber-500">Permit</span>
                     )}
                     <Link
                       to={`/destination/${destination.slug}`}
@@ -247,16 +240,6 @@ export function ComparePage() {
 
                   {/* Desktop: Type/Tags */}
                   <div className="hidden md:flex col-span-2 items-center gap-1 flex-wrap">
-                    {destination.permitRequired ||
-                    destination.permits?.toLowerCase().includes("required") ? (
-                      <span className="px-2 py-0.5 bg-amber-50 text-amber-600 rounded text-[10px] font-medium">
-                        Permit
-                      </span>
-                    ) : (
-                      <span className="px-2 py-0.5 bg-green-50 text-green-600 rounded text-[10px] font-medium">
-                        No Permit
-                      </span>
-                    )}
                     {(
                       destination.tags || [
                         destination.landscape.split(",")[0].trim(),
@@ -271,6 +254,12 @@ export function ComparePage() {
                           {tag}
                         </span>
                       ))}
+
+                    {destination.permitRequired && (
+                      <span className="text-xs px-2 py-0.5 rounded-sm bg-amber-500">
+                        Permit
+                      </span>
+                    )}
                   </div>
 
                   {/* Desktop: Action */}

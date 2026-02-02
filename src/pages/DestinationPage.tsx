@@ -29,7 +29,7 @@ import {
   WarningTriangle,
 } from "iconoir-react";
 import { useState } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import type { Swiper as SwiperType } from "swiper";
 import { FreeMode, Navigation, Pagination, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -42,6 +42,7 @@ import "swiper/css/thumbs";
 
 export function DestinationPage() {
   const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [activeTab, setActiveTab] = useState<
     "itinerary" | "costs" | "tips" | "info"
@@ -72,7 +73,7 @@ export function DestinationPage() {
         <Swiper
           modules={[Navigation, Pagination, Thumbs]}
           navigation={true}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           thumbs={{
             swiper:
               thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
@@ -103,13 +104,13 @@ export function DestinationPage() {
         </Swiper>
 
         {/* Back Button */}
-        <Link
-          to="/"
+        <button
+          onClick={() => navigate(-1)}
           className="absolute top-24 left-4 md:left-8 z-20 flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />
           <span className="hidden sm:inline">Back</span>
-        </Link>
+        </button>
 
         {/* Title Overlay */}
         <div className="absolute bottom-0 left-0 right-0 z-10 p-6 md:p-12">
@@ -269,10 +270,7 @@ export function DestinationPage() {
                   attractions={
                     destination.attractions || destination.keyAttractions
                   }
-                  permitRequired={
-                    destination.permitRequired ??
-                    destination.permits?.toLowerCase().includes("required")
-                  }
+                  permitRequired={destination.permitRequired!}
                 />
               </motion.div>
             )}

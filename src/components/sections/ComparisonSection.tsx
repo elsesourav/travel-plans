@@ -1,6 +1,10 @@
 import { destinations } from "@/data/destinations";
 import type { Destination } from "@/data/types";
-import { formatBudgetRange } from "@/lib/utils";
+import {
+  formatBudgetRange,
+  getBudgetRange,
+  getDestinationImage,
+} from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, MapPin, Wallet } from "iconoir-react";
 import { Link } from "react-router-dom";
@@ -43,13 +47,9 @@ export function ComparisonSection() {
               >
                 <div className="flex items-start gap-3 mb-3">
                   <img
-                    src={
-                      typeof (destination.images?.[0]) === 'string' 
-                        ? destination.images[0] 
-                        : destination.images?.[0]?.urls?.[0] || `/images/destinations/${destination.slug}.jpg`
-                    }
+                    src={getDestinationImage(destination)}
                     alt={destination.name || destination.destination}
-                    className="w-14 h-14 rounded-lg object-cover flex-shrink-0"
+                    className="w-14 h-14 rounded-lg object-cover shrink-0"
                   />
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-content-primary truncate">
@@ -70,12 +70,7 @@ export function ComparisonSection() {
                   <div className="flex items-center gap-1.5">
                     <Wallet className="w-3.5 h-3.5 text-primary-500" />
                     <span className="font-medium text-primary-600">
-                      {formatBudgetRange(
-                        destination.totalBudget || {
-                          min: destination.budgetBreakdown.perPerson.total.low,
-                          max: destination.budgetBreakdown.perPerson.total.typical,
-                        },
-                      )}
+                      {formatBudgetRange(getBudgetRange(destination))}
                     </span>
                   </div>
                 </div>
@@ -140,11 +135,7 @@ export function ComparisonSection() {
                   <td className="p-4 lg:p-6">
                     <div className="flex items-center gap-3">
                       <img
-                        src={
-                      typeof (destination.images?.[0]) === 'string' 
-                        ? destination.images[0] 
-                        : destination.images?.[0]?.urls?.[0] || `/images/destinations/${destination.slug}.jpg`
-                    }
+                        src={getDestinationImage(destination)}
                         alt={destination.name || destination.destination}
                         className="w-12 h-12 rounded-xl object-cover"
                       />
@@ -163,12 +154,7 @@ export function ComparisonSection() {
                   </td>
                   <td className="p-4 lg:p-6">
                     <span className="font-semibold text-primary-600">
-                      {formatBudgetRange(
-                        destination.totalBudget || {
-                          min: destination.budgetBreakdown.perPerson.total.low,
-                          max: destination.budgetBreakdown.perPerson.total.typical,
-                        },
-                      )}
+                      {formatBudgetRange(getBudgetRange(destination))}
                     </span>
                   </td>
                   <td className="p-4 lg:p-6 text-content-secondary">

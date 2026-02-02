@@ -346,7 +346,7 @@ export function TipsPage() {
                       key={item}
                       className="flex items-start gap-2 text-sm text-content-secondary"
                     >
-                      <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -398,7 +398,7 @@ export function TipsPage() {
                       key={tip}
                       className="flex items-start gap-2 text-sm text-content-secondary"
                     >
-                      <InfoCircle className="w-4 h-4 text-content-tertiary flex-shrink-0 mt-0.5" />
+                      <InfoCircle className="w-4 h-4 text-content-tertiary shrink-0 mt-0.5" />
                       <span>{tip}</span>
                     </li>
                   ))}
@@ -474,7 +474,7 @@ export function TipsPage() {
             viewport={{ once: true }}
             className="mt-6 p-4 rounded-xl bg-primary-50 border border-primary-100 flex items-start gap-3"
           >
-            <Calendar className="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
+            <Calendar className="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
             <div>
               <p className="font-medium text-primary-800 mb-1">Pro Tip</p>
               <p className="text-sm text-primary-700">
