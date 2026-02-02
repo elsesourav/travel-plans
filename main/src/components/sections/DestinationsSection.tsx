@@ -1,6 +1,3 @@
-import { destinations } from "../../data/destinations";
-import type { Destination } from "../../data/types";
-import { getMinBudget } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Cloud,
@@ -17,8 +14,12 @@ import {
   Xmark,
 } from "iconoir-react";
 import { useMemo, useRef, useState } from "react";
-import { Autoplay, Navigation } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { destinations } from "../../data/destinations";
+import type { Destination } from "../../data/types";
+import { getMinBudget } from "../../lib/utils";
 import { DestinationCard } from "./DestinationCard";
 
 import "swiper/css";
@@ -158,6 +159,8 @@ export function DestinationsSection() {
   const [priceFilter, setPriceFilter] = useState("all");
   const [landscapeFilters, setLandscapeFilters] = useState<string[]>([]);
   const [permitFilters, setPermitFilters] = useState<string[]>([]);
+  const [mobileSlideIndex, setMobileSlideIndex] = useState(0);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
   // Toggle season filter
@@ -255,7 +258,7 @@ export function DestinationsSection() {
     <section
       id="destinations"
       ref={sectionRef}
-      className="py-20 md:py-32 bg-surface-primary"
+      className="py-12 md:py-20 lg:py-32 bg-surface-primary"
     >
       <div className="container-custom">
         {/* Section Header */}
@@ -264,15 +267,15 @@ export function DestinationsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-6 md:mb-12"
         >
-          <span className="inline-block px-4 py-2 bg-primary-50 text-primary-600 rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-primary-50 text-primary-600 rounded-full text-xs md:text-sm font-medium mb-3 md:mb-4">
             Explore Destinations
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-content-primary mb-6">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-content-primary mb-3 md:mb-6">
             {filteredDestinations.length} Incredible Places
           </h2>
-          <p className="text-lg text-content-secondary max-w-2xl mx-auto">
+          <p className="text-sm md:text-lg text-content-secondary max-w-2xl mx-auto px-4 md:px-0">
             From spiritual Varanasi to adventurous Ladakh, each destination
             offers a unique experience with detailed plans and budgets.
           </p>
@@ -551,41 +554,126 @@ export function DestinationsSection() {
         </div>
 
         {/* Destinations Slider - Mobile Only */}
-        <div className="md:hidden overflow-hidden">
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            spaceBetween={16}
-            slidesPerView={1}
-            centeredSlides={false}
-            loop={filteredDestinations.length > 1}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              400: {
-                slidesPerView: 1.1,
-                spaceBetween: 16,
-              },
-              500: {
-                slidesPerView: 1.3,
-                spaceBetween: 16,
-              },
-              640: {
-                slidesPerView: 1.5,
-                spaceBetween: 20,
-              },
-            }}
-            className="pb-4"
-          >
-            {filteredDestinations.map(
-              (destination: Destination, index: number) => (
-                <SwiperSlide key={destination.id || destination.slug}>
-                  <DestinationCard destination={destination} index={index} />
-                </SwiperSlide>
-              ),
+        <div className="md:hidden">
+          {/* Swiper Container */}
+          <div className="relative">
+            {/* Left Arrow */}
+            {mobileSlideIndex > 0 && (
+              <button
+                onClick={() => swiperInstance?.slidePrev()}
+                className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:bg-white transition-colors"
+              >
+                <NavArrowLeft className="w-4 h-4 text-gray-700" />
+              </button>
             )}
-          </Swiper>
+
+            {/* Right Arrow */}
+            {mobileSlideIndex < filteredDestinations.length - 1 && (
+              <button
+                onClick={() => swiperInstance?.slideNext()}
+                className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:bg-white transition-colors"
+              >
+                <NavArrowRight className="w-4 h-4 text-gray-700" />
+              </button>
+            )}
+
+            <Swiper
+              modules={[Navigation, Autoplay, Pagination]}
+              spaceBetween={16}
+              slidesPerView={1}
+              centeredSlides={false}
+              loop={false}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: true,
+              }}
+              onSwiper={setSwiperInstance}
+              onSlideChange={(swiper) => setMobileSlideIndex(swiper.realIndex)}
+              breakpoints={{
+                400: {
+                  slidesPerView: 1.1,
+                  spaceBetween: 16,
+                },
+                500: {
+                  slidesPerView: 1.3,
+                  spaceBetween: 16,
+                },
+                640: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 20,
+                },
+              }}
+              className="pb-2"
+            >
+              {filteredDestinations.map(
+                (destination: Destination, index: number) => (
+                  <SwiperSlide key={destination.id || destination.slug}>
+                    <DestinationCard destination={destination} index={index} />
+                  </SwiperSlide>
+                ),
+              )}
+            </Swiper>
+          </div>
+
+          {/* Custom Pagination Dots */}
+          <div className="flex items-center justify-center gap-1 mt-4 px-4">
+            {/* Left scroll indicator */}
+            {filteredDestinations.length > 7 && mobileSlideIndex > 3 && (
+              <button
+                onClick={() => swiperInstance?.slideTo(0)}
+                className="w-6 h-6 flex items-center justify-center text-content-tertiary hover:text-primary-500 transition-colors"
+              >
+                <NavArrowLeft className="w-3 h-3" />
+              </button>
+            )}
+
+            {/* Pagination dots */}
+            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-hide max-w-[280px] px-1">
+              {filteredDestinations.map((_, index) => {
+                const isActive = index === mobileSlideIndex;
+                const isNearby = Math.abs(index - mobileSlideIndex) <= 3;
+
+                // Show dots for nearby items or if total is small
+                if (filteredDestinations.length <= 7 || isNearby) {
+                  return (
+                    <button
+                      key={index}
+                      onClick={() => swiperInstance?.slideTo(index)}
+                      className={`flex-shrink-0 rounded-full transition-all duration-300 ${
+                        isActive
+                          ? "w-6 h-2 bg-primary-500"
+                          : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
+                      }`}
+                      aria-label={`Go to slide ${index + 1}`}
+                    />
+                  );
+                }
+                return null;
+              })}
+            </div>
+
+            {/* Right scroll indicator */}
+            {filteredDestinations.length > 7 &&
+              mobileSlideIndex < filteredDestinations.length - 4 && (
+                <button
+                  onClick={() =>
+                    swiperInstance?.slideTo(filteredDestinations.length - 1)
+                  }
+                  className="w-6 h-6 flex items-center justify-center text-content-tertiary hover:text-primary-500 transition-colors"
+                >
+                  <NavArrowRight className="w-3 h-3" />
+                </button>
+              )}
+          </div>
+
+          {/* Slide counter */}
+          <p className="text-center text-xs text-content-tertiary mt-2">
+            <span className="font-semibold text-primary-600">
+              {mobileSlideIndex + 1}
+            </span>
+            <span className="mx-1">/</span>
+            <span>{filteredDestinations.length}</span>
+          </p>
         </div>
       </div>
     </section>

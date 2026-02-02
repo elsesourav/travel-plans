@@ -64,7 +64,7 @@ export function ComparePage() {
   }, [budgetFilter, seasonFilter, sortBy]);
 
   return (
-    <div className="min-h-screen bg-surface-primary">
+    <div className="min-h-svh bg-surface-primary">
       {/* Hero Header */}
       <div className="bg-gradient-to-br from-secondary-600 to-secondary-800 text-white py-16 md:py-20">
         <div className="container-custom">

@@ -44,6 +44,8 @@ export function DestinationPage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+  const [mainSwiper, setMainSwiper] = useState<SwiperType | null>(null);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [activeTab, setActiveTab] = useState<
     "itinerary" | "costs" | "tips" | "info"
   >("itinerary");
@@ -67,7 +69,7 @@ export function DestinationPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-surface-primary">
+    <div className="min-h-svh bg-surface-primary">
       {/* Hero Section */}
       <section className="relative h-[70vh] md:h-[80vh] overflow-hidden">
         <Swiper
@@ -78,6 +80,8 @@ export function DestinationPage() {
             swiper:
               thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
           }}
+          onSwiper={setMainSwiper}
+          onSlideChange={(swiper) => setActiveImageIndex(swiper.realIndex)}
           className="h-full hero-slider"
           loop={allImages.length > 1}
         >
@@ -163,19 +167,23 @@ export function DestinationPage() {
       </section>
 
       {/* Thumbnail Gallery */}
-      <div className="bg-surface-secondary py-4">
+      <div className="bg-surface-secondary py-3 md:py-4">
         <div className="container-custom">
           <Swiper
-            modules={[FreeMode, Thumbs]}
+            modules={[FreeMode, Thumbs, Navigation]}
             onSwiper={setThumbsSwiper}
             slidesPerView={4}
-            spaceBetween={12}
-            freeMode
+            spaceBetween={8}
+            freeMode={false}
             watchSlidesProgress
+            centeredSlides={false}
+            slideToClickedSlide={true}
             breakpoints={{
-              640: { slidesPerView: 5 },
-              768: { slidesPerView: 6 },
-              1024: { slidesPerView: 8 },
+              480: { slidesPerView: 5, spaceBetween: 10 },
+              640: { slidesPerView: 6, spaceBetween: 10 },
+              768: { slidesPerView: 7, spaceBetween: 12 },
+              1024: { slidesPerView: 8, spaceBetween: 12 },
+              1280: { slidesPerView: 10, spaceBetween: 12 },
             }}
             className="thumbs-gallery"
           >
@@ -184,14 +192,73 @@ export function DestinationPage() {
               : [`/images/destinations/${destination.slug}.jpg`]
             ).map((image: string, index: number) => (
               <SwiperSlide key={index}>
-                <img
-                  src={image}
-                  alt={`Thumbnail ${index + 1}`}
-                  className="w-full aspect-video object-cover rounded-lg cursor-pointer opacity-60 hover:opacity-100 transition-opacity"
-                />
+                <div
+                  onClick={() => {
+                    if (mainSwiper) {
+                      mainSwiper.slideToLoop(index);
+                    }
+                    setActiveImageIndex(index);
+
+                    // Smart auto-scroll based on clicked position
+                    if (thumbsSwiper) {
+                      const totalImages = allImages.length;
+
+                      // Don't scroll if it's the first or last image
+                      if (index === 0 || index === totalImages - 1) {
+                        return;
+                      }
+
+                      // Calculate scroll position to keep clicked image visible with context
+                      // Try to show 2 images before and after the clicked image when possible
+                      const slidesPerView =
+                        (thumbsSwiper.params.slidesPerView as number) || 4;
+                      const offset = Math.floor(slidesPerView / 3); // Show clicked image at 1/3 position
+
+                      let targetIndex = index - offset;
+
+                      // Ensure we don't scroll beyond bounds
+                      targetIndex = Math.max(
+                        0,
+                        Math.min(targetIndex, totalImages - slidesPerView),
+                      );
+
+                      thumbsSwiper.slideTo(targetIndex, 300);
+                    }
+                  }}
+                  className={cn(
+                    "relative cursor-pointer rounded-lg overflow-hidden transition-all duration-200",
+                    activeImageIndex === index
+                      ? "opacity-100 shadow-md"
+                      : "opacity-50 hover:opacity-75",
+                  )}
+                >
+                  <img
+                    src={image}
+                    alt={`${imagesByPlace[index]?.placeName || `Image ${index + 1}`}`}
+                    className="w-full aspect-video object-cover"
+                  />
+                  {/* Active indicator - border instead of ring */}
+                  {activeImageIndex === index && (
+                    <div className="absolute inset-0 border-2 border-primary-500 rounded-lg" />
+                  )}
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
+
+          {/* Image counter */}
+          <p className="text-center text-xs text-content-tertiary mt-2">
+            <span className="font-semibold text-primary-600">
+              {activeImageIndex + 1}
+            </span>
+            <span className="mx-1">/</span>
+            <span>{allImages.length}</span>
+            {imagesByPlace[activeImageIndex]?.placeName && (
+              <span className="ml-2 text-content-secondary">
+                — {imagesByPlace[activeImageIndex].placeName}
+              </span>
+            )}
+          </p>
         </div>
       </div>
 

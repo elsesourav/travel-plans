@@ -204,7 +204,7 @@ const seasons = [
 
 export function TipsPage() {
   return (
-    <div className="min-h-screen bg-surface-primary">
+    <div className="min-h-svh bg-surface-primary">
       {/* Hero Header */}
       <div className="bg-gradient-to-br from-accent-600 to-accent-800 text-white py-16 md:py-20">
         <div className="container-custom">

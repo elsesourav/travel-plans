@@ -16,7 +16,7 @@ export function Logo({ className, size = "md", variant = "full" }: LogoProps) {
   return (
     <div className={cn("flex items-center gap-2", className)}>
       <img
-        src="./favicon.png"
+        src="https://github.com/elsesourav/travel-plans/blob/master/favicon.png?raw=true"
         alt="Travel Plans Logo"
         className={cn(sizes[size].icon, "object-contain")}
       />
