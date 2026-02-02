@@ -172,7 +172,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-Created with ❤️ by Sourav
+Created with ❤️ by Sourav Barui
 
 ## 🙏 Acknowledgments
 
