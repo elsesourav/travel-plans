@@ -1,11 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/layout";
+import { ScrollProgress } from "./components/ScrollProgress";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { ComparePage, DestinationPage, HomePage, TipsPage } from "./pages";
 
 function App() {
   return (
     <>
+      <ScrollProgress />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>

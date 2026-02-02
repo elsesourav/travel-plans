@@ -248,7 +248,12 @@ export function Navbar() {
                       ?.scrollIntoView({ behavior: "smooth" });
                   } else {
                     // Navigate to home and then scroll
-                    navigate("/#destinations");
+                    navigate("/");
+                    setTimeout(() => {
+                      document
+                        .getElementById("destinations")
+                        ?.scrollIntoView({ behavior: "smooth" });
+                    }, 100);
                   }
                 }}
               >
@@ -530,10 +535,23 @@ export function Navbar() {
                       className="w-full"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
-                        navigate("/compare");
+                        if (location.pathname === "/") {
+                          // Already on home, just scroll to destinations
+                          document
+                            .getElementById("destinations")
+                            ?.scrollIntoView({ behavior: "smooth" });
+                        } else {
+                          // Navigate to home and then scroll
+                          navigate("/");
+                          setTimeout(() => {
+                            document
+                              .getElementById("destinations")
+                              ?.scrollIntoView({ behavior: "smooth" });
+                          }, 100);
+                        }
                       }}
                     >
-                      Plan Your Trip
+                      Plan Trip
                     </Button>
                   </div>
                 </div>

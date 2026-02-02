@@ -82,14 +82,27 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
   }
 
   body {
     @apply bg-surface text-text-primary font-sans;
     background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
     background-size: 20px 20px;
-    scrollbar-width: thin;
-    scrollbar-color: #4b5563 transparent;
+    /* Hide scrollbar */
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   /* Apply dotted pattern to surface backgrounds */

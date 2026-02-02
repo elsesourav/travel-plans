@@ -34,7 +34,7 @@ export function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-2">
               <img
-                src="https://github.com/elsesourav/travel-plans/blob/master/favicon.png?raw=true"
+                src="./favicon.png"
                 alt="Travel Plans"
                 className="w-8 h-8 rounded-lg"
               />
