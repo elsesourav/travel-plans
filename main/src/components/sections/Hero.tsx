@@ -166,7 +166,7 @@ export function Hero() {
             <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
           </a>
           <Link
-            to="/compare"
+            to="./compare"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105"
             style={{
               background: "rgba(255,255,255,0.15)",

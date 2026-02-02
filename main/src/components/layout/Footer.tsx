@@ -34,7 +34,7 @@ export function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-2">
               <img
-                src="/favicon.png"
+                src="./favicon.png"
                 alt="Travel Plans"
                 className="w-8 h-8 rounded-lg"
               />
@@ -50,25 +50,25 @@ export function Footer() {
             <h4 className="font-semibold text-sm mb-2 md:mb-3">Quick Links</h4>
             <ul className="flex flex-wrap gap-x-4 gap-y-1 text-gray-400 text-xs">
               <li>
-                <a
-                  href="/#destinations"
+                <Link
+                  to="/#destinations"
                   className="hover:text-white transition-colors"
                 >
                   Destinations
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/compare"
+                <Link
+                  to="/compare"
                   className="hover:text-white transition-colors"
                 >
                   Compare
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/tips" className="hover:text-white transition-colors">
+                <Link to="/tips" className="hover:text-white transition-colors">
                   Tips
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

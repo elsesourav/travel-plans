@@ -41,6 +41,7 @@ export function Navbar() {
 
   // Reset selected index when search results change
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setSelectedIndex(0);
   }, [searchResults]);
 
