@@ -1,7 +1,7 @@
-import { Button, Input, Logo } from "@/components/ui";
-import { destinations } from "@/data/destinations";
-import type { Destination } from "@/data/types";
-import { cn, getDestinationImage } from "@/lib/utils";
+import { Button, Input, Logo } from "../ui";
+import { destinations } from "../../data/destinations";
+import type { Destination } from "../../data/types";
+import { cn, getDestinationImage } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Search, Xmark } from "iconoir-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";

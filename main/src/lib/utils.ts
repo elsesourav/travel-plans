@@ -1,4 +1,4 @@
-import type { Destination, PlaceImage } from "@/data/types";
+import type { Destination, PlaceImage } from "../data/types";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 

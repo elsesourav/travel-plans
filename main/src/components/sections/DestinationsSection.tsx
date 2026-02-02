@@ -1,6 +1,6 @@
-import { destinations } from "@/data/destinations";
-import type { Destination } from "@/data/types";
-import { getMinBudget } from "@/lib/utils";
+import { destinations } from "../../data/destinations";
+import type { Destination } from "../../data/types";
+import { getMinBudget } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Cloud,

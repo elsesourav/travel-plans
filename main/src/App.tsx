@@ -1,7 +1,7 @@
-import { Layout } from "@/components/layout";
-import { ScrollToTop } from "@/components/ScrollToTop";
-import { ComparePage, DestinationPage, HomePage, TipsPage } from "@/pages";
 import { Route, Routes } from "react-router-dom";
+import { Layout } from "./components/layout";
+import { ScrollToTop } from "./components/ScrollToTop";
+import { ComparePage, DestinationPage, HomePage, TipsPage } from "./pages";
 
 function App() {
   return (

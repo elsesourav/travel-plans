@@ -1,10 +1,10 @@
-import { Badge } from "@/components/ui";
-import type { Destination } from "@/data/types";
+import { Badge } from "../ui";
+import type { Destination } from "../../data/types";
 import {
   formatBudgetRange,
   getBudgetRange,
   getDestinationImage,
-} from "@/lib/utils";
+} from "../../lib/utils";
 import { motion } from "framer-motion";
 import {
   ArrowRight,

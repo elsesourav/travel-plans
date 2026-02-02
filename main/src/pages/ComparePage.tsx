@@ -1,11 +1,11 @@
-import { destinations } from "@/data/destinations";
-import type { Destination } from "@/data/types";
+import { destinations } from "../data/destinations";
+import type { Destination } from "../data/types";
 import {
   formatBudgetRange,
   getBudgetRange,
   getDestinationImage,
   getMinBudget,
-} from "@/lib/utils";
+} from "../lib/utils";
 import { motion } from "framer-motion";
 import { ArrowRight, Filter, MapPin, SunLight, Wallet } from "iconoir-react";
 import { useMemo, useState } from "react";

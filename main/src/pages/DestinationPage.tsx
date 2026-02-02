@@ -1,19 +1,3 @@
-import { Badge } from "@/components/ui";
-import { destinations } from "@/data/destinations";
-import type {
-  BudgetBreakdown,
-  Destination,
-  ItineraryDay,
-  MultilingualInfo,
-} from "@/data/types";
-import {
-  cn,
-  formatBudgetRange,
-  formatCurrency,
-  getAllImageUrls,
-  getBudgetRange,
-  getImagesByPlace,
-} from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -33,6 +17,22 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import type { Swiper as SwiperType } from "swiper";
 import { FreeMode, Navigation, Pagination, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Badge } from "../components/ui";
+import { destinations } from "../data/destinations";
+import type {
+  BudgetBreakdown,
+  Destination,
+  ItineraryDay,
+  MultilingualInfo,
+} from "../data/types";
+import {
+  cn,
+  formatBudgetRange,
+  formatCurrency,
+  getAllImageUrls,
+  getBudgetRange,
+  getImagesByPlace,
+} from "../lib/utils";
 
 import "swiper/css";
 import "swiper/css/free-mode";

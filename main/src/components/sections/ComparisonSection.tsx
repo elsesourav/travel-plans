@@ -1,10 +1,10 @@
-import { destinations } from "@/data/destinations";
-import type { Destination } from "@/data/types";
+import { destinations } from "../../data/destinations";
+import type { Destination } from "../../data/types";
 import {
   formatBudgetRange,
   getBudgetRange,
   getDestinationImage,
-} from "@/lib/utils";
+} from "../../lib/utils";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, MapPin, Wallet } from "iconoir-react";
 import { Link } from "react-router-dom";
