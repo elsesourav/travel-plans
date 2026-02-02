@@ -150,7 +150,7 @@ export function Navbar() {
         <div className="container-custom">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 group">
+            <Link to="./" className="flex items-center gap-2 group">
               <Logo
                 variant="full"
                 size="md"

@@ -52,7 +52,7 @@ export function DestinationPage() {
   const destination = destinations.find((d: Destination) => d.slug === slug);
 
   if (!destination) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="./" replace />;
   }
 
   // Get all image URLs from the new structure
