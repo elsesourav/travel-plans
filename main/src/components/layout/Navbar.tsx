@@ -1,16 +1,16 @@
-import { Button, Input, Logo } from "../ui";
-import { destinations } from "../../data/destinations";
-import type { Destination } from "../../data/types";
-import { cn, getDestinationImage } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Search, Xmark } from "iconoir-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { destinations } from "../../data/destinations";
+import type { Destination } from "../../data/types";
+import { cn, getDestinationImage } from "../../lib/utils";
+import { Button, Input, Logo } from "../ui";
 
 const navLinks = [
-  { label: "Destinations", href: "/#destinations" },
-  { label: "Compare", href: "/compare" },
-  { label: "Tips", href: "/tips" },
+  { label: "Destinations", href: "/#destinations", isHash: true },
+  { label: "Compare", href: "/compare", isHash: false },
+  { label: "Tips", href: "/tips", isHash: false },
 ];
 
 export function Navbar() {
@@ -164,14 +164,49 @@ export function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => {
-                const isActive =
-                  link.href.startsWith("/") && !link.href.includes("#")
-                    ? location.pathname === link.href
-                    : location.pathname === "/" && link.href.includes("#");
+                const isActive = link.isHash
+                  ? location.pathname === "/" &&
+                    location.hash === "#destinations"
+                  : location.pathname === link.href;
+
+                if (link.isHash) {
+                  return (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (location.pathname !== "/") {
+                          navigate("/");
+                          setTimeout(() => {
+                            document
+                              .getElementById("destinations")
+                              ?.scrollIntoView({ behavior: "smooth" });
+                          }, 100);
+                        } else {
+                          document
+                            .getElementById("destinations")
+                            ?.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
+                      className={cn(
+                        "text-sm font-medium transition-colors hover:text-primary-500 relative cursor-pointer",
+                        isScrolled ? "text-text-secondary" : "text-white/90",
+                        isActive && "text-primary-500",
+                      )}
+                    >
+                      {link.label}
+                      {isActive && (
+                        <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-500 rounded-full" />
+                      )}
+                    </a>
+                  );
+                }
+
                 return (
-                  <a
+                  <Link
                     key={link.href}
-                    href={link.href}
+                    to={link.href}
                     className={cn(
                       "text-sm font-medium transition-colors hover:text-primary-500 relative",
                       isScrolled ? "text-text-secondary" : "text-white/90",
@@ -182,7 +217,7 @@ export function Navbar() {
                     {isActive && (
                       <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-500 rounded-full" />
                     )}
-                  </a>
+                  </Link>
                 );
               })}
             </div>
@@ -422,30 +457,72 @@ export function Navbar() {
               <div className="bg-white/80 backdrop-blur-2xl shadow-xl border border-white/50 rounded-2xl overflow-hidden ring-1 ring-black/5">
                 <div className="p-4 space-y-1">
                   {navLinks.map((link, index) => {
-                    const isActive =
-                      link.href.startsWith("/") && !link.href.includes("#")
-                        ? location.pathname === link.href
-                        : location.pathname === "/" && link.href.includes("#");
+                    const isActive = link.isHash
+                      ? location.pathname === "/"
+                      : location.pathname === link.href;
+
+                    if (link.isHash) {
+                      return (
+                        <motion.a
+                          key={link.href}
+                          href={link.href}
+                          initial={{ opacity: 0, x: -10 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: index * 0.05 }}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsMobileMenuOpen(false);
+                            if (location.pathname !== "/") {
+                              navigate("/");
+                              setTimeout(() => {
+                                document
+                                  .getElementById("destinations")
+                                  ?.scrollIntoView({ behavior: "smooth" });
+                              }, 100);
+                            } else {
+                              document
+                                .getElementById("destinations")
+                                ?.scrollIntoView({ behavior: "smooth" });
+                            }
+                          }}
+                          className={cn(
+                            "flex items-center gap-3 px-4 py-3 font-medium hover:bg-primary-50/80 rounded-xl transition-all active:scale-[0.98] cursor-pointer",
+                            isActive
+                              ? "text-primary-600 bg-primary-50/50"
+                              : "text-content-primary",
+                          )}
+                        >
+                          {link.label}
+                          {isActive && (
+                            <span className="ml-auto w-1.5 h-1.5 bg-primary-500 rounded-full" />
+                          )}
+                        </motion.a>
+                      );
+                    }
+
                     return (
-                      <motion.a
+                      <Link
                         key={link.href}
-                        href={link.href}
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.05 }}
+                        to={link.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={cn(
-                          "flex items-center gap-3 px-4 py-3 font-medium hover:bg-primary-50/80 rounded-xl transition-all active:scale-[0.98]",
-                          isActive
-                            ? "text-primary-600 bg-primary-50/50"
-                            : "text-content-primary",
-                        )}
                       >
-                        {link.label}
-                        {isActive && (
-                          <span className="ml-auto w-1.5 h-1.5 bg-primary-500 rounded-full" />
-                        )}
-                      </motion.a>
+                        <motion.div
+                          initial={{ opacity: 0, x: -10 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: index * 0.05 }}
+                          className={cn(
+                            "flex items-center gap-3 px-4 py-3 font-medium hover:bg-primary-50/80 rounded-xl transition-all active:scale-[0.98]",
+                            isActive
+                              ? "text-primary-600 bg-primary-50/50"
+                              : "text-content-primary",
+                          )}
+                        >
+                          {link.label}
+                          {isActive && (
+                            <span className="ml-auto w-1.5 h-1.5 bg-primary-500 rounded-full" />
+                          )}
+                        </motion.div>
+                      </Link>
                     );
                   })}
                   <div className="pt-3 mt-2 border-t border-gray-200/50">

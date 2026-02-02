@@ -32,7 +32,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start md:items-center">
           {/* Brand */}
           <div>
-            <Link to="./" className="flex items-center gap-2 mb-2">
+            <Link to="/" className="flex items-center gap-2 mb-2">
               <img
                 src="./favicon.png"
                 alt="Travel Plans"
@@ -50,26 +50,29 @@ export function Footer() {
             <h4 className="font-semibold text-sm mb-2 md:mb-3">Quick Links</h4>
             <ul className="flex flex-wrap gap-x-4 gap-y-1 text-gray-400 text-xs">
               <li>
-                <Link
-                  to="./#destinations"
-                  className="hover:text-white transition-colors"
+                <a
+                  href="#destinations"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("destinations")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="hover:text-white transition-colors cursor-pointer"
                 >
                   Destinations
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
-                  to="./compare"
+                  to="/compare"
                   className="hover:text-white transition-colors"
                 >
                   Compare
                 </Link>
               </li>
               <li>
-                <Link
-                  to="./tips"
-                  className="hover:text-white transition-colors"
-                >
+                <Link to="/tips" className="hover:text-white transition-colors">
                   Tips
                 </Link>
               </li>
